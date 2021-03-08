@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "Report-Msgid-Bugs-To: contact@foe.tools\n"
 "POT-Creation-Date: 2020-08-21T21:00:52.270Z\n"
-"PO-Revision-Date: 2021-03-08 00:44+0000\n"
+"PO-Revision-Date: 2021-03-08 05:12+0000\n"
 "Last-Translator: srkns <serkanisleyen@gmail.com>\n"
 "Language-Team: Turkish <https://translate.foe.tools/projects/"
 "foe-tools-website/website/tr/>\n"
@@ -146,10 +146,9 @@ msgstr "Gelen Erzak"
 msgid "components.cf_calculator.block_cfc.infinity_generator.message"
 msgstr ""
 "Şu anki görevleri tamamlamak için @:(foe_data.gb.Chateau_Frontenac) bonusu "
-"ile,  kullanacağından daha fazla para ve malzeme kazanacaksın. Lütfen "
-"yapmak istediğiniz "
-"\"@:(components.cf_calculator.block_cfc.infinity_generator.label)\" "
-"sayısını seçin."
+"ile, kullanacağından daha fazla para ve malzeme kazanacaksın. Lütfen yapmak "
+"istediğiniz \"@:(components.cf_calculator.block_cfc.infinity_generator.label)"
+"\" sayısını seçin."
 
 msgid "components.cf_calculator.block_cfc.infinity_generator.label"
 msgstr "Birikimli görev"
@@ -3270,3 +3269,210 @@ msgstr "Gizlilik Politikası"
 
 msgid "footer_menu.cookie_policy"
 msgstr "Çerez Politikası"
+
+msgid "components.gb_investment.tutorial.snipe.title"
+msgstr "Pusucu"
+
+msgid "cookieConsent.consentModal.description"
+msgstr ""
+"Burada, bu web sitesinde kullanmak istediğimiz hizmetleri değerlendirebilir "
+"ve özelleştirebilirsiniz. Sorumlu sensin! Hizmetleri uygun gördüğünüz "
+"şekilde etkinleştirin veya devre dışı bırakın."
+
+msgid "cookieConsent.purposes.performance.description"
+msgstr ""
+"Bu hizmetler, bu web sitesinin sunduğu hizmeti optimize etmek için kişisel "
+"bilgileri işler."
+
+msgid "cookieConsent.purposes.functional.description"
+msgstr ""
+"Bu hizmetler, bu web sitesinin doğru çalışması için gereklidir. Aksi "
+"takdirde servis düzgün çalışmayacağından bunları burada devre dışı "
+"bırakamazsınız."
+
+msgid "cookieConsent.consentNotice.edit"
+msgstr ""
+"Senin için uygun mu? Onayını daha sonra her zaman değiştirebilir veya geri "
+"çekebilirsin."
+
+msgid "cookieConsent.purposes.advertising.description"
+msgstr ""
+"Bu hizmetler, size kişiselleştirilmiş veya ilgi alanına dayalı reklamları "
+"göstermek için kişisel bilgileri işler."
+
+msgid "cookieConsent.consentNotice.description"
+msgstr "Aşağıdaki amaçlarla ek hizmetleri etkinleştirmek istiyoruz:"
+
+msgid "cookieConsent.consentNotice.changeDescription"
+msgstr ""
+"Son ziyaretinizden bu yana değişiklikler oldu, lütfen onayınızı yenileyin."
+
+msgid "cookieConsent.foe-tools.description"
+msgstr ""
+"Yapılandırmanızla ilgili tüm veriler(Devasa Binaların seviyesi, "
+"yatırımcılar, Ark bonusu, vs.)"
+
+msgid "routes.about.cookie.p2"
+msgstr "Daha fazla bilgi için lütfen aşağıdaki bağlantılara bakın:"
+
+msgid "components.site_layout.translation_not_completed.content"
+msgstr "Aşağıdaki çeviriler tamamlanmadı ve çevirmenlere ihtiyacı var:"
+
+msgid ""
+"components.gb_investment.tutorial.promotion_message.custom_"
+"fields"
+msgstr ""
+"Bazı şablonların kendi adlarına sahip kendi alanları olduğunu unutmayın."
+
+msgid ""
+"components.gb_investment.tutorial.promotion_message.display_gb_"
+"name"
+msgstr "Devasa Binanın adını gösterir(eğer ileti şablonunda varsa)."
+
+msgid "components.gb_investment.tutorial.promotion_message.prefix"
+msgstr "İletinin başına eklenecek metin."
+
+msgid "components.gb_investment.tutorial.promotion_message.suffix"
+msgstr "İletinin sonuna eklenecek metin."
+
+msgid "components.gb_investment.tutorial.table.message"
+msgstr "Bu tablo size bilmek istediğiniz tüm bilgileri gösterir."
+
+msgid "cookieConsent.ok"
+msgstr "Benim için tamam"
+
+msgid "cookieConsent.consentModal.title"
+msgstr "Kullanmak istediğimiz hizmetler"
+
+msgid "cookieConsent.acceptAll"
+msgstr "Hepsini kabul ediyorum"
+
+#, fuzzy
+msgid "cookieConsent.sentry.description"
+msgstr ""
+"Olası hataları belirlemek için hataların toplanması (self-hosted solution)"
+
+msgid "cookieConsent.title"
+msgstr "Selam ! Biziz ... Çerezler!"
+
+msgid "foe_data.age.SpaceAgeAsteroidBelt"
+msgstr "Uzay Çağı Asteroit Kemeri"
+
+msgid "routes.donate.donation_options"
+msgstr "Bağış Yap @:(common.links.donorbox) veya @:(common.links.paypal) ile."
+
+msgid "routes.donate.conversion"
+msgstr "Çalışmamı takdir ediyorsanız, lütfen bağış yapmayı düşünün."
+
+msgid "routes.help_to_translate_the_site.state_of_translation"
+msgstr "Çevirinin durumu :"
+
+msgid "components.site_layout.global_config_dialog.custom_gb_names"
+msgstr "Özel Devasa Bina İsimleri"
+
+msgid "components.site_layout.translation_not_completed.title"
+msgstr "Çeviri tamamlanmadı"
+
+msgid "addToHomeScreen.title"
+msgstr "FOE-Tools Yükle"
+
+msgid "cookieConsent.consentNotice.learnMore_nonTogglable"
+msgstr "Daha Fazla"
+
+msgid "cookieConsent.consentNotice.learnMore"
+msgstr "Seçiyorum"
+
+msgid "utils.FP"
+msgid_plural "utils.FP"
+msgstr[0] "{count} FP"
+msgstr[1] "{count} FP"
+
+msgid "utils.alpha_order"
+msgstr "Alfabetik sıra"
+
+msgid "foe_data.gb.Galata_Tower"
+msgstr "Galata Kulesi"
+
+msgid "routes.about.cookie.info.cookieConsent"
+msgstr "Çerez seçenekleri"
+
+msgid "components.site_layout.global_config_dialog.day_night_mode.System"
+msgstr "Sistem tercihleri"
+
+msgid "components.gb_investment.remove_favourite"
+msgstr "Favorilerden Sil"
+
+msgid "components.gb_investment.add_favourite"
+msgstr "Favorilere Ekle"
+
+msgid "addToHomeScreen.install"
+msgstr "Yükle"
+
+msgid "cookieConsent.purposes.quality"
+msgstr "Kalite"
+
+msgid "cookieConsent.purposes.advertising.title"
+msgstr "Reklam"
+
+msgid "cookieConsent.acceptSelected"
+msgstr "Tamamlandı"
+
+msgid "cookieConsent.back"
+msgstr "Geri"
+
+msgid "utils.unlock"
+msgstr "Kilidi Aç"
+
+msgid "utils.lock"
+msgstr "Kilitle"
+
+msgid "utils.favourites"
+msgstr "Favoriler"
+
+msgid "foe_data.goods.platinum_crystals"
+msgstr "Platin Kristal"
+
+msgid "foe_data.goods.compound_fluid"
+msgstr "Bileşik Akışkanı"
+
+msgid "foe_data.goods.processed_materials"
+msgstr "İşlenmiş Malzeme"
+
+msgid "foe_data.goods.fusion_reactors"
+msgstr "Füzyon Gücü"
+
+msgid "foe_data.goods.mars_microbes"
+msgstr "Mars Mikrobu"
+
+msgid "foe_data.goods.biotech_crops"
+msgstr "Biyo-Teknoloji Ürünü"
+
+msgid "foe_data.gb_short.Galata_Tower"
+msgstr "Galata Kulesi"
+
+msgid "foe_data.gb.Space_Carrier"
+msgstr "Uzay Taşıyıcısı"
+
+msgid "utils.Donate"
+msgstr "Bağış"
+
+msgid "utils.Tutorial"
+msgstr "Öğretici"
+
+msgid "utils.Done"
+msgstr "Tamam"
+
+msgid "utils.Exit"
+msgstr "Çıkış"
+
+msgid "foe_data.goods.bromine"
+msgstr "Brom"
+
+msgid "foe_data.goods.nickel"
+msgstr "Nikel"
+
+msgid "foe_data.goods.superalloys"
+msgstr "Süper Alaşım"
+
+msgid "foe_data.goods.lubricants"
+msgstr "Makine Yağı"
