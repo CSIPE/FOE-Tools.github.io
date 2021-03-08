@@ -1,16 +1,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"Report-Msgid-Bugs-To: foe-tools@protonmail.com\n"
+"Report-Msgid-Bugs-To: contact@foe.tools\n"
 "POT-Creation-Date: 2020-08-21T21:00:52.270Z\n"
-"PO-Revision-Date: 2020-10-29 09:30+0000\n"
+"PO-Revision-Date: 2021-03-08 00:44+0000\n"
+"Last-Translator: srkns <serkanisleyen@gmail.com>\n"
 "Language-Team: Turkish <https://translate.foe.tools/projects/"
 "foe-tools-website/website/tr/>\n"
 "Language: tr\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "mime-version: 1.0\n"
 
 msgid "main_menu.home"
@@ -3248,3 +3249,24 @@ msgstr "madalyalar"
 
 msgid "seo.keywords.military_units"
 msgstr "askeri birlikler"
+
+msgid "components.campaign_cost.provinces"
+msgstr "Eyaletler"
+
+msgid "components.campaign_cost.all_provinces"
+msgstr "Tüm eyaletler"
+
+msgid "components.gb_investment.tutorial.display_modes.title"
+msgstr "Görüntüleme modları"
+
+msgid "components.cf_calculator.tutorial.yourAge"
+msgstr "Çağınızı seçin."
+
+msgid "components.campaign_cost.all_ages"
+msgstr "Tüm Çağlar"
+
+msgid "footer_menu.privacy_policy"
+msgstr "Gizlilik Politikası"
+
+msgid "footer_menu.cookie_policy"
+msgstr "Çerez Politikası"
