@@ -425,7 +425,7 @@ export default {
         if (statSelector !== "reward_cost") {
           return maxAgeCost[i].cost;
         } else {
-          return maxAgeCost[i].reward[0];
+          return maxAgeCost[i].reward[0].fp;
         }
       });
 
@@ -436,9 +436,9 @@ export default {
             suggestedMax = x.cost > suggestedMax ? x.cost : suggestedMax;
             return x.cost;
           } else {
-            suggestedMin = x.reward[0] < suggestedMin ? x.reward[0] : suggestedMin;
-            suggestedMax = x.reward[0] > suggestedMax ? x.reward[0] : suggestedMax;
-            return x.reward[0];
+            suggestedMin = x.reward[0].fp < suggestedMin ? x.reward[0].fp : suggestedMin;
+            suggestedMax = x.reward[0].fp > suggestedMax ? x.reward[0].fp : suggestedMax;
+            return x.reward[0].fp;
           }
         });
       }

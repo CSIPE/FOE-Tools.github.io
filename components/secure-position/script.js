@@ -263,7 +263,7 @@ export default {
       const value = !val || val.length === 0 ? 0 : val;
       this.$data.change = true;
       if (this.haveInputLevelCost()) {
-        if (this.$props.levelData.investment.map((k) => k.reward).includes(value)) {
+        if (this.$props.levelData.investment.map((k) => k.reward.fp).includes(value)) {
           this.$data.errors.fpTargetReward = false;
           this.$store.commit("UPDATE_URL_QUERY", {
             key: queryKey.fpTargetReward,
