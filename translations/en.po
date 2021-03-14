@@ -3496,7 +3496,7 @@ msgstr "Double Collection"
 
 msgid "foe_data.bonus.double_collection.gb_description"
 msgstr ""
-"Gives you a chance to get double the resources in the the first buildings "
+"Gives you a chance to get the double the resources in the the first buildings "
 "collected. Excludes military and great buildings. Refreshes with each "
 "collection of this building."
 

@@ -117,7 +117,7 @@
   "components.gb_investment.tutorial.snipe.content": "\"Kapa\" är när en spelare tar en plats (1-5) i ett MB för att profitera som vanligen inte möter upp till ägarens förväntningar.\n\nT.ex. nivå 49 → 50 på MB \"@:(foe_data.gb.The_Virgo_Project)\" kräver ingen grundning i form av FP av ägaren för att säkra de 2 första platserna. Den förväntade investeringen med 1.9 (190%) för plats 1 är {fp1739}. En \"kapare\" (med en @:(foe_data.gb.The_Arc) på nivå 80) kan så fort tillfälle ges, ta platsen med en investering på endast {fp1679}, detta räcker för att säkra platsen och generera en profit på {fp60}.",
   "components.gb_investment.tutorial.gb_select": "Detta fält tillåter ett snabbt byte av MB.\nDet finns två typer selektorer.\n\nDen enkla selektorn (gamla versionen) som visar en \"drop-down\"-lista. Detta är standard-selektorn:\n\n{videoSelect}\n\nDen auto-kompletterande låter dig finna ett MB genom att skriva ett fåtal bokstäver från namnet på ett MB:\n\n{videoAutoComplete}",
   "components.gb_investment.tutorial.display_modes.title": "Visnings lägen",
-  "components.gb_investment.tutorial.display_modes.content": "Detta verktyg ger all information ägaren och investeraren behöver veta för investeringar på en nivå i ett MB. Det har två lägen:\n\n\"@:(routes.gb_investment.tab.owner_view.title)\" (where you are) visar detaljerad information på den nuvarande nivån endast.\n\n\"@:(routes.gb_investment.tab.investors_view.title)\" visar värdena på flera nivåer i tabulär form. Du ser endast antal FP ägaren och investerarna behöver bidra med, med resulterande profit/förlust.",
+  "components.gb_investment.tutorial.display_modes.content": "Detta verktyg ger all information ägaren och investeraren behöver veta för investeringar på en nivå i ett MB. Det har två lägen:\n\n\"@:(routes.gb_investment.tab.owner_view.title)\" (where you are) visar detaljerad information på den nuvarande nivån endast.\n\n\"@:(routes.gb_investment.tab.investors_view.title)\" visar värdena på flera nivåer i tabulär form. Du ser endast antal FP ägaren och investerarna behöver bidra med, resulterande profit/förlust.",
   "components.gb_investment.tutorial.level": "Välj nivån du vill jobba med.",
   "components.gb_investment.tutorial.investor_percentage": "Välj kursen du förväntar dig av investerarna\nEx. för investeringar på 190%, välj 90",
   "components.gb_investment.tutorial.owner_investment": "Har du redan FP investerat i ditt MB?\nOm ja, ange hur många",
@@ -1186,5 +1186,7 @@
   "addToHomeScreen.title": "Installera FoE-Tools",
   "utils.unlock": "Lås upp",
   "utils.lock": "Lås",
-  "components.site_layout.global_config_dialog.disable_update_notification": "Inaktivera notifikationer om uppdatering"
+  "components.site_layout.global_config_dialog.disable_update_notification": "Inaktivera notifikationer om uppdatering",
+  "components.site_layout.global_config_dialog.custom_gb_names": "Anpassade namn på MB",
+  "components.gb_investment.custom_name": "Du kan anpassa namn på MB i @:(components.site_layout.global_config)"
 }

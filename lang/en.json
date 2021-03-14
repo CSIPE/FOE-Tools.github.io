@@ -1029,7 +1029,7 @@
   "foe_data.bonus.first_strike.name": "First Strike",
   "foe_data.bonus.first_strike.gb_description": "Gives you a chance that at the start of the next several fights, a unit from the enemy's defense army will be killed immediately. This only applies to the first wave of a battle.",
   "foe_data.bonus.double_collection.name": "Double Collection",
-  "foe_data.bonus.double_collection.gb_description": "Gives you a chance to get double the resources in the the first buildings collected. Excludes military and great buildings. Refreshes with each collection of this building.",
+  "foe_data.bonus.double_collection.gb_description": "Gives you a chance to get the double the resources in the the first buildings collected. Excludes military and great buildings. Refreshes with each collection of this building.",
   "foe_data.bonus.exploration_site.name": "Exploration Site",
   "foe_data.bonus.exploration_site.gb_description": "---",
   "utils.content.tools": "Tools",
