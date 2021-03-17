@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "Report-Msgid-Bugs-To: contact@foe.tools\n"
 "POT-Creation-Date: 2020-08-21T21:00:51.977Z\n"
-"PO-Revision-Date: 2021-03-14 09:26+0000\n"
+"PO-Revision-Date: 2021-03-18 12:37+0000\n"
 "Last-Translator: V <avd.way@gmail.com>\n"
 "Language-Team: Russian <https://translate.foe.tools/projects/"
 "foe-tools-website/website/ru/>\n"
@@ -254,8 +254,9 @@ msgstr "@:(routes.gb_investment_gb_chooser.hero.title)"
 
 msgid "components.gb_investment.gb_investment.description.p1"
 msgstr ""
-"Укажите уровень прокачиваемый уровень ВС и бонус Арки вкладчиков в процентах "
-"(на 80 уровне - 90%). Значения в таблице ниже рассчитаются автоматически."
+"Укажите прокачиваемый уровень Вашего ВС и стандартный бонус Арки вкладчиков "
+"в процентах. \n"
+"Значения в таблице ниже рассчитаются автоматически."
 
 msgid "components.gb_investment.gb_investment.description.p2_html"
 msgstr ""
@@ -270,7 +271,7 @@ msgid "components.gb_investment.gb_investment.form.level"
 msgstr "Прокачиваемый уровень {fromLevel} → {level} (@:(utils.between_range))"
 
 msgid "components.gb_investment.gb_investment.form.investor_percentage"
-msgstr "Стандартный бонус Арок вкладчиков в процентах (на 80 уровне - 90%)"
+msgstr "Бонус Арки вкладчиков в процентах (на 80 уровне - 90%)"
 
 msgid "components.gb_investment.gb_investment.form.submit_global"
 msgstr "Рассчитать"
@@ -279,7 +280,7 @@ msgid "components.gb_investment.gb_investment.form.submit_custom"
 msgstr "Рассчитать индивидуально"
 
 msgid "components.gb_investment.gb_investment.form.owner_investment"
-msgstr "Количество СО, которые вложил владелец ВС (максимум {max})"
+msgstr "Количество СО, которые вложил владелец (максимум {max})"
 
 msgid "components.gb_investment.gb_investment.form.add_investors"
 msgstr ""
@@ -410,7 +411,7 @@ msgid ""
 msgstr "Общий вклад владельца"
 
 msgid "components.gb_investment.gb_investment.table.tfoot.level_cost"
-msgstr "Вся стоимость уровня"
+msgstr "Стоимость всего уровня"
 
 msgid ""
 "components.gb_investment.gb_investment.table.tfoot.tooltip_"
@@ -669,22 +670,22 @@ msgid "components.secure_position.block_place.title"
 msgstr "Блокирование места"
 
 msgid "components.secure_position.block_place.level_cost"
-msgstr "Вся стоимость уровня"
+msgstr "Стоимость всего уровня"
 
 msgid "components.secure_position.block_place.current_deposits"
-msgstr "Сумма вложений на данный момент"
+msgstr "Сумма всех текущих вложений"
 
 msgid "components.secure_position.block_place.your_participation"
-msgstr "Ваше вложение"
+msgstr "СО, которые Вы уже вложили"
 
 msgid "components.secure_position.block_place.other_participation"
 msgstr "Вложение игрока, которого нужно обойти"
 
 msgid "components.secure_position.block_place.your_arc_bonus"
-msgstr "Бонус Арки в процентах"
+msgstr "Бонус Вашей Арки в процентах"
 
 msgid "components.secure_position.block_place.fp_target_reward"
-msgstr "СО планируемого места"
+msgstr "Награда в СО от планируемого места"
 
 msgid "components.secure_position.block_place.target_reward"
 msgstr "Ожидаемое место"
@@ -943,7 +944,7 @@ msgstr ""
 "\"х\" значение от 1 до 5)"
 
 msgid "components.promotion_message_builder.variables.message.LC"
-msgstr "Вся стоимость уровня"
+msgstr "Стоимость всего уровня"
 
 msgid "components.promotion_message_builder.variables.message.LF"
 msgstr "Перевод строки, добавление новой строки"
@@ -1185,9 +1186,7 @@ msgid "routes.gb_investment_gb_chooser.hero.title"
 msgstr "Обеспечение гаранта"
 
 msgid "routes.gb_investment_gb_chooser.hero.subtitle"
-msgstr ""
-"Инструмент для подсчета Стратегических очков, которые игрок должен вложить в "
-"Великое строение для обеспечения гарантированного места другим вкладчикам."
+msgstr "Обеспечение гарантированных мест другим вкладчикам."
 
 msgid "routes.gb_investment_gb_chooser.choose_gb.title"
 msgstr "Выберите Великое строение"
@@ -1219,9 +1218,7 @@ msgid "routes.secure_position.hero.title"
 msgstr "Блокирование места"
 
 msgid "routes.secure_position.hero.subtitle"
-msgstr ""
-"Инструмент для подсчета Стратегических очков, которые игрок должен вложить в "
-"Великое строение, чтобы гарантировано получить место самому."
+msgstr "Блокирование своего места, делая перебитие невозможным."
 
 msgid "routes.error.404.title"
 msgstr "Страница не найдена | @:(common.site_title)"
