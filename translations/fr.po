@@ -3820,6 +3820,9 @@ msgstr "médailles"
 msgid "seo.keywords.military_units"
 msgstr "unités militaires"
 
+msgid "pwa_update.message"
+msgstr "L'application a été mise à jour. L'application se rechargera en 5 secondes."
+
 msgid "cookieConsent.title"
 msgstr "Coucou c'est nous… les Cookies !"
 

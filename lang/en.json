@@ -1118,6 +1118,7 @@
   "seo.keywords.forge_point": "forge point",
   "seo.keywords.medals": "medals",
   "seo.keywords.military_units": "military units",
+  "pwa_update.message": "App has been updated. The app will reload in 5 secondes.",
   "cookieConsent.title": "Hey there ! It's us… the Cookies !",
   "cookieConsent.consentNotice.learnMore": "I choose",
   "cookieConsent.consentNotice.learnMore_nonTogglable": "Learn More",
