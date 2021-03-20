@@ -1,13 +1,20 @@
 import Vue from "vue";
 import AddToHomeScreen from "~/components/add-to-home-screen/AddToHomeScreen";
 
-export default ({ store }) => {
+export default ({ store, $clone, $moment }) => {
   const setHaveReadInstallApp = (value) => {
     store.set(`global/haveReadInstallApp`, value);
   };
   const getHaveReadInstallApp = () => {
     return store.get(`global/haveReadInstallApp`);
   };
+
+  let hasAcceptedCookieConsent = false;
+  if ($moment().isAfter($moment($clone(store.get("global/cookieConsentExpirationDate")), "YYYY-MM-DD"))) {
+    hasAcceptedCookieConsent = false;
+  } else {
+    hasAcceptedCookieConsent = true;
+  }
 
   const elt = document.createElement("div");
   elt.id = "#addToHomeScreen";
@@ -19,6 +26,7 @@ export default ({ store }) => {
     propsData: {
       setHaveReadInstallApp,
       getHaveReadInstallApp,
+      hasAcceptedCookieConsent,
     },
   });
   component.$forceUpdate();

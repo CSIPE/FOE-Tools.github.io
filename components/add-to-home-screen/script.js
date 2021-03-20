@@ -11,6 +11,7 @@ export default {
       type: Function,
       required: true,
     },
+    hasAcceptedCookieConsent: Boolean,
   },
   data() {
     return {
@@ -42,7 +43,7 @@ export default {
     },
   },
   mounted() {
-    if (!this.$props.getHaveReadInstallApp() && this.$cookieConsentManager.confirmed) {
+    if (!this.$props.getHaveReadInstallApp() && this.$props.hasAcceptedCookieConsent) {
       this.showDialog = true;
     }
   },
