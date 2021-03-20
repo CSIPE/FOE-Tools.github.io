@@ -5,6 +5,10 @@ export default {
       type: Object,
       required: true,
     },
+    updateExpirationDate: {
+      type: Function,
+      required: true,
+    },
   },
   data() {
     return {
@@ -88,11 +92,13 @@ export default {
       this.$data.customize = false;
       this.$props.cm.changeAll(true);
       this.$props.cm.saveAndApplyConsents();
+      this.updateExpirationDate();
     },
     acceptSelected() {
       this.$data.showDialog = false;
       this.$data.customize = false;
       this.$props.cm.saveAndApplyConsents();
+      this.updateExpirationDate();
     },
     toggle(purposeKeys, value) {
       for (const purpose of purposeKeys) {
