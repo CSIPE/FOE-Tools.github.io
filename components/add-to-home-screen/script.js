@@ -3,10 +3,15 @@ import viewGridAdd from "~/assets/view-grid-add.svg?inline";
 export default {
   name: "AddToHomeScreen",
   props: {
-    app: {
-      type: Object,
+    setHaveReadInstallApp: {
+      type: Function,
       required: true,
     },
+    getHaveReadInstallApp: {
+      type: Function,
+      required: true,
+    },
+    hasAcceptedCookieConsent: Boolean,
   },
   data() {
     return {
@@ -26,7 +31,7 @@ export default {
   methods: {
     toggleModal(value = undefined) {
       this.showDialog = value === undefined ? !this.showDialog : value;
-      this.$props.app.store.set(`global/haveReadInstallApp`, true);
+      this.$props.setHaveReadInstallApp(true);
     },
     dismiss() {
       this.toggleModal(false);
@@ -38,7 +43,7 @@ export default {
     },
   },
   mounted() {
-    if (!this.$props.app.store.get("global/haveReadInstallApp") && this.$cookieConsentManager.confirmed) {
+    if (!this.$props.getHaveReadInstallApp() && this.$props.hasAcceptedCookieConsent) {
       this.showDialog = true;
     }
   },

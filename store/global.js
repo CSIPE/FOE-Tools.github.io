@@ -21,6 +21,7 @@ export const state = () => ({
   currentProfile: "",
   profiles: [],
   customGbName: {},
+  cookieConsentExpirationDate: "",
 });
 
 export const mutations = {
