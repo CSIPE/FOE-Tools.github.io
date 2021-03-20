@@ -10,11 +10,10 @@ export default ({ store, $clone, $moment }) => {
   };
 
   let hasAcceptedCookieConsent = false;
-  if ($moment().isAfter($moment($clone(store.get("global/cookieConsentExpirationDate")), "YYYY-MM-DD"))) {
-    hasAcceptedCookieConsent = false;
-  } else {
-    hasAcceptedCookieConsent = true;
-  }
+  const cookieConsentExpirationDate = $clone(store.get("global/cookieConsentExpirationDate"));
+  hasAcceptedCookieConsent = !(
+    !cookieConsentExpirationDate.length || $moment().isAfter($moment(cookieConsentExpirationDate), "YYYY-MM-DD")
+  );
 
   const elt = document.createElement("div");
   elt.id = "#addToHomeScreen";
