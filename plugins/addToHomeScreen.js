@@ -1,7 +1,14 @@
 import Vue from "vue";
 import AddToHomeScreen from "~/components/add-to-home-screen/AddToHomeScreen";
 
-export default ({ app }) => {
+export default ({ store }) => {
+  const setHaveReadInstallApp = (value) => {
+    store.set(`global/haveReadInstallApp`, value);
+  };
+  const getHaveReadInstallApp = () => {
+    return store.get(`global/haveReadInstallApp`);
+  };
+
   const elt = document.createElement("div");
   elt.id = "#addToHomeScreen";
   document.body.appendChild(elt);
@@ -10,7 +17,8 @@ export default ({ app }) => {
   const component = new DialogComponent({
     el: elt,
     propsData: {
-      app,
+      setHaveReadInstallApp,
+      getHaveReadInstallApp,
     },
   });
   component.$forceUpdate();
