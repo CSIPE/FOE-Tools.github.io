@@ -1017,7 +1017,7 @@
   "foe_data.bonus.first_strike.name": "Första slaget",
   "foe_data.bonus.first_strike.gb_description": "Ger en viss chans vid de första striderna, att en enhet från fienden dödas omedelbart vid början av strid. Detta gäller bara den första vågen. Uppdateras vid skördning.",
   "foe_data.bonus.double_collection.name": "Dubbelinsamling",
-  "foe_data.bonus.double_collection.gb_description": "Ger en chans att få dubbla resurser i de första byggnaderna som samlats in. Utesluter militära och stora byggnader. Uppdateras vid skördning.",
+  "foe_data.bonus.double_collection.gb_description": "Ger chans att få dubbla resurser i de första byggnaderna som skördas. Excluderar militära och mäktiga byggnader. Uppdateras vid skördning.",
   "foe_data.bonus.exploration_site.name": "Utforskningsställe",
   "foe_data.bonus.exploration_site.gb_description": "---",
   "utils.content.tools": "Verktyg",
