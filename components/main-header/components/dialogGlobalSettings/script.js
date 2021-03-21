@@ -94,10 +94,6 @@ export default {
     },
   },
   mounted() {
-    console.log(
-      'Object.keys(this.$store.get("defaultCustomGbName")).length',
-      Object.keys(this.$store.get("defaultCustomGbName")).length
-    );
     if (Object.keys(this.$store.get("defaultCustomGbName")).length === 0) {
       const defaultCustomGbName = {};
       for (const elt of this.gbListAlpha) {

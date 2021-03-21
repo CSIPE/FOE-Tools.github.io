@@ -996,7 +996,7 @@
   "components.site_layout.translation_not_completed.title": "Traduzione non completa",
   "components.site_layout.global_config_dialog.day_night_mode.System": "Impostazioni di sistema",
   "components.site_layout.whats_new": "Quali sono le novità?",
-  "components.site_layout.update": "Un aggiornamento dall'ultima visita. |  {count} aggiornamenti dall'ultima visita.",
+  "components.site_layout.update": "Un aggiornamento dall'ultima visita. | {count} aggiornamenti dall'ultima visita.",
   "components.gb_forecast_cost.message.estimated_time_swap_threads": "Tempo stimato per raggiungere il livello usando uno scambio punti (5/10/20/50/100 PF, ecc): {time}",
   "components.gb_investment.tutorial.promotion_message.add_message": "Questo campo ti permette di aggiungere dei messaggi.",
   "components.gb_investment.tutorial.promotion_message.custom_fields": "Si noti che alcuni modelli hanno i loro campi e i rispettivi nomi.",

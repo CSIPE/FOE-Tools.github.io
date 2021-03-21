@@ -186,10 +186,19 @@ async function getLocaleCompletion(store, $axios, $i18n) {
   }, 0);
 }
 
+async function initFoeData(store, $axios) {
+  const gbs = store.get("foe/gbs");
+  if (!gbs || !Object.keys(gbs).length) {
+    const result = await $axios.$get("/foe-data/gbs.json");
+    store.set("foe/gbs", result);
+  }
+}
+
 export default function ({ store, $clone, $moment, $axios, app, $colorMode }) {
   initStore(store);
   storeProfileSchemaUpdate(store, $clone);
   dayNightMode(store, $clone, $moment, $colorMode);
   getSurvey(store, $axios);
   getLocaleCompletion(store, $axios, app.i18n);
+  initFoeData(store, $axios);
 }

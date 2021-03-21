@@ -1,16 +1,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"Report-Msgid-Bugs-To: foe-tools@protonmail.com\n"
+"Report-Msgid-Bugs-To: contact@foe.tools\n"
 "POT-Creation-Date: 2020-08-21T21:00:52.270Z\n"
-"PO-Revision-Date: 2020-10-29 09:30+0000\n"
+"PO-Revision-Date: 2021-03-11 10:44+0000\n"
+"Last-Translator: srkns <serkanisleyen@gmail.com>\n"
 "Language-Team: Turkish <https://translate.foe.tools/projects/"
 "foe-tools-website/website/tr/>\n"
 "Language: tr\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "mime-version: 1.0\n"
 
 msgid "main_menu.home"
@@ -85,7 +86,7 @@ msgid "components.cf_calculator.block_cfc.gb_plunder_goods"
 msgstr "DB ve Yağma Malları"
 
 msgid "components.cf_calculator.block_cfc.fp_by_24h"
-msgstr "24 Saat FP üretimi"
+msgstr "24 Saatlik FP üretimi"
 
 msgid "components.cf_calculator.block_cfc.other_rq"
 msgstr "Diğer Günlük Yinelenen Görevler"
@@ -145,10 +146,9 @@ msgstr "Gelen Erzak"
 msgid "components.cf_calculator.block_cfc.infinity_generator.message"
 msgstr ""
 "Şu anki görevleri tamamlamak için @:(foe_data.gb.Chateau_Frontenac) bonusu "
-"ile,  kullanacağından daha fazla para ve malzeme kazanacaksın. Lütfen "
-"yapmak istediğiniz "
-"\"@:(components.cf_calculator.block_cfc.infinity_generator.label)\" "
-"sayısını seçin."
+"ile, kullanacağından daha fazla para ve malzeme kazanacaksın. Lütfen yapmak "
+"istediğiniz \"@:(components.cf_calculator.block_cfc.infinity_generator.label)"
+"\" sayısını seçin."
 
 msgid "components.cf_calculator.block_cfc.infinity_generator.label"
 msgstr "Birikimli görev"
@@ -186,7 +186,7 @@ msgid "components.gb_investment.gb_investment.form.investor_percentage"
 msgstr "FP atacak kişilerin Ark bonusu"
 
 msgid "components.gb_investment.gb_investment.form.submit_global"
-msgstr "Global hesaplama"
+msgstr "Küresel hesaplama"
 
 msgid "components.gb_investment.gb_investment.form.submit_custom"
 msgstr "Özel hesaplama"
@@ -235,7 +235,7 @@ msgid "components.gb_investment.gb_investment.table.thead.th5"
 msgstr "FP atacak kişilerin Ark bonusu"
 
 msgid "components.gb_investment.gb_investment.table.thead.th6"
-msgstr "Tanıtım mesajına dahil et"
+msgstr "Tanıtım iletisine dahil et"
 
 msgid ""
 "components.gb_investment.gb_investment.table.thead.fp_already_"
@@ -256,7 +256,7 @@ msgid ""
 msgstr "Ark'ınızın % bonus'uyla elde edilen FP"
 
 msgid "components.gb_investment.gb_investment.table.thead.is_sniper"
-msgstr "Potansiyel bir keskin nişancı mı?"
+msgstr "Potansiyel bir pusucu mu?"
 
 msgid ""
 "components.gb_investment.gb_investment.table.tbody.button_show_"
@@ -264,8 +264,8 @@ msgid ""
 msgid_plural ""
 "components.gb_investment.gb_investment.table.tbody.button_show_"
 "extra_investor"
-msgstr[0] "Ekstra yatırımcı göster"
-msgstr[1] "Ekstra yatırımcıları göster"
+msgstr[0] "İlave yatırımcı göster"
+msgstr[1] "İlave yatırımcıları göster"
 
 msgid ""
 "components.gb_investment.gb_investment.table.tbody.button_hide_"
@@ -273,13 +273,13 @@ msgid ""
 msgid_plural ""
 "components.gb_investment.gb_investment.table.tbody.button_hide_"
 "extra_investor"
-msgstr[0] "Ekstra yatırımcıyı gizle"
-msgstr[1] "Ekstra yatırımcıları gizle"
+msgstr[0] "İlave yatırımcıyı gizle"
+msgstr[1] "İlave yatırımcıları gizle"
 
 msgid "components.gb_investment.gb_investment.table.tbody.loss"
 msgid_plural "components.gb_investment.gb_investment.table.tbody.loss"
-msgstr[0] "Bu oyuncu FP kaybedece"
-msgstr[1] "Bu oyuncu FP kaybedecek"
+msgstr[0] "Bu oyuncu FP kaybedecek"
+msgstr[1] "Bu oyuncu FP'lerini kaybedecek"
 
 msgid ""
 "components.gb_investment.gb_investment.table.tbody.tooltip_"
@@ -295,7 +295,7 @@ msgid "components.gb_investment.gb_investment.table.tbody.profit"
 msgstr "Bu oyuncu kar edecek"
 
 msgid "components.gb_investment.gb_investment.table.tbody.neutral"
-msgstr "Bu oyuncu ne kar eder ne de zarar"
+msgstr "Bu oyuncu ne kar edecek ne de zarar"
 
 msgid ""
 "components.gb_investment.gb_investment.table.tfoot.total_"
@@ -320,27 +320,27 @@ msgid "components.gb_investment.gb_investment.show_level"
 msgstr "Seviyeyi göster?"
 
 msgid "components.gb_investment.promotion.title"
-msgstr "Tanıtım mesajı"
+msgstr "Tanıtım iletisi"
 
 msgid "components.gb_investment.promotion.prefix_placeholder"
-msgstr "Tanıtım mesajından önceki metin"
+msgstr "Tanıtım iletisinden önceki metin"
 
 msgid "components.gb_investment.promotion.suffix_placeholder"
-msgstr "Tanıtım mesajından sonraki metin"
+msgstr "Tanıtım iletisinden sonraki metin"
 
 msgid "components.gb_investment.promotion.promo"
 msgstr ""
-"P1 ({investment})\n"
-"P2 ({investment})\n"
-"P3 ({investment})\n"
-"P4 ({investment})\n"
-"P5 ({investment})"
+"Sıra1 ({investment})\n"
+"Sıra2 ({investment})\n"
+"Sıra3 ({investment})\n"
+"Sıra4 ({investment})\n"
+"Sıra5 ({investment})"
 
 msgid "components.gb_investment_investors.description.p1"
 msgstr ""
-"Bu görüş, başka yerlerdeki yatırımları hesaba katarak veya hesaba katmadan "
-"bir yer alarak elde edilebilecek kazancı görmeyi sağlar.Diğer yerler için  "
-"{count}türleri var:"
+"Bu görünüm, başka yerlerdeki yatırımları hesaba katarak veya hesaba katmadan "
+"bir yer alarak elde edilebilecek kazancı görmeyi sağlar. Diğer yerleri "
+"değerlendirmek için {count} tür var:"
 
 msgid ""
 "components.gb_investment_investors.takingPlaceInConsideration."
@@ -398,7 +398,7 @@ msgstr "Tahmin"
 msgid "components.gb_forecast_cost.p1"
 msgstr ""
 "Ark bonusuyla veya Ark bonusu olmadan, bir seviyeden diğer bir seviyeye "
-"geçiş için gereken FP sayısını hesapla"
+"geçiş için gereken FP sayısını hesapla."
 
 msgid "components.gb_forecast_cost.custom_percentage"
 msgstr "Farklı bir Ark bonus oranı (her sıra için)"
@@ -408,7 +408,7 @@ msgstr "Seviyeye ulaşmak için tahmini zaman"
 
 msgid "components.gb_forecast_cost.message.diff"
 msgid_plural "components.gb_forecast_cost.message.diff"
-msgstr[0] "Atılan bonuslu FP'lerle, {count} FP kazanç sağlayacaksınız."
+msgstr[0] "Atılan bonuslu FP'lerle, {count} FP kazanç sağlayacaksınız"
 msgstr[1] "Bonuslarla birlikte, {count} FP tasarruf edeceksiniz"
 
 msgid "components.gb_forecast_cost.message.single"
@@ -420,7 +420,7 @@ msgid "components.gb_forecast_cost.message.multi"
 msgstr ""
 "{gb} Devasal Binasının, Seviye {from}'den {to}'e geçmesi için; bina "
 "sahibinin {preparation} FP yatırması gerekiyor. Tüm seviyeler için gereken "
-"toplam FP: {cost}"
+"toplam : {cost} FP."
 
 msgid "components.gb_forecast_cost.message.estimated_time"
 msgstr "Bu seviyeye ulaşmak için gereken zaman: {time}"
@@ -453,7 +453,7 @@ msgid "components.gb_statistics.p1"
 msgstr ""
 "Grafikler çağlara göre ayarlanır; aynı çağın devasal binalarının seviye "
 "yükseltme bedeli / ödülleri aynıdır. (@:(foe_data.gb.Oracle_of_Delphi) "
-"İstisnadır)"
+"İstisnadır)."
 
 msgid "components.gb_statistics.represent"
 msgstr "Kılavuz:"
@@ -473,7 +473,7 @@ msgstr "İlk sıra ödülünün seviye maliyetlerine göre değişimi"
 msgid "components.secure_position.block_place.fp_to_complete_level"
 msgid_plural "components.secure_position.block_place.fp_to_complete_level"
 msgstr[0] "Bu seviyeyi tamamlamak için gereken FP sayısı:"
-msgstr[1] "Bu seviyeyi tamamlamak için gereken FP sayısı:"
+msgstr[1] "Bu seviyeyi tamamlamak için gereken FP'lerin sayısı:"
 
 msgid "components.secure_position.block_place.place"
 msgid_plural "components.secure_position.block_place.place"
@@ -519,17 +519,17 @@ msgstr "Sıranızı kilitlemek için atılacak FP"
 msgid "components.secure_position.block_place.result.default"
 msgid_plural "components.secure_position.block_place.result.default"
 msgstr[0] "Sırayı kilitlemek için {count} FP'ye sahip olmalısınız."
-msgstr[1] "Sırayı kilitlemek için {count} FP'ye sahip olmalısınız."
+msgstr[1] "Sırayı kilitlemek için {count} adet FP'ye sahip olmalısınız."
 
 msgid "components.secure_position.block_place.result.fp_need_to_lock"
 msgid_plural "components.secure_position.block_place.result.fp_need_to_lock"
-msgstr[0] "Sırayı kilitlemek için için sahip olmanız gereken FP:"
-msgstr[1] "Yerinizi garantilemeniz için yatırmanız gereken FP sayısı"
+msgstr[0] "Sırayı kilitlemek için sahip olmanız gereken FP:"
+msgstr[1] "Yerinizi garantilemeniz için yatırmanız gereken FP sayısı:"
 
 msgid "components.secure_position.block_place.result.fp_to_secure_html"
 msgid_plural "components.secure_position.block_place.result.fp_to_secure_html"
 msgstr[0] "Hala {count} FP atmanız gerekli."
-msgstr[1] "Hala  {count} FP atmanız gerekli."
+msgstr[1] "Hala {count} adet FP atmanız gerekli."
 
 msgid "components.secure_position.block_place.result.error"
 msgstr "Bir veya daha fazla değer geçersiz."
@@ -542,13 +542,13 @@ msgstr[1] "{count} FP kazancaksınız"
 msgid "components.secure_position.block_place.result.roi.loss"
 msgid_plural "components.secure_position.block_place.result.roi.loss"
 msgstr[0] "{count} FP kaybedeceksiniz"
-msgstr[1] "{count} FP kaybedeceksiniz"
+msgstr[1] "{count} adet FP kaybedeceksiniz"
 
 msgid "components.secure_position.block_place.result.roi.neutral"
 msgstr "Bu yatırımdan kazancınız olmayacak"
 
 msgid "components.secure_position.block_place.result.already_blocked"
-msgstr "Sıranız kilitlendi"
+msgstr "Sıranız kilitlendi."
 
 msgid "components.secure_position.block_place.result.still_to_put"
 msgstr "Hala yatırmanız gereken FP sayısı"
@@ -575,7 +575,7 @@ msgid "components.simple_trade.table.thead.th4"
 msgstr "Sonuç"
 
 msgid "components.simple_trade.table.thead.split"
-msgstr "Ayrılmış şekli:"
+msgstr "Ayrılmış şekli"
 
 msgid "components.simple_trade.table.thead.ratio"
 msgstr "Oran"
@@ -595,7 +595,7 @@ msgid "components.site_layout.hero.title"
 msgstr "@:(common.site_title)"
 
 msgid "components.site_layout.hero.slogan_html"
-msgstr "@:(common.links.foe) tecrübenizi kolaylaştırmaya yaran birkaç araç."
+msgstr "@:(common.links.foe) tecrübenizi kolaylaştırmaya yarayan birkaç araç"
 
 msgid "components.site_layout.cookie.link"
 msgstr "Daha fazla bilgi"
@@ -703,21 +703,22 @@ msgstr "@:(components.trade.split_message.common) ve {secondPart}"
 msgid "components.trade.message.result"
 msgstr ""
 "{to} {ageTo} ürünü için, {count} ürüne kadar {from} {ageFrom} ürününe "
-"ihtiyacınız olacak."
+"ihtiyacınız olacak:"
 
 msgid "components.trade.message.total"
 msgstr "(toplamda: {amount}{key})"
 
 msgid "components.promotion_message_builder.title"
-msgstr "Tanıtım mesajı yaratıcı"
+msgstr "Tanıtım iletisi yaratıcı"
 
 msgid "components.promotion_message_builder.info"
-msgstr "Bu metin paylaşılmak üzere kopyalanabilir; örneğin lonca arkadaşlarınız ile."
+msgstr ""
+"Bu metin paylaşılmak üzere kopyalanabilir; örneğin lonca arkadaşlarınız ile"
 
 msgid "components.promotion_message_builder.note"
 msgstr ""
-"Mesaj yaratıcı, önizleme için @:(foe_data.gb.Observatory) binasının seviye "
-"9 → 10 arasını, 1.9 oranla gösterir."
+"İleti yaratıcı, önizleme için @:(foe_data.gb.Observatory) binasının seviye 9 "
+"→ 10 arasını, 1.9 oranla gösterir."
 
 msgid "components.promotion_message_builder.action"
 msgstr "Eylem"
@@ -777,16 +778,16 @@ msgid "components.promotion_message_builder.place_preview"
 msgstr "Yer önizlemesi (1. Sıra)"
 
 msgid "components.promotion_message_builder.message_builder"
-msgstr "Mesaj yaratıcı"
+msgstr "İleti yaratıcı"
 
 msgid "components.promotion_message_builder.message_preview"
-msgstr "Mesaj önizlemesi"
+msgstr "İleti önizlemesi"
 
 msgid "components.promotion_message_builder.place_builder_title"
 msgstr "Sıra yaratıcı"
 
 msgid "components.promotion_message_builder.message_builder_title"
-msgstr "Mesaj yaratıcı"
+msgstr "İleti yaratıcı"
 
 msgid "components.promotion_message_builder.available_variables"
 msgstr "Mevcut değişkenler:"
@@ -807,7 +808,7 @@ msgid "components.promotion_message_builder.variables.message.TLVL"
 msgstr "Şu seviyeye"
 
 msgid "components.promotion_message_builder.variables.message.GBN"
-msgstr "Devasal Bina ismi"
+msgstr "Devasa Bina ismi"
 
 msgid "components.promotion_message_builder.variables.message.P"
 msgstr "Sıralar"
@@ -847,7 +848,7 @@ msgid "components.promotion_message_builder.template_deleted"
 msgstr "Şablon silindi"
 
 msgid "components.import_promotion_message.title"
-msgstr "Tanıtım mesajını dışarıdan al"
+msgstr "Tanıtım iletisini dışarıdan al"
 
 msgid "components.import_promotion_message.config_placeholder"
 msgstr "Yapılandırmanızı buraya yapıştırın"
@@ -1079,10 +1080,9 @@ msgstr ""
 
 msgid "routes.about.dev_info.p3_html"
 msgstr ""
-"İşlevsellik ile ilgili bir fikriniz mi var ? Veya bir sorun ? "
-"@:(common.links.github)'da bir başlık açın veya bana "
-"@:(common.links.contact_foe_tools) üzerinden email gönderin (İngilizce veya "
-"Fransızca)"
+"İşlevsellik ile ilgili bir fikriniz mi var ? Veya bir sorun ? @:(common.links"
+".github)'da bir başlık açın veya bana @:(common.links.contact_foe_tools) "
+"üzerinden email gönderin (İngilizce veya Fransızca)."
 
 msgid "routes.about.dev_info.message_info_github_issue"
 msgstr ""
@@ -1098,7 +1098,7 @@ msgstr "Fetih Maliyeti"
 msgid "routes.campaign_cost.hero.subtitle"
 msgstr ""
 "Bu araç, kıta haritasında bir sektörü veya bölgeyi müzakere ederek "
-"fethetmenin maliyetini hesaplar. "
+"fethetmenin maliyetini hesaplar."
 
 msgid "routes.cf_calculator.title"
 msgstr "@:(routes.cf_calculator.hero.title) | @:(common.site_title)"
@@ -1109,7 +1109,7 @@ msgstr "Frontenac Şatosu Hesaplama Aracı"
 msgid "routes.cf_calculator.hero.subtitle"
 msgstr ""
 "Hikaye görevleri ve günlük görevlerini tamamlayarak kazanılacak FP ve "
-"ürünleri hesaplayan bir araç"
+"ürünleri hesaplayan bir araç."
 
 msgid "routes.changelog.title"
 msgstr "Değişiklikler | @:(common.site_title)"
@@ -1124,7 +1124,7 @@ msgid "routes.contributors.hero.subtitle"
 msgstr "Bu sayfa tüm katılımcıları listelemeye çalışıyor"
 
 msgid "routes.gb_investment.title"
-msgstr "@:(routes.gb_investment.hero.title)  | @:(common.site_title)"
+msgstr "@:(routes.gb_investment.hero.title) | @:(common.site_title)"
 
 msgid "routes.gb_investment.hero.title"
 msgstr "{gb_key} - @:(routes.gb_investment_gb_chooser.hero.title)"
@@ -1228,11 +1228,11 @@ msgstr "Çeviri ekibine nasıl katılırım?"
 
 msgid "routes.help_to_translate_the_site.p2_html"
 msgstr ""
-"@:(common.site_title), kullanıcılar tarafından tercüme edilmektedir. "
-"Tercüme sürecini @:(common.links.translation_platform) üzerinden "
-"yürütmekteyiz. Ekibe katılmak için @:(common.links.contact_foe_tools) "
-"adresine, hangi dillerde tercüme yapabileceğinizi belirten bir email "
-"atabilirsiniz (email İngilizce olmalı); böylece size davet gönderebiliriz."
+"@:(common.site_title), kullanıcılar tarafından tercüme edilmektedir. Tercüme "
+"sürecini @:(common.links.translation_platform) üzerinden yürütmekteyiz. "
+"Ekibe katılmak için @:(common.links.contact_foe_tools) adresine, hangi "
+"dillerde tercüme yapabileceğinizi belirten bir email atabilirsiniz (email "
+"İngilizce olmalı); böylece size davet gönderebiliriz"
 
 msgid "routes.survey.title"
 msgstr "@:(routes.survey.hero.title) | @:(common.site_title)"
@@ -1286,7 +1286,7 @@ msgid "routes.error.404.title"
 msgstr "Sayfa bulunamadı | @:(common.site_title)"
 
 msgid "routes.error.404.message"
-msgstr "Üzgünüz, aradığınız sayfa bulunamıyor."
+msgstr "Üzgünüz, aradığınız sayfa bulunamıyor"
 
 msgid "foe_data.age.Oracle"
 msgstr "@:(foe_data.age.NoAge) (@:(foe_data.gb.Oracle_of_Delphi))"
@@ -1409,7 +1409,7 @@ msgid "foe_data.gb.Oracle_of_Delphi"
 msgstr "Delphi Kahini"
 
 msgid "foe_data.gb.Tower_of_Babel"
-msgstr "Babil Kulesi "
+msgstr "Babil Kulesi"
 
 msgid "foe_data.gb.Statue_of_Zeus"
 msgstr "Zeus Heykeli"
@@ -1475,7 +1475,7 @@ msgid "foe_data.gb.Innovation_Tower"
 msgstr "Yenilik Kulesi"
 
 msgid "foe_data.gb.Truce_Tower"
-msgstr "Dinamik Kule"
+msgstr "Ateşkes Kulesi"
 
 msgid "foe_data.gb.Voyager_V1"
 msgstr "Voyager V1"
@@ -3031,13 +3031,13 @@ msgstr "Değerleri girin. Değiştirdiğinizde sonuç otomatik olarak güncellen
 msgid "utils.description.p2_html"
 msgstr ""
 "<strong>Not:</strong> Güncelleme otomatik olarak yapılmaz ise, buraya "
-"tıklayın: \"@:(utils.btn_calculate)\""
+"tıklayın: \"@:(utils.btn_calculate)\"."
 
 msgid "utils.choose_age"
 msgstr "Bir çağ seçin"
 
 msgid "utils.permalink"
-msgstr "Kalıcı link"
+msgstr "Kalıcı bağlantı"
 
 msgid "utils.Add"
 msgstr "Ekle"
@@ -3058,13 +3058,13 @@ msgid "utils.Copy"
 msgstr "Kopyala"
 
 msgid "utils.Copyed"
-msgstr "Kopyalandı"
+msgstr "Kopyalandı !"
 
 msgid "utils.Information"
 msgstr "Bilgi"
 
 msgid "utils.From"
-msgstr "Şu seviyeden:"
+msgstr "Şu seviyeden"
 
 msgid "utils.To"
 msgstr "Şu seviyeye: (Maksimum {max})"
@@ -3091,7 +3091,7 @@ msgid "utils.Cost"
 msgstr "Maliyet"
 
 msgid "utils.Conquered"
-msgstr "Fethedildi mi ?"
+msgstr "Fethedildi mi"
 
 msgid "utils.Total"
 msgstr "Toplam"
@@ -3138,7 +3138,7 @@ msgstr "Bu alan boş olamaz"
 msgid "utils.moment.year"
 msgid_plural "utils.moment.year"
 msgstr[0] "{count} yıl"
-msgstr[1] "{count} years"
+msgstr[1] "{count} yıl"
 
 msgid "utils.moment.month"
 msgid_plural "utils.moment.month"
@@ -3151,7 +3151,7 @@ msgstr[0] "{count} gün"
 msgstr[1] "{count} gün"
 
 msgid "utils.graph.gb_level"
-msgstr "Seviye "
+msgstr "Seviye"
 
 msgid "utils.graph.gb_level_cost"
 msgstr "Seviye maliyeti"
@@ -3248,3 +3248,577 @@ msgstr "madalyalar"
 
 msgid "seo.keywords.military_units"
 msgstr "askeri birlikler"
+
+msgid "components.campaign_cost.provinces"
+msgstr "Eyaletler"
+
+msgid "components.campaign_cost.all_provinces"
+msgstr "Tüm eyaletler"
+
+msgid "components.gb_investment.tutorial.display_modes.title"
+msgstr "Görüntüleme modları"
+
+msgid "components.cf_calculator.tutorial.yourAge"
+msgstr "Çağınızı seçin."
+
+msgid "components.campaign_cost.all_ages"
+msgstr "Tüm Çağlar"
+
+msgid "footer_menu.privacy_policy"
+msgstr "Gizlilik Politikası"
+
+msgid "footer_menu.cookie_policy"
+msgstr "Çerez Politikası"
+
+msgid "components.gb_investment.tutorial.snipe.title"
+msgstr "Pusucu"
+
+msgid "cookieConsent.consentModal.description"
+msgstr ""
+"Burada, bu web sitesinde kullanmak istediğimiz hizmetleri değerlendirebilir "
+"ve özelleştirebilirsiniz. Sorumlu sensin! Hizmetleri uygun gördüğünüz "
+"şekilde etkinleştirin veya devre dışı bırakın."
+
+msgid "cookieConsent.purposes.performance.description"
+msgstr ""
+"Bu hizmetler, bu web sitesinin sunduğu hizmeti optimize etmek için kişisel "
+"bilgileri işler."
+
+msgid "cookieConsent.purposes.functional.description"
+msgstr ""
+"Bu hizmetler, bu web sitesinin doğru çalışması için gereklidir. Aksi "
+"takdirde servis düzgün çalışmayacağından bunları burada devre dışı "
+"bırakamazsınız."
+
+msgid "cookieConsent.consentNotice.edit"
+msgstr ""
+"Senin için uygun mu? Onayını daha sonra her zaman değiştirebilir veya geri "
+"çekebilirsin."
+
+msgid "cookieConsent.purposes.advertising.description"
+msgstr ""
+"Bu hizmetler, size kişiselleştirilmiş veya ilgi alanına dayalı reklamları "
+"göstermek için kişisel bilgileri işler."
+
+msgid "cookieConsent.consentNotice.description"
+msgstr "Aşağıdaki amaçlarla ek hizmetleri etkinleştirmek istiyoruz:"
+
+msgid "cookieConsent.consentNotice.changeDescription"
+msgstr ""
+"Son ziyaretinizden bu yana değişiklikler oldu, lütfen onayınızı yenileyin."
+
+msgid "cookieConsent.foe-tools.description"
+msgstr ""
+"Yapılandırmanızla ilgili tüm veriler(Devasa Binaların seviyesi, "
+"yatırımcılar, Ark bonusu, vs.)"
+
+msgid "routes.about.cookie.p2"
+msgstr "Daha fazla bilgi için lütfen aşağıdaki bağlantılara bakın:"
+
+msgid "components.site_layout.translation_not_completed.content"
+msgstr "Aşağıdaki çeviriler tamamlanmadı ve çevirmenlere ihtiyacı var:"
+
+msgid ""
+"components.gb_investment.tutorial.promotion_message.custom_"
+"fields"
+msgstr ""
+"Bazı şablonların kendi adlarına sahip kendi alanları olduğunu unutmayın."
+
+msgid ""
+"components.gb_investment.tutorial.promotion_message.display_gb_"
+"name"
+msgstr "Devasa Binanın adını gösterir(eğer ileti şablonunda varsa)."
+
+msgid "components.gb_investment.tutorial.promotion_message.prefix"
+msgstr "İletinin başına eklenecek metin."
+
+msgid "components.gb_investment.tutorial.promotion_message.suffix"
+msgstr "İletinin sonuna eklenecek metin."
+
+msgid "components.gb_investment.tutorial.table.message"
+msgstr "Bu tablo size bilmek istediğiniz tüm bilgileri gösterir."
+
+msgid "cookieConsent.ok"
+msgstr "Benim için tamam"
+
+msgid "cookieConsent.consentModal.title"
+msgstr "Kullanmak istediğimiz hizmetler"
+
+msgid "cookieConsent.acceptAll"
+msgstr "Hepsini kabul ediyorum"
+
+msgid "cookieConsent.sentry.description"
+msgstr ""
+"Olası hataları belirlemek için hataların toplanması (kendi-içinden sunulan "
+"çözüm)"
+
+msgid "cookieConsent.title"
+msgstr "Selam ! Biziz ... Çerezler!"
+
+msgid "foe_data.age.SpaceAgeAsteroidBelt"
+msgstr "Uzay Çağı Asteroit Kemeri"
+
+msgid "routes.donate.donation_options"
+msgstr "Bağış Yap @:(common.links.donorbox) veya @:(common.links.paypal) ile."
+
+msgid "routes.donate.conversion"
+msgstr "Çalışmamı takdir ediyorsanız, lütfen bağış yapmayı düşünün."
+
+msgid "routes.help_to_translate_the_site.state_of_translation"
+msgstr "Çevirinin durumu :"
+
+msgid "components.site_layout.global_config_dialog.custom_gb_names"
+msgstr "Özel Devasa Bina(DB) İsimleri"
+
+msgid "components.site_layout.translation_not_completed.title"
+msgstr "Çeviri tamamlanmadı"
+
+msgid "addToHomeScreen.title"
+msgstr "FOE-Tools(FOE-Araçları) Yükle"
+
+msgid "cookieConsent.consentNotice.learnMore_nonTogglable"
+msgstr "Daha Fazla"
+
+msgid "cookieConsent.consentNotice.learnMore"
+msgstr "Seçiyorum"
+
+msgid "utils.FP"
+msgid_plural "utils.FP"
+msgstr[0] "{count} FP"
+msgstr[1] "{count} adet FP"
+
+msgid "utils.alpha_order"
+msgstr "Alfabetik sıra"
+
+msgid "foe_data.gb.Galata_Tower"
+msgstr "Galata Kulesi"
+
+msgid "routes.about.cookie.info.cookieConsent"
+msgstr "Çerez seçenekleri"
+
+msgid "components.site_layout.global_config_dialog.day_night_mode.System"
+msgstr "Sistem tercihleri"
+
+msgid "components.gb_investment.remove_favourite"
+msgstr "Favorilerden Sil"
+
+msgid "components.gb_investment.add_favourite"
+msgstr "Favorilere Ekle"
+
+msgid "addToHomeScreen.install"
+msgstr "Yükle"
+
+msgid "cookieConsent.purposes.quality"
+msgstr "Kalite"
+
+msgid "cookieConsent.purposes.advertising.title"
+msgstr "Reklam"
+
+msgid "cookieConsent.acceptSelected"
+msgstr "Tamamlandı"
+
+msgid "cookieConsent.back"
+msgstr "Geri"
+
+msgid "utils.unlock"
+msgstr "Kilidi Aç"
+
+msgid "utils.lock"
+msgstr "Kilitle"
+
+msgid "utils.favourites"
+msgstr "Favoriler"
+
+msgid "foe_data.goods.platinum_crystals"
+msgstr "Platin Kristal"
+
+msgid "foe_data.goods.compound_fluid"
+msgstr "Bileşik Akışkanı"
+
+msgid "foe_data.goods.processed_materials"
+msgstr "İşlenmiş Malzeme"
+
+msgid "foe_data.goods.fusion_reactors"
+msgstr "Füzyon Gücü"
+
+msgid "foe_data.goods.mars_microbes"
+msgstr "Mars Mikrobu"
+
+msgid "foe_data.goods.biotech_crops"
+msgstr "Biyo-Teknoloji Ürünü"
+
+msgid "foe_data.gb_short.Galata_Tower"
+msgstr "Galata Kulesi"
+
+msgid "foe_data.gb.Space_Carrier"
+msgstr "Uzay Taşıyıcısı"
+
+msgid "utils.Donate"
+msgstr "Bağış"
+
+msgid "utils.Tutorial"
+msgstr "Öğretici"
+
+msgid "utils.Done"
+msgstr "Tamam"
+
+msgid "utils.Exit"
+msgstr "Çıkış"
+
+msgid "foe_data.goods.bromine"
+msgstr "Brom"
+
+msgid "foe_data.goods.nickel"
+msgstr "Nikel"
+
+msgid "foe_data.goods.superalloys"
+msgstr "Süper Alaşım"
+
+msgid "foe_data.goods.lubricants"
+msgstr "Makine Yağı"
+
+msgid "components.cf_calculator.tutorial.fpBy24h"
+msgstr "24 saat içinde elde ettiğiniz FP'lerin sayısını yazın."
+
+msgid "components.cf_calculator.tutorial.goods"
+msgstr "Devasa binanızdan ve yağmadan topladığınız ürünlerin sayısını yazın."
+
+msgid "components.cf_calculator.tutorial.supplies"
+msgstr "Tüm görevler için kullanmak istediğiniz erzak miktarını girin."
+
+msgid "components.cf_calculator.tutorial.coins"
+msgstr "Tüm görevler için kullanmak istediğiniz para miktarını yazın."
+
+msgid "components.cf_calculator.tutorial.yourCfBoost"
+msgstr ""
+"@:(foe_data.gb.Chateau_Frontenac) bonusunuzu yazın.\n"
+"\n"
+"Örneğin: %450 için, 450 yazın."
+
+msgid "components.cf_calculator.tutorial.welcome"
+msgstr ""
+"Bu araç tamamen gayri resmidir. @:(foe_data.gb.Chateau_Frontenac) ile "
+"istatistiksel olarak elde edebileceğiniz şeyler hakkında size bilgi verir."
+
+msgid "components.gb_investment.tutorial.table.fp_to_put_by_the_owner"
+msgstr ""
+"Adından da anlaşılacağı gibi, sahibinin yeri güvence altına almak için "
+"DB'sına koyması gereken FP'lerin miktarına karşılık gelir."
+
+msgid "components.gb_investment.tutorial.owner_investment"
+msgstr ""
+"Devasa binanızda hali hazırda FP'niz var mı?\n"
+"Evet ise, kaç tane FP'niz olduğunu buraya ekleyin"
+
+msgid "foe_data.gb_short.Space_Carrier"
+msgstr "UT"
+
+msgid "addToHomeScreen.description"
+msgstr ""
+"FOE-Araçları(FOE-Tools) uygulamasını edinin. Cihazınızda (bilgisayar, akıllı "
+"telefon vb.) yer kaplamaz ve FOE-Araçlar'a ana ekranınızdan veya "
+"masaüstünüzden hızlı bir şekilde erişmenizi sağlar."
+
+msgid "addToHomeScreen.dismiss"
+msgstr "Yoksay"
+
+msgid "cookieConsent.purposes.performance.title"
+msgstr "Verim İyileştirmesi"
+
+msgid "foe_data.bonus.exploration_site.name"
+msgstr "Keşif Alanı"
+
+msgid "utils.Previous"
+msgstr "←"
+
+msgid "utils.Next"
+msgstr "→"
+
+msgid "foe_data.bonus.exploration_site.gb_description"
+msgstr "---"
+
+msgid "foe_data.province.Euphrosyne_A_20"
+msgstr "Euphrosyne A-20"
+
+msgid "foe_data.province.Nemesis"
+msgstr "Nemesis"
+
+msgid "foe_data.province.Ceres_K_18"
+msgstr "Ceres K-18"
+
+msgid "foe_data.province.Fides"
+msgstr "Fides"
+
+msgid "foe_data.province.Vesta_M_16"
+msgstr "Vesta M-16"
+
+msgid "foe_data.province.Vesta_L_15"
+msgstr "Vesta L-15"
+
+msgid "foe_data.province.Hygiea_O_14"
+msgstr "Hygiea O-14"
+
+msgid "foe_data.province.Hygiea_N_13"
+msgstr "Hygiea N-13"
+
+msgid "foe_data.province.Euphrosyne_A_12"
+msgstr "Euphrosyne A-12"
+
+msgid "foe_data.province.Eunike"
+msgstr "Eunike"
+
+msgid "foe_data.province.Gyptis"
+msgstr "Gyptis"
+
+msgid "foe_data.province.Loreley"
+msgstr "Loreley"
+
+msgid "foe_data.province.Pales"
+msgstr "Pales"
+
+msgid "foe_data.province.Ceres_G_7"
+msgstr "Ceres G-7"
+
+msgid "foe_data.province.Ceres_E_6"
+msgstr "Ceres E-6"
+
+msgid "foe_data.province.Aurora"
+msgstr "Kutup Işığı"
+
+msgid "foe_data.province.Cybele_V_4"
+msgstr "Cybele V-4"
+
+msgid "foe_data.province.Cybele_F_3"
+msgstr "Cybele F-3"
+
+msgid "foe_data.province.Juno"
+msgstr "Juno"
+
+msgid "foe_data.province.Vesta_S_1"
+msgstr "Vesta S-1"
+
+msgid "foe_data.province.Egeria"
+msgstr "Egeria"
+
+msgid "foe_data.province.Diotima"
+msgstr "Diotima"
+
+msgid "foe_data.province.Aletheia"
+msgstr "Aletheia"
+
+msgid "foe_data.province.Metis"
+msgstr "Metis"
+
+msgid "foe_data.province.Hektor"
+msgstr "Hektor"
+
+msgid "foe_data.province.Ino"
+msgstr "Ino"
+
+msgid "foe_data.province.Thisbe"
+msgstr "Thisbe"
+
+msgid "foe_data.province.Amphitrite"
+msgstr "Amfitriti"
+
+msgid "foe_data.province.Interamnia"
+msgstr "Interamnia"
+
+msgid "foe_data.province.TB_15_X_7"
+msgstr "TB-15 X-7"
+
+msgid "foe_data.province.Eunomia"
+msgstr "Eunomia"
+
+msgid "foe_data.province.Pallas_D_5"
+msgstr "Pallas D-5"
+
+msgid "foe_data.province.Pallas_C_4"
+msgstr "Pallas C-4"
+
+msgid "foe_data.province.Eros"
+msgstr "Eros"
+
+msgid "foe_data.province.Medea"
+msgstr "Medea"
+
+msgid "foe_data.province.Psyche"
+msgstr "Psyche"
+
+msgid "foe_data.province.Everdoom"
+msgstr "Everdoom"
+
+msgid "foe_data.province.Delta_Hills"
+msgstr "Delta Tepeleri"
+
+msgid "foe_data.province.Sharvice"
+msgstr "Sharvice"
+
+msgid "foe_data.province.Loakmolden"
+msgstr "Loakmolden"
+
+msgid "foe_data.province.Jalcion_Crater"
+msgstr "Jalcion Crater"
+
+msgid "foe_data.province.Plateau_Firnane_2"
+msgstr "Firnane Platosu 2"
+
+msgid "foe_data.province.High_Hacoon_Valley"
+msgstr "Yukarı Hacoon Vadisi"
+
+msgid "foe_data.province.Low_Hacoon_Valley"
+msgstr "Aşağı Hacoon Vadisi"
+
+msgid "foe_data.province.Vyvalgis"
+msgstr "Vyvalgis"
+
+msgid "foe_data.province.Destallia"
+msgstr "Destallia"
+
+msgid "foe_data.province.Astra_Prime"
+msgstr "Astra Prime"
+
+msgid "foe_data.province.Phovolken"
+msgstr "Phovolken"
+
+msgid "foe_data.province.Verda_Dophria"
+msgstr "Verda Dophria"
+
+msgid "foe_data.province.Zomantau"
+msgstr "Zomantau"
+
+msgid "foe_data.province.Vaanderbirch"
+msgstr "Vaanderbirch"
+
+msgid "foe_data.province.New_Frozenstone"
+msgstr "Yeni Donmuş Taş"
+
+msgid "foe_data.province.Ertannen_Belt"
+msgstr "Ertannen Kemeri"
+
+msgid "foe_data.province.Xalvades"
+msgstr "Xalvades"
+
+msgid "foe_data.province.Oppeska"
+msgstr "Oppeska"
+
+msgid "foe_data.province.Enervein"
+msgstr "Enervein"
+
+msgid "foe_data.province.Akuppers"
+msgstr "Akupper'lar"
+
+msgid "foe_data.province.Fortrin"
+msgstr "Fortrin"
+
+msgid "foe_data.province.Carva_Caska"
+msgstr "Carva Caska"
+
+msgid "foe_data.province.Wrandasten_3"
+msgstr "Wrandasten 3"
+
+msgid "foe_data.province.Klaylach"
+msgstr "Klaylach"
+
+msgid "foe_data.province.Ghirken"
+msgstr "Ghirken"
+
+msgid "foe_data.province.Nobisia"
+msgstr "Nobisia"
+
+msgid "foe_data.province.Vradeen"
+msgstr "Vradeen"
+
+msgid "foe_data.province.Kardine_Haven"
+msgstr "Kardine Haven"
+
+msgid "foe_data.province.Mathaben"
+msgstr "Mathaben"
+
+msgid "foe_data.province.Rustikauri"
+msgstr "Rustikauri"
+
+msgid "routes.donate.hero.subtitle"
+msgstr "Bağış yap @:(common.site_title)"
+
+msgid "routes.donate.title"
+msgstr "@:(routes.donate.hero.title) - @:(common.site_title)"
+
+msgid "components.promotion_message_builder.variables.message.LC"
+msgstr "Seviye maliyeti"
+
+msgid "components.site_layout.global_config_dialog.disable_update_notification"
+msgstr "Güncelleme ile ilgili bildirimleri devre dışı bırakın"
+
+msgid "components.gb_investment.custom_name"
+msgstr ""
+"@:(components.site_layout.global_config) içinde özel Devasa bina adı "
+"ayarlayabilirsiniz"
+
+msgid "components.gb_investment.tutorial.promotion_message.add_message"
+msgstr "Bu alan ileti eklemenize izin verir."
+
+msgid "components.gb_investment.tutorial.promotion_message.show_level"
+msgstr "Devasa bina seviyesini görüntüler (ileti şablonuna dahil edilmişse)."
+
+msgid "components.gb_investment.tutorial.table.include_in_copy_boxes"
+msgstr ""
+"Bu alan, bu yeri kopyalayıp oyuna yapıştırabileceğiniz promosyon iletisini "
+"görüntülemenizi sağlar."
+
+msgid "components.gb_investment.tutorial.table.is_sniper"
+msgstr ""
+"Bu sütun, en az bir yatırımcı tanımladığınızda görüntülenir. Bir oyuncunun "
+"potansiyel bir pusucu olup olmadığını tanımlamak için kullanılır. Bu "
+"bilgiler sıra güvenliğinin hesaplanmasında kullanılır."
+
+msgid "components.gb_investment.tutorial.table.fp_already_putin"
+msgstr ""
+"Bu sütun, en az bir yatırımcı girdiğinizde görüntülenir. Sahibinin "
+"stratejisi (beklenen yatırım) ile yatırımcının yerinin ne olacağını size "
+"gösterir."
+
+msgid "components.gb_investment.tutorial.table.rewards_with_rate"
+msgstr "Bu, bir yatırımcı yer aldığında bina sahibinin beklediği FP sayısıdır."
+
+msgid "components.cf_calculator.tutorial.suppliesGathered"
+msgstr ""
+"Tekrar eden ikinci görev için kullanmak istediğiniz erzak sayısını girin."
+
+msgid "components.gb_investment.tutorial.table.default_rewards"
+msgstr "Bu, sıranın varsayılan ödülüdür (Ark bonusu olmadan)."
+
+msgid "components.gb_investment.tutorial.table.place"
+msgstr "Sıraya karşılık gelir."
+
+msgid "components.gb_investment.tutorial.investor_percentage"
+msgstr ""
+"Yatırımcılarınızın kullanmasını beklediğiniz oranı seçin\n"
+"Örneğin: 1.9 oran için, 90 yazın"
+
+msgid "components.gb_investment.tutorial.level"
+msgstr "Üzerinde çalışmak istediğiniz seviyeyi seçin."
+
+msgid "components.cf_calculator.tutorial.secondRqCompleted"
+msgstr "Tamamlayabileceğiniz ikinci tekrar eden görev sayısı."
+
+msgid "components.cf_calculator.tutorial.totalRqCompleted"
+msgstr ""
+"Tamamlayabileceğiniz (istatistiksel olarak) yinelenen görevlerin toplamı."
+
+msgid "components.cf_calculator.tutorial.totalFp"
+msgstr "Görevler, devasa binalar vb. ile kazanacağınız FP sayısı."
+
+msgid "components.cf_calculator.tutorial.totalGoods"
+msgstr "Görevler, devasa binalar vb. ile kazanacağınız malların sayısı."
+
+msgid "components.cf_calculator.tutorial.tableReward"
+msgstr ""
+"Bu tablo size kazanacağınız ödülleri gösterir. Değerlerin deneysel bir "
+"olasılığa dayandığını unutmayın."
+
+msgid "components.cf_calculator.tutorial.cumulativeQuest"
+msgstr "Bu durumda, yapmak istediğiniz Görev sayısını belirlemeniz gerekir."
+
+msgid "components.cf_calculator.tutorial.otherRq"
+msgstr "Şu anda yaptığınız diğer günlük yinelenen görevleri ayarlayın."
