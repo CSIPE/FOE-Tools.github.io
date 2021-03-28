@@ -99,6 +99,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     <td align="center"><a href="https://github.com/JhonnyBn"><img src="https://avatars1.githubusercontent.com/u/29382833?v=4?s=100" width="100px;" alt=""/><br /><sub><b>JhonnyBn</b></sub></a><br /><a href="#translation-JhonnyBn" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/FJduFou"><img src="https://avatars0.githubusercontent.com/u/46401854?v=4?s=100" width="100px;" alt=""/><br /><sub><b>François-Joseph du Fou</b></sub></a><br /><a href="#design-FJduFou" title="Design">🎨</a></td>
     <td align="center"><img src="https://forum.en.forgeofempires.com/styles/game/avatars/avatar.png?s=100" width="100px;" alt=""/><br /><sub><b>CaioMario (PT)</b></sub><br /><a href="#bug-CaioMario (PT)" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://forum.ru.forgeofempires.com/index.php?members/the-advantages.33890/"><img src="/img/contributors/The_Advantages_Vlad.jpg?s=100" width="100px;" alt=""/><br /><sub><b>The Advantages (Vlad) (RU)</b></sub></a><br /><a href="#translation-The Advantages (Vlad) (RU)" title="Translation">🌍</a></td>
   </tr>
 </table>
 
