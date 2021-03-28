@@ -4,16 +4,15 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [2.85.1](https://github.com/FOE-Tools/FOE-Tools.github.io/compare/v2.85.0...v2.85.1) (2021-03-28)
 
-
 ### Translation
 
-* Translated using Weblate (Danish) ([1d15778](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/1d15778d0c5ffa43455f8f50552950072db5c866))
-* Translated using Weblate (Greek) ([0d15f43](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/0d15f43746c8e561c99702e13f5e412c75bf3707))
-* Translated using Weblate (Greek) ([8af5e9e](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/8af5e9ebcaa937d5aad68b4fc4d2fce84450ac01))
-* Translated using Weblate (Greek) ([e974087](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/e97408739dce3aaf0e70e5641762bf1b60c01809))
-* Translated using Weblate (Russian) ([cba381f](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/cba381f5d95876d316d82d842438b595bbe9482f))
-* Translated using Weblate (Swedish) ([cc0560f](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/cc0560f78e258519945648f8679056bbfb00ba2b))
-* update translation ([3c712b1](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/3c712b1a811773773362c7dba1c5e36aba70bffb))
+- Translated using Weblate (Danish) ([1d15778](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/1d15778d0c5ffa43455f8f50552950072db5c866))
+- Translated using Weblate (Greek) ([0d15f43](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/0d15f43746c8e561c99702e13f5e412c75bf3707))
+- Translated using Weblate (Greek) ([8af5e9e](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/8af5e9ebcaa937d5aad68b4fc4d2fce84450ac01))
+- Translated using Weblate (Greek) ([e974087](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/e97408739dce3aaf0e70e5641762bf1b60c01809))
+- Translated using Weblate (Russian) ([cba381f](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/cba381f5d95876d316d82d842438b595bbe9482f))
+- Translated using Weblate (Swedish) ([cc0560f](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/cc0560f78e258519945648f8679056bbfb00ba2b))
+- update translation ([3c712b1](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/3c712b1a811773773362c7dba1c5e36aba70bffb))
 
 ## [2.85.0](https://github.com/FOE-Tools/FOE-Tools.github.io/compare/v2.84.1...v2.85.0) (2021-03-21)
 
