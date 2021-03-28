@@ -607,6 +607,13 @@
       "avatar_url": "https://forum.en.forgeofempires.com/styles/game/avatars/avatar.png",
       "profile": "",
       "contributions": ["bug"]
+    },
+    {
+      "login": "The Advantages (Vlad) (RU)",
+      "name": "The Advantages (Vlad) (RU)",
+      "avatar_url": "/img/contributors/The_Advantages_Vlad.jpg",
+      "profile": "https://forum.ru.forgeofempires.com/index.php?members/the-advantages.33890/",
+      "contributions": ["translation"]
     }
   ],
   "commitConvention": "none"
