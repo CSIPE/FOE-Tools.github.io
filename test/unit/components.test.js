@@ -1,5 +1,5 @@
 import { doTestOf } from "./utils";
 
-describe("Components", () => {
+describe.skip("Components", () => {
   doTestOf("components");
 });

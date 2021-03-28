@@ -19,3 +19,4 @@ tmp
 .DS_Store
 !lib/vuex-pathify/dist
 yarn.lock
+.env

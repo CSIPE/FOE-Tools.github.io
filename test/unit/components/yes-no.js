@@ -15,16 +15,23 @@ const factory = () => {
   });
 };
 
+let wrapper;
+
 describe("YesNo", () => {
+  afterEach(() => {
+    wrapper.destroy();
+    wrapper = null;
+  });
+
   test("Is a Vue instance", () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.$nextTick(() => {
       expect(wrapper.isVueInstance()).toBeTruthy();
     });
   });
 
   test("Can select no", () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.$nextTick(() => {
       expect(wrapper.vm.$data.newValue).toBe(true);
 
@@ -38,7 +45,7 @@ describe("YesNo", () => {
   });
 
   test("Update props affect newValue", () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.$data.newValue).toBe(true);
 
     wrapper.setProps({ value: false });

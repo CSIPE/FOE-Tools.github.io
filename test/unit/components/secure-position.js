@@ -5,6 +5,8 @@ import { gbsData } from "../../../lib/foe-data/gbs";
 import gbProcess from "~/lib/foe-compute-process/gb-investment";
 import { getDefaultStore } from "../utils";
 
+let wrapper;
+
 const factory = (propsData = {}, mocks = {}) => {
   const { localVue, store } = getView(getDefaultStore());
   return shallowMount(Component, {
@@ -28,15 +30,20 @@ const invalidValueType = "foo";
  */
 
 describe("SecurePosition", () => {
+  afterEach(() => {
+    wrapper.destroy();
+    wrapper = null;
+  });
+
   test("Is a Vue instance", () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.$nextTick(() => {
       expect(wrapper.isVueInstance()).toBeTruthy();
     });
   });
 
   test('Change "levelCost" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.levelCost).toBe(0);
     expect(wrapper.vm.errors.levelCost).toBeFalsy();
     wrapper.vm.levelCost = 123;
@@ -47,7 +54,7 @@ describe("SecurePosition", () => {
   });
 
   test('Change "levelCost" invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.levelCost).toBe(0);
     expect(wrapper.vm.errors.levelCost).toBeFalsy();
     wrapper.vm.levelCost = -1;
@@ -58,7 +65,7 @@ describe("SecurePosition", () => {
   });
 
   test('Change "levelCost" invalid type', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.levelCost).toBe(0);
     expect(wrapper.vm.errors.levelCost).toBeFalsy();
     wrapper.vm.levelCost = invalidValueType;
@@ -69,7 +76,7 @@ describe("SecurePosition", () => {
   });
 
   test('Change "currentDeposits" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.levelCost = 321;
 
     expect(wrapper.vm.currentDeposits).toBe(0);
@@ -82,7 +89,7 @@ describe("SecurePosition", () => {
   });
 
   test('Change "currentDeposits" invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.currentDeposits).toBe(0);
     expect(wrapper.vm.errors.currentDeposits).toBeFalsy();
     wrapper.vm.currentDeposits = -1;
@@ -93,7 +100,7 @@ describe("SecurePosition", () => {
   });
 
   test('Change "currentDeposits" invalid type', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.currentDeposits).toBe(0);
     expect(wrapper.vm.errors.currentDeposits).toBeFalsy();
     wrapper.vm.currentDeposits = invalidValueType;
@@ -104,7 +111,7 @@ describe("SecurePosition", () => {
   });
 
   test('Change "yourParticipation" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.levelCost = 321;
     wrapper.vm.currentDeposits = 200;
 
@@ -118,7 +125,7 @@ describe("SecurePosition", () => {
   });
 
   test('Change "yourParticipation" invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.levelCost = 321;
     wrapper.vm.currentDeposits = 200;
 
@@ -132,7 +139,7 @@ describe("SecurePosition", () => {
   });
 
   test('Change "yourParticipation" invalid type', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.levelCost = 321;
     wrapper.vm.currentDeposits = 200;
 
@@ -146,7 +153,7 @@ describe("SecurePosition", () => {
   });
 
   test('Change "otherParticipation" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.levelCost = 321;
     wrapper.vm.currentDeposits = 200;
 
@@ -160,7 +167,7 @@ describe("SecurePosition", () => {
   });
 
   test('Change "otherParticipation" invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.levelCost = 321;
     wrapper.vm.currentDeposits = 200;
 
@@ -174,7 +181,7 @@ describe("SecurePosition", () => {
   });
 
   test('Change "otherParticipation" invalid type', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.levelCost = 321;
     wrapper.vm.currentDeposits = 200;
 
@@ -188,7 +195,7 @@ describe("SecurePosition", () => {
   });
 
   test('Change "yourArcBonus" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.yourArcBonus).toBe(90.6);
     expect(wrapper.vm.errors.yourArcBonus).toBeFalsy();
     wrapper.vm.yourArcBonus = 123;
@@ -199,7 +206,7 @@ describe("SecurePosition", () => {
   });
 
   test('Change "yourArcBonus" invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.yourArcBonus).toBe(90.6);
     expect(wrapper.vm.errors.yourArcBonus).toBeFalsy();
     wrapper.vm.yourArcBonus = -1;
@@ -210,7 +217,7 @@ describe("SecurePosition", () => {
   });
 
   test('Change "yourArcBonus" invalid type', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.yourArcBonus).toBe(90.6);
     expect(wrapper.vm.errors.yourArcBonus).toBeFalsy();
     wrapper.vm.yourArcBonus = invalidValueType;
@@ -221,7 +228,7 @@ describe("SecurePosition", () => {
   });
 
   test('Change "fpTargetReward" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.fpTargetReward).toBe(0);
     expect(wrapper.vm.errors.fpTargetReward).toBeFalsy();
     wrapper.vm.fpTargetReward = 123;
@@ -232,7 +239,7 @@ describe("SecurePosition", () => {
   });
 
   test('Change "fpTargetReward" invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.fpTargetReward).toBe(0);
     expect(wrapper.vm.errors.fpTargetReward).toBeFalsy();
     wrapper.vm.fpTargetReward = -1;
@@ -243,7 +250,7 @@ describe("SecurePosition", () => {
   });
 
   test('Change "fpTargetReward" invalid type', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.fpTargetReward).toBe(0);
     expect(wrapper.vm.errors.fpTargetReward).toBeFalsy();
     wrapper.vm.fpTargetReward = invalidValueType;
@@ -254,7 +261,7 @@ describe("SecurePosition", () => {
   });
 
   test("Form with valid input", () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.levelCost = 1720;
     wrapper.vm.currentDeposits = 860;
     wrapper.vm.yourParticipation = 10;
@@ -269,7 +276,7 @@ describe("SecurePosition", () => {
   });
 
   test('Change "levelData" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.$props.levelData).toBe(null);
     wrapper.setProps({ levelData: gbData });
     wrapper.vm.$nextTick(() => {
@@ -278,7 +285,7 @@ describe("SecurePosition", () => {
   });
 
   test('Change "customYourArcBonus" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.$props.customYourArcBonus).toBe(false);
     wrapper.setProps({ customYourArcBonus: 90 });
     wrapper.vm.$nextTick(() => {
@@ -287,7 +294,7 @@ describe("SecurePosition", () => {
   });
 
   test('Change "yourArcBonus" value with "customYourArcBonus" set', () => {
-    const wrapper = factory({ customYourArcBonus: 90 });
+    wrapper = factory({ customYourArcBonus: 90 });
     expect(wrapper.vm.$props.customYourArcBonus).toBe(90);
     wrapper.setProps({ customYourArcBonus: 90 });
     const newValue = 42;
@@ -299,7 +306,7 @@ describe("SecurePosition", () => {
   });
 
   test('Initialize with custom "levelData"', () => {
-    const wrapper = factory({ levelData: gbData });
+    wrapper = factory({ levelData: gbData });
     wrapper.vm.$nextTick(() => {
       expect(wrapper.vm.$props.levelData).toBe(gbData);
       expect(wrapper.vm.levelCost).toBe(gbData.cost);
@@ -307,7 +314,7 @@ describe("SecurePosition", () => {
   });
 
   test('Change "fpTargetReward" value when initialize with custom "levelData"', () => {
-    const wrapper = factory({ levelData: gbData });
+    wrapper = factory({ levelData: gbData });
     expect(wrapper.vm.fpTargetReward).toBe(0);
     expect(wrapper.vm.errors.fpTargetReward).toBeFalsy();
     wrapper.vm.fpTargetReward = 5;
@@ -318,7 +325,7 @@ describe("SecurePosition", () => {
   });
 
   test('Change "fpTargetReward" invalid when initialize with custom "levelData"', () => {
-    const wrapper = factory({ levelData: gbData });
+    wrapper = factory({ levelData: gbData });
     expect(wrapper.vm.fpTargetReward).toBe(0);
     expect(wrapper.vm.errors.fpTargetReward).toBeFalsy();
     wrapper.vm.fpTargetReward = -1;
@@ -329,7 +336,7 @@ describe("SecurePosition", () => {
   });
 
   test('Call "checkFormValid" with invalid type', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.levelCost = 1720;
     wrapper.vm.currentDeposits = 860;
     wrapper.vm.yourParticipation = 10;
@@ -343,7 +350,7 @@ describe("SecurePosition", () => {
   });
 
   test('Call "checkFormValid" with initial value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.levelCost = 0;
     wrapper.vm.currentDeposits = 0;
     wrapper.vm.yourParticipation = 0;
@@ -357,7 +364,7 @@ describe("SecurePosition", () => {
   });
 
   test('Call "checkFormValid" with invalid "levelCost"', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.levelCost = -1;
     wrapper.vm.currentDeposits = 860;
     wrapper.vm.yourParticipation = 10;
@@ -371,7 +378,7 @@ describe("SecurePosition", () => {
   });
 
   test('Call "checkFormValid" with "currentDeposits" > "levelCost"', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.levelCost = 1720;
     wrapper.vm.currentDeposits = 1860;
     wrapper.vm.yourParticipation = 10;
@@ -385,7 +392,7 @@ describe("SecurePosition", () => {
   });
 
   test('Call "checkFormValid" with "yourParticipation" > "levelCost"', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.levelCost = 1720;
     wrapper.vm.currentDeposits = 860;
     wrapper.vm.yourParticipation = 10000;
@@ -399,7 +406,7 @@ describe("SecurePosition", () => {
   });
 
   test('Call "checkFormValid" with "otherParticipation" > "levelCost"', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.levelCost = 1720;
     wrapper.vm.currentDeposits = 860;
     wrapper.vm.yourParticipation = 10;
@@ -413,7 +420,7 @@ describe("SecurePosition", () => {
   });
 
   test('Call "checkFormValid" with "yourParticipation" + "otherParticipation" > "currentDeposits"', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.levelCost = 1720;
     wrapper.vm.currentDeposits = 860;
     wrapper.vm.yourParticipation = 800;
@@ -427,7 +434,7 @@ describe("SecurePosition", () => {
   });
 
   test('Call "checkQuery" with query parameters', () => {
-    const wrapper = factory(
+    wrapper = factory(
       { levelData: gbData },
       {
         $route: {
@@ -455,7 +462,7 @@ describe("SecurePosition", () => {
   });
 
   test('Change values but with "yourParticipation" null and "otherParticipation" empty', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.levelCost = 812;
     wrapper.vm.currentDeposits = 633;
     wrapper.vm.yourParticipation = null;
@@ -471,7 +478,7 @@ describe("SecurePosition", () => {
   });
 
   test('call "resetValues"', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.levelCost = 812;
     wrapper.vm.currentDeposits = 633;
     wrapper.vm.yourParticipation = null;

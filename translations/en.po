@@ -1580,6 +1580,9 @@ msgstr "Space Age: Mars"
 msgid "foe_data.age.SpaceAgeAsteroidBelt"
 msgstr "Space Age: Asteroid Belt"
 
+msgid "foe_data.age.SpaceAgeVenus"
+msgstr "Space Age: Venus"
+
 msgid "foe_data.age_short.NoAge"
 msgstr "NA"
 
@@ -1757,6 +1760,9 @@ msgstr "Star Gazer"
 msgid "foe_data.gb.Space_Carrier"
 msgstr "Space Carrier"
 
+msgid "foe_data.gb.Flying_Island"
+msgstr "Flying Island"
+
 msgid "foe_data.gb_short.Observatory"
 msgstr "Obs"
 
@@ -1876,6 +1882,9 @@ msgstr "SG"
 
 msgid "foe_data.gb_short.Space_Carrier"
 msgstr "SC"
+
+msgid "foe_data.gb_short.Flying_Island"
+msgstr "Island"
 
 msgid "foe_data.gb_short.Galata_Tower"
 msgstr "Galata"

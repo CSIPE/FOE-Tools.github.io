@@ -408,6 +408,7 @@
   "foe_data.age.VirtualFuture": "Futur Virtuel",
   "foe_data.age.SpaceAgeMars": "Ère Spatiale : Mars",
   "foe_data.age.SpaceAgeAsteroidBelt": "Ère Spatiale : Ceinture d’Astéroïdes",
+  "foe_data.age.SpaceAgeVenus": "Ère Spatiale : Vénus",
   "foe_data.age_short.NoAge": "SA",
   "foe_data.age_short.BronzeAge": "ADB",
   "foe_data.age_short.IronAge": "ADF",

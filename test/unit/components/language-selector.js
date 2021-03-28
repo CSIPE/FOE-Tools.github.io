@@ -13,16 +13,23 @@ const factory = () => {
   });
 };
 
+let wrapper;
+
 describe("LanguageSelector", () => {
+  afterEach(() => {
+    wrapper.destroy();
+    wrapper = null;
+  });
+
   test("Is a Vue instance", () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.$nextTick(() => {
       expect(wrapper.isVueInstance()).toBeTruthy();
     });
   });
 
   test("Change current lang", () => {
-    const wrapper = factory();
+    wrapper = factory();
     window.location.reload = jest.fn();
     const newValue = "fr";
 
@@ -39,7 +46,7 @@ describe("LanguageSelector", () => {
   });
 
   test('Call "getCurrentCountry" with a non special locale', () => {
-    const wrapper = factory();
+    wrapper = factory();
     window.location.reload = jest.fn();
 
     wrapper.vm.$nextTick(() => {
@@ -48,7 +55,7 @@ describe("LanguageSelector", () => {
   });
 
   test('Call "getCurrentCountry" with a special locale', () => {
-    const wrapper = factory();
+    wrapper = factory();
     window.location.reload = jest.fn();
 
     wrapper.vm.$nextTick(() => {

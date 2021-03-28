@@ -42,18 +42,25 @@ const dataCheckResult = [
   // }
 ];
 
+let wrapper;
+
 describe("SimpleTrade", () => {
+  afterEach(() => {
+    wrapper.destroy();
+    wrapper = null;
+  });
+
   // Valid values
 
   test("Is a Vue instance", () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.$nextTick(() => {
       expect(wrapper.isVueInstance()).toBeTruthy();
     });
   });
 
   test('Change "Split" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.splitValue).toBe(1000);
     expect(wrapper.vm.errors.splitValue).toBeFalsy();
     wrapper.vm.splitValue = 123;
@@ -64,7 +71,7 @@ describe("SimpleTrade", () => {
   });
 
   test('Change "Split" with invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.splitValue).toBe(1000);
     expect(wrapper.vm.errors.splitValue).toBeFalsy();
     wrapper.vm.splitValue = -1;
@@ -75,7 +82,7 @@ describe("SimpleTrade", () => {
   });
 
   test('Change "Split" switch', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.split).toBe(false);
     wrapper.vm.split = true;
     wrapper.vm.$nextTick(() => {
@@ -84,7 +91,7 @@ describe("SimpleTrade", () => {
   });
 
   test(`Call "resetFormIfAllZero" with current age "${Object.keys(fairTradeArray)[1]}"`, () => {
-    const wrapper = factory();
+    wrapper = factory();
 
     for (let age in agesGoods) {
       expect(wrapper.vm.values[age]).toBe(0);
@@ -102,7 +109,7 @@ describe("SimpleTrade", () => {
   test(`Call "resetFormIfAllZero" with current age "${
     Object.keys(fairTradeArray)[1]
   }" and all one value not equal to 0`, () => {
-    const wrapper = factory();
+    wrapper = factory();
 
     for (let age in agesGoods) {
       expect(wrapper.vm.values[age]).toBe(0);
@@ -122,7 +129,7 @@ describe("SimpleTrade", () => {
   });
 
   test(`Call "haveError" with key "${Object.keys(fairTradeArray)[1]}" and value 100`, () => {
-    const wrapper = factory();
+    wrapper = factory();
     const key = Object.keys(fairTradeArray)[1];
     wrapper.vm.values[key] = 100;
     wrapper.vm.$nextTick(() => {
@@ -131,7 +138,7 @@ describe("SimpleTrade", () => {
   });
 
   test(`Call "haveError" with key "${Object.keys(fairTradeArray)[1]}" and value 10000`, () => {
-    const wrapper = factory();
+    wrapper = factory();
     const key = Object.keys(fairTradeArray)[1];
     wrapper.vm.values[key] = 10000;
     wrapper.vm.$nextTick(() => {
@@ -140,14 +147,14 @@ describe("SimpleTrade", () => {
   });
 
   test(`Call "haveError" with unknown key and no error`, () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.$nextTick(() => {
       expect(wrapper.vm.haveError("foo")).toBe("");
     });
   });
 
   test(`Call "haveError" with unknown age and error`, () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.errors["foo"] = true;
     wrapper.vm.$nextTick(() => {
       expect(wrapper.vm.haveError("foo")).toBe("is-danger");
@@ -158,7 +165,7 @@ describe("SimpleTrade", () => {
 
   for (const elt of dataCheckResult) {
     test(`Check result with current age ${elt.age} for value ${elt.value} and split ${elt.splitValue}`, () => {
-      const wrapper = factory();
+      wrapper = factory();
       wrapper.vm.values[elt.age] = elt.value;
       wrapper.vm.split = elt.splitValue !== 1000;
       wrapper.vm.splitValue = elt.splitValue;

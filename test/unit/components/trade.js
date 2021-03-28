@@ -92,18 +92,25 @@ const dataCheckResult = [
   },
 ];
 
+let wrapper;
+
 describe("Trade", () => {
+  afterEach(() => {
+    wrapper.destroy();
+    wrapper = null;
+  });
+
   // Valid values
 
   test("Is a Vue instance", () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.$nextTick(() => {
       expect(wrapper.isVueInstance()).toBeTruthy();
     });
   });
 
   test('Change "I have" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.iHave).toBe(Object.keys(fairTradeArray)[0]);
     expect(wrapper.vm.errors.iHave).toBeFalsy();
     wrapper.vm.iHave = Object.keys(fairTradeArray)[1];
@@ -114,7 +121,7 @@ describe("Trade", () => {
   });
 
   test('Change "I want" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.iWant).toBe(Object.keys(fairTradeArray)[0]);
     expect(wrapper.vm.errors.iWant).toBeFalsy();
     wrapper.vm.iWant = Object.keys(fairTradeArray)[1];
@@ -125,7 +132,7 @@ describe("Trade", () => {
   });
 
   test('Change "Split" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.splitValue).toBe(1000);
     expect(wrapper.vm.errors.splitValue).toBeFalsy();
     wrapper.vm.splitValue = 123;
@@ -136,7 +143,7 @@ describe("Trade", () => {
   });
 
   test('Change "Value" with value 427', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.value).toBe(0);
     expect(wrapper.vm.errors.value).toBeFalsy();
     expect(wrapper.vm.warnings.value).toBeFalsy();
@@ -149,7 +156,7 @@ describe("Trade", () => {
   });
 
   test('Change "Value" with value 1001', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.value).toBe(0);
     expect(wrapper.vm.errors.value).toBeFalsy();
     expect(wrapper.vm.warnings.value).toBeFalsy();
@@ -164,7 +171,7 @@ describe("Trade", () => {
   // Invalid values
 
   test('Change "I have" with invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.iHave).toBe(Object.keys(fairTradeArray)[0]);
     expect(wrapper.vm.errors.iHave).toBeFalsy();
     wrapper.vm.iHave = "foo";
@@ -175,7 +182,7 @@ describe("Trade", () => {
   });
 
   test('Change "I want" with invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.iWant).toBe(Object.keys(fairTradeArray)[0]);
     expect(wrapper.vm.errors.iWant).toBeFalsy();
     wrapper.vm.iWant = "foo";
@@ -186,7 +193,7 @@ describe("Trade", () => {
   });
 
   test('Change "Split" with invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const value = 0;
     expect(wrapper.vm.splitValue).toBe(1000);
     expect(wrapper.vm.errors.splitValue).toBeFalsy();
@@ -198,7 +205,7 @@ describe("Trade", () => {
   });
 
   test('Change "Split" with invalid type', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const value = "foo";
     expect(wrapper.vm.splitValue).toBe(1000);
     expect(wrapper.vm.errors.splitValue).toBeFalsy();
@@ -210,7 +217,7 @@ describe("Trade", () => {
   });
 
   test('Change "Value" with invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const value = -1;
     expect(wrapper.vm.value).toBe(0);
     expect(wrapper.vm.errors.value).toBeFalsy();
@@ -224,7 +231,7 @@ describe("Trade", () => {
   });
 
   test('Change "Value" with invalid type', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const value = "foo";
     expect(wrapper.vm.value).toBe(0);
     expect(wrapper.vm.errors.value).toBeFalsy();
@@ -241,7 +248,7 @@ describe("Trade", () => {
 
   for (const elt of dataCheckResult) {
     test(`Check result from ${elt.iHave} to ${elt.iWant} for value ${elt.value} and split ${elt.splitValue}`, () => {
-      const wrapper = factory();
+      wrapper = factory();
       wrapper.vm.iHave = elt.iHave;
       wrapper.vm.iWant = elt.iWant;
       wrapper.vm.value = elt.value;

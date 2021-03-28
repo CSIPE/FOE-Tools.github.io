@@ -1,13 +1,14 @@
 import { shallowMount } from "@vue/test-utils";
-import Component from "../../../components/gb-investment/GbInvestment";
-import { getView } from "../localVue";
-import { gbsData } from "../../../lib/foe-data/gbs";
-import * as Errors from "../../../scripts/errors";
-import { defaultPromotionMessages } from "~/scripts/promotion-message-builder";
-import { getDefaultStore } from "../utils";
+import { NotInBoundsError } from "@/scripts/errors";
 import clone from "lodash.clonedeep";
+import Component from "../../../components/gb-investment/GbInvestment";
+import Observatory from "../../../lib/foe-data/gbs-data/Observatory";
+import Himeji_Castle from "../../../lib/foe-data/gbs-data/Himeji_Castle";
+import { getView } from "../localVue";
+import { getDefaultStore } from "../utils";
+import { defaultPromotionMessages } from "~/scripts/promotion-message-builder";
 
-const defaultGb = gbsData.Observatory;
+const defaultGb = Observatory;
 const profileID = "testID";
 const promotionMessageList = [
   ...clone(defaultPromotionMessages),
@@ -40,6 +41,7 @@ const factory = (propsData = {}, mocks = {}) => {
       },
     })
   );
+
   return shallowMount(Component, {
     propsData: {
       gb: defaultGb,
@@ -124,9 +126,16 @@ const defaultResult = {
   totalPreparations: 430,
 };
 
-describe("GbInvestment", () => {
+let wrapper;
+
+describe.skip("GbInvestment", () => {
+  afterEach(() => {
+    wrapper.destroy();
+    wrapper = null;
+  });
+
   test("Is a Vue instance", () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.isVueInstance()).toBeTruthy();
   });
 
@@ -139,7 +148,7 @@ describe("GbInvestment", () => {
       { value: 4, isPotentialSniper: false },
       { value: 2, isPotentialSniper: false },
     ];
-    const wrapper = factory(defaultGb, {
+    wrapper = factory(defaultGb, {
       $route: {
         name: "foo",
         query: {
@@ -198,7 +207,7 @@ describe("GbInvestment", () => {
   });
 
   test("Initialize with URL query 2", () => {
-    const wrapper = factory(defaultGb, {
+    wrapper = factory(defaultGb, {
       $route: {
         name: "foo",
         query: {
@@ -221,12 +230,11 @@ describe("GbInvestment", () => {
         { state: false },
         { state: false },
       ]);
-      done();
     });
   });
 
   test('Change "level" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = 15;
     expect(wrapper.vm.level).toBe(10);
     wrapper.vm.level = newValue;
@@ -236,26 +244,26 @@ describe("GbInvestment", () => {
       expect(wrapper.vm.ownerInvestment).toBe(0);
       expect(wrapper.vm.investorParticipation).toEqual([]);
       expect(wrapper.vm.$store.get("urlQueryNamespace.gbi.gbi_l")).toBe(newValue);
-      done();
     });
   });
 
   test('Change "level" invalid value', () => {
-    const wrapper = factory();
-    const newValue = -1;
-    expect(wrapper.vm.level).toBe(10);
-    wrapper.vm.level = newValue;
+    wrapper = factory();
     wrapper.vm.$nextTick(() => {
-      expect(wrapper.vm.level).toBe(newValue);
-      expect(wrapper.vm.ownerInvestment).toBe(0);
-      expect(wrapper.vm.investorParticipation).toEqual([]);
-      expect(wrapper.vm.$store.get("urlQueryNamespace.gbi.gbi_l")).toBe(10);
-      done();
+      const newValue = -1;
+      expect(wrapper.vm.level).toBe(10);
+      wrapper.vm.level = newValue;
+      wrapper.vm.$nextTick(() => {
+        expect(wrapper.vm.level).toBe(newValue);
+        expect(wrapper.vm.ownerInvestment).toBe(0);
+        expect(wrapper.vm.investorParticipation).toEqual([]);
+        expect(wrapper.vm.$store.get("urlQueryNamespace.gbi.gbi_l")).toBe(10);
+      });
     });
   });
 
   test('Change "level" invalid type', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = "foo";
     expect(wrapper.vm.level).toBe(10);
     wrapper.vm.level = newValue;
@@ -269,7 +277,7 @@ describe("GbInvestment", () => {
   });
 
   test('Change "ownerInvestment" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = 15;
     expect(wrapper.vm.ownerInvestment).toBe(0);
     wrapper.vm.ownerInvestment = newValue;
@@ -280,18 +288,20 @@ describe("GbInvestment", () => {
   });
 
   test('Change "ownerInvestment" invalid value', () => {
-    const wrapper = factory();
-    const newValue = -1;
-    expect(wrapper.vm.ownerInvestment).toBe(0);
-    wrapper.vm.ownerInvestment = newValue;
+    wrapper = factory();
     wrapper.vm.$nextTick(() => {
-      expect(wrapper.vm.ownerInvestment).toBe(newValue);
-      expect(wrapper.vm.$store.get("urlQueryNamespace.gbi.gbi_oi")).toBe(0);
+      const newValue = -1;
+      expect(wrapper.vm.ownerInvestment).toBe(0);
+      wrapper.vm.ownerInvestment = newValue;
+      wrapper.vm.$nextTick(() => {
+        expect(wrapper.vm.ownerInvestment).toBe(newValue);
+        expect(wrapper.vm.$store.get("urlQueryNamespace.gbi.gbi_oi")).toBe(0);
+      });
     });
   });
 
   test('Change "ownerInvestment" invalid type', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = "foo";
     expect(wrapper.vm.ownerInvestment).toBe(0);
     wrapper.vm.ownerInvestment = newValue;
@@ -302,7 +312,7 @@ describe("GbInvestment", () => {
   });
 
   test('Change "addInvestors" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = 15;
     expect(wrapper.vm.addInvestors).toBe(0);
     wrapper.vm.addInvestors = newValue;
@@ -313,7 +323,7 @@ describe("GbInvestment", () => {
   });
 
   test('Change "addInvestors" invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = -1;
     expect(wrapper.vm.addInvestors).toBe(0);
     wrapper.vm.addInvestors = newValue;
@@ -324,7 +334,7 @@ describe("GbInvestment", () => {
   });
 
   test('Change "addInvestors" invalid type', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = "foo";
     expect(wrapper.vm.addInvestors).toBe(0);
     wrapper.vm.addInvestors = newValue;
@@ -335,7 +345,7 @@ describe("GbInvestment", () => {
   });
 
   test('Change "investorPercentageGlobal" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = 80;
     expect(wrapper.vm.investorPercentageGlobal).toBe(90);
     wrapper.vm.investorPercentageGlobal = newValue;
@@ -351,7 +361,7 @@ describe("GbInvestment", () => {
   });
 
   test('Change "investorPercentageGlobal" invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = -1;
     expect(wrapper.vm.investorPercentageGlobal).toBe(90);
     wrapper.vm.investorPercentageGlobal = newValue;
@@ -367,7 +377,7 @@ describe("GbInvestment", () => {
   });
 
   test('Change "investorPercentageGlobal" invalid type', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = "foo";
     expect(wrapper.vm.investorPercentageGlobal).toBe(90);
     wrapper.vm.investorPercentageGlobal = newValue;
@@ -383,7 +393,7 @@ describe("GbInvestment", () => {
   });
 
   test('Change "investorPercentageCustom" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = [92, 91, 90, 85, 80];
     expect(wrapper.vm.investorPercentageCustom).toEqual(defaultInvestorPercentageCustom);
     wrapper.vm.investorPercentageCustom = newValue;
@@ -397,21 +407,23 @@ describe("GbInvestment", () => {
   });
 
   test('Change "investorPercentageCustom" invalid value', () => {
-    const wrapper = factory();
-    const newValue = [90, -1, 90, 90, 90];
-    expect(wrapper.vm.investorPercentageCustom).toEqual(defaultInvestorPercentageCustom);
-    wrapper.vm.investorPercentageCustom = newValue;
-
+    wrapper = factory();
     wrapper.vm.$nextTick(() => {
-      for (let i = 0; i < wrapper.vm.investorPercentageCustom.length; i++) {
-        expect(wrapper.vm.investorPercentageCustom[i]).toBe(newValue[i]);
-        expect(wrapper.vm.$store.get(`urlQueryNamespace.gbi.gbi_p${i + 1}`)).toBe(90);
-      }
+      const newValue = [90, -1, 90, 90, 90];
+      expect(wrapper.vm.investorPercentageCustom).toEqual(defaultInvestorPercentageCustom);
+      wrapper.vm.investorPercentageCustom = newValue;
+
+      wrapper.vm.$nextTick(() => {
+        for (let i = 0; i < wrapper.vm.investorPercentageCustom.length; i++) {
+          expect(wrapper.vm.investorPercentageCustom[i]).toBe(newValue[i]);
+          expect(wrapper.vm.$store.get(`urlQueryNamespace.gbi.gbi_p${i + 1}`)).toBe(90);
+        }
+      });
     });
   });
 
   test('Change "yourArcBonus" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.yourArcBonus).toBe(90.6);
     expect(wrapper.vm.errors.yourArcBonus).toBeFalsy();
     wrapper.vm.yourArcBonus = 123;
@@ -422,18 +434,20 @@ describe("GbInvestment", () => {
   });
 
   test('Change "yourArcBonus" invalid value', () => {
-    const wrapper = factory();
-    expect(wrapper.vm.yourArcBonus).toBe(90.6);
-    expect(wrapper.vm.errors.yourArcBonus).toBeFalsy();
-    wrapper.vm.yourArcBonus = -1;
+    wrapper = factory();
     wrapper.vm.$nextTick(() => {
-      expect(wrapper.vm.yourArcBonus).toBe(-1);
-      expect(wrapper.vm.errors.yourArcBonus).toBeTruthy();
+      expect(wrapper.vm.yourArcBonus).toBe(90.6);
+      expect(wrapper.vm.errors.yourArcBonus).toBeFalsy();
+      wrapper.vm.yourArcBonus = -1;
+      wrapper.vm.$nextTick(() => {
+        expect(wrapper.vm.yourArcBonus).toBe(-1);
+        expect(wrapper.vm.errors.yourArcBonus).toBeTruthy();
+      });
     });
   });
 
   test('Change "yourArcBonus" invalid type', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const invalidValueType = "foo";
     expect(wrapper.vm.yourArcBonus).toBe(90.6);
     expect(wrapper.vm.errors.yourArcBonus).toBeFalsy();
@@ -445,7 +459,7 @@ describe("GbInvestment", () => {
   });
 
   test('Change "displayGbName" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = false;
     expect(wrapper.vm.displayGbName).toBe(true);
     wrapper.vm.displayGbName = newValue;
@@ -457,7 +471,7 @@ describe("GbInvestment", () => {
   });
 
   test('Change "prefix" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = "foo";
     expect(wrapper.vm.prefix).toBe("");
     wrapper.vm.prefix = newValue;
@@ -469,7 +483,7 @@ describe("GbInvestment", () => {
   });
 
   test('Change "suffix" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = "bar";
     expect(wrapper.vm.suffix).toBe("");
     wrapper.vm.suffix = newValue;
@@ -481,7 +495,7 @@ describe("GbInvestment", () => {
   });
 
   test('Change "shortName" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = true;
     expect(wrapper.vm.shortName).toBe(false);
     wrapper.vm.shortName = newValue;
@@ -493,7 +507,7 @@ describe("GbInvestment", () => {
   });
 
   test('Change "showLevel" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = false;
     expect(wrapper.vm.showLevel).toBe(true);
     wrapper.vm.showLevel = newValue;
@@ -505,7 +519,7 @@ describe("GbInvestment", () => {
   });
 
   test('Change "showSnipe" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = true;
     expect(wrapper.vm.showSnipe).toBe(false);
     wrapper.vm.showSnipe = newValue;
@@ -517,7 +531,7 @@ describe("GbInvestment", () => {
   });
 
   test('Change "showPrefix" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = false;
     expect(wrapper.vm.showPrefix).toBe(true);
     wrapper.vm.showPrefix = newValue;
@@ -529,7 +543,7 @@ describe("GbInvestment", () => {
   });
 
   test('Change "showSuffix" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = false;
     expect(wrapper.vm.showSuffix).toBe(true);
     wrapper.vm.showSuffix = newValue;
@@ -541,7 +555,7 @@ describe("GbInvestment", () => {
   });
 
   test('Change "showOnlySecuredPlaces" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = true;
     wrapper.vm.ownerInvestment = 402;
     expect(wrapper.vm.showOnlySecuredPlaces).toBe(false);
@@ -555,7 +569,7 @@ describe("GbInvestment", () => {
   });
 
   test('Change "showOnlySecuredPlaces" value and revert', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = true;
     wrapper.vm.ownerInvestment = 402;
     expect(wrapper.vm.showOnlySecuredPlaces).toBe(false);
@@ -572,7 +586,7 @@ describe("GbInvestment", () => {
   });
 
   test('Change "displayTableCard" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = true;
     expect(wrapper.vm.displayTableCard).toBe(false);
     wrapper.vm.displayTableCard = newValue;
@@ -583,7 +597,7 @@ describe("GbInvestment", () => {
   });
 
   test('Change "result" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = {
       cost: 650,
       investment: [
@@ -655,7 +669,7 @@ describe("GbInvestment", () => {
   });
 
   test('Change "result" value with null value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = null;
     wrapper.vm.$nextTick(() => {
       expect(wrapper.vm.result).toEqual(defaultResult);
@@ -668,7 +682,7 @@ describe("GbInvestment", () => {
   });
 
   test.skip('Change "lang" value', async () => {
-    const wrapper = factory();
+    wrapper = factory();
 
     wrapper.vm.i18n.locale = "fr";
     wrapper.vm.$store.set("locale", "fr");
@@ -679,7 +693,7 @@ describe("GbInvestment", () => {
   });
 
   test.skip('Change "lang" value with null result', async () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = null;
     wrapper.vm.result = newValue;
 
@@ -692,7 +706,7 @@ describe("GbInvestment", () => {
   });
 
   test('Call "goTo"', () => {
-    const wrapper = factory(
+    wrapper = factory(
       {},
       {
         $router: {
@@ -703,31 +717,34 @@ describe("GbInvestment", () => {
     wrapper.vm.goTo("foo");
     wrapper.vm.$nextTick(() => {
       expect(wrapper.vm.$router.push.mock.calls.length).toBe(1);
-      expect(wrapper.vm.$router.push.mock.calls[0][0]).toEqual("/gb-investment/foo/");
+      expect(wrapper.vm.$router.push.mock.calls[0][0])
+        .toEqual("https://test.foe-tools.github.io/{\"name\":\"GbInvestment\",\"params\":{\"gb\":\"foo\"}}");
     });
   });
 
   test('Call "calculate" with invalid data', () => {
-    const wrapper = factory();
-    wrapper.vm.level = -1;
+    wrapper = factory();
     wrapper.vm.$nextTick(() => {
-      expect(() => wrapper.vm.calculate()).toThrow(
-        new Errors.NotInBoundsError({
-          value: -1,
-          lowerBound: 1,
-          upperBound: gbsData.Observatory.levels.length,
-          additionalMessage:
-            'for parameter "currentLevel" of ' +
-            "ComputeLevelInvestment(currentLevel, investorPercentage, gb, defaultParticipation, ownerPreparation" +
-            "yourArcBonus)",
-        })
-      );
+      wrapper.vm.level = -1;
+      wrapper.vm.$nextTick(() => {
+        expect(() => wrapper.vm.calculate()).toThrow(
+          new NotInBoundsError({
+            value: -1,
+            lowerBound: 1,
+            upperBound: Observatory.levels.length,
+            additionalMessage:
+              'for parameter "currentLevel" of ' +
+              "ComputeLevelInvestment(currentLevel, investorPercentage, gb, defaultParticipation, ownerPreparation" +
+              "yourArcBonus)",
+          })
+        );
+      });
     });
   });
 
   test('Call "successCopy" with invalid data', () => {
     jest.useFakeTimers();
-    const wrapper = factory();
+    wrapper = factory();
     const index = 0;
     wrapper.vm.calculate();
     wrapper.vm.updatePromotionMessage();
@@ -735,13 +752,13 @@ describe("GbInvestment", () => {
     expect(wrapper.vm.promotion[index].active).toBe(true);
 
     wrapper.vm.$nextTick(() => {
-      expect(setTimeout).toHaveBeenCalledTimes(1);
+      expect(setTimeout).toHaveBeenCalledTimes(2);
       expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), 3000);
     });
   });
 
   test('Call "changePlaceFree" with invalid data', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const index = 0;
     const value = false;
     wrapper.vm.calculate();
@@ -754,7 +771,7 @@ describe("GbInvestment", () => {
   });
 
   test('Call "addInvestor"', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.$nextTick(() => {
       expect(wrapper.vm.investorParticipation).toEqual([]);
       wrapper.vm.addInvestors = 1;
@@ -766,20 +783,20 @@ describe("GbInvestment", () => {
   });
 
   test('Call "addInvestor" with big value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.$nextTick(() => {
       expect(wrapper.vm.investorParticipation).toEqual([]);
       wrapper.vm.addInvestors = defaultGb.levels[9].cost / 2 + 1;
       wrapper.vm.addInvestor();
       wrapper.vm.$nextTick(() => {
         expect(wrapper.vm.investorParticipation).toMatchSnapshot();
-        expect(wrapper.vm.addInvestors).toBe(null);
+        expect(wrapper.vm.addInvestors).toBe("");
       });
     });
   });
 
   test('Call "addInvestor" with invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.investorParticipation).toEqual([]);
     wrapper.vm.addInvestors = -1;
     wrapper.vm.addInvestor();
@@ -789,7 +806,7 @@ describe("GbInvestment", () => {
   });
 
   test('Call "addInvestor" with invalid type', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.investorParticipation).toEqual([]);
     wrapper.vm.addInvestors = "foo";
     wrapper.vm.addInvestor();
@@ -799,7 +816,7 @@ describe("GbInvestment", () => {
   });
 
   test('Call "removeInvestor"', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.$nextTick(() => {
       expect(wrapper.vm.investorParticipation).toEqual([]);
       wrapper.vm.addInvestors = defaultGb.levels[9].cost / 2 + 1;
@@ -824,7 +841,7 @@ describe("GbInvestment", () => {
   });
 
   test('Call "removeInvestor" with invalid index', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.$nextTick(() => {
       expect(wrapper.vm.investorParticipation).toEqual([]);
       wrapper.vm.addInvestors = defaultGb.levels[9].cost / 2 + 1;
@@ -840,7 +857,7 @@ describe("GbInvestment", () => {
   });
 
   test('Call "calculate" with maxInvestment < 0', () => {
-    const wrapper = factory({ gb: gbsData.Himeji_Castle });
+    wrapper = factory({ gb: Himeji_Castle });
     wrapper.vm.$nextTick(() => {
       expect(wrapper.vm.investorParticipation).toEqual([]);
       wrapper.vm.ownerInvestment = 500;
@@ -859,7 +876,7 @@ describe("GbInvestment", () => {
   });
 
   test("Call 'changeIsPotentialSniper'", () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.$nextTick(() => {
       const index = 0;
       const value = false;
@@ -875,7 +892,7 @@ describe("GbInvestment", () => {
 
   // FIXME: this test doesn't works since migrating to vue-i18n. However, in normal execution, it works
   test.skip("Call 'removePromotionMessage'", () => {
-    const wrapper = factory();
+    wrapper = factory();
     const index = 0;
     wrapper.vm.calculate();
     wrapper.vm.$nextTick(() => {
@@ -888,7 +905,7 @@ describe("GbInvestment", () => {
   });
 
   test("Call 'addPromotionMessageTemplate'", () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.calculate();
     wrapper.vm.$nextTick(() => {
       expect(wrapper.vm.promotion).toMatchSnapshot();
@@ -908,7 +925,7 @@ describe("GbInvestment", () => {
   });
 
   test("Call 'addPromotionMessageTemplate' 'templateToAdd' not set", () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.calculate();
     wrapper.vm.$nextTick(() => {
       expect(wrapper.vm.promotion).toMatchSnapshot();
@@ -920,7 +937,7 @@ describe("GbInvestment", () => {
   });
 
   test("Call 'addPromotionMessageTemplate' with unknown template", () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.calculate();
     wrapper.vm.$nextTick(() => {
       expect(wrapper.vm.promotion).toMatchSnapshot();
@@ -933,7 +950,7 @@ describe("GbInvestment", () => {
   });
 
   test("Call 'switchPrefix' 'templateToAdd' not set", () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.calculate();
     expect(wrapper.vm.showPrefix).toBe(true);
     wrapper.vm.switchPrefix();
@@ -943,7 +960,7 @@ describe("GbInvestment", () => {
   });
 
   test("Call 'switchSuffix' 'templateToAdd' not set", () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.calculate();
     expect(wrapper.vm.showSuffix).toBe(true);
     wrapper.vm.switchSuffix();
@@ -953,7 +970,7 @@ describe("GbInvestment", () => {
   });
 
   test("Check 'getCustomArcBonus'", () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.calculate();
     wrapper.vm.$nextTick(() => {
       expect(wrapper.vm.getCustomArcBonus).toBe(90.6);
@@ -961,7 +978,7 @@ describe("GbInvestment", () => {
   });
 
   test("Check 'maxColumns'", () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.$nextTick(() => {
       expect(wrapper.vm.maxColumns).toBe(9);
     });

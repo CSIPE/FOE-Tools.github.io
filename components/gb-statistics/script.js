@@ -170,6 +170,10 @@ export default {
           name: this.$t("foe_data.age.SpaceAgeAsteroidBelt"),
           color: "rgb(9,78,189)",
         },
+        SpaceAgeVenus: {
+          name: this.$t("foe_data.age.SpaceAgeVenus"),
+          color: "rgb(221,197,0)",
+        },
       },
       statSelector: "cost_level",
       maxLevelGraph: Object.keys(gbsData)

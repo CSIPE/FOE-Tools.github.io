@@ -167,15 +167,15 @@ export default {
       };
     },
     minCoins() {
-      return 7 * this.$data.questData.ages[this.$data.yourAge].cost.coins;
+      return this.yourAge in questData.ages ? 7 * this.$data.questData.ages[this.$data.yourAge].cost.coins : 0;
     },
     minSupplies() {
-      return 7 * this.$data.questData.ages[this.$data.yourAge].cost.coins;
+      return this.yourAge in questData.ages ? 7 * this.$data.questData.ages[this.$data.yourAge].cost.coins : 0;
     },
   },
   watch: {
     yourAge(val) {
-      if (!(this.yourAge in questData.ages)) {
+      if (!(val in questData.ages)) {
         this.errors.yourAge = true;
         return;
       }
@@ -385,8 +385,8 @@ export default {
     calculate() {
       /* istanbul ignore next */
       if (
-        Utils.normalizeNumberValue(this.$data.coins) < this.$data.minCoins ||
-        Utils.normalizeNumberValue(this.$data.supplies) < this.$data.minSupplies
+        Utils.normalizeNumberValue(this.$data.coins) < this.minCoins ||
+        Utils.normalizeNumberValue(this.$data.supplies) < this.minSupplies
       ) {
         // If coins or supplies are < than 7 times the amount of quests, we cannot guarantee any profit (statistically)
         return;

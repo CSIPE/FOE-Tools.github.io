@@ -42,16 +42,23 @@ const defaultHidden = () => [
   true,
 ];
 
+let wrapper;
+
 describe("GbStatistics", () => {
+  afterEach(() => {
+    wrapper.destroy();
+    wrapper = null;
+  });
+
   test("Is a Vue instance", () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.$nextTick(() => {
       expect(wrapper.isVueInstance()).toBeTruthy();
     });
   });
 
   test("Initialize with custom values", () => {
-    const wrapper = factory({
+    wrapper = factory({
       $route: {
         name: "foo",
         query: {
@@ -83,7 +90,7 @@ describe("GbStatistics", () => {
   });
 
   test('Change "statSelector" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.statSelector).toBe("cost_level");
     wrapper.vm.statSelector = "reward_level";
     wrapper.vm.$nextTick(() => {
@@ -93,7 +100,7 @@ describe("GbStatistics", () => {
   });
 
   test('Change "statSelector" invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.statSelector).toBe("cost_level");
     wrapper.vm.statSelector = "foo";
     wrapper.vm.$nextTick(() => {
@@ -103,7 +110,7 @@ describe("GbStatistics", () => {
   });
 
   test('Change "from" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.from).toBe(1);
     expect(wrapper.vm.errors.from).toBeFalsy();
     wrapper.vm.from = 42;
@@ -115,7 +122,7 @@ describe("GbStatistics", () => {
   });
 
   test('Change "from" value with "statSelector" set to "reward_cost"', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.statSelector = "reward_cost";
     expect(wrapper.vm.from).toBe(1);
     expect(wrapper.vm.errors.from).toBeFalsy();
@@ -128,7 +135,7 @@ describe("GbStatistics", () => {
   });
 
   test('Change "from" value with "statSelector" set to "cost_reward"', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const value = 42;
     wrapper.vm.statSelector = "cost_reward";
     expect(wrapper.vm.from).toBe(1);
@@ -142,7 +149,7 @@ describe("GbStatistics", () => {
   });
 
   test('Change "from" invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const value = -1;
     expect(wrapper.vm.from).toBe(1);
     expect(wrapper.vm.errors.from).toBeFalsy();
@@ -155,7 +162,7 @@ describe("GbStatistics", () => {
   });
 
   test('Change "from" invalid type', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const value = "foo";
     expect(wrapper.vm.from).toBe(1);
     expect(wrapper.vm.errors.from).toBeFalsy();
@@ -168,7 +175,7 @@ describe("GbStatistics", () => {
   });
 
   test('Change "to" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const value = 42;
     expect(wrapper.vm.to).toBe(80);
     expect(wrapper.vm.errors.to).toBeFalsy();
@@ -181,7 +188,7 @@ describe("GbStatistics", () => {
   });
 
   test('Change "to" invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const value = -1;
     expect(wrapper.vm.to).toBe(80);
     expect(wrapper.vm.errors.to).toBeFalsy();
@@ -194,7 +201,7 @@ describe("GbStatistics", () => {
   });
 
   test('Change "to" invalid type', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const value = "foo";
     expect(wrapper.vm.to).toBe(80);
     expect(wrapper.vm.errors.to).toBeFalsy();
@@ -207,7 +214,7 @@ describe("GbStatistics", () => {
   });
 
   test('Change "to" valid value and error with "from"', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.errors.from = 21;
     expect(wrapper.vm.to).toBe(80);
     wrapper.vm.to = 42;
@@ -220,7 +227,7 @@ describe("GbStatistics", () => {
   });
 
   test('Change "hidden" value ', () => {
-    const wrapper = factory();
+    wrapper = factory();
     let value = defaultHidden();
     expect(wrapper.vm.hidden).toEqual(value);
     value[value.length - 1] = false;
@@ -232,7 +239,7 @@ describe("GbStatistics", () => {
   });
 
   test('Change "lang" value', async () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.graphType.cost_level.title).toBe("Evolution of the cost of the levels according to the levels");
 
     wrapper.vm.$i18n.locale = "fr";
@@ -244,7 +251,7 @@ describe("GbStatistics", () => {
   });
 
   test("Change visibility of age", () => {
-    const wrapper = factory();
+    wrapper = factory();
     let value = defaultHidden();
     expect(wrapper.vm.hidden).toEqual(value);
     wrapper.vm.switchVisibility(wrapper.vm.hidden.length - 1);
@@ -255,7 +262,7 @@ describe("GbStatistics", () => {
   });
 
   test("Change visibility of age with invalid value", () => {
-    const wrapper = factory();
+    wrapper = factory();
     let value = defaultHidden();
     expect(wrapper.vm.hidden).toEqual(value);
     wrapper.vm.switchVisibility(-1);

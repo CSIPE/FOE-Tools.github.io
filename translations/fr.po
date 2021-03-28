@@ -1619,6 +1619,9 @@ msgstr "Ère Spatiale : Mars"
 msgid "foe_data.age.SpaceAgeAsteroidBelt"
 msgstr "Ère Spatiale : Ceinture d’Astéroïdes"
 
+msgid "foe_data.age.SpaceAgeVenus"
+msgstr "Ère Spatiale : Vénus"
+
 msgid "foe_data.age_short.NoAge"
 msgstr "SA"
 
