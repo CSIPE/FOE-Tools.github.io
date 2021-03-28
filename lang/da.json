@@ -244,7 +244,7 @@
   "components.promotion_message_builder.variables.message.GBN": "SB navn",
   "components.promotion_message_builder.variables.message.P": "Pladseringer",
   "components.promotion_message_builder.variables.message.OP": "@:(components.gb_investment.gb_investment.table.tfoot.total_preparation)",
-  "components.promotion_message_builder.variables.message.PPx": "Antal FP's, der skal pladseres af ejeren til pladsering \"x\" (\"x\" = 1 - 5)",
+  "components.promotion_message_builder.variables.message.PPx": "Antal FP, der skal lægges af ejeren til pladsering \"x\" (\"x\" = 1 - 5)",
   "components.promotion_message_builder.variables.message.LF": "Linje Feed, tilføj en ny linje",
   "components.promotion_message_builder.template_name": "Skabelon navn",
   "components.promotion_message_builder.errors.template_cannot_have_this_name": "Skabelonen kan ikke have dette navn. Brug et andet navn.",

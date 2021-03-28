@@ -1188,5 +1188,6 @@
   "utils.lock": "Lås",
   "components.site_layout.global_config_dialog.disable_update_notification": "Inaktivera notifikationer om uppdatering",
   "components.site_layout.global_config_dialog.custom_gb_names": "Anpassade namn på MB",
-  "components.gb_investment.custom_name": "Du kan anpassa namn på MB i @:(components.site_layout.global_config)"
+  "components.gb_investment.custom_name": "Du kan anpassa namn på MB i @:(components.site_layout.global_config)",
+  "pwa_update.message": "Appen har blivit uppdaterad. Appen kommer att laddas om inom 5 sekunder."
 }
