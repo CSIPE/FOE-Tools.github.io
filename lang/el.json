@@ -496,7 +496,7 @@
   "components.cf_calculator.block_cfc.other_rq": "αλλες ημερησιες επαναλαμβανομενες αποστολες",
   "components.cf_calculator.block_cfc.supplies_to_use": "προμήθειες που χρειάζονται για UBQ",
   "components.cf_calculator.block_cfc.coins_to_use": "νομίσματα που χρειάζονται για UBQ",
-  "footer_menu.cookie_policy": "πολιτικη cookies",
+  "footer_menu.cookie_policy": "Πολιτική cookies",
   "components.gb_investment.tutorial.table.place": "Αντιστοιχεί στον δείκτη θέσης.",
   "components.gb_investment.gb_investment.table.thead.is_sniper": "Είναι πιθανός sniper?",
   "components.gb_investment.gb_investment.table.thead.spot_snipe": "Θέση/Snipe",
@@ -508,5 +508,16 @@
   "components.cf_calculator.tutorial.suppliesGathered": "Γράψτε την ποσότητα των προμηθειών που θελετε να χρησιμοποιήσετε για την δεύτερη επαναλαμβανόμενη αποστολή.",
   "components.cf_calculator.block_cfc.table_reward.thead.th1": "Σχεδιαγράμματα",
   "components.cf_calculator.block_cfc.second_rq": "2η θέση Συνεισφορά ?",
-  "components.cf_calculator.block_cfc.reward_message.total_rq_completed": "Συνολικές ολοκληρωμένες Επαναλαμβανόμενες Αποστολές"
+  "components.cf_calculator.block_cfc.reward_message.total_rq_completed": "Συνολικές ολοκληρωμένες Επαναλαμβανόμενες Αποστολές",
+  "components.gb_investment.tutorial.gb_select": "Αυτό το πεδίο σας επιτρέπει την γρήγορη εναλλαγή των ΜΚ.\nΥπάρχουν 2 τύποι του επιλογέα.\n\nΟ απλός επιλογέας (παλιά έκδοση) ο οποίος παρουσιάζει μια απλή αναπτυσσόμενη λίστα. Αυτός είναι ο προεπιλεγμένος επιλογέας.\n\n{videoSelect}\n\nΗ αυτόματη-συμπλήρωση με την οποία μπορείς να βρίσκεις τα ΜΚ πληκτρολογώντας γράμματα που εμπεριέχονται στο επιθυμιτό όνομα του ΜΚ:\n\n{videoAutoComplete}",
+  "components.gb_investment.tutorial.display_modes.content": "Αυτό το εργαλείο σας δίνει όλες τις πληροφορίες που ο ιδιοκτήτης και οι επενδυτές χρειάζεται να ξέρουν για να επενδύσουν σε ένα επίπεδο ενός ΜΚ. Έχει δύο επιλογές παρουσίασης:\n\n\"@:(routes.gb_investment.tab.owner_view.title)\" (εκεί που βρίσκεστε) το οποίο παρουσιάζει τις πληροφορίες μόνο στο τρέχον επίπεδο και με μεγάλη λεπτομέρεια.\n\n\"@:(routes.gb_investment.tab.investors_view.title)\" παρουσιάζει τις τιμές διαφόρων επιπέδων σε μορφή πίνακα. Θα βρείτε μόνο τον αριθμό των FP που ο ιδιοκτήτης και οι επενδυτές πρέπει να βάλουν με το προκύπτον κέρδος / ζημία",
+  "components.gb_investment.tutorial.welcome": "Ο σκοπός αυτού του tutorial είναι να εξηγήσει όλα τα χαρακτηριστικά αυτού του εργαλείου.\n\nΜπορείτε να πατήσετε τα παρακάτω link για να μάθετε περισσότερα για αυτά.\nΓια να συνεχίσετε με το tutorial παρακαλώ πατήστε στο κουμπί \"@:(utils.Next)\".",
+  "components.gb_investment.gb_investment.form.submit_global": "Παγκόσμιος υπολογισμός",
+  "components.gb_investment.gb_investment.description.p2_html": "<strong>Σημείωση</strong>: Εάν η ενημέρωση δεν γίνεται αυτόματα, πρώτα ορίστε το επίπεδο του ΜΚ και την συνολική αξία επένδυσης και πατήστε στο \"@:(components.gb_investment.gb_investment.form.submit_global)\". Εάν θέλετε να προσαρμόσετε τις τιμές για κάθε θέση, προσαρμόστε το όπως σας βολεύει και πατήστε στο \"@:(components.gb_investment.gb_investment.form.submit_custom)\".",
+  "components.gb_investment.gb_list_select.info": "Μπορείτε να αλλάξετε το στυλ (παλαιού τύπου επιλογή ή αυτόματη-συμπλήρωση) στις παγκόσμιες ρυθμίσεις.",
+  "components.cf_calculator.tutorial.bonusUbq": "Αριθμός των Αποστολών Αγενεθλείων που μπορείτε (στατιστικά) να ολοκληρώσετε με τα αρχικά νομίσματα και προμήθειες σας και τι θα κερδίσετε.",
+  "components.cf_calculator.tutorial.dailyUbq": "Αριθμός των Αποστολών Αγενεθλείων που μπορείτε να ολοκληρώσετε σύμφωνα με τα νομίσματα και τις προμήθειες που είστε πρόθυμοι να ξοδέψετε.",
+  "components.cf_calculator.block_cfc.infinity_generator.label": "Συσσωρευμένες αποστολές",
+  "components.cf_calculator.block_cfc.infinity_generator.message": "Με το τρέχον μπόνους του @:(foe_data.gb.Chateau_Frontenac), θα κερδίσετε περισσότερα νομίσματα και προμήθειες από όσα θα χρειαστούν για να ολοκληρώσεις τις αποστολές. Παρακαλώ επιλέξτε τον αριθμό των \"@:(components.cf_calculator.block_cfc.infinity_generator.label)\" που θες να κάνεις.",
+  "components.cf_calculator.block_cfc.reward_message.daily_ubq": "Ημερήσιες Αποστολές Αγενεθλείων: {count}"
 }

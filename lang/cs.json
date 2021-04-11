@@ -1137,7 +1137,7 @@
   "seo.keywords.medals": "medajle",
   "seo.keywords.military_units": "Vojenské jednotky",
   "components.gb_investment.gb_investment.table.tbody.button_show_extra_investor": "Ukázat extra investora | Ukázat extra investory | ",
-  "components.gb_investment.gb_investment.table.tbody.button_hide_extra_investor": " | Schovat extra investory",
+  "components.gb_investment.gb_investment.table.tbody.button_hide_extra_investor": "Skrýt extra investora | Skrýt extra investory | Skrýt extra investory",
   "components.gb_investment.gb_investment.table.tbody.loss": "Tento hráč prodělá bod | Tento hráč prodělá body | ",
   "components.gb_forecast_cost.message.diff": " | S bonusovými investicemi ušetříte {count} FP",
   "components.secure_position.block_place.fp_to_complete_level": " | Počet zbývajících FB k dokončení úrovně:",

@@ -2,6 +2,39 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.85.1](https://github.com/FOE-Tools/FOE-Tools.github.io/compare/v2.85.0...v2.85.1) (2021-03-28)
+
+### Translation
+
+- Translated using Weblate (Danish) ([1d15778](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/1d15778d0c5ffa43455f8f50552950072db5c866))
+- Translated using Weblate (Greek) ([0d15f43](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/0d15f43746c8e561c99702e13f5e412c75bf3707))
+- Translated using Weblate (Greek) ([8af5e9e](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/8af5e9ebcaa937d5aad68b4fc4d2fce84450ac01))
+- Translated using Weblate (Greek) ([e974087](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/e97408739dce3aaf0e70e5641762bf1b60c01809))
+- Translated using Weblate (Russian) ([cba381f](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/cba381f5d95876d316d82d842438b595bbe9482f))
+- Translated using Weblate (Swedish) ([cc0560f](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/cc0560f78e258519945648f8679056bbfb00ba2b))
+- update translation ([3c712b1](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/3c712b1a811773773362c7dba1c5e36aba70bffb))
+
+## [2.85.0](https://github.com/FOE-Tools/FOE-Tools.github.io/compare/v2.84.1...v2.85.0) (2021-03-21)
+
+### Features
+
+- add notification that will reload the page when app has been updated ([0c915f3](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/0c915f3c56b980a70d38d50f294fa511948b1dde))
+
+### Bug Fixes
+
+- **add-to-home-screen:** fix issues related to "Add To Home Screen" button ([ad2ea9b](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/ad2ea9bc202baf91a3110ed7576420098ca03374))
+- **cookie-consent:** fix issue of cookie consent expire after 7 days. Now ask every years. ([81f361a](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/81f361a3d3e60fbc101a5a5ab3de2e4fab61006c))
+- **global-settings:** fix crash related to GB Names ([08b88e9](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/08b88e92180bc3554930146a0b78843a13d8d9a9)), closes [#445](https://github.com/FOE-Tools/FOE-Tools.github.io/issues/445)
+- **modal:** fix modal close on 'escape' key pressed ([8de4020](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/8de40206a6c93fa9a8f8990b77b21286937cca27))
+- **modal:** fix modal greater than screen height ([fb98b5e](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/fb98b5ef4c3b19b5f2130b0e5104936e6cf98feb))
+
+### Translation
+
+- Translated using Weblate (Czech) ([66c1b96](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/66c1b969a3b0e5368b181bbd9daccca59aa38403))
+- Translated using Weblate (Russian) ([a07f02c](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/a07f02ca6cde3f11bc6c40014048adbcc3a8f817))
+- Translated using Weblate (Swedish) ([e367a63](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/e367a63142f4333ddaad27f607dc63009fc37fec))
+- update translation ([a7c5294](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/a7c5294c7f1af4cbf38b78cd68f538e574679651))
+
 ### [2.84.1](https://github.com/FOE-Tools/FOE-Tools.github.io/compare/v2.84.0...v2.84.1) (2021-03-14)
 
 ### Bug Fixes
