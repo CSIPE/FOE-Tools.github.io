@@ -14,6 +14,8 @@ import ImportPromotionMessage from "~/components/import-promotion-message/Import
 import { defaultPromotionMessages, buildMessage } from "~/scripts/promotion-message-builder";
 import { getVideoTag, formatTuto } from "~/scripts/tutorial";
 import TProgress from "~/components/t-progress/TProgress";
+import GbReward from "~/components/gb-reward/GbReward";
+import GbPatronReward from "~/components/gb-patron-reward/GbPatronReward";
 
 const i18nPrefix = "components.gb_investment.";
 
@@ -1483,5 +1485,7 @@ export default {
     ContentLoader,
     TTag,
     TProgress,
+    GbReward,
+    GbPatronReward,
   },
 };

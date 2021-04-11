@@ -1265,6 +1265,24 @@ msgstr "Les données ne sont pas valides"
 msgid "components.import_promotion_message.template_imported"
 msgstr "Modèle importé"
 
+msgid "components.gb_data.icon_alt"
+msgstr "Liste des bonus"
+
+msgid "components.gb_data.missing_values"
+msgstr "Valeurs manquantes."
+
+msgid "components.gb_patron_data.icon_alt"
+msgstr "Liste des récompenses"
+
+msgid "components.gb_patron_data.rewards.fp"
+msgstr "PFs"
+
+msgid "components.gb_patron_data.rewards.bp"
+msgstr "Plans"
+
+msgid "components.gb_patron_data.rewards.medals"
+msgstr "Médailles"
+
 msgid "routes.home.title"
 msgstr "@:(common.site_title)"
 
@@ -3552,6 +3570,36 @@ msgstr "Site d'exploration"
 
 msgid "foe_data.bonus.exploration_site.gb_description"
 msgstr "---"
+
+msgid "foe_data.bonus.advanced_tactics.name"
+msgstr "Tactiques avancées"
+
+msgid "foe_data.bonus.advanced_tactics.gb_description"
+msgstr "Les unités d'attaque et de défense voient leurs valeurs d'attaque et de défense augmentées d'un certain pourcentage."
+
+msgid "foe_data.bonus.diplomatic_gifts.name"
+msgstr "Cadeaux diplomatiques"
+
+msgid "foe_data.bonus.diplomatic_gifts.gb_description"
+msgstr "Les premières combinaisons réussies lors d'une négociation (colonies exclues) ont une chance de vous octroyer une récompense aléatoire."
+
+msgid "foe_data.bonus.missile_launch.name"
+msgstr "Lancement de missile"
+
+msgid "foe_data.bonus.missile_launch.gb_description"
+msgstr "Lors des premières batailles, vous avez une chance de tuer la moitié des unités ennemies au début du combat. La compétence ne s'applique qu'à la première vague des batailles en deux vagues."
+
+msgid "foe_data.bonus.plunder_repel.name"
+msgstr "Résistance au pillage"
+
+msgid "foe_data.bonus.plunder_repel.gb_description"
+msgstr "Les premières tentatives de pillage que nous subissons ont une chance d'être repoussées."
+
+msgid "foe_data.bonus.spoils_of_war.name"
+msgstr "Butins de guerre"
+
+msgid "foe_data.bonus.spoils_of_war.gb_description"
+msgstr "Les premières victoires ont une chance de vous octroyer une récompense aléatoire."
 
 msgid "utils.content.tools"
 msgstr "Outils"

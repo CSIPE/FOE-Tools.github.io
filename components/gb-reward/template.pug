@@ -1,0 +1,25 @@
+tippy.inline-block.align-middle(
+  interactive,
+  :animate-fill="false",
+  placement="top",
+  distant="7",
+  theme="light",
+  animation="fade",
+  trigger="mouseenter focus",
+  arrow
+)
+  template(#trigger)
+    img(width="24", height="24", :src="icon", :alt="$t(i18nPrefix + 'icon_alt')", :title="$t(i18nPrefix + 'icon_alt')")
+
+  template(v-if="!missingValues")
+    p.flex(v-for="(elt, key) in rewards")
+      template(v-if="!key.includes('afterModern')")
+        img.inline-block(
+          width="24",
+          height="24",
+          :src="'/img/foe/bonus/' + bonus[key] + '.png'",
+          :alt="$t('foe_data.bonus.' + bonus[key] + '.name')",
+          :title="$t('foe_data.bonus.' + bonus[key] + '.name')"
+        )
+        span &nbsp;{{ $n(getValue(bonus[key], elt)) }}
+  p(v-else) {{ $t(i18nPrefix + 'missing_values') }}

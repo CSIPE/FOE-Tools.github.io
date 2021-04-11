@@ -1,0 +1,53 @@
+tippy.inline-block.align-middle(
+  interactive,
+  :animate-fill="false",
+  placement="top",
+  distant="7",
+  theme="light",
+  animation="fade",
+  trigger="mouseenter focus",
+  arrow
+)
+  template(#trigger)
+    img(
+      width="24",
+      height="24",
+      :src="rewardIcon",
+      :alt="$t(i18nPrefix + 'icon_alt')",
+      :title="$t(i18nPrefix + 'icon_alt')"
+    )
+
+  p.flex
+    img.inline-block(
+      width="24",
+      height="24",
+      :src="'/img/foe/bonus/research.png'",
+      :alt="$t(i18nPrefix + 'rewards.fp')",
+      :title="$t(i18nPrefix + 'rewards.fp')"
+    )
+    span &nbsp;{{ $n(rewards.fp) }}
+      template(v-if="rewards.fp") &nbsp;({{ $n(Math.round(rewards.fp * arcBonusNormalized)) }})
+
+  p.flex
+    img.inline-block(
+      width="24",
+      height="24",
+      :src="'/img/foe/bonus/blueprint.png'",
+      :alt="$t(i18nPrefix + 'rewards.bp')",
+      :title="$t(i18nPrefix + 'rewards.bp')"
+    )
+    span(v-if="'bp' in rewards") &nbsp;{{ $n(rewards.bp) }}
+      template(v-if="rewards.bp") &nbsp;({{ $n(Math.round(rewards.bp * arcBonusNormalized)) }})
+    span(v-else) &nbsp;?
+
+  p.flex
+    img.inline-block(
+      width="24",
+      height="24",
+      :src="'/img/foe/bonus/medal.png'",
+      :alt="$t(i18nPrefix + 'rewards.medals')",
+      :title="$t(i18nPrefix + 'rewards.medals')"
+    )
+    span(v-if="'medals' in rewards") &nbsp;{{ $n(rewards.medals) }}
+      template(v-if="rewards.medals") &nbsp;({{ $n(Math.round(rewards.medals * arcBonusNormalized)) }})
+    span(v-else) &nbsp;?
