@@ -1,4 +1,9 @@
 require("dotenv").config();
+
+if (!process.env.FA_API_URL || !process.env.FA_API_KEY) {
+  throw new Error("FA_API_URL or FA_API_KEY not set.");
+}
+
 const axios = require("axios").create({
   baseURL: process.env.FA_API_URL,
   headers: { "x-api-key": process.env.FA_API_KEY },
@@ -108,16 +113,28 @@ function updateGbData(gbData = require("./all_gb_from_api.json")) {
         return 0;
       });
 
-      if (gb.levels[i].reward && gb.levels[i].reward[0].fp !== currentDataFromAPI.patron_bonus[0].forgepoints) {
-        console.error(
-          `Level ${i + 1} of ${elt}: firt place FP reward defer between Sheet (${gb.levels[i].reward[0].fp}) and API (${
-            currentDataFromAPI.patron_bonus[0].forgepoints
-          })`
-        );
-        continue;
+      if (currentDataFromAPI.patron_bonus.length) {
+        if (gb.levels[i].reward && gb.levels[i].reward[0].fp !== currentDataFromAPI.patron_bonus[0].forgepoints) {
+          console.error(
+            `Level ${i + 1} of ${elt}: first place FP reward defer between Sheet (${
+              gb.levels[i].reward[0].fp
+            }) and API (${currentDataFromAPI.patron_bonus[0].forgepoints})`
+          );
+          continue;
+        }
       }
 
-      gb.gbReward[i + 1] = currentDataFromAPI.rewards;
+      let addGbReward = true;
+      for (const rewardKey in currentDataFromAPI.rewards) {
+        if (currentDataFromAPI.rewards[rewardKey] === "") {
+          addGbReward = false;
+          break;
+        }
+      }
+
+      if (addGbReward) {
+        gb.gbReward[i + 1] = currentDataFromAPI.rewards;
+      }
 
       currentDataFromAPI.patron_bonus = currentDataFromAPI.patron_bonus.map((elt) => ({
         fp: elt.forgepoints,
@@ -143,10 +160,10 @@ function updateGbData(gbData = require("./all_gb_from_api.json")) {
     let resultFile = `const ages = require("../ages.json");
 const ageCost = require("../ages-cost/${
       gb.key === "Galata_Tower" ? "Galata" : gb.key === "Oracle_of_Delphi" ? "Oracle" : gb.age
-    }.json");
+    }");
 ${
   ["HighMiddleAges", "NoAge"].includes(gb.age) && !(gb.key === "Galata_Tower")
-    ? 'const defaultCost = require("../ages-cost/defaultCost.json")'
+    ? 'const defaultCost = require("../ages-cost/defaultCost");'
     : ""
 }
 

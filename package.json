@@ -28,7 +28,7 @@
     "test:unit:coverage:dev": "NODE_OPTIONS=--max_old_space_size=5120 jest --clearCache && NODE_OPTIONS=--max_old_space_size=5120 jest --coverage=true",
     "test:unit:watch": "NODE_OPTIONS=--max_old_space_size=5120 jest --clearCache && NODE_OPTIONS=--max_old_space_size=5120 jest --coverage=false --testRegex ^.*.test.js$ test/unit/ --watch",
     "test": "NODE_OPTIONS=--max_old_space_size=5120 npm run test:unit",
-    "update-foe-data": "node .scripts/update-gb-data.js",
+    "update-foe-data": "node .scripts/update-gb-data.js && node .scripts/from_api/update_from_api.js",
     "i18n:watch": "vuei18n-po --watch --messagesDir=lang translations/*.po",
     "i18n:generate": "vuei18n-po --messagesDir=lang translations/*.po"
   },
