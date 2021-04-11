@@ -67,11 +67,6 @@ export default {
     lang: get("locale"),
   },
   watch: {
-    lang() {
-      if (this.$data.result !== null) {
-        this.updatePromotionMessage();
-      }
-    },
     templateName(val) {
       if (!val || !val.length) {
         this.errors.templateName.found = true;
