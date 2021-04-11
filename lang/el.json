@@ -519,5 +519,8 @@
   "components.cf_calculator.tutorial.dailyUbq": "Αριθμός των Αποστολών Αγενεθλείων που μπορείτε να ολοκληρώσετε σύμφωνα με τα νομίσματα και τις προμήθειες που είστε πρόθυμοι να ξοδέψετε.",
   "components.cf_calculator.block_cfc.infinity_generator.label": "Συσσωρευμένες αποστολές",
   "components.cf_calculator.block_cfc.infinity_generator.message": "Με το τρέχον μπόνους του @:(foe_data.gb.Chateau_Frontenac), θα κερδίσετε περισσότερα νομίσματα και προμήθειες από όσα θα χρειαστούν για να ολοκληρώσεις τις αποστολές. Παρακαλώ επιλέξτε τον αριθμό των \"@:(components.cf_calculator.block_cfc.infinity_generator.label)\" που θες να κάνεις.",
-  "components.cf_calculator.block_cfc.reward_message.daily_ubq": "Ημερήσιες Αποστολές Αγενεθλείων: {count}"
+  "components.cf_calculator.block_cfc.reward_message.daily_ubq": "Ημερήσιες Αποστολές Αγενεθλείων: {count}",
+  "components.cf_calculator.block_cfc.reward_message.bonus_ubq": "Μπόνους UQB'S: {count}",
+  "components.gb_investment.tutorial.add_investors": "Μήπως έχεις τυχαίες επενδύσεις στα μεγάλα κτήρια σου που είναι μεγαλύτερες η μικρότερες από τους υπολογισμούς σου;\nΒάλε όλες τις περίεργες επενδύσεις σε αυτό το πεδίο ξεχωριστά.\nΑυτό το εργαλείο θα υπολογίσει τους νέεους ασφαλείς Forge πόντους σου και θα σου δείξει επίσης ποιές θέσεις έχεις καλύψει.",
+  "components.gb_investment.tutorial.your_arc_bonus": "Αυτό το πεδίο είναι για επενδυτές και πρέπει να χρησιμοποιηθεί με \"@:(components.gb_investment.gb_investment.form.show_snipe)\" set to \"@:(utils.Yes)\".\nΣου λέει πόσους Forge πόντους πρέπει να βάλεις στο επίπεδο του μεγάλου κτηρίου για να ασφαλίσεις μία θέση σε άτομο,επίσης σου δίνει το κέρδος η την ζημιά που θα έχεις."
 }
