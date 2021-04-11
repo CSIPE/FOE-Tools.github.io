@@ -1232,6 +1232,24 @@ msgstr "Data are invalid"
 msgid "components.import_promotion_message.template_imported"
 msgstr "Template imported"
 
+msgid "components.gb_data.icon_alt"
+msgstr "Bonus list"
+
+msgid "components.gb_data.missing_values"
+msgstr "Missing values."
+
+msgid "components.gb_patron_data.icon_alt"
+msgstr "Reward list"
+
+msgid "components.gb_patron_data.rewards.fp"
+msgstr "FPs"
+
+msgid "components.gb_patron_data.rewards.bp"
+msgstr "Blueprints"
+
+msgid "components.gb_patron_data.rewards.medals"
+msgstr "Medals"
+
 msgid "routes.home.title"
 msgstr "@:(common.site_title)"
 
@@ -1580,6 +1598,9 @@ msgstr "Space Age: Mars"
 msgid "foe_data.age.SpaceAgeAsteroidBelt"
 msgstr "Space Age: Asteroid Belt"
 
+msgid "foe_data.age.SpaceAgeVenus"
+msgstr "Space Age: Venus"
+
 msgid "foe_data.age_short.NoAge"
 msgstr "NA"
 
@@ -1757,6 +1778,9 @@ msgstr "Star Gazer"
 msgid "foe_data.gb.Space_Carrier"
 msgstr "Space Carrier"
 
+msgid "foe_data.gb.Flying_Island"
+msgstr "Flying Island"
+
 msgid "foe_data.gb_short.Observatory"
 msgstr "Obs"
 
@@ -1876,6 +1900,9 @@ msgstr "SG"
 
 msgid "foe_data.gb_short.Space_Carrier"
 msgstr "SC"
+
+msgid "foe_data.gb_short.Flying_Island"
+msgstr "Island"
 
 msgid "foe_data.gb_short.Galata_Tower"
 msgstr "Galata"
@@ -3505,6 +3532,36 @@ msgstr "Exploration Site"
 
 msgid "foe_data.bonus.exploration_site.gb_description"
 msgstr "---"
+
+msgid "foe_data.bonus.advanced_tactics.name"
+msgstr "Advanced Tactics"
+
+msgid "foe_data.bonus.advanced_tactics.gb_description"
+msgstr "Attacking and defending units have their attack and defense values boosted by a percentage."
+
+msgid "foe_data.bonus.diplomatic_gifts.name"
+msgstr "Diplomatic Gifts"
+
+msgid "foe_data.bonus.diplomatic_gifts.gb_description"
+msgstr "The first number of victorious negotiation combination games (excluding settlements) have a chance of providing you with a random reward."
+
+msgid "foe_data.bonus.missile_launch.name"
+msgstr "Missile Launch"
+
+msgid "foe_data.bonus.missile_launch.gb_description"
+msgstr "For the first number of battles, there is a chance of killing half the enemy units at the start of the battle. For two-wave battles, the skill applies only to the first wave."
+
+msgid "foe_data.bonus.plunder_repel.name"
+msgstr "Plunder Repel"
+
+msgid "foe_data.bonus.plunder_repel.gb_description"
+msgstr "The first number of suffered plunder attempts have a chance of being repelled."
+
+msgid "foe_data.bonus.spoils_of_war.name"
+msgstr "Spoils of War"
+
+msgid "foe_data.bonus.spoils_of_war.gb_description"
+msgstr "The first number of victorious battles have a chance of providing you with a random reward."
 
 msgid "utils.content.tools"
 msgstr "Tools"

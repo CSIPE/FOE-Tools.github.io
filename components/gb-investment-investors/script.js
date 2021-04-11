@@ -589,7 +589,7 @@ export default {
                 0,
                 0,
                 Utils.normalizeNumberValue(this.$data.yourArcBonus),
-                currentLevel.reward[j]
+                currentLevel.reward[j].fp
               )
             );
           }

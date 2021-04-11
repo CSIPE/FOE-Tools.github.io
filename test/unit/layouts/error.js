@@ -18,14 +18,16 @@ const factory = (props = {}) => {
   });
 };
 
+let wrapper;
+
 describe("Error", () => {
   test("Is a Vue instance", () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.isVueInstance()).toBeTruthy();
   });
 
   test("Initialize with unknown error code", () => {
-    const wrapper = factory({
+    wrapper = factory({
       error: {
         statusCode: 42,
         message: "Answer to the Ultimate Question of Life, the Universe, and Everything",
@@ -35,7 +37,7 @@ describe("Error", () => {
   });
 
   test("Initialize with unknown error", () => {
-    const wrapper = factory({
+    wrapper = factory({
       error: {},
     });
     expect(wrapper.isVueInstance()).toBeTruthy();

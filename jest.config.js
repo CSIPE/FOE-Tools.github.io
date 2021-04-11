@@ -71,6 +71,8 @@ module.exports = {
     "!**/components/**/script.js",
     "!**/components/number-input/**",
     "!**/components/campaign-cost/**",
+    "!**/components/gb-reward/**",
+    "!**/components/gb-patron-reward/**",
     "!**/layouts/**/script.js",
     "!**/scripts/tutorial.js",
     "!**/store/global.js",

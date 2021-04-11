@@ -32,9 +32,16 @@ const factory = (propsData = {}, mocks = {}) => {
   });
 };
 
+let wrapper;
+
 describe("GbInvestmentInvestors", () => {
+  afterEach(() => {
+    wrapper.destroy();
+    wrapper = null;
+  });
+
   test("Is a Vue instance", () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.$nextTick(() => {
       expect(wrapper.isVueInstance()).toBeTruthy();
     });
@@ -43,7 +50,7 @@ describe("GbInvestmentInvestors", () => {
   test("Initialize with URL query", () => {
     const showPlaceValues = [true, true, false, false, false];
     const investorPercentageCustom = [92, 91, 90, 85, 80];
-    const wrapper = factory(defaultGb, {
+    wrapper = factory(defaultGb, {
       $route: {
         name: "foo",
         query: {
@@ -77,7 +84,7 @@ describe("GbInvestmentInvestors", () => {
   });
 
   test('Change "from" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = 5;
     expect(wrapper.vm.from).toBe(1);
     wrapper.vm.from = newValue;
@@ -88,7 +95,7 @@ describe("GbInvestmentInvestors", () => {
   });
 
   test('Change "fromInput" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = 5;
     expect(wrapper.vm.fromInput).toBe(0);
     wrapper.vm.fromInput = newValue;
@@ -98,7 +105,7 @@ describe("GbInvestmentInvestors", () => {
   });
 
   test('Change "from" invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = -1;
     expect(wrapper.vm.from).toBe(1);
     wrapper.vm.from = newValue;
@@ -109,7 +116,7 @@ describe("GbInvestmentInvestors", () => {
   });
 
   test('Change "from" invalid type', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = "foo";
     expect(wrapper.vm.from).toBe(1);
     wrapper.vm.from = newValue;
@@ -120,7 +127,7 @@ describe("GbInvestmentInvestors", () => {
   });
 
   test('Change "to" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = 5;
     expect(wrapper.vm.to).toBe(defaultTo);
     expect(wrapper.vm.errors.from).toBe(false);
@@ -133,7 +140,7 @@ describe("GbInvestmentInvestors", () => {
   });
 
   test('Change "to" value and from error', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = 15;
     expect(wrapper.vm.to).toBe(defaultTo);
     wrapper.vm.to = 10;
@@ -150,7 +157,7 @@ describe("GbInvestmentInvestors", () => {
   });
 
   test('Change "to" invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = -1;
     expect(wrapper.vm.to).toBe(defaultTo);
     wrapper.vm.to = newValue;
@@ -161,7 +168,7 @@ describe("GbInvestmentInvestors", () => {
   });
 
   test('Change "to" invalid type', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = "foo";
     expect(wrapper.vm.to).toBe(defaultTo);
     wrapper.vm.to = newValue;
@@ -172,7 +179,7 @@ describe("GbInvestmentInvestors", () => {
   });
 
   test('Change "customPercentage" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     let newValue = true;
     expect(wrapper.vm.customPercentage).toEqual(false);
     wrapper.vm.customPercentage = newValue;
@@ -197,7 +204,7 @@ describe("GbInvestmentInvestors", () => {
   });
 
   test('Change "investorPercentageGlobal" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = 80;
     expect(wrapper.vm.investorPercentageGlobal).toBe(defaultInvestorPercentageGlobal);
     wrapper.vm.investorPercentageGlobal = newValue;
@@ -213,7 +220,7 @@ describe("GbInvestmentInvestors", () => {
   });
 
   test('Change "investorPercentageGlobal" invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = -1;
     expect(wrapper.vm.investorPercentageGlobal).toBe(defaultInvestorPercentageGlobal);
     wrapper.vm.investorPercentageGlobal = newValue;
@@ -228,7 +235,7 @@ describe("GbInvestmentInvestors", () => {
   });
 
   test('Change "investorPercentageGlobal" invalid type', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = "foo";
     expect(wrapper.vm.investorPercentageGlobal).toBe(defaultInvestorPercentageGlobal);
     wrapper.vm.investorPercentageGlobal = newValue;
@@ -243,7 +250,7 @@ describe("GbInvestmentInvestors", () => {
   });
 
   test('Change "investorPercentageCustom" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = [92, 91, 90, 85, 80];
     expect(wrapper.vm.investorPercentageCustom).toEqual(defaultInvestorPercentageCustom);
     wrapper.vm.investorPercentageCustom = newValue;
@@ -256,7 +263,7 @@ describe("GbInvestmentInvestors", () => {
   });
 
   test('Change "investorPercentageCustom" invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = [90, -1, 90, 90, 90];
     expect(wrapper.vm.investorPercentageCustom).toEqual(defaultInvestorPercentageCustom);
     wrapper.vm.investorPercentageCustom = newValue;
@@ -269,7 +276,7 @@ describe("GbInvestmentInvestors", () => {
   });
 
   test('Change "investorPercentageCustom" invalid type', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = [90, "foo", 90, 90, 90];
     expect(wrapper.vm.investorPercentageCustom).toEqual(defaultInvestorPercentageCustom);
     wrapper.vm.investorPercentageCustom = newValue;
@@ -282,7 +289,7 @@ describe("GbInvestmentInvestors", () => {
   });
 
   test('Change "takingPlaceInConsideration" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     let newValue = 1;
     expect(wrapper.vm.takingPlaceInConsideration).toBe(0);
 
@@ -300,7 +307,7 @@ describe("GbInvestmentInvestors", () => {
   });
 
   test('Change "takingPlaceInConsideration" invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = -1;
     expect(wrapper.vm.takingPlaceInConsideration).toBe(0);
     wrapper.vm.takingPlaceInConsideration = newValue;
@@ -311,7 +318,7 @@ describe("GbInvestmentInvestors", () => {
   });
 
   test('Change "yourArcBonus" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.yourArcBonus).toBe(90.6);
     expect(wrapper.vm.errors.yourArcBonus).toBeFalsy();
     wrapper.vm.yourArcBonus = 123;
@@ -323,7 +330,7 @@ describe("GbInvestmentInvestors", () => {
   });
 
   test('Change "yourArcBonus" invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.yourArcBonus).toBe(90.6);
     expect(wrapper.vm.errors.yourArcBonus).toBeFalsy();
     wrapper.vm.yourArcBonus = -1;
@@ -335,7 +342,7 @@ describe("GbInvestmentInvestors", () => {
   });
 
   test('Change "yourArcBonus" invalid type', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const invalidValueType = "foo";
     expect(wrapper.vm.yourArcBonus).toBe(90.6);
     expect(wrapper.vm.errors.yourArcBonus).toBeFalsy();
@@ -348,7 +355,7 @@ describe("GbInvestmentInvestors", () => {
   });
 
   test('Change "showPlace" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     let newValue = [true, true, false, false, false];
     expect(wrapper.vm.showPlace).toEqual([true, false, false, false, false]);
     wrapper.vm.showPlace = newValue;
@@ -359,7 +366,7 @@ describe("GbInvestmentInvestors", () => {
   });
 
   test('Call "goTo"', () => {
-    const wrapper = factory(
+    wrapper = factory(
       {},
       {
         $router: {
@@ -370,12 +377,13 @@ describe("GbInvestmentInvestors", () => {
     wrapper.vm.goTo("foo");
     wrapper.vm.$nextTick(() => {
       expect(wrapper.vm.$router.push.mock.calls.length).toBe(1);
-      expect(wrapper.vm.$router.push.mock.calls[0][0]).toEqual("/gb-investment/foo/");
+      expect(wrapper.vm.$router.push.mock.calls[0][0])
+        .toEqual("https://test.foe-tools.github.io/{\"name\":\"GbInvestment\",\"params\":{\"gb\":\"foo\"}}");
     });
   });
 
   test('Call "checkFrom" with empty string', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.$nextTick(() => {
       expect(wrapper.vm.errors.from).toBe(false);
       expect(wrapper.vm.checkFrom("")).toBe(false);
@@ -385,7 +393,7 @@ describe("GbInvestmentInvestors", () => {
   });
 
   test('Call "checkFrom" with invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newValue = -1;
     wrapper.vm.$nextTick(() => {
       expect(wrapper.vm.errors.from).toBe(false);

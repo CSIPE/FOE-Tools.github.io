@@ -34,7 +34,7 @@ export default {
         const ownerPreparation = [402, 402, 421, 421, 430];
 
         for (let i = 0; i < Observatory.levels[9].reward.length; i++) {
-          if (Observatory.levels[9].reward[i] <= 0) {
+          if (Observatory.levels[9].reward[i].fp <= 0) {
             continue;
           }
           placesInterpolationValues.push([
@@ -67,11 +67,6 @@ export default {
     lang: get("locale"),
   },
   watch: {
-    lang() {
-      if (this.$data.result !== null) {
-        this.updatePromotionMessage();
-      }
-    },
     templateName(val) {
       if (!val || !val.length) {
         this.errors.templateName.found = true;

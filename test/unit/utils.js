@@ -31,6 +31,8 @@ export function getDefaultStore(profileID = "testID", customConf = {}) {
       donationConversion: "",
       currentProfile: profileID,
       profiles: [{ id: profileID, name: "Foo Bar" }],
+      customGbName: {},
+      cookieConsentExpirationDate: "",
     },
     profileStore: {
       profiles: {},

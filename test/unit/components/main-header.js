@@ -22,14 +22,21 @@ const factory = (mocks = {}) => {
   });
 };
 
+let wrapper;
+
 describe("Default", () => {
+  afterEach(() => {
+    wrapper.destroy();
+    wrapper = null;
+  });
+
   test("Is a Vue instance", () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.isVueInstance()).toBeTruthy();
   });
 
   test("Change route", () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.burgerMenuVisible = true;
 
     wrapper.vm.$route.path = "bar";
@@ -40,14 +47,14 @@ describe("Default", () => {
   });
 
   test('Call "toggleMenu"', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.burgerMenuVisible).toBe(false);
     wrapper.vm.toggleMenu();
     expect(wrapper.vm.burgerMenuVisible).toBe(true);
   });
 
   test('Call "goTo"', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.goTo("Observatory");
 
     expect(wrapper.vm.$router.push.mock.calls.length).toBe(1);

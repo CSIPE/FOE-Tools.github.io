@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Utils from "~/scripts/utils";
 import { splitGoods } from "~/scripts/trade";
-import ages from "~/lib/foe-data/ages";
+import ages from "~/lib/foe-data/ages.json";
 import YesNo from "~/components/yes-no/YesNo";
 import numberinput from "~/components/number-input/NumberInput";
 

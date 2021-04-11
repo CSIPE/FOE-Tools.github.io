@@ -347,7 +347,7 @@ describe("FoeGbInvestment", () => {
 
     test("Throw error when invalid type for gb[3].reward[1]", () => {
       const deepCopy = JSON.parse(JSON.stringify(agesCost.BronzeAge));
-      deepCopy[3].reward[1] = "a";
+      deepCopy[3].reward[1].fp = "a";
       expect(() => GbProcess.ComputeLevelInvestment(10, [0, 0, 0, 0, 0], deepCopy, [])).toThrow(
         new Errors.InvalidTypeError({
           expected: "number",

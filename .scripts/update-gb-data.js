@@ -5,6 +5,7 @@ const path = require("path");
 let config = require("./config.json");
 const urlConfig = require("./url.json");
 const locale = require("../lang/en");
+const { generateReward } = require("../lib/foe-data/utils");
 
 const ages = [
   "BronzeAge",
@@ -25,6 +26,7 @@ const ages = [
   "VirtualFuture",
   "SpaceAgeMars",
   "SpaceAgeAsteroidBelt",
+  "SpaceAgeVenus",
 ];
 
 const promises = [];
@@ -41,10 +43,7 @@ function updateAge(index) {
   const age = ages[index];
 
   let results = [];
-  let result = `const { generateReward } = require("../utils");
-
-module.exports = [
-`;
+  let result = `module.exports = [\n`;
   return new Promise((resolve) => {
     download(urlConfig.url + urlConfig[age])
       .pipe(
@@ -71,19 +70,20 @@ module.exports = [
           if (!results[i].reward) {
             break;
           }
-          result += `  { cost: ${results[i].cost}, reward: generateReward(${results[i].reward}) },\n`;
+          result += `  { cost: ${results[i].cost}, reward: ${JSON.stringify(
+            generateReward(parseInt(results[i].reward))
+          )} },\n`;
           counter++;
         }
         counter += age !== "HighMiddleAges" ? 0 : 9;
 
         result += `];\n`;
 
+        fs.writeFileSync(
+          path.join(__dirname, `../lib/foe-data/ages-cost/${age !== "HighMiddleAges" ? age : "defaultCost"}.js`),
+          result
+        );
         if (counter > config[age]) {
-          fs.writeFileSync(
-            path.join(__dirname, `../lib/foe-data/ages-cost/${age !== "HighMiddleAges" ? age : "defaultCost"}.js`),
-            result
-          );
-
           diff[age] = {
             age,
             from: config[age] + 1,

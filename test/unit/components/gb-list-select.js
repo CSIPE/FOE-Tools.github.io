@@ -16,16 +16,23 @@ const factory = () => {
   });
 };
 
+let wrapper;
+
 describe("GbListSelect", () => {
+  afterEach(() => {
+    wrapper.destroy();
+    wrapper = null;
+  });
+
   test("Is a Vue instance", () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.$nextTick(() => {
       expect(wrapper.isVueInstance()).toBeTruthy();
     });
   });
 
   test('Change "selected" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newGb = "Statue_of_Zeus";
     expect(wrapper.vm.selected).toBe(defaultGb);
     wrapper.vm.selected = newGb;
@@ -37,7 +44,7 @@ describe("GbListSelect", () => {
   });
 
   test('Change "selected" invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const newGb = "foo";
     expect(wrapper.vm.selected).toBe(defaultGb);
     wrapper.vm.selected = newGb;

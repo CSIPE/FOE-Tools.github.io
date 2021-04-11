@@ -1,0 +1,272 @@
+[
+  {
+    "cost": 50,
+    "reward": [
+      {
+        "fp": 5,
+        "bp": 0,
+        "medals": 13
+      },
+      {
+        "fp": 5,
+        "bp": 0,
+        "medals": 7
+      },
+      {
+        "fp": 0,
+        "bp": 0,
+        "medals": 3
+      },
+      {
+        "fp": 0,
+        "bp": 0,
+        "medals": 1
+      },
+      {
+        "fp": 0,
+        "bp": 0,
+        "medals": 1
+      }
+    ]
+  },
+  {
+    "cost": 70,
+    "reward": [
+      {
+        "fp": 10,
+        "bp": 1,
+        "medals": 18
+      },
+      {
+        "fp": 5,
+        "bp": 0,
+        "medals": 9
+      },
+      {
+        "fp": 0,
+        "bp": 0,
+        "medals": 5
+      },
+      {
+        "fp": 0,
+        "bp": 0,
+        "medals": 2
+      },
+      {
+        "fp": 0,
+        "bp": 0,
+        "medals": 1
+      }
+    ]
+  },
+  {
+    "cost": 130,
+    "reward": [
+      {
+        "fp": 15,
+        "bp": 1,
+        "medals": 33
+      },
+      {
+        "fp": 10,
+        "bp": 1,
+        "medals": 17
+      },
+      {
+        "fp": 5,
+        "bp": 1,
+        "medals": 8
+      },
+      {
+        "fp": 0,
+        "bp": 0,
+        "medals": 3
+      },
+      {
+        "fp": 0,
+        "bp": 0,
+        "medals": 2
+      }
+    ]
+  },
+  {
+    "cost": 200,
+    "reward": [
+      {
+        "fp": 20,
+        "bp": 1,
+        "medals": 50
+      },
+      {
+        "fp": 10,
+        "bp": 1,
+        "medals": 25
+      },
+      {
+        "fp": 5,
+        "bp": 1,
+        "medals": 13
+      },
+      {
+        "fp": 0,
+        "bp": 1,
+        "medals": 5
+      },
+      {
+        "fp": 0,
+        "bp": 1,
+        "medals": 3
+      }
+    ]
+  },
+  {
+    "cost": 270,
+    "reward": [
+      {
+        "fp": 30,
+        "bp": 2,
+        "medals": 68
+      },
+      {
+        "fp": 15,
+        "bp": 1,
+        "medals": 34
+      },
+      {
+        "fp": 5,
+        "bp": 1,
+        "medals": 17
+      },
+      {
+        "fp": 0,
+        "bp": 1,
+        "medals": 7
+      },
+      {
+        "fp": 0,
+        "bp": 1,
+        "medals": 3
+      }
+    ]
+  },
+  {
+    "cost": 330,
+    "reward": [
+      {
+        "fp": 35,
+        "bp": 2,
+        "medals": 83
+      },
+      {
+        "fp": 20,
+        "bp": 1,
+        "medals": 42
+      },
+      {
+        "fp": 5,
+        "bp": 1,
+        "medals": 21
+      },
+      {
+        "fp": 0,
+        "bp": 1,
+        "medals": 8
+      },
+      {
+        "fp": 0,
+        "bp": 1,
+        "medals": 4
+      }
+    ]
+  },
+  {
+    "cost": 420,
+    "reward": [
+      {
+        "fp": 45,
+        "bp": 2,
+        "medals": 105
+      },
+      {
+        "fp": 25,
+        "bp": 2,
+        "medals": 53
+      },
+      {
+        "fp": 10,
+        "bp": 1,
+        "medals": 26
+      },
+      {
+        "fp": 5,
+        "bp": 1,
+        "medals": 11
+      },
+      {
+        "fp": 0,
+        "bp": 1,
+        "medals": 5
+      }
+    ]
+  },
+  {
+    "cost": 490,
+    "reward": [
+      {
+        "fp": 50,
+        "bp": 3,
+        "medals": 123
+      },
+      {
+        "fp": 25,
+        "bp": 2,
+        "medals": 62
+      },
+      {
+        "fp": 10,
+        "bp": 1,
+        "medals": 31
+      },
+      {
+        "fp": 5,
+        "bp": 1,
+        "medals": 12
+      },
+      {
+        "fp": 0,
+        "bp": 1,
+        "medals": 6
+      }
+    ]
+  },
+  {
+    "cost": 570,
+    "reward": [
+      {
+        "fp": 60,
+        "bp": 3,
+        "medals": 143
+      },
+      {
+        "fp": 30,
+        "bp": 2,
+        "medals": 72
+      },
+      {
+        "fp": 10,
+        "bp": 2,
+        "medals": 36
+      },
+      {
+        "fp": 5,
+        "bp": 1,
+        "medals": 14
+      },
+      {
+        "fp": 0,
+        "bp": 1,
+        "medals": 7
+      }
+    ]
+  }
+]

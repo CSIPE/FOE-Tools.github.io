@@ -33,6 +33,7 @@ $ageColors: (
   "VirtualFuture": #551a8b,
   "SpaceAgeMars": #bb653d,
   "SpaceAgeAsteroidBelt": #094ebd,
+  "SpaceAgeVenus": #ddc500,
 );
 
 @each $key, $color in $ageColors {

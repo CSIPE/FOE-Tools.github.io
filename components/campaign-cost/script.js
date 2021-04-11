@@ -2,7 +2,7 @@ import Vue from "vue";
 import clone from "lodash.clonedeep";
 import set from "lodash.set";
 import lodashValues from "lodash.values";
-import allAges from "~/lib/foe-data/ages";
+import allAges from "~/lib/foe-data/ages.json";
 import Utils from "~/scripts/utils";
 
 const i18nPrefix = "components.campaign_cost.";
@@ -11,6 +11,7 @@ let campaignCost = {};
 
 const ages = clone(allAges);
 delete ages.NoAge;
+delete ages.SpaceAgeVenus;
 
 export default {
   name: "CampaignCost",

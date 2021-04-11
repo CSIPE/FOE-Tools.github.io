@@ -247,7 +247,13 @@
             // Place
             td.px-6.py-2.whitespace-nowrap.text-right {{ $n(i + 1) }}
             // Default reward
-            td.px-6.py-2.whitespace-nowrap.text-right {{ $n(place.reward) }}
+            td.px-6.py-2.whitespace-nowrap.text-right
+              span.align-middle.mr-2 {{ $n(place.reward) }}
+              gbPatronReward(
+                :iconIndex="i",
+                :arcBonus="investorPercentageCustom[i]",
+                :rewards="$props.gb.levels[level - 1].reward[i]"
+              )
             // Owner preparation
             td.px-6.py-2.whitespace-nowrap.text-right
               span(v-if="place.preparation > 0 && ownerInvestmentNormalized > 0") {{ $n(place.preparation) }} (
@@ -417,7 +423,8 @@
               class="dark:text-white",
               :colspan="tutoMode ? maxColumns - 1 : nbColumns - 1"
             ) {{ $t($data.i18nPrefix + 'gb_investment.table.tfoot.level_cost') }}
-            td.px-6.py-2.whitespace-nowrap.text-right {{ $n(result.cost) }}
+            td.px-6.py-2.whitespace-nowrap.text-right {{ $n(result.cost) }}&nbsp;
+              GbReward(v-if="gb.gbReward[level - 1]", :rewards="gb.gbReward[level] ? gb.gbReward[level] : {}")
 
     //////////////////////////
     // Mobile table version //
@@ -447,7 +454,13 @@
 
           // Default reward
           .col-span-4.py-3.text-left.text-xs.font-medium.text-gray-500.uppercase.tracking-wider(class="dark:text-white") {{ $t($data.i18nPrefix + 'gb_investment.table.thead.th2') }}
-          .col-span-2.text-right {{ $n(place.reward) }}
+          .col-span-2.text-right
+            span.align-middle.mr-2 {{ $n(place.reward) }}
+            gbPatronReward(
+              :iconIndex="i",
+              :arcBonus="investorPercentageCustom[i]",
+              :rewards="$props.gb.levels[level - 1].reward[i]"
+            )
 
           // Owner preparation
           .col-span-4.py-3.text-left.text-xs.font-medium.text-gray-500.uppercase.tracking-wider(class="dark:text-white") {{ $t($data.i18nPrefix + 'gb_investment.table.thead.th3') }}
@@ -640,7 +653,8 @@
               | )
 
           .col-span-4.py-3.text-left.text-xs.font-medium.text-gray-500.uppercase.tracking-wider(class="dark:text-white") {{ $t($data.i18nPrefix + 'gb_investment.table.tfoot.level_cost') }}
-          .col-span-2.text-right {{ $n(result.cost) }}
+          .col-span-2.text-right {{ $n(result.cost) }}&nbsp;
+            GbReward(v-if="gb.gbReward[level - 1]", :rewards="gb.gbReward[level] ? gb.gbReward[level] : {}")
 
     ///////////////////////////////
     // Promotion Message Section //

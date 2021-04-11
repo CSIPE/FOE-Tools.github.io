@@ -12,9 +12,11 @@ const factory = () => {
   });
 };
 
+let wrapper;
+
 describe("Default", () => {
   test("Is a Vue instance", () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.isVueInstance()).toBeTruthy();
   });
 });

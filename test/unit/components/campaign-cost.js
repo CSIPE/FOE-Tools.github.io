@@ -13,17 +13,24 @@ const factory = () => {
   });
 };
 
+let wrapper;
+
 /*
  * This test is skip in prod and should be tested individually in local due to "heap out of memory".
  */
 describe.skip("CampaignCost", () => {
+  afterEach(() => {
+    wrapper.destroy();
+    wrapper = null;
+  });
+
   test("Is a Vue instance", () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.isVueInstance()).toBeTruthy();
   });
 
   test('Change "currentAge" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const value = ages.IronAge.key;
     expect(wrapper.vm.currentAge).toBe(ages.BronzeAge.key);
     wrapper.vm.currentAge = value;
@@ -32,7 +39,7 @@ describe.skip("CampaignCost", () => {
   });
 
   test('Change "currentAge" invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const value = "foo";
     expect(wrapper.vm.currentAge).toBe(ages.BronzeAge.key);
     wrapper.vm.currentAge = value;
@@ -41,7 +48,7 @@ describe.skip("CampaignCost", () => {
   });
 
   test('Change "province" value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const provinces = wrapper.vm.sortProvinceArray(wrapper.vm.campaignCost, wrapper.vm.currentAge);
     const value = provinces[Object.keys(provinces)[1]];
 
@@ -52,7 +59,7 @@ describe.skip("CampaignCost", () => {
   });
 
   test('Change "province" invalid value', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const provinces = wrapper.vm.sortProvinceArray(wrapper.vm.campaignCost, wrapper.vm.currentAge);
     const value = "foo";
 
@@ -63,7 +70,7 @@ describe.skip("CampaignCost", () => {
   });
 
   test('Call "campaignConquired"', () => {
-    const wrapper = factory();
+    wrapper = factory();
     const provinces = wrapper.vm.sortProvinceArray(wrapper.vm.campaignCost, wrapper.vm.currentAge);
     const index = 0;
     const value = true;

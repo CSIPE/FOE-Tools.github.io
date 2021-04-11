@@ -21,9 +21,11 @@ const factory = (mocks = {}) => {
 
 const i18nPrefix = "routes.secure_position.";
 
+let wrapper;
+
 describe("Store", () => {
   test('Call "SET_HERO"', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.$store.get("hero")).toEqual({
       title: "components.site_layout.hero.title",
       subtitle: "components.site_layout.hero.slogan_html",
@@ -42,7 +44,7 @@ describe("Store", () => {
   });
 
   test('Call "RESTORE_HERO"', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.$store.get("hero")).toEqual({
       title: "components.site_layout.hero.title",
       subtitle: "components.site_layout.hero.slogan_html",
@@ -67,7 +69,7 @@ describe("Store", () => {
   });
 
   test('Call "getUrlQuery"', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.$store.commit("ADD_URL_QUERY", { key: "foo", value: "bar" });
     expect(wrapper.vm.$store.getters.getUrlQuery()).toEqual({ foo: "bar" });
   });
@@ -77,7 +79,7 @@ describe("Store", () => {
    * See: https://github.com/nuxt/nuxt.js/issues/4757
    */
   test('Throw error when call "ADD_URL_QUERY" with invalid key', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.$store.commit("ADD_URL_QUERY", { key: "foo", value: "bar" });
     wrapper.vm.$store.commit("ADD_URL_QUERY", { key: "foo", value: "bar" });
     // expect(() => wrapper.vm.$store.commit("ADD_URL_QUERY", { key: "foo", value: "bar" })).toThrow(
@@ -90,7 +92,7 @@ describe("Store", () => {
    * See: https://github.com/nuxt/nuxt.js/issues/4757
    */
   test('Throw error when call "ADD_URL_QUERY" with invalid key in namespace', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.$store.commit("ADD_URL_QUERY", { key: "foo", value: "bar" });
     wrapper.vm.$store.commit("ADD_URL_QUERY", { key: "foo", value: "bar", ns: "baz" });
     // expect(() => wrapper.vm.$store.commit("ADD_URL_QUERY", { key: "foo", value: "bar", ns: "baz" })).toThrow(
@@ -103,7 +105,7 @@ describe("Store", () => {
    * See: https://github.com/nuxt/nuxt.js/issues/4757
    */
   test('Throw error when call "UPDATE_URL_QUERY" with invalid namespace', () => {
-    const wrapper = factory();
+    wrapper = factory();
     wrapper.vm.$store.commit("ADD_URL_QUERY", { key: "foo", value: "bar" });
     wrapper.vm.$store.commit("UPDATE_URL_QUERY", { key: "foo", value: "bar", ns: "baz" });
     // expect(() => wrapper.vm.$store.commit("UPDATE_URL_QUERY", { key: "foo", value: "bar", ns: "baz" })).toThrow(
@@ -112,7 +114,7 @@ describe("Store", () => {
   });
 
   test('Call "IS_DARK_THEME"', () => {
-    const wrapper = factory();
+    wrapper = factory();
     expect(wrapper.vm.$store.get("isDarkTheme")).toEqual(false);
     wrapper.vm.$store.set("isDarkTheme", true);
     expect(wrapper.vm.$store.get("isDarkTheme")).toEqual(true);
