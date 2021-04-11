@@ -4,21 +4,19 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [2.86.0](https://github.com/FOE-Tools/FOE-Tools.github.io/compare/v2.85.1...v2.86.0) (2021-04-11)
 
-
 ### Features
 
-* **foe-data:** add levels of several ages ([653bdf0](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/653bdf06025e06eb4a9b12bae9b268fd5991236e))
-* **foe-data:** update GB data ([42517df](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/42517dfecef724b12f4efe031c2a35dc2ffefab0))
-* **gb-investment:** add reward info and level bonus ([25093f3](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/25093f3d52665e0480b017dc5c918baec71a3d39))
-* **update-foe-data:** update GB data from GSheet and API ([193028d](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/193028dc8731df1b807b804671d3c9a174648b5c))
-
+- **foe-data:** add levels of several ages ([653bdf0](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/653bdf06025e06eb4a9b12bae9b268fd5991236e))
+- **foe-data:** update GB data ([42517df](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/42517dfecef724b12f4efe031c2a35dc2ffefab0))
+- **gb-investment:** add reward info and level bonus ([25093f3](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/25093f3d52665e0480b017dc5c918baec71a3d39))
+- **update-foe-data:** update GB data from GSheet and API ([193028d](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/193028dc8731df1b807b804671d3c9a174648b5c))
 
 ### Translation
 
-* Translated using Weblate (Greek) ([e7ef61e](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/e7ef61eaedf9115eea35ffbbbc0dd789c2dca221))
-* Translated using Weblate (Russian) ([0c5c2c4](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/0c5c2c4a0f2e4c60fc9d0699c0488de57133465b))
-* Translated using Weblate (Russian) ([17b85c1](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/17b85c15eab4b484c24493eeba5adefd0b143086))
-* update translation ([9a9ec38](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/9a9ec389d47a00acf569664a1c30411d585b2072))
+- Translated using Weblate (Greek) ([e7ef61e](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/e7ef61eaedf9115eea35ffbbbc0dd789c2dca221))
+- Translated using Weblate (Russian) ([0c5c2c4](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/0c5c2c4a0f2e4c60fc9d0699c0488de57133465b))
+- Translated using Weblate (Russian) ([17b85c1](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/17b85c15eab4b484c24493eeba5adefd0b143086))
+- update translation ([9a9ec38](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/9a9ec389d47a00acf569664a1c30411d585b2072))
 
 ### [2.85.1](https://github.com/FOE-Tools/FOE-Tools.github.io/compare/v2.85.0...v2.85.1) (2021-03-28)
 
