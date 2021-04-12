@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "Report-Msgid-Bugs-To: contact@foe.tools\n"
 "POT-Creation-Date: 2020-08-21T21:00:52.129Z\n"
-"PO-Revision-Date: 2021-03-25 17:26+0000\n"
+"PO-Revision-Date: 2021-04-13 01:44+0000\n"
 "Last-Translator: Magnus Beutner <magnus.beutner@gmail.com>\n"
 "Language-Team: Swedish <https://translate.foe.tools/projects/"
 "foe-tools-website/website/sv/>\n"
@@ -4035,3 +4035,71 @@ msgstr "Du kan anpassa namn på MB i @:(components.site_layout.global_config)"
 msgid "pwa_update.message"
 msgstr ""
 "Appen har blivit uppdaterad. Appen kommer att laddas om inom 5 sekunder."
+
+msgid "foe_data.bonus.spoils_of_war.gb_description"
+msgstr ""
+"Ett antal av de första lyckade striderna ger chans att få en slumpmässig "
+"belöning."
+
+msgid "foe_data.bonus.spoils_of_war.name"
+msgstr "Krigsbyte"
+
+#, fuzzy
+msgid "foe_data.bonus.plunder_repel.gb_description"
+msgstr "Ett antal av de första försöken till plundring avvisas."
+
+msgid "foe_data.bonus.plunder_repel.name"
+msgstr "Förhindrad plundring"
+
+#, fuzzy
+msgid "foe_data.bonus.missile_launch.gb_description"
+msgstr ""
+"Ett antal av de första striderna ges chans att hälften av fiende-enheterna "
+"redan är besegrade. Gäller endast 1:a vågen och inte mot andra spelare."
+
+msgid "foe_data.bonus.diplomatic_gifts.name"
+msgstr "Diplomatgåvor"
+
+msgid "foe_data.bonus.missile_launch.name"
+msgstr "Raketramp"
+
+msgid "foe_data.bonus.diplomatic_gifts.gb_description"
+msgstr ""
+"Ett antal av de första lyckade förhandlingarna (bosättningar exkluderat) ger "
+"chans att få en slumpmässig belöning."
+
+#, fuzzy
+msgid "foe_data.bonus.advanced_tactics.gb_description"
+msgstr "Attackerande och försvarande enheter är boostade procentuellt."
+
+msgid "foe_data.bonus.advanced_tactics.name"
+msgstr "Avancerad Taktik"
+
+#, fuzzy
+msgid "foe_data.gb_short.Flying_Island"
+msgstr "SÖ"
+
+#, fuzzy
+msgid "foe_data.gb.Flying_Island"
+msgstr "Svävande ön"
+
+msgid "foe_data.age.SpaceAgeVenus"
+msgstr "Rymdålder Venus"
+
+msgid "components.gb_patron_data.rewards.medals"
+msgstr "Medaljer"
+
+msgid "components.gb_patron_data.rewards.bp"
+msgstr "Ritningar"
+
+msgid "components.gb_patron_data.rewards.fp"
+msgstr "FPs"
+
+msgid "components.gb_patron_data.icon_alt"
+msgstr "Belöning lista"
+
+msgid "components.gb_data.missing_values"
+msgstr "Saknade värden."
+
+msgid "components.gb_data.icon_alt"
+msgstr "Bonus lista"
