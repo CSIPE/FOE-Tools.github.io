@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "Report-Msgid-Bugs-To: contact@foe.tools\n"
 "POT-Creation-Date: 2020-08-21T21:00:51.977Z\n"
-"PO-Revision-Date: 2021-03-30 19:16+0000\n"
+"PO-Revision-Date: 2021-04-13 01:44+0000\n"
 "Last-Translator: V <avd.way@gmail.com>\n"
 "Language-Team: Russian <https://translate.foe.tools/projects/"
 "foe-tools-website/website/ru/>\n"
@@ -680,7 +680,7 @@ msgid "components.secure_position.block_place.your_participation"
 msgstr "Ваше текущее вложение (0 - если нет)"
 
 msgid "components.secure_position.block_place.other_participation"
-msgstr "Вложение игрока, которого нужно обойти (0, если нет)"
+msgstr "Вложение игрока, которого нужно обойти (0 - если нет)"
 
 msgid "components.secure_position.block_place.your_arc_bonus"
 msgstr "Бонус вашей Арки (в процентах)"
@@ -4064,3 +4064,9 @@ msgstr ""
 
 msgid "pwa_update.message"
 msgstr "Приложение было обновлено и будет перезагружено через 5 секунд."
+
+msgid "components.gb_data.icon_alt"
+msgstr "Прибыль с Арок"
+
+msgid "components.gb_patron_data.icon_alt"
+msgstr "Награды за вклад"
