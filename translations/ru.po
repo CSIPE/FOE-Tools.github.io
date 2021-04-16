@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "Report-Msgid-Bugs-To: contact@foe.tools\n"
 "POT-Creation-Date: 2020-08-21T21:00:51.977Z\n"
-"PO-Revision-Date: 2021-04-13 01:44+0000\n"
+"PO-Revision-Date: 2021-04-17 00:31+0000\n"
 "Last-Translator: V <avd.way@gmail.com>\n"
 "Language-Team: Russian <https://translate.foe.tools/projects/"
 "foe-tools-website/website/ru/>\n"
@@ -43,7 +43,7 @@ msgid "main_menu.campaign_cost"
 msgstr "@:(routes.campaign_cost.hero.title)"
 
 msgid "footer_menu.about"
-msgstr "О сервисе"
+msgstr "О проекте"
 
 msgid "footer_menu.contributors"
 msgstr "Авторы и участники проекта"
@@ -81,7 +81,7 @@ msgid "components.cf_calculator.block_cfc.your_age"
 msgstr "Ваша эпоха"
 
 msgid "components.cf_calculator.block_cfc.your_cf_boost"
-msgstr "Ваш бонус @:(foe_data.gb.Chateau_Frontenac)"
+msgstr "Ваш бонус @:(foe_data.gb.Chateau_Frontenac) (в процентах)"
 
 msgid "components.cf_calculator.block_cfc.coins_to_use"
 msgstr "Монет в Праздничной вечеринке Ринбина (ПВР)"
@@ -162,8 +162,8 @@ msgstr "Кумулятивный квест"
 
 msgid "components.cf_calculator.block_cfc.coins_supplies_info"
 msgstr ""
-"Это значение должно не меньше {min}, потому что меньшее значение не "
-"гарантирует прибыль (среднестатистически)"
+"Это значение должно быть не меньше {min}, потому что значения ниже не "
+"гарантируют прибыль (среднестатистически)"
 
 msgid "components.cf_calculator.tutorial.goods"
 msgstr "Укажите количество товаров, которые вы хотите использовать для всех квестов."
@@ -189,9 +189,9 @@ msgstr ""
 
 msgid "components.cf_calculator.tutorial.yourCfBoost"
 msgstr ""
-"Введите \"квест-бонус\" вашего @:(foe_data.gb.Chateau_Frontenac).\n"
+"Укажите бонус вашего @:(foe_data.gb.Chateau_Frontenac) в процентах.\n"
 "\n"
-"Пример: для 450%, введите 450."
+"Пример: для 450%, укажите 450."
 
 msgid "components.cf_calculator.tutorial.welcome"
 msgstr ""
@@ -686,7 +686,7 @@ msgid "components.secure_position.block_place.your_arc_bonus"
 msgstr "Бонус вашей Арки (в процентах)"
 
 msgid "components.secure_position.block_place.fp_target_reward"
-msgstr "Награда планируемого места в СО (без учёта бонуса Арки)"
+msgstr "Награда планируемого места (без учёта бонуса Арки)"
 
 msgid "components.secure_position.block_place.target_reward"
 msgstr "Ожидаемое место"
@@ -1087,7 +1087,7 @@ msgid "routes.home.title"
 msgstr "@:(common.site_title)"
 
 msgid "routes.about.title"
-msgstr "О @:(common.site_title)"
+msgstr "Об @:(common.site_title)"
 
 msgid "routes.about.general_info.title"
 msgstr "Общая информация"
@@ -1151,8 +1151,8 @@ msgstr "Калькулятор Шато-Фронтенак"
 
 msgid "routes.cf_calculator.hero.subtitle"
 msgstr ""
-"Инструмент для подсчета возврата товаров и СО при выполнении круговых "
-"квестов и неосновного квеста Ринбин (Непраздничная вечеринка)."
+"Инструмент для подсчета бонусных товаров и пакетов СО при выполнении "
+"круговых квестов."
 
 msgid "routes.changelog.title"
 msgstr "Изменения | @:(common.site_title)"
@@ -1219,7 +1219,7 @@ msgid "routes.secure_position.hero.title"
 msgstr "Блокирование места"
 
 msgid "routes.secure_position.hero.subtitle"
-msgstr "Защита своего места, делая перебитие другими вкладчиками невозможным."
+msgstr "Защита своего места от перебития другими вкладчиками."
 
 msgid "routes.error.404.title"
 msgstr "Страница не найдена | @:(common.site_title)"
@@ -1234,9 +1234,7 @@ msgid "routes.trade.title"
 msgstr "@:(routes.trade.hero.title) | @:(common.site_title)"
 
 msgid "routes.campaign_cost.hero.subtitle"
-msgstr ""
-"Этот инструмент показывает стоимость захвата провинции или сектора путем "
-"переговоров."
+msgstr "Подсчёт стоимости захвата провинций на карте кампании."
 
 msgid "routes.campaign_cost.hero.title"
 msgstr "Стоимость кампании"
@@ -2644,9 +2642,9 @@ msgstr[2] "За счет бонуса вы сэкономите {count} СО"
 
 msgid "components.secure_position.block_place.fp_to_complete_level"
 msgid_plural "components.secure_position.block_place.fp_to_complete_level"
-msgstr[0] "Чтобы полностью закрыть уровень, нужно ещё вложить СО:"
-msgstr[1] "Чтобы полностью закрыть уровень, нужно ещё вложить СО:"
-msgstr[2] "Чтобы полностью закрыть уровень, нужно ещё вложить СО:"
+msgstr[0] "СО, которых не хватает для полного закрытия уровня:"
+msgstr[1] "СО, которых не хватает для полного закрытия уровня:"
+msgstr[2] "СО, которых не хватает для полного закрытия уровня:"
 
 msgid "components.secure_position.block_place.place"
 msgid_plural "components.secure_position.block_place.place"
@@ -4070,3 +4068,62 @@ msgstr "Прибыль с Арок"
 
 msgid "components.gb_patron_data.icon_alt"
 msgstr "Награды за вклад"
+
+msgid "components.gb_data.missing_values"
+msgstr "Значения отсутствуют."
+
+msgid "foe_data.bonus.spoils_of_war.gb_description"
+msgstr ""
+"После победы в первых нескольких битвах у вас будет шанс получить случайную "
+"награду."
+
+msgid "foe_data.bonus.spoils_of_war.name"
+msgstr "Военные трофеи"
+
+msgid "foe_data.bonus.plunder_repel.gb_description"
+msgstr "Есть шанс предотвратить первые попытки грабежа."
+
+msgid "foe_data.bonus.plunder_repel.name"
+msgstr "Защита от грабежа"
+
+msgid "foe_data.bonus.missile_launch.gb_description"
+msgstr ""
+"В первых битвах есть шанс убить половину войска врага в начале боя. Если в "
+"битве две волны, то умение применяется только к первой волне."
+
+msgid "foe_data.bonus.missile_launch.name"
+msgstr "Запуск ракеты"
+
+msgid "foe_data.bonus.diplomatic_gifts.gb_description"
+msgstr ""
+"После победы в первых нескольких переговорах (исключая переговоры в "
+"поселениях) у вас будет шанс получить случайную награду."
+
+msgid "foe_data.bonus.diplomatic_gifts.name"
+msgstr "Дипломатические дары"
+
+msgid "foe_data.bonus.advanced_tactics.gb_description"
+msgstr ""
+"Атака и защита атакующих и обороняющихся боевых единиц повышаются на "
+"определенный процент."
+
+msgid "foe_data.bonus.advanced_tactics.name"
+msgstr "Улучшенная тактика"
+
+msgid "foe_data.gb_short.Flying_Island"
+msgstr "Остров"
+
+msgid "foe_data.gb.Flying_Island"
+msgstr "Парящий остров"
+
+msgid "foe_data.age.SpaceAgeVenus"
+msgstr "Космическая Эра: Венера"
+
+msgid "components.gb_patron_data.rewards.medals"
+msgstr "Медали"
+
+msgid "components.gb_patron_data.rewards.bp"
+msgstr "Чертежи"
+
+msgid "components.gb_patron_data.rewards.fp"
+msgstr "СО"
