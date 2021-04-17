@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "Report-Msgid-Bugs-To: contact@foe.tools\n"
 "POT-Creation-Date: 2020-08-21T21:00:52.129Z\n"
-"PO-Revision-Date: 2021-04-13 01:44+0000\n"
+"PO-Revision-Date: 2021-04-17 18:57+0000\n"
 "Last-Translator: Magnus Beutner <magnus.beutner@gmail.com>\n"
 "Language-Team: Swedish <https://translate.foe.tools/projects/"
 "foe-tools-website/website/sv/>\n"
@@ -4044,9 +4044,9 @@ msgstr ""
 msgid "foe_data.bonus.spoils_of_war.name"
 msgstr "Krigsbyte"
 
-#, fuzzy
 msgid "foe_data.bonus.plunder_repel.gb_description"
-msgstr "Ett antal av de första försöken till plundring avvisas."
+msgstr ""
+"Ett antal av de första försöken till plundring har en chans att avvisas."
 
 msgid "foe_data.bonus.plunder_repel.name"
 msgstr "Förhindrad plundring"
@@ -4075,13 +4075,11 @@ msgstr "Attackerande och försvarande enheter är boostade procentuellt."
 msgid "foe_data.bonus.advanced_tactics.name"
 msgstr "Avancerad Taktik"
 
-#, fuzzy
 msgid "foe_data.gb_short.Flying_Island"
-msgstr "SÖ"
+msgstr "FÖ"
 
-#, fuzzy
 msgid "foe_data.gb.Flying_Island"
-msgstr "Svävande ön"
+msgstr "Flygande ön"
 
 msgid "foe_data.age.SpaceAgeVenus"
 msgstr "Rymdålder Venus"
