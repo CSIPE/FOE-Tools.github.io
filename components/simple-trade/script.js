@@ -22,7 +22,6 @@ export default {
   },
   data() {
     agesGoods = this.$store.get("foe/goods@agesGoods");
-    delete agesGoods.SpaceAgeAsteroidBelt; // TODO: to be deleted when fair trade ratio found
 
     const data = {
       i18nPrefix,
