@@ -43,7 +43,7 @@ export default {
   },
   async fetch({ app, store }) {
     if (!Object.keys(store.get("foe/gbs")).length) {
-      const result = await app.$axios.$get("/foe-data/gbs.json");
+      const result = await app.$axios.$get(app.$config.FOE_DATA_API_GBS);
       store.set("foe/gbs", result);
     }
   },

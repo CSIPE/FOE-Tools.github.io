@@ -14,12 +14,12 @@ export default {
   },
   async fetch({ app, store }) {
     if (!Object.keys(store.get("foe/campaignCost")).length) {
-      const campaignCostResult = await app.$axios.$get("/foe-data/campaign-cost.json");
+      const campaignCostResult = await app.$axios.$get(app.$config.FOE_DATA_API_CAMPAIGN_COST);
       store.set("foe/campaignCost", campaignCostResult);
     }
 
     if (!Object.keys(store.get("foe/goods")).length) {
-      const goodsResult = await app.$axios.$get("/foe-data/goods.json");
+      const goodsResult = await app.$axios.$get(app.$config.FOE_DATA_API_GOODS);
       store.set("foe/goods", goodsResult);
     }
   },
