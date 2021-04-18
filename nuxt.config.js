@@ -9,8 +9,8 @@ import { defaultLocale, supportedLocales, locales } from "./scripts/locales";
 Vue.use(VueI18n);
 
 const i18n = new VueI18n({
-  locale: "en",
-  fallbackLocale: "en",
+  locale: defaultLocale,
+  fallbackLocale: defaultLocale,
   messages: {
     en: {
       ...require("./translations/common.json"),
