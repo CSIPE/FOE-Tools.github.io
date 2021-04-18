@@ -1051,6 +1051,8 @@
   "foe_data.bonus.plunder_repel.gb_description": "The first number of suffered plunder attempts have a chance of being repelled.",
   "foe_data.bonus.spoils_of_war.name": "Spoils of War",
   "foe_data.bonus.spoils_of_war.gb_description": "The first number of victorious battles have a chance of providing you with a random reward.",
+  "foe_data.bonus.mysterious_shards.name": "Mysterious Shards",
+  "foe_data.bonus.mysterious_shards.gb_description": "A chance of spawning a Shard reward in the active Cultural Settlement.",
   "utils.content.tools": "Tools",
   "utils.content.statistics": "Statistics",
   "utils.btn_calculate": "Calculate",

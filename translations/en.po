@@ -3563,6 +3563,12 @@ msgstr "Spoils of War"
 msgid "foe_data.bonus.spoils_of_war.gb_description"
 msgstr "The first number of victorious battles have a chance of providing you with a random reward."
 
+msgid "foe_data.bonus.mysterious_shards.name"
+msgstr "Mysterious Shards"
+
+msgid "foe_data.bonus.mysterious_shards.gb_description"
+msgstr "A chance of spawning a Shard reward in the active Cultural Settlement."
+
 msgid "utils.content.tools"
 msgstr "Tools"
 

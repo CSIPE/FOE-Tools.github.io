@@ -1814,6 +1814,12 @@ msgstr "Star Gazer"
 msgid "foe_data.gb.Space_Carrier"
 msgstr "Transporteur Spatial"
 
+msgid "foe_data.gb.Galata_Tower"
+msgstr "Tour de Galata"
+
+msgid "foe_data.gb.Flying_Island"
+msgstr "Île volante"
+
 msgid "foe_data.gb_short.Observatory"
 msgstr "Obs"
 
@@ -1936,6 +1942,9 @@ msgstr "Transporteur"
 
 msgid "foe_data.gb_short.Galata_Tower"
 msgstr "Galata"
+
+msgid "foe_data.gb_short.Flying_Island"
+msgstr "Île"
 
 msgid "foe_data.goods.dye"
 msgstr "Teinture"
@@ -3601,6 +3610,12 @@ msgstr "Butins de guerre"
 msgid "foe_data.bonus.spoils_of_war.gb_description"
 msgstr "Les premières victoires ont une chance de vous octroyer une récompense aléatoire."
 
+msgid "foe_data.bonus.mysterious_shards.name"
+msgstr "Éclats mystérieux"
+
+msgid "foe_data.bonus.mysterious_shards.gb_description"
+msgstr "Une chance de faire apparaître une récompense d'éclat dans la Colonie culturelle active."
+
 msgid "utils.content.tools"
 msgstr "Outils"
 
@@ -3936,9 +3951,6 @@ msgstr "Ces services traitent les informations personnelles afin d'optimiser le 
 
 msgid "cookieConsent.purposes.performance.title"
 msgstr "Optimisation de la performance"
-
-msgid "foe_data.gb.Galata_Tower"
-msgstr "Tour Galata"
 
 msgid "addToHomeScreen.title"
 msgstr "Installer FOE-Tools"

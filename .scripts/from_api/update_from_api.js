@@ -54,6 +54,7 @@ const keyMapping = {
   X_TomorrowEra_Landmark2: "Truce_Tower",
   X_VirtualFuture_Landmark1: "Terracotta_Army",
   X_VirtualFuture_Landmark2: "Himeji_Castle",
+  X_SpaceAgeVenus_Landmark1: "Flying_Island",
 };
 
 const deleteFileIfExist = (path) => {
