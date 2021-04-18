@@ -559,9 +559,7 @@ export default {
   css: ["~/assets/style.scss", "@fortawesome/fontawesome-svg-core/styles.css"],
 
   axios: {
-    host: process.env.DEPLOY_ENV === "GH_PAGES" ? prodUrl : "localhost",
-    port: process.env.DEPLOY_ENV === "GH_PAGES" ? 443 : 3000,
-    https: process.env.DEPLOY_ENV === "GH_PAGES",
+    baseURL: "/",
   },
 
   pwa: {
