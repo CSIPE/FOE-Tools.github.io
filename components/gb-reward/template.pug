@@ -9,12 +9,18 @@ tippy.inline-block.align-middle(
   arrow
 )
   template(#trigger)
-    img(width="24", height="24", :src="icon", :alt="$t(i18nPrefix + 'icon_alt')", :title="$t(i18nPrefix + 'icon_alt')")
+    img.h-6.w-6(
+      width="24",
+      height="24",
+      :src="icon",
+      :alt="$t(i18nPrefix + 'icon_alt')",
+      :title="$t(i18nPrefix + 'icon_alt')"
+    )
 
   template(v-if="!missingValues")
     p.flex(v-for="(elt, key) in rewards")
       template(v-if="!key.includes('afterModern')")
-        img.inline-block(
+        img.inline-block.h-6.w-6(
           width="24",
           height="24",
           :src="'/img/foe/bonus/' + bonus[key] + '.png'",

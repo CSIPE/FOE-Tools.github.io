@@ -9,7 +9,7 @@ tippy.inline-block.align-middle(
   arrow
 )
   template(#trigger)
-    img(
+    img.h-6.w-6(
       width="24",
       height="24",
       :src="rewardIcon",
@@ -18,7 +18,7 @@ tippy.inline-block.align-middle(
     )
 
   p.flex
-    img.inline-block(
+    img.inline-block.h-6.w-6(
       width="24",
       height="24",
       :src="'/img/foe/bonus/research.png'",
@@ -29,7 +29,7 @@ tippy.inline-block.align-middle(
       template(v-if="rewards.fp") &nbsp;({{ $n(Math.round(rewards.fp * arcBonusNormalized)) }})
 
   p.flex
-    img.inline-block(
+    img.inline-block.h-6.w-6(
       width="24",
       height="24",
       :src="'/img/foe/bonus/blueprint.png'",
@@ -41,7 +41,7 @@ tippy.inline-block.align-middle(
     span(v-else) &nbsp;?
 
   p.flex
-    img.inline-block(
+    img.inline-block.h-6.w-6(
       width="24",
       height="24",
       :src="'/img/foe/bonus/medal.png'",
