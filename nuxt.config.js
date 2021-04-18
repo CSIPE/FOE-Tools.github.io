@@ -1,17 +1,16 @@
 import { JSDOM } from "jsdom";
 import Vue from "vue";
 import VueI18n from "vue-i18n";
-import { bestFacebookLocaleFor } from "facebook-locales";
 import colors from "tailwindcss/colors";
 import tailwindConf from "tailwindcss/defaultConfig";
 import { gbs } from "./lib/foe-data/gbs";
-import { defaultLocale, supportedLocales } from "./scripts/locales";
+import { defaultLocale, supportedLocales, locales } from "./scripts/locales";
 
 Vue.use(VueI18n);
 
 const i18n = new VueI18n({
-  locale: "en",
-  fallbackLocale: "en",
+  locale: defaultLocale,
+  fallbackLocale: defaultLocale,
   messages: {
     en: {
       ...require("./translations/common.json"),
@@ -132,7 +131,7 @@ const modifyHtml = (page, locale) => {
   node.setAttribute("property", "og:locale");
   node.setAttribute("name", "og:locale");
   node.setAttribute("hid", "og:locale");
-  node.content = locale === "en" ? "en_US" : bestFacebookLocaleFor(`${locale}_${locale.toUpperCase()}`);
+  node.content = locales.find((elt) => elt.code === locale).iso.replace("-", "_");
   window.document.querySelector("head").appendChild(node);
   // Twitter card
   node = window.document.createElement("meta");
@@ -263,8 +262,7 @@ const modifyHtml = (page, locale) => {
     node.setAttribute("property", "og:locale:alternate");
     node.setAttribute("name", "og:locale:alternate");
     node.setAttribute("hid", "og:locale:alternate");
-    node.content =
-      supportedLocale === "en" ? "en_US" : bestFacebookLocaleFor(`${supportedLocale}_${supportedLocale.toUpperCase()}`);
+    node.content = locales.find((elt) => elt.code === supportedLocale).iso.replace("-", "_");
     window.document.querySelector("head").appendChild(node);
   }
 
@@ -561,9 +559,7 @@ export default {
   css: ["~/assets/style.scss", "@fortawesome/fontawesome-svg-core/styles.css"],
 
   axios: {
-    host: process.env.DEPLOY_ENV === "GH_PAGES" ? prodUrl : "localhost",
-    port: process.env.DEPLOY_ENV === "GH_PAGES" ? 443 : 3000,
-    https: process.env.DEPLOY_ENV === "GH_PAGES",
+    baseURL: "/",
   },
 
   pwa: {
@@ -573,27 +569,8 @@ export default {
   },
 
   i18n: {
-    // Use this site to find iso code: https://www.localeplanet.com/icu/iso639.html
-    // Or some info here: https://appmakers.dev/bcp-47-language-codes-list/
-    locales: [
-      { code: "cs", file: "cs.json", iso: "cs-CZ" },
-      { code: "da", file: "da.json", iso: "da-DK" },
-      { code: "de", file: "de.json", iso: "de-DE" },
-      { code: "en", file: "en.json", iso: "en-US" },
-      { code: "es", file: "es.json", iso: "es-ES" },
-      { code: "fr", file: "fr.json", iso: "fr-FR" },
-      { code: "hu", file: "hu.json", iso: "hu-HU" },
-      { code: "it", file: "it.json", iso: "it-IT" },
-      { code: "nl", file: "nl.json", iso: "nl-NL" },
-      { code: "pl", file: "pl.json", iso: "pl-PL" },
-      { code: "pt", file: "pt.json", iso: "pt-PT" },
-      { code: "pt-BR", file: "pt-BR.json", iso: "pt-BR" },
-      { code: "ru", file: "ru.json", iso: "ru-RU" },
-      { code: "sk", file: "sk.json", iso: "sk-SK" },
-      { code: "sv", file: "sv.json", iso: "sv-SE" },
-      { code: "tr", file: "tr.json", iso: "tr-TR" },
-    ],
-    defaultLocale: "en",
+    locales,
+    defaultLocale,
     lazy: true,
     langDir: "lang/",
     vueI18n: "~/plugins/vue-i18n.js",
@@ -783,6 +760,7 @@ export default {
   sentry: {
     dsn: "https://4088bc858d3d4dd3859d9b214d21720a@sentry.foe.tools/2",
     disableServerSide: true,
+    disabled: process.env.NODE_ENV !== "production",
     config: {
       lazy: true,
     },

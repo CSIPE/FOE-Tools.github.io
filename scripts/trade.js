@@ -9,10 +9,8 @@ class TradeArray extends Enum {}
 TradeArray.initEnum(["SIMPLE", "FAIR"]);
 const ages = clone(allAges);
 delete ages.NoAge;
-delete ages.SpaceAgeAsteroidBelt; // TODO: to be deleted when fair trade ratio found
 
 const goods = clone(agesCost);
-delete goods.SpaceAgeAsteroidBelt; // TODO: to be deleted when fair trade ratio found
 
 /**
  * Compute total cost (coins plus supplies) for a good. From "Modern Era" it
@@ -47,6 +45,14 @@ function getFairTradeArray() {
     fairTradeObj[key1] = {};
     for (const key2 in goods) {
       fairTradeObj[key1][key2] = getTotalGoodCostFairTrade(goods[key1][0]) / getTotalGoodCostFairTrade(goods[key2][0]);
+      if (
+        // If the ratio is not a "valid" (in the sense of in-game) ratio
+        (fairTradeObj[key1][key2] < 0.5 || fairTradeObj[key1][key2] > 2) &&
+        // And that it is consecutive ages
+        Math.abs(allAges[key1].index - allAges[key2].index) === 1
+      ) {
+        fairTradeObj[key1][key2] = allAges[key1].index < allAges[key2].index ? 0.5 : 2;
+      }
     }
   }
 

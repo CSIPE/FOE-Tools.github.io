@@ -532,7 +532,7 @@ msgid "components.gb_investment.tutorial.display_modes.content"
 msgstr ""
 "Cet outil vous donne toutes les informations que le propriétaire et les "
 "investisseurs doivent savoir pour investir sur un niveau d'un GM. Il dispose "
-"de deux modes d’affichages : \n"
+"de deux modes d'affichages : \n"
 "\n"
 "« @:(routes.gb_investment.tab.owner_view.title) » (là où vous vous trouvez) "
 "qui affiche des informations uniquement sur le niveau actuel et de manière "
@@ -549,11 +549,11 @@ msgstr ""
 "Il existe deux types de sélecteur.\n"
 "\n"
 "Le simple sélecteur (ancienne version) qui affiche une simple liste "
-"déroulante. C’est le sélecteur par défaut :\n"
+"déroulante. C'est le sélecteur par défaut :\n"
 "\n"
 "{videoSelect}\n"
 "\n"
-"L’auto-complétion qui permet de trouver un GM en tapant des séquences "
+"L'auto-complétion qui permet de trouver un GM en tapant des séquences "
 "lettres contenues dans le nom du GM souhaité :\n"
 "\n"
 "{videoAutoComplete}"
@@ -659,7 +659,7 @@ msgstr ""
 
 msgid "components.gb_investment.tutorial.promotion_message.message"
 msgstr ""
-"Cette section vous permet d’avoir des messages contenant des informations "
+"Cette section vous permet d'avoir des messages contenant des informations "
 "sur le niveau courant du GM et les places. Vous pouvez copier un message et "
 "le coller directement dans le jeu, par exemple dans un fils 1.9."
 
@@ -1325,7 +1325,7 @@ msgid "routes.about.cookie.info.cookieConsent"
 msgstr "Vos préférences en matière de cookies"
 
 msgid "routes.about.cookie.p2"
-msgstr "Pour plus d’informations, veuillez vous référer aux liens suivants :"
+msgstr "Pour plus d'informations, veuillez vous référer aux liens suivants :"
 
 msgid "routes.about.dev_info.title"
 msgstr "Informations développement"
@@ -1635,7 +1635,7 @@ msgid "foe_data.age.SpaceAgeMars"
 msgstr "Ère Spatiale : Mars"
 
 msgid "foe_data.age.SpaceAgeAsteroidBelt"
-msgstr "Ère Spatiale : Ceinture d’Astéroïdes"
+msgstr "Ère Spatiale : Ceinture d'Astéroïdes"
 
 msgid "foe_data.age.SpaceAgeVenus"
 msgstr "Ère Spatiale : Vénus"
@@ -1693,6 +1693,12 @@ msgstr "VIR"
 
 msgid "foe_data.age_short.SpaceAgeMars"
 msgstr "Mars"
+
+msgid "foe_data.age_short.SpaceAgeAsteroidBelt"
+msgstr "Astéroïdes"
+
+msgid "foe_data.age_short.SpaceAgeVenus"
+msgstr "Venus"
 
 msgid "foe_data.gb.Observatory"
 msgstr "Observatoire"
@@ -1813,6 +1819,12 @@ msgstr "Star Gazer"
 
 msgid "foe_data.gb.Space_Carrier"
 msgstr "Transporteur Spatial"
+
+msgid "foe_data.gb.Galata_Tower"
+msgstr "Tour de Galata"
+
+msgid "foe_data.gb.Flying_Island"
+msgstr "Île volante"
 
 msgid "foe_data.gb_short.Observatory"
 msgstr "Obs"
@@ -1936,6 +1948,9 @@ msgstr "Transporteur"
 
 msgid "foe_data.gb_short.Galata_Tower"
 msgstr "Galata"
+
+msgid "foe_data.gb_short.Flying_Island"
+msgstr "Île"
 
 msgid "foe_data.goods.dye"
 msgstr "Teinture"
@@ -2212,6 +2227,21 @@ msgstr "Brome"
 
 msgid "foe_data.goods.platinum_crystals"
 msgstr "Crystal de platine"
+
+msgid "foe_data.goods.glowing_seaweed"
+msgstr "Algue lumineuse"
+
+msgid "foe_data.goods.herbal_snack"
+msgstr "En-cas d'herbe"
+
+msgid "foe_data.goods.microgreen_supplement"
+msgstr "Supplément de micropousses"
+
+msgid "foe_data.goods.soy_proteins"
+msgstr "Protéine de soja"
+
+msgid "foe_data.goods.sugar_crystals"
+msgstr "Crystal de sucre"
 
 msgid "foe_data.province.Dunarsund"
 msgstr "Dunarsund"
@@ -3601,6 +3631,12 @@ msgstr "Butins de guerre"
 msgid "foe_data.bonus.spoils_of_war.gb_description"
 msgstr "Les premières victoires ont une chance de vous octroyer une récompense aléatoire."
 
+msgid "foe_data.bonus.mysterious_shards.name"
+msgstr "Éclats mystérieux"
+
+msgid "foe_data.bonus.mysterious_shards.gb_description"
+msgstr "Une chance de faire apparaître une récompense d'éclat dans la Colonie culturelle active."
+
 msgid "utils.content.tools"
 msgstr "Outils"
 
@@ -3936,9 +3972,6 @@ msgstr "Ces services traitent les informations personnelles afin d'optimiser le 
 
 msgid "cookieConsent.purposes.performance.title"
 msgstr "Optimisation de la performance"
-
-msgid "foe_data.gb.Galata_Tower"
-msgstr "Tour Galata"
 
 msgid "addToHomeScreen.title"
 msgstr "Installer FOE-Tools"

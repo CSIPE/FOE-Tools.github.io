@@ -16,7 +16,7 @@ export default {
   async validate({ app, store, params }) {
     // Check if `params.gb` is an existing Great Building
     if (!Object.keys(store.get("foe/gbs")).length) {
-      const result = await app.$axios.$get("/foe-data/gbs.json");
+      const result = await app.$axios.$get(app.$config.FOE_DATA_API_GBS);
       store.set("foe/gbs", result);
     }
 

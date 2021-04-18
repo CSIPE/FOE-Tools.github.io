@@ -1655,6 +1655,12 @@ msgstr "VF"
 msgid "foe_data.age_short.SpaceAgeMars"
 msgstr "SAM"
 
+msgid "foe_data.age_short.SpaceAgeAsteroidBelt"
+msgstr "SAAB"
+
+msgid "foe_data.age_short.SpaceAgeVenus"
+msgstr "Venus"
+
 msgid "foe_data.gb.Observatory"
 msgstr "Observatory"
 
@@ -2182,6 +2188,21 @@ msgstr "Bromine"
 
 msgid "foe_data.goods.platinum_crystals"
 msgstr "Platinum Crystals"
+
+msgid "foe_data.goods.glowing_seaweed"
+msgstr "Glowing Seaweed"
+
+msgid "foe_data.goods.herbal_snack"
+msgstr "Herbal Snack"
+
+msgid "foe_data.goods.microgreen_supplement"
+msgstr "Microgreen Supplement"
+
+msgid "foe_data.goods.soy_proteins"
+msgstr "Soy Proteins"
+
+msgid "foe_data.goods.sugar_crystals"
+msgstr "Sugar Crystals"
 
 msgid "foe_data.province.Dunarsund"
 msgstr "Dunarsund"
@@ -3562,6 +3583,12 @@ msgstr "Spoils of War"
 
 msgid "foe_data.bonus.spoils_of_war.gb_description"
 msgstr "The first number of victorious battles have a chance of providing you with a random reward."
+
+msgid "foe_data.bonus.mysterious_shards.name"
+msgstr "Mysterious Shards"
+
+msgid "foe_data.bonus.mysterious_shards.gb_description"
+msgstr "A chance of spawning a Shard reward in the active Cultural Settlement."
 
 msgid "utils.content.tools"
 msgstr "Tools"
