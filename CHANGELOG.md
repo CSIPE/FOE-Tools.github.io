@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.87.0](https://github.com/FOE-Tools/FOE-Tools.github.io/compare/v2.86.0...v2.87.0) (2021-04-18)
+
+
+### Features
+
+* **foe-data:** update GB Data ([c4600ed](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/c4600ed1ee93b27499eb059d95519eb7d47b86ce))
+* **trade:** add SAAB and Venus ([abee3b1](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/abee3b11906cc211052d32c1a68d860526e2228f))
+
+
+### Bug Fixes
+
+* **gb-investment:** fix image size of rewards on smartphone ([b1d1112](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/b1d11125441184715fa382aaff5c3cab1c47c9c5))
+
+
+### Translation
+
+* Translated using Weblate (Russian) ([d54ecb4](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/d54ecb4f0b275f5b4e78df11b18336a49275c5c4))
+* Translated using Weblate (Russian) ([37a91a4](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/37a91a4bc12ca5b5ad08d13d57fe7609994b6f5b))
+* Translated using Weblate (Swedish) ([efa3961](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/efa39617dcf0964130f5df78689e3109c7bc1acb))
+* Translated using Weblate (Swedish) ([2761961](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/27619612a5d69f2ef71852a7643d175fe7a2d694))
+* update translation ([3982777](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/398277738c419d06ec0b43bacbea09680f20db99))
+
 ## [2.86.0](https://github.com/FOE-Tools/FOE-Tools.github.io/compare/v2.85.1...v2.86.0) (2021-04-11)
 
 ### Features
