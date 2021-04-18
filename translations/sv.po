@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "Report-Msgid-Bugs-To: contact@foe.tools\n"
 "POT-Creation-Date: 2020-08-21T21:00:52.129Z\n"
-"PO-Revision-Date: 2021-04-17 18:57+0000\n"
+"PO-Revision-Date: 2021-04-19 10:06+0000\n"
 "Last-Translator: Magnus Beutner <magnus.beutner@gmail.com>\n"
 "Language-Team: Swedish <https://translate.foe.tools/projects/"
 "foe-tools-website/website/sv/>\n"
@@ -4051,7 +4051,6 @@ msgstr ""
 msgid "foe_data.bonus.plunder_repel.name"
 msgstr "Förhindrad plundring"
 
-#, fuzzy
 msgid "foe_data.bonus.missile_launch.gb_description"
 msgstr ""
 "Ett antal av de första striderna ges chans att hälften av fiende-enheterna "
@@ -4068,7 +4067,6 @@ msgstr ""
 "Ett antal av de första lyckade förhandlingarna (bosättningar exkluderat) ger "
 "chans att få en slumpmässig belöning."
 
-#, fuzzy
 msgid "foe_data.bonus.advanced_tactics.gb_description"
 msgstr "Attackerande och försvarande enheter är boostade procentuellt."
 
@@ -4101,3 +4099,31 @@ msgstr "Saknade värden."
 
 msgid "components.gb_data.icon_alt"
 msgstr "Bonus lista"
+
+msgid "foe_data.bonus.mysterious_shards.gb_description"
+msgstr ""
+"Ger chans att generera en skärvbelöning i din aktiva kulturella bosättning."
+
+msgid "foe_data.bonus.mysterious_shards.name"
+msgstr "Mysteriska skärvor"
+
+msgid "foe_data.goods.sugar_crystals"
+msgstr "Sockerkristaller"
+
+msgid "foe_data.goods.soy_proteins"
+msgstr "Sojaproteiner"
+
+msgid "foe_data.goods.microgreen_supplement"
+msgstr "Bladskottstillskott"
+
+msgid "foe_data.goods.herbal_snack"
+msgstr "Örtsnacks"
+
+msgid "foe_data.goods.glowing_seaweed"
+msgstr "Glödande tång"
+
+msgid "foe_data.age_short.SpaceAgeVenus"
+msgstr "SAV"
+
+msgid "foe_data.age_short.SpaceAgeAsteroidBelt"
+msgstr "RÅAB"
