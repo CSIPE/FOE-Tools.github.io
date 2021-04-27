@@ -1,5 +1,5 @@
 import Remark from "~/components/remark/Remark";
-import TLoading from "~/components/t-loading/TLoading";
+import changelog from "~/CHANGELOG.md";
 
 const i18nPrefix = "routes.changelog.";
 
@@ -12,23 +12,10 @@ export default {
     this.$store.commit("RESTORE_HERO");
 
     return {
-      url: "https://raw.githubusercontent.com/FOE-Tools/FOE-Tools.github.io/production/CHANGELOG.md",
-      markdown: "",
+      markdown: changelog,
     };
-  },
-  mounted() {
-    const self = this;
-    this.$axios
-      .$get(this.$data.url)
-      .then((markdown) => {
-        self.$data.markdown = markdown;
-      })
-      .catch((e) => {
-        console.error("Error when getting changelog: ", e);
-      });
   },
   components: {
     Remark,
-    TLoading,
   },
 };

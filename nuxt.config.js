@@ -765,6 +765,12 @@ export default {
       babelrc: true,
       configFile: "./.babelrc",
     },
+    extend(config) {
+      config.module.rules.push({
+        test: /\.md$/,
+        use: "raw-loader",
+      });
+    },
   },
 
   buildModules: [
