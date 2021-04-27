@@ -18,6 +18,8 @@ Using npm:
 npm install
 ```
 
+Copy `sample.env` to `.env`. For development, you do not need to edit this file.
+
 ## Start the server
 
 Using npm:

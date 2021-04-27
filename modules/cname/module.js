@@ -1,7 +1,7 @@
 const { join } = require("path");
 const { writeFileSync } = require("fs");
 
-const prodUrl = "foe.tools";
+const prodUrl = new URL(process.env.FRONTEND_URL).hostname;
 
 module.exports = async function () {
   const { generate: { dir: generateDir } } = this.options;

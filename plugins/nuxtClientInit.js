@@ -96,7 +96,7 @@ async function getSurvey(store, $axios) {
     urlParam = "?_id_nin=" + store.get("global/survey").join("&_id_nin=");
   }
   try {
-    const { data } = await $axios.get(`${process.env.surveyURL}${urlParam}`);
+    const { data } = await $axios.get(`${process.env.BACKEND_URL}/surveys${urlParam}`);
     if (data && Array.isArray(data)) {
       store.set("survey", data);
     }
@@ -170,7 +170,7 @@ function checkLocaleNotCompleted(store, translationState, $i18n) {
 }
 
 async function getLocaleCompletion(store, $axios, $i18n) {
-  let url = "https://translate.foe.tools/api/components/foe-tools-website/website/statistics/";
+  let url = `${process.env.TRANSLATION_URL}/statistics/`;
   const obj = {};
   do {
     const localesStatistics = await $axios.get(url);
