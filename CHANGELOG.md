@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.87.1](https://github.com/FOE-Tools/FOE-Tools.github.io/compare/v2.87.0...v2.87.1) (2021-05-02)
+
+
+### Translation
+
+* Translated using Weblate (Portuguese) ([90d6a91](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/90d6a9148ded20ca3294bf1d316b62f33896e983))
+* Translated using Weblate (Russian) ([b25e351](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/b25e3516dd02af01c75f06a8bbed84472cddec5d))
+* Translated using Weblate (Russian) ([a5c0ff3](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/a5c0ff330bbef9a550684f2f68780d82a60f33fc))
+* Translated using Weblate (Swedish) ([1f25ba8](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/1f25ba87694758d124609e695ec04efd2495710f))
+* update translation ([ff11fd2](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/ff11fd2a7779e7d4eb61fb22ff76856fdaec8ec5))
+
 ## [2.87.0](https://github.com/FOE-Tools/FOE-Tools.github.io/compare/v2.86.0...v2.87.0) (2021-04-18)
 
 ### Features
