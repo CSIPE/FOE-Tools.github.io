@@ -111,7 +111,7 @@ export default {
     },
     callback(key) {
       this.$axios
-        .post(process.env.surveySubmitURL, {
+        .post(`${process.env.BACKEND_URL}/surveyresponses`, {
           response: {
             response: this.$data.result,
             survey: this.$store.get("survey@[0].id"),

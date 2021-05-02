@@ -420,8 +420,7 @@ const routerBase =
       }
     : {};
 
-const prodUrl = "foe.tools";
-const hostname = process.env.DEPLOY_ENV === "GH_PAGES" ? `https://${prodUrl}` : "";
+const hostname = process.env.FRONTEND_URL;
 
 const defaultRoutes = [
   { route: "/", dynamic: [] },
@@ -454,21 +453,15 @@ const sitemap =
       }
     : {};
 
-const apiURL = process.env.DEPLOY_ENV === "GH_PAGES" ? "https://api.foe.tools" : "https://api.docker.localhost";
-
 export default {
   ...routerBase,
   ...sitemap,
 
   env: {
-    surveyURL: `${apiURL}/surveys`,
-    surveySubmitURL: `${apiURL}/surveyresponses`,
-    prodUrl,
-    sitekey:
-      process.env.DEPLOY_ENV === "GH_PAGES"
-        ? "6Le0qqAUAAAAADcXlFuBa9hfCXfdUi53i85sWzSp"
-        : "6LdzDKAUAAAAAKVUJf-Po_iaYTdnOzjkvusHF6ie",
-    HCAPTCHA_SITEKEY: "9e710cfa-bf17-47fb-a2b1-af30a5196b1d",
+    BACKEND_URL: process.env.BACKEND_URL,
+    TRANSLATION_URL: process.env.TRANSLATION_URL,
+    sitekey: process.env.SITEKEY,
+    HCAPTCHA_SITEKEY: process.env.HCAPTCHA_SITEKEY,
   },
 
   loading: {
@@ -758,7 +751,7 @@ export default {
   },
 
   sentry: {
-    dsn: "https://4088bc858d3d4dd3859d9b214d21720a@sentry.foe.tools/2",
+    dsn: process.env.SENTRY_DSN,
     disableServerSide: true,
     disabled: process.env.NODE_ENV !== "production",
     config: {
@@ -771,6 +764,12 @@ export default {
     babel: {
       babelrc: true,
       configFile: "./.babelrc",
+    },
+    extend(config) {
+      config.module.rules.push({
+        test: /\.md$/,
+        use: "raw-loader",
+      });
     },
   },
 

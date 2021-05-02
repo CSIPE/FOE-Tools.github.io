@@ -57,6 +57,51 @@ const keyMapping = {
   X_SpaceAgeVenus_Landmark1: "Flying_Island",
 };
 
+const gbSize = {
+  Observatory: { length: 3, width: 3 },
+  Temple_of_Relics: { length: 6, width: 6 },
+  Oracle_of_Delphi: { length: 3, width: 3 },
+  Gaea_Statue: { length: 6, width: 4 },
+  Arctic_Orangery: { length: 7, width: 7 },
+  Seed_Vault: { length: 5, width: 6 },
+  Tower_of_Babel: { length: 4, width: 4 },
+  Statue_of_Zeus: { length: 2, width: 3 },
+  Frauenkirche_of_Dresden: { length: 5, width: 5 },
+  Deal_Castle: { length: 7, width: 7 },
+  Lotus_Temple: { length: 6, width: 6 },
+  Innovation_Tower: { length: 6, width: 6 },
+  Hagia_Sophia: { length: 7, width: 6 },
+  Cathedral_of_Aachen: { length: 0, width: 0 },
+  Galata_Tower: { length: 4, width: 6 },
+  The_Arc: { length: 7, width: 5 },
+  Rain_Forest_Project: { length: 6, width: 6 },
+  St_Mark_s_Basilica: { length: 6, width: 6 },
+  Notre_Dame: { length: 4, width: 6 },
+  Royal_Albert_Hall: { length: 7, width: 6 },
+  Capitol: { length: 7, width: 5 },
+  Colosseum: { length: 6, width: 7 },
+  Lighthouse_of_Alexandria: { length: 4, width: 4 },
+  Saint_Basil_s_Cathedral: { length: 5, width: 5 },
+  Castel_del_Monte: { length: 5, width: 5 },
+  Space_Needle: { length: 6, width: 5 },
+  Atomium: { length: 7, width: 6 },
+  Atlantis_Museum: { length: 6, width: 7 },
+  The_Kraken: { length: 5, width: 5 },
+  The_Blue_Galaxy: { length: 7, width: 5 },
+  Cape_Canaveral: { length: 4, width: 5 },
+  The_Habitat: { length: 7, width: 6 },
+  Alcatraz: { length: 10, width: 7 },
+  Chateau_Frontenac: { length: 5, width: 6 },
+  Space_Carrier: { length: 7, width: 4 },
+  Star_Gazer: { length: 5, width: 5 },
+  The_Virgo_Project: { length: 5, width: 5 },
+  Voyager_V1: { length: 4, width: 7 },
+  Truce_Tower: { length: 6, width: 5 },
+  Terracotta_Army: { length: 4, width: 6 },
+  Himeji_Castle: { length: 6, width: 6 },
+  Flying_Island: { length: 4, width: 6 },
+};
+
 const deleteFileIfExist = (path) => {
   if (fs.existsSync(path)) {
     fs.unlinkSync(path);
@@ -172,7 +217,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true,
 });
 
-exports.default = ${JSON.stringify(finalGB, null, 2).slice(0, -2)},\n  age: ages.${gb.age}.key,\n  levels: ${
+exports.default = ${JSON.stringify(finalGB, null, 2).slice(0, -2)},\n  age: ages.${
+      gb.age
+    }.key,\n  size: ${JSON.stringify(gbSize[elt])},\n  levels: ${
       ["HighMiddleAges", "NoAge"].includes(gb.age) && !(gb.key === "Galata_Tower")
         ? "[...ageCost, ...defaultCost]"
         : "ageCost"

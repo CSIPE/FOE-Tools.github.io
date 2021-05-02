@@ -12,7 +12,7 @@ export default ({ store, $moment, $clone }) => {
       elementID: "cookieConsent",
       cookieName: "cookieConsent",
       storageMethod: "localStorage",
-      privacyPolicy: `https://${process.env.prodUrl}/privacy-policy`,
+      privacyPolicy: `/privacy-policy`,
       services: [
         {
           name: "foe-tools",
