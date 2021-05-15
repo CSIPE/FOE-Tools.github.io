@@ -182,6 +182,10 @@ function updateGbData(gbData = require("./all_gb_from_api.json")) {
         gb.gbReward[i + 1] = currentDataFromAPI.rewards;
       }
 
+      if ("trials" in currentDataFromAPI) {
+        gb.gbReward[i + 1].trials = currentDataFromAPI.trials;
+      }
+
       currentDataFromAPI.patron_bonus = currentDataFromAPI.patron_bonus.map((elt) => ({
         fp: elt.forgepoints,
         bp: elt.blueprints,
@@ -202,6 +206,7 @@ function updateGbData(gbData = require("./all_gb_from_api.json")) {
     const finalGB = clone(gb);
     delete finalGB.levels;
     delete finalGB.age;
+    delete finalGB.size;
 
     let resultFile = `const ages = require("../ages.json");
 const ageCost = require("../ages-cost/${
