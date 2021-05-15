@@ -34,6 +34,7 @@ export const state = () => ({
     contact: { key: "contact", link: "Contact" },
     cookie_policy: { key: "cookie_policy", link: "CookiePolicy" },
     privacy_policy: { key: "privacy_policy", link: "PrivacyPolicy" },
+    gb_leveling_order: { key: "gb_leveling_order", link: "GbLevelingOrder", isBeta: true },
   },
 
   /**

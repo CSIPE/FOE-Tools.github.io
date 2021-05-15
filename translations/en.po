@@ -40,6 +40,9 @@ msgstr "@:(routes.help_to_translate_the_site.hero.title)"
 msgid "main_menu.campaign_cost"
 msgstr "@:(routes.campaign_cost.hero.title)"
 
+msgid "main_menu.gb_leveling_order"
+msgstr "@:(routes.gb_leveling_order.hero.title)"
+
 msgid "footer_menu.about"
 msgstr "About"
 
@@ -968,6 +971,9 @@ msgstr ""
 "You visit a permalink. Consequently, any changes made will not be saved in "
 "cookies."
 
+msgid "components.site_layout.in_beta"
+msgstr "This tool is in beta. Do not hesitate to give me a feedback at: @:(common.links.contact_foe_tools)"
+
 msgid "components.site_layout.footer.license_html"
 msgstr "Source code under @:(common.links.mit) license"
 
@@ -1537,6 +1543,57 @@ msgstr "Page not found | @:(common.site_title)"
 
 msgid "routes.error.404.message"
 msgstr "Sorry, the page you are looking for does not exist or no more"
+
+msgid "routes.gb_leveling_order.hero.title"
+msgstr "GB Leveling order"
+
+msgid "routes.gb_leveling_order.hero.subtitle"
+msgstr "Which GB should I mount? In which order? To which level? This tool is here to answer these questions."
+
+msgid "routes.gb_leveling_order.title"
+msgstr "@:(routes.gb_leveling_order.hero.title)"
+
+msgid "routes.gb_leveling_order.table_reward.from"
+msgstr "From level"
+
+msgid "routes.gb_leveling_order.table_reward.to"
+msgstr "To level"
+
+msgid "routes.gb_leveling_order.table_reward.bonus"
+msgstr "Total bonus"
+
+msgid "routes.gb_leveling_order.table_reward.time"
+msgstr "Estimated time"
+
+msgid "routes.gb_leveling_order.table_reward.build"
+msgstr "Building"
+
+msgid "routes.gb_leveling_order.reward_to_boost"
+msgstr "Bonus to boost"
+
+msgid "routes.gb_leveling_order.choose_reward_to_boost"
+msgstr "Choose a bonus to boost (FP, Attack, etc.)"
+
+msgid "routes.gb_leveling_order.rewardKinds.popular"
+msgstr "Popular"
+
+msgid "routes.gb_leveling_order.targetLevel"
+msgstr "Target level (-1 = no limit)"
+
+msgid "routes.gb_leveling_order.buildRatio"
+msgstr "Equivalence of 1 resource (in FP) needed to build a GM (0 to be ignored)"
+
+msgid "routes.gb_leveling_order.initFpBy24h_fp_boost"
+msgstr " (FP GBs excluded)"
+
+msgid "routes.gb_leveling_order.randomRewardProduction"
+msgstr " (by 24 hours)"
+
+msgid "routes.gb_leveling_order.includeRandomReward"
+msgstr "Take in account GBs that can provides random rewards of the desired bonus ?"
+
+msgid "routes.gb_leveling_order.yourGbs"
+msgstr "Levels of your GBs (-1 = not yet built)"
 
 msgid "foe_data.age.Oracle"
 msgstr "@:(foe_data.age.NoAge) (@:(foe_data.gb.Oracle_of_Delphi))"
@@ -3590,6 +3647,12 @@ msgstr "Mysterious Shards"
 msgid "foe_data.bonus.mysterious_shards.gb_description"
 msgstr "A chance of spawning a Shard reward in the active Cultural Settlement."
 
+msgid "foe_data.bonus.previous_era_goods_production.name"
+msgstr "Previous Era Goods Production"
+
+msgid "foe_data.bonus.previous_era_goods_production.gb_description"
+msgstr "Produces random goods from the player's previous age every 24 hours. For the Bronze Age it produces Bronze Age goods."
+
 msgid "utils.content.tools"
 msgstr "Tools"
 
@@ -3860,7 +3923,7 @@ msgid "seo.keywords.military_units"
 msgstr "military units"
 
 msgid "pwa_update.message"
-msgstr "App has been updated. The app will reload in 5 secondes."
+msgstr "App has been updated. The app will reload in 5 seconds."
 
 msgid "cookieConsent.title"
 msgstr "Hey there ! It's us… the Cookies !"

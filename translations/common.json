@@ -64,6 +64,10 @@
       "campaign_cost": {
         "title": "@:(routes.campaign_cost.hero.title)",
         "subtitle": "@:(routes.campaign_cost.hero.subtitle)"
+      },
+      "gb_leveling_order": {
+        "title": "@:(routes.gb_leveling_order.hero.title)",
+        "subtitle": "@:(routes.gb_leveling_order.hero.subtitle)"
       }
     },
     "statistics": {

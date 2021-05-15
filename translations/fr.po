@@ -40,6 +40,9 @@ msgstr "@:(routes.help_to_translate_the_site.hero.title)"
 msgid "main_menu.campaign_cost"
 msgstr "@:(routes.campaign_cost.hero.title)"
 
+msgid "main_menu.gb_leveling_order"
+msgstr "@:(routes.gb_leveling_order.hero.title)"
+
 msgid "footer_menu.about"
 msgstr "À propos"
 
@@ -999,6 +1002,9 @@ msgstr ""
 "Vous visitez un lien permanent. De ce fait, toutes modifications effectuées "
 "ne seront pas sauvegardées dans des cookies."
 
+msgid "components.site_layout.in_beta"
+msgstr "Cet outil est en version bêta. N'hésitez pas à me faire part de vos commentaires à l'adresse suivante: @:(common.links.contact_foe_tools)"
+
 msgid "components.site_layout.footer.license_html"
 msgstr "Code source sous licence @:(common.links.mit)"
 
@@ -1576,6 +1582,57 @@ msgstr "Page non trouvée | @:(common.site_title)"
 
 msgid "routes.error.404.message"
 msgstr "Désolé, la page que vous recherchez n'existe pas ou plus"
+
+msgid "routes.gb_leveling_order.hero.title"
+msgstr "Ordre de montée des GMs"
+
+msgid "routes.gb_leveling_order.hero.subtitle"
+msgstr "Quels GM dois-je monter ? Dans quel ordre ? Jusqu'à quel niveau ? Cet outil est là pour répondre à ces questions."
+
+msgid "routes.gb_leveling_order.title"
+msgstr "@:(routes.gb_leveling_order.hero.title)"
+
+msgid "routes.gb_leveling_order.table_reward.from"
+msgstr "Du niveau"
+
+msgid "routes.gb_leveling_order.table_reward.to"
+msgstr "Au niveau"
+
+msgid "routes.gb_leveling_order.table_reward.bonus"
+msgstr "Bonus total"
+
+msgid "routes.gb_leveling_order.table_reward.time"
+msgstr "Durée estimée"
+
+msgid "routes.gb_leveling_order.table_reward.build"
+msgstr "Construire"
+
+msgid "routes.gb_leveling_order.reward_to_boost"
+msgstr "Bonus à monter"
+
+msgid "routes.gb_leveling_order.choose_reward_to_boost"
+msgstr "Choisir un bonus à booster (PF, Attaque, etc.)"
+
+msgid "routes.gb_leveling_order.rewardKinds.popular"
+msgstr "Populaire"
+
+msgid "routes.gb_leveling_order.targetLevel"
+msgstr "Niveau souhaité (-1 = aucune limite)"
+
+msgid "routes.gb_leveling_order.buildRatio"
+msgstr "Équivalence de 1 ressource (en PF) nécessaires pour construire un GM (0 pour ne pas prendre en compte)"
+
+msgid "routes.gb_leveling_order.initFpBy24h_fp_boost"
+msgstr " (GMs à PFs exclus)"
+
+msgid "routes.gb_leveling_order.randomRewardProduction"
+msgstr " (par 24 heures)"
+
+msgid "routes.gb_leveling_order.includeRandomReward"
+msgstr "Prendre en compte les GMs qui peuvent fournir des récompenses aléatoires du bonus souhaité ?"
+
+msgid "routes.gb_leveling_order.yourGbs"
+msgstr "Niveaux de vos GMs (-1 = pas encore construit)"
 
 msgid "foe_data.age.Oracle"
 msgstr "@:(foe_data.age.NoAge) (@:(foe_data.gb.Oracle_of_Delphi))"
@@ -3636,6 +3693,12 @@ msgstr "Éclats mystérieux"
 
 msgid "foe_data.bonus.mysterious_shards.gb_description"
 msgstr "Une chance de faire apparaître une récompense d'éclat dans la Colonie culturelle active."
+
+msgid "foe_data.bonus.previous_era_goods_production.name"
+msgstr "Production de ressources de l'ère précédente"
+
+msgid "foe_data.bonus.previous_era_goods_production.gb_description"
+msgstr "Produit des ressources aléatoires de l'âge précédent du joueur toutes les 24 heures. Produit des ressources de l'Âge du Bronze pendant l'Âge du Bronze."
 
 msgid "utils.content.tools"
 msgstr "Outils"

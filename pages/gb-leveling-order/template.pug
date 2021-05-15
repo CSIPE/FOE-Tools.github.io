@@ -1,0 +1,120 @@
+div(v-if="gbsData")
+  .t-content-container
+    h3.title {{ $t($data.i18nPrefix + 'title') }}
+
+    .t-columns.my-4.space-y-4(class="sm:space-x-8 sm:space-y-0")
+      .w-full(class="sm:w-1/2")
+        t-label#reward-to-boost(:label="$t(i18nPrefix + 'reward_to_boost')", label-for="chosenReward")
+          t-select#chosenReward.mt-2(v-model="chosenReward", name="chosenReward")
+            option(value="", disabled, :selected="!chosenReward.length") {{ $t(i18nPrefix + 'choose_reward_to_boost') }}
+            optgroup(:label="$t(i18nPrefix + 'rewardKinds.popular')")
+              option(
+                v-for="rewardKind in popularRewardKinds",
+                :value="rewardKind.key",
+                :key="rewardKind.key",
+                :selected="chosenReward === rewardKind.key",
+                :id="'option_' + rewardKind.key",
+                autocomplete="off"
+              ) {{ rewardKind.text.charAt(0).toUpperCase() + rewardKind.text.slice(1) }}
+            optgroup(:label="$t('utils.alpha_order')")
+              option(
+                v-for="rewardKind in rewardKinds",
+                :value="rewardKind.key",
+                :key="rewardKind.key",
+                :selected="chosenReward === rewardKind.key",
+                :id="'option_' + rewardKind.key",
+                autocomplete="off"
+              ) {{ rewardKind.text.charAt(0).toUpperCase() + rewardKind.text.slice(1) }}
+
+      .w-full(class="sm:w-1/2")
+        t-label#targetLevelLabel(:label="$t(i18nPrefix + 'targetLevel')", label-for="targetLevel")
+          numberinput(inputId="targetLevel", :min="-1", v-model.number="targetLevel", name="targetLevel")
+
+    .t-columns.my-4.space-y-4(class="sm:space-x-8 sm:space-y-0")
+      .w-full(class="sm:w-1/2")
+        t-label#buildRatioLabel(:label="$t(i18nPrefix + 'buildRatio')", label-for="buildRatio")
+          numberinput(inputId="buildRatio", :min="0", :step="0.1", v-model.number="buildRatio", name="buildRatio")
+      .w-full(class="sm:w-1/2")
+        t-label#initFpBy24hLabel(
+          :label="$t('components.cf_calculator.block_cfc.fp_by_24h') + (chosenReward === 'strategy_points' ? $t(i18nPrefix + 'initFpBy24h_fp_boost') : '')",
+          label-for="initFpBy24h"
+        )
+          numberinput(inputId="initFpBy24h", :min="1", v-model.number="initFpBy24h", name="initFpBy24h")
+
+    .t-columns.my-4.space-y-4(v-if="canHaveRandomGBReward", class="sm:space-x-8 sm:space-y-0")
+      .w-full(class="sm:w-1/2")
+        yes-no(v-model="includeRandomReward", :label="$t(i18nPrefix + 'includeRandomReward')")
+      .w-full(v-if="includeRandomReward && chosenReward === 'random_goods'", class="sm:w-1/2")
+        t-label#goodsLabel(
+          :label="$t('foe_data.bonus.good.name') + $t(i18nPrefix + 'randomRewardProduction')",
+          label-for="goodsProduction"
+        )
+          numberinput(
+            inputId="goodsProduction",
+            :min="1",
+            v-model.number="randomRewardProduction",
+            name="goodsProduction"
+          )
+      .w-full(v-if="includeRandomReward && chosenReward === 'supplies'", class="sm:w-1/2")
+        t-label#suppliesLabel(
+          :label="$t('foe_data.bonus.supply.name') + $t(i18nPrefix + 'randomRewardProduction')",
+          label-for="suppliesProduction"
+        )
+          numberinput(
+            inputId="suppliesProduction",
+            :min="1",
+            v-model.number="randomRewardProduction",
+            name="suppliesProduction"
+          )
+
+    h4.title.mt-4(v-if="Object.keys(gbs).length") {{ $t(i18nPrefix + 'yourGbs') }}
+
+    .t-columns.mb-4.mt-4(v-for="gb in gbs")
+      .w-full(class="sm:w-1/2")
+        t-label(:label="$t('foe_data.gb.' + gb.key)", :label-for="gb.key + 'label'")
+      .w-full(class="sm:w-1/2")
+        numberinput(
+          :min="-1",
+          v-model.number="fromLevel[gb.key]",
+          :name="gb.key + 'label'",
+          :inputId="gb.key + 'label'",
+          :showIncDec="true",
+          @input="fromLevelChange"
+        )
+
+  .overflow-x-auto.rounded-lg.mt-8.shadow-lg.mx-0(v-if="r.length", class="md:mx-16 lg:mx-32 xl:mx-64")
+    table#tableReward.min-w-full.divide-y.divide-gray-200.transition-light-dark(class="dark:divide-gray-600")
+      thead.bg-gray-50.transition-light-dark(class="dark:bg-gray-900")
+        tr
+          th.px-6.py-3.text-center.text-xs.font-medium.text-gray-500.uppercase.tracking-wider(
+            scope="col",
+            class="dark:text-white"
+          ) {{ $t('components.promotion_message_builder.variables.message.GBN') }}
+          th.px-6.py-3.text-center.text-xs.font-medium.text-gray-500.uppercase.tracking-wider(
+            scope="col",
+            class="dark:text-white"
+          ) {{ $t(i18nPrefix + 'table_reward.from') }}
+          th.px-6.py-3.text-center.text-xs.font-medium.text-gray-500.uppercase.tracking-wider(
+            scope="col",
+            class="dark:text-white"
+          ) {{ $t(i18nPrefix + 'table_reward.to') }}
+          th.px-6.py-3.text-center.text-xs.font-medium.text-gray-500.uppercase.tracking-wider(
+            scope="col",
+            class="dark:text-white"
+          ) {{ $t(i18nPrefix + 'table_reward.bonus') }}
+          th.px-6.py-3.text-center.text-xs.font-medium.text-gray-500.uppercase.tracking-wider(
+            scope="col",
+            class="dark:text-white"
+          ) {{ $t(i18nPrefix + 'table_reward.time') }}
+      tbody.bg-white.divide-y.divide-gray-200.transition-light-dark(class="dark:bg-gray-800 dark:divide-gray-600")
+        tr(v-for="(elt, idx) of r")
+          td.px-6.py-4.whitespace-nowrap.text-left {{ $t('foe_data.gb.' + elt.gbKey) }}
+          td.px-6.py-4.whitespace-nowrap.text-right {{ elt.from < 0 ? $t(i18nPrefix + 'table_reward.build') : $n(elt.from) }}
+          td.px-6.py-4.whitespace-nowrap.text-right {{ $n(elt.to) }}
+          td.px-6.py-4.whitespace-nowrap.text-right {{ $n(elt.bonus) }}
+          td.px-6.py-4.whitespace-nowrap.text-right {{ formatDate(elt.time) }}
+            span(v-if="idx > 0 && elt.time - r[idx - 1].time > 0") &nbsp;(+ {{ formatDate(elt.time - r[idx - 1].time) }})
+
+div(v-else)
+  .t-content-container
+    .loader.mx-auto

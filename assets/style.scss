@@ -626,3 +626,17 @@ a.t-dropdown-item {
 .border-r-1 {
   border-right-width: 1px;
 }
+
+.ribbon {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8rem;
+  height: 1.3rem;
+  margin-right: -2.5rem;
+  margin-top: 0.75rem;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Safari prior 9.0 */
+  transform: rotate(45deg); /* Standard syntax */
+}

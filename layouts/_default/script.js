@@ -68,6 +68,16 @@ export default {
       return this.$store.get("localesNotCompleted");
     },
     disableUpdateNotification: sync("global/disableUpdateNotification"),
+    currentPageInBeta() {
+      const routes = this.$store.get("routes");
+      for (const key in routes) {
+        if (this.$route.name.startsWith(routes[key].link)) {
+          return routes[key].isBeta;
+        }
+      }
+
+      return false;
+    },
   },
   watch: {
     localesNotCompleted(val) {

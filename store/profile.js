@@ -59,6 +59,12 @@ export const getters = {
       },
       gb: {},
       bookmarks: [],
+      /*
+       * Theses values are used in GB Leveling Order tool.
+       * Key: GB Name
+       * Value: Level
+       */
+      yourGbs: {},
     };
   },
   ...make.getters(state),
