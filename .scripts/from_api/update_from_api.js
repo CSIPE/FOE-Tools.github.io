@@ -184,6 +184,9 @@ function updateGbData(gbData = require("./all_gb_from_api.json")) {
 
       if ("trials" in currentDataFromAPI) {
         gb.gbReward[i + 1].trials = currentDataFromAPI.trials;
+        if (typeof gb.gbReward[i + 1].trials === "string") {
+          gb.gbReward[i + 1].trials = parseFloat(gb.gbReward[i + 1].trials.replace(",", "."));
+        }
       }
 
       currentDataFromAPI.patron_bonus = currentDataFromAPI.patron_bonus.map((elt) => ({
