@@ -19,7 +19,7 @@ tippy.inline-block.align-middle(
 
   template(v-if="!missingValues")
     p.flex(v-for="(elt, key) in rewards")
-      template(v-if="!key.includes('afterModern')")
+      template(v-if="!key.includes('afterModern') && key !== 'trials'")
         img.inline-block.h-6.w-6(
           width="24",
           height="24",
