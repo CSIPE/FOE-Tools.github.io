@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "Report-Msgid-Bugs-To: contact@foe.tools\n"
 "POT-Creation-Date: 2020-08-21T21:00:51.833Z\n"
-"PO-Revision-Date: 2021-02-10 17:59+0000\n"
+"PO-Revision-Date: 2021-04-25 15:25+0000\n"
 "Last-Translator: Mario Carapinha <omega.2delta@gmail.com>\n"
 "Language-Team: Portuguese <https://translate.foe.tools/projects/"
 "foe-tools-website/website/pt/>\n"
@@ -3992,3 +3992,131 @@ msgstr "Politica de Privacidade"
 
 msgid "footer_menu.cookie_policy"
 msgstr "Politica de Cookies"
+
+msgid "addToHomeScreen.dismiss"
+msgstr "Ignorar"
+
+msgid "addToHomeScreen.install"
+msgstr "Instalar"
+
+msgid "addToHomeScreen.description"
+msgstr ""
+"Instala FOE-Tools app. Não ocupa muito espaço no seu dispositivo ("
+"computador. telemóvel, etc.)e tem acesso rápido ao FOE-Tools ."
+
+msgid "addToHomeScreen.title"
+msgstr "Instale FOE-Tools"
+
+msgid "pwa_update.message"
+msgstr "A aplicação foi atualizada. Será reiniciada em 5 segundos."
+
+msgid "utils.lock"
+msgstr "Fecha"
+
+msgid "utils.unlock"
+msgstr "Abre"
+
+msgid "foe_data.bonus.mysterious_shards.gb_description"
+msgstr ""
+"Probabilidade de despontar um Fragmento recompensa na Colónia Cultural ativa."
+
+msgid "foe_data.bonus.mysterious_shards.name"
+msgstr "Fragmentos Misteriosos"
+
+msgid "foe_data.bonus.spoils_of_war.gb_description"
+msgstr ""
+"Nas primeiras batalhas vitoriosas, existe uma probabilidade de receberes uma "
+"recompensa aleatória."
+
+msgid "foe_data.bonus.spoils_of_war.name"
+msgstr "Despojos de Guerra"
+
+msgid "foe_data.bonus.plunder_repel.gb_description"
+msgstr ""
+"As primeiras tentativas de saque têm uma probabilidade de serem repelidas."
+
+msgid "foe_data.bonus.plunder_repel.name"
+msgstr "Repelir Saque"
+
+msgid "foe_data.bonus.missile_launch.name"
+msgstr "Lançamento do Míssil"
+
+msgid "foe_data.bonus.missile_launch.gb_description"
+msgstr ""
+"Nas primeiras batalhas, existe uma probabilidade de metade das unidades "
+"adversárias serem destruídas no início da batalha. Nas batalhas de duas "
+"ondas, a habilidade apenas tem efeito na primeira onda."
+
+msgid "foe_data.bonus.diplomatic_gifts.gb_description"
+msgstr ""
+"Nos primeiros jogos de negociações ganhas, ( expeto colonias), tens a "
+"oportunidade de ganhares uma recompensa aleatória."
+
+msgid "foe_data.bonus.diplomatic_gifts.name"
+msgstr "Presentes Diplomáticos"
+
+msgid "foe_data.bonus.advanced_tactics.gb_description"
+msgstr ""
+"Nas unidades que ataquem e defendem, têm um aumento nos seus valores "
+"determinado por uma percentagem."
+
+msgid "foe_data.bonus.advanced_tactics.name"
+msgstr "Táticas Avançadas"
+
+msgid "foe_data.goods.sugar_crystals"
+msgstr "Cristais de Açúcar"
+
+msgid "foe_data.goods.soy_proteins"
+msgstr "Proteínas de Soja"
+
+msgid "foe_data.goods.microgreen_supplement"
+msgstr "Suplementos de Microverdes"
+
+msgid "foe_data.goods.herbal_snack"
+msgstr "Merendas de Ervas"
+
+msgid "foe_data.goods.glowing_seaweed"
+msgstr "Algas Brilhantes"
+
+msgid "foe_data.gb_short.Flying_Island"
+msgstr "Ilha"
+
+msgid "foe_data.gb.Flying_Island"
+msgstr "Ilha Voadora"
+
+msgid "foe_data.age_short.SpaceAgeVenus"
+msgstr "Vénus"
+
+msgid "foe_data.age_short.SpaceAgeAsteroidBelt"
+msgstr "IECA"
+
+msgid "foe_data.age.SpaceAgeVenus"
+msgstr "Idade Espacial: Vénus"
+
+msgid "components.gb_patron_data.rewards.medals"
+msgstr "Medalhas"
+
+msgid "components.gb_patron_data.rewards.bp"
+msgstr "Plantas"
+
+msgid "components.gb_patron_data.rewards.fp"
+msgstr "PFs"
+
+msgid "components.gb_patron_data.icon_alt"
+msgstr "Lista de Recompensas"
+
+msgid "components.gb_data.missing_values"
+msgstr "Valores em falta."
+
+msgid "components.gb_data.icon_alt"
+msgstr "Lista de Bónus"
+
+msgid "components.site_layout.global_config_dialog.custom_gb_names"
+msgstr "Nomes normais dos GE's"
+
+msgid "components.site_layout.global_config_dialog.disable_update_notification"
+msgstr "Desativar notificações sobre atualizações"
+
+msgid "components.gb_investment.custom_name"
+msgstr ""
+"Podes colocar o nome do GE em : @:(components.site_layout.global_config)"

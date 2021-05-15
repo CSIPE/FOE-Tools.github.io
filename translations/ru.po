@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "Report-Msgid-Bugs-To: contact@foe.tools\n"
 "POT-Creation-Date: 2020-08-21T21:00:51.977Z\n"
-"PO-Revision-Date: 2021-04-17 00:31+0000\n"
+"PO-Revision-Date: 2021-04-20 12:20+0000\n"
 "Last-Translator: V <avd.way@gmail.com>\n"
 "Language-Team: Russian <https://translate.foe.tools/projects/"
 "foe-tools-website/website/ru/>\n"
@@ -49,7 +49,7 @@ msgid "footer_menu.contributors"
 msgstr "Авторы и участники проекта"
 
 msgid "footer_menu.changelog"
-msgstr "История обновлений"
+msgstr "История обновлений сайта"
 
 msgid "footer_menu.contact"
 msgstr "Контакты"
@@ -81,7 +81,7 @@ msgid "components.cf_calculator.block_cfc.your_age"
 msgstr "Ваша эпоха"
 
 msgid "components.cf_calculator.block_cfc.your_cf_boost"
-msgstr "Ваш бонус @:(foe_data.gb.Chateau_Frontenac) (в процентах)"
+msgstr "Ваш множитель @:(foe_data.gb.Chateau_Frontenac) (в процентах)"
 
 msgid "components.cf_calculator.block_cfc.coins_to_use"
 msgstr "Монет в Праздничной вечеринке Ринбина (ПВР)"
@@ -93,7 +93,7 @@ msgid "components.cf_calculator.block_cfc.gb_plunder_goods"
 msgstr "ВС и производственные здания (товары)"
 
 msgid "components.cf_calculator.block_cfc.fp_by_24h"
-msgstr "Производство СО в сутки"
+msgstr "Примерное производство СО в сутки (из всех источников)"
 
 msgid "components.cf_calculator.block_cfc.other_rq"
 msgstr "Другие суточные круговые квесты"
@@ -189,7 +189,7 @@ msgstr ""
 
 msgid "components.cf_calculator.tutorial.yourCfBoost"
 msgstr ""
-"Укажите бонус вашего @:(foe_data.gb.Chateau_Frontenac) в процентах.\n"
+"Укажите множитель вашего @:(foe_data.gb.Chateau_Frontenac) в процентах.\n"
 "\n"
 "Пример: для 450%, укажите 450."
 
@@ -242,7 +242,7 @@ msgstr ""
 "настоящее время."
 
 msgid "components.gb_investment.gb_list_select.label"
-msgstr "Выбрать другое Великое cтроение"
+msgstr "Великое Строение"
 
 msgid "components.gb_investment.gb_list_select.info"
 msgstr ""
@@ -254,25 +254,25 @@ msgstr "@:(routes.gb_investment_gb_chooser.hero.title)"
 
 msgid "components.gb_investment.gb_investment.description.p1"
 msgstr ""
-"Укажите прокачиваемый уровень вашего ВС и стандартный бонус Арки вкладчиков "
-"в процентах. \n"
+"Укажите прокачиваемый уровень вашего ВС и стандартный множитель Арки ваших "
+"вкладчиков в процентах. \n"
 "\n"
 "Значения в таблице ниже рассчитаются автоматически."
 
 msgid "components.gb_investment.gb_investment.description.p2_html"
 msgstr ""
 "<strong>Замечание</strong>: Если таблица не обновилась автоматически, "
-"сначала укажите уровень ВС, потом значение бонуса Арки и нажмите "
-"\"@:(components.gb_investment.gb_investment.form.submit_global)\". Если вы "
+"сначала укажите уровень ВС, потом значение множителя Арки и нажмите \""
+"@:(components.gb_investment.gb_investment.form.submit_global)\". Если вы "
 "хотите указать значения вкладов для всех мест вручную, заполните правую "
-"колонку таблицы и нажмите "
-"\"@:(components.gb_investment.gb_investment.form.submit_custom)\"."
+"колонку таблицы и нажмите \"@:(components.gb_investment.gb_investment.form."
+"submit_custom)\"."
 
 msgid "components.gb_investment.gb_investment.form.level"
 msgstr "Прокачиваемый уровень {fromLevel} → {level} (@:(utils.between_range))"
 
 msgid "components.gb_investment.gb_investment.form.investor_percentage"
-msgstr "Процент бонуса Арки вкладчиков (на 80 уровне - 90%)"
+msgstr "Множитель Арки вкладчиков в процентах (на 80 уровне - 90%)"
 
 msgid "components.gb_investment.gb_investment.form.submit_global"
 msgstr "Рассчитать"
@@ -322,10 +322,10 @@ msgid "components.gb_investment.gb_investment.table.thead.th3"
 msgstr "СО, которые должен вложить владелец ВС для обеспечения гаранта"
 
 msgid "components.gb_investment.gb_investment.table.thead.th4"
-msgstr "Прибыль с учётом бонуса Арки"
+msgstr "Прибыль с учётом множителя Арки"
 
 msgid "components.gb_investment.gb_investment.table.thead.th5"
-msgstr "Указать другой бонус Арки:"
+msgstr "Указать другой множитель Арки:"
 
 msgid "components.gb_investment.gb_investment.table.thead.th6"
 msgstr "Включить в рекламное сообщение"
@@ -338,7 +338,7 @@ msgstr "Количество СО уже вложенных"
 msgid ""
 "components.gb_investment.gb_investment.table.thead.real_"
 "participation"
-msgstr "СО получено с % бонуса % вашей Арки"
+msgstr "СО получено с учетом множителя вашей Арки"
 
 msgid "components.gb_investment.gb_investment.table.thead.is_sniper"
 msgstr "Потенциально перебьёт вышестоящего?"
@@ -346,7 +346,7 @@ msgstr "Потенциально перебьёт вышестоящего?"
 msgid ""
 "components.gb_investment.gb_investment.table.thead.expected_"
 "participation"
-msgstr "Количество СО получаемые с учетом бонуса, установленным владельцем ВС"
+msgstr "Количество СО с учетом множителя Арки"
 
 msgid "components.gb_investment.gb_investment.table.thead.spot_snipe"
 msgstr "Незваный вкладчик"
@@ -448,7 +448,7 @@ msgstr ""
 "P5 ({investment})"
 
 msgid "components.gb_investment.tutorial.table.default_rewards"
-msgstr "Это стандартная награда (без учёта бонуса Арки) за место."
+msgstr "Это номинальная награда за место (без учёта множителя Арки)."
 
 msgid "components.gb_investment.tutorial.table.is_sniper"
 msgstr ""
@@ -471,7 +471,7 @@ msgstr ""
 
 msgid "components.gb_investment.tutorial.investor_percentage"
 msgstr ""
-"Выберите коэффициент, который, как вы ожидаете, будут использовать ваши "
+"Выберите множитель, который, как вы ожидаете, будут использовать ваши "
 "инвесторы\n"
 "Пример: для инвестиций под 1.9 поставьте 90"
 
@@ -520,11 +520,11 @@ msgstr ""
 "«Снайпер - это игрок, который занимает место в ВС, чтобы получить прибыль, "
 "как правило, в убыток владельцу ВС.\n"
 "\n"
-"Например, поднятие уровня с 49 по 50 ВС "
-"\"@:(foe_data.gb.The_Virgo_Project)\" не требует от владельца вклада СО для "
-"обеспечения первых двух мест. Вложения при коэффициенте 1.9, составляет "
-"{fp1739}. Игрок (с Аркой 80-го уровня) может, после открытия уровня, занять "
-"первое место за {fp1679}, что обеспечит ему прибыль в размере {fp60}."
+"Например, поднятие уровня с 49 по 50 ВС \"@:(foe_data.gb.The_Virgo_Project)\""
+" не требует от владельца вклада СО для обеспечения первых двух мест. "
+"Вложения при множителе 1.9 составляет {fp1739}. Игрок (с Аркой 80-го уровня) "
+"может, после открытия уровня, занять первое место за {fp1679}, что обеспечит "
+"ему прибыль в размере {fp60}."
 
 msgid ""
 "components.gb_investment_investors.takingPlaceInConsideration."
@@ -570,18 +570,16 @@ msgid "components.gb_investment_investors.table.thead.th_profit_loss"
 msgstr "Прибыль / Потеря"
 
 msgid "components.gb_forecast_cost.title"
-msgstr "Прогноз"
+msgstr "Прогноз стоимости ВС"
 
 msgid "components.gb_forecast_cost.p1"
-msgstr ""
-"Определите количество СО, нужное для перехода с уровня на уровень, с и без "
-"бонуса Арки."
+msgstr "Прогноз затрат СО при разных сценариях прокачки вашего ВС."
 
 msgid "components.gb_forecast_cost.custom_percentage"
-msgstr "Разные бонусы Арки (для разных мест)"
+msgstr "Указать разные множители для разных мест?"
 
 msgid "components.gb_forecast_cost.estimated_time"
-msgstr "Примерное время на достижения уровня"
+msgstr "Приблизительная оценка временных затрат"
 
 msgid "components.gb_forecast_cost.message.diff_0"
 msgstr "За счет бонуса вы сэкономите {count} СО"
@@ -599,17 +597,17 @@ msgstr ""
 
 msgid "components.gb_forecast_cost.message.multi"
 msgstr ""
-"Чтобы перейти с {from} уровня на {to} из \"{gb}\", владелец должен вложить "
-"{preparation} СО. Общая стоимость уровней: {cost} СО."
+"Чтобы перейти с {from} уровня на {to} в ВС \"{gb}\", владелец должен будет "
+"вложить {preparation} своих СО. Общая стоимость уровней: {cost} СО."
 
 msgid "components.gb_forecast_cost.message.estimated_time"
 msgstr "Примерное время на достижение уровня: {time}"
 
 msgid "components.gb_forecast_cost.prop_already_invested"
-msgstr "Уже вложено СО владельцем в текущий уровень"
+msgstr "СО, уже вложенные владельцем в текущий уровень"
 
 msgid "components.gb_forecast_cost.graph.title"
-msgstr "Прогноз затрат СО для владельца для подготовки и прокачки \"{gb}\""
+msgstr "Прогноз затрат СО при разных сценариях прокачки ВС \"{gb}\""
 
 msgid "components.gb_forecast_cost.graph.x_axes_label"
 msgstr "@:(utils.graph.gb_level)"
@@ -618,13 +616,13 @@ msgid "components.gb_forecast_cost.graph.y_axes_label"
 msgstr "@:(utils.graph.gb_level_cost)"
 
 msgid "components.gb_forecast_cost.graph.label.default"
-msgstr "Разница относительно прошлого уровня"
+msgstr "Стоимость уровня без продажи мест"
 
 msgid "components.gb_forecast_cost.graph.label.default_preparation"
-msgstr "Количество требуемых СО без бонуса"
+msgstr "Если продавать места по номиналу"
 
 msgid "components.gb_forecast_cost.graph.label.custom_preparation"
-msgstr "Количество требуемых СО с бонусом"
+msgstr "Если продавать места под указанный множитель Арки"
 
 msgid "components.gb_statistics.title"
 msgstr "@:(routes.gb_statistics.hero.title)"
@@ -683,10 +681,10 @@ msgid "components.secure_position.block_place.other_participation"
 msgstr "Вложение игрока, которого нужно обойти (0 - если нет)"
 
 msgid "components.secure_position.block_place.your_arc_bonus"
-msgstr "Бонус вашей Арки (в процентах)"
+msgstr "Множитель вашей Арки (в процентах)"
 
 msgid "components.secure_position.block_place.fp_target_reward"
-msgstr "Награда планируемого места (без учёта бонуса Арки)"
+msgstr "СО планируемого места (без учёта множителя Арки)"
 
 msgid "components.secure_position.block_place.target_reward"
 msgstr "Ожидаемое место"
@@ -773,10 +771,10 @@ msgid "components.secure_position.block_place.fp_according_rate"
 msgstr "Количество прибыли"
 
 msgid "components.secure_position.block_place.rate"
-msgstr "Бонус Арки"
+msgstr "Множитель Арки"
 
 msgid "components.secure_position.block_place.various_rate"
-msgstr "Примеры с различными бонусами Арки"
+msgstr "Примеры с популярными множителями Арки"
 
 msgid "components.simple_trade.table.thead.th1"
 msgstr "Эпоха"
@@ -820,10 +818,10 @@ msgstr ""
 "cookies."
 
 msgid "components.site_layout.footer.license_html"
-msgstr "Исходный код доступен под лицезией @:(common.links.mit)"
+msgstr "Исходный код доступен под лицензией @:(common.links.mit)"
 
 msgid "components.site_layout.footer.version"
-msgstr "Версия {version}"
+msgstr "Версия сайта {version}"
 
 msgid "components.site_layout.day_night.Day"
 msgstr "День"
@@ -847,20 +845,20 @@ msgid "components.site_layout.global_config"
 msgstr "Настройки сайта"
 
 msgid "components.site_layout.global_config_dialog.fixed_main_menu"
-msgstr "Всегда отображать глобальное меню"
+msgstr "Закрепить верхнее меню при прокрутке страниц"
 
 msgid ""
 "components.site_layout.global_config_dialog.select_gb_style_"
 "mode.datalist"
-msgstr "Автозавершение"
+msgstr "Автозаполнение"
 
 msgid ""
 "components.site_layout.global_config_dialog.select_gb_style_"
 "mode.select"
-msgstr "Выбор из списка(устаревший)"
+msgstr "Выбор из списка (устаревший)"
 
 msgid "components.site_layout.global_config_dialog.day_night"
-msgstr "Тема"
+msgstr "Тема сайта"
 
 msgid "components.site_layout.global_config_dialog.day_night_mode.Day"
 msgstr "День"
@@ -869,10 +867,10 @@ msgid "components.site_layout.global_config_dialog.day_night_mode.Night"
 msgstr "Ночь"
 
 msgid "components.site_layout.global_config_dialog.day_night_mode.Auto"
-msgstr "Автоматически"
+msgstr "Динамическая смена"
 
 msgid "components.site_layout.global_config_dialog.select_gb_style"
-msgstr "Стиль выбора ВС"
+msgstr "Стиль переключателя ВС"
 
 msgid "components.site_layout.new_year.message_0"
 msgstr "@:(common.site_title) отмечает {count} год"
@@ -952,8 +950,8 @@ msgstr "Перевод строки, добавление новой строк�
 
 msgid "components.promotion_message_builder.variables.message.PVx"
 msgstr ""
-"Количество СО, которые должен вложить инвестор с учётом бонусов чтобы занять "
-"место \"х\" (где \"х\" значение от 1 до 5)"
+"Количество СО, которые должен вложить инвестор с учётом множителей Арки "
+"чтобы занять место \"х\" (где \"х\" значение от 1 до 5)"
 
 msgid "components.promotion_message_builder.variables.message.OP"
 msgstr "@:(components.gb_investment.gb_investment.table.tfoot.total_preparation)"
@@ -979,7 +977,7 @@ msgstr "Номер места"
 msgid "components.promotion_message_builder.note"
 msgstr ""
 "Внимание: Конструктор сообщений использует для примера прокачку уровня с 9 "
-"до 10 под коэффициент 1,9 у ВС @:(foe_data.gb.Observatory)."
+"до 10 под множитель 1.9 у ВС @:(foe_data.gb.Observatory)."
 
 msgid "components.promotion_message_builder.info"
 msgstr ""
@@ -1150,9 +1148,7 @@ msgid "routes.cf_calculator.hero.title"
 msgstr "Калькулятор Шато-Фронтенак"
 
 msgid "routes.cf_calculator.hero.subtitle"
-msgstr ""
-"Инструмент для подсчета бонусных товаров и пакетов СО при выполнении "
-"круговых квестов."
+msgstr "Подсчёт бонусов при выполнении круговых квестов."
 
 msgid "routes.changelog.title"
 msgstr "Изменения | @:(common.site_title)"
@@ -1196,21 +1192,21 @@ msgid "routes.gb_forecast_cost.title"
 msgstr "@:(routes.gb_forecast_cost.hero.title) | @:(common.site_title)"
 
 msgid "routes.gb_forecast_cost.hero.title"
-msgstr "Прогноз строимости ВС"
+msgstr "Прогноз стоимости прокачки ВС"
 
 msgid "routes.gb_forecast_cost.hero.subtitle"
 msgstr ""
-"Этот инструмент позволяет определить количество СО, нужное для перехода с "
-"уровня на уровень, с и без бонуса Арки."
+"Подсчёт количества СО, которое должен будет вложить владелец при продаже "
+"мест другим вкладчикам."
 
 msgid "routes.gb_statistics.title"
 msgstr "@:(routes.gb_statistics.hero.title) | @:(common.site_title)"
 
 msgid "routes.gb_statistics.hero.title"
-msgstr "Статистика ВС"
+msgstr "Эпохи ВС"
 
 msgid "routes.gb_statistics.hero.subtitle"
-msgstr "Этот инструмент визуализирует рост стоимости ВС относительно эпохи."
+msgstr "Визуализация роста стоимости ВС относительно эпохи."
 
 msgid "routes.secure_position.title"
 msgstr "@:(routes.secure_position.hero.title) | @:(common.site_title)"
@@ -1228,16 +1224,16 @@ msgid "routes.error.404.message"
 msgstr "Извините, страница не существует"
 
 msgid "routes.trade.hero.title"
-msgstr "Торговля"
+msgstr "Обмен товаров"
 
 msgid "routes.trade.title"
 msgstr "@:(routes.trade.hero.title) | @:(common.site_title)"
 
 msgid "routes.campaign_cost.hero.subtitle"
-msgstr "Подсчёт стоимости захвата провинций на карте кампании."
+msgstr "Подсчёт стоимости захвата провинций путём переговоров."
 
 msgid "routes.campaign_cost.hero.title"
-msgstr "Стоимость кампании"
+msgstr "Стоимость захвата провинций"
 
 msgid "routes.campaign_cost.title"
 msgstr "@:(routes.campaign_cost.hero.title) | @:(common.site_title)"
@@ -1480,13 +1476,13 @@ msgid "foe_data.gb_short.Statue_of_Zeus"
 msgstr "Зевс"
 
 msgid "foe_data.gb_short.Colosseum"
-msgstr "Коля"
+msgstr "Колизей"
 
 msgid "foe_data.gb_short.The_Arc"
 msgstr "Арка"
 
 msgid "foe_data.gb_short.Atlantis_Museum"
-msgstr "Музей Атлантиды"
+msgstr "Музей"
 
 msgid "foe_data.gb_short.The_Kraken"
 msgstr "Кракен"
@@ -1498,28 +1494,28 @@ msgid "foe_data.gb_short.Lighthouse_of_Alexandria"
 msgstr "Маяк"
 
 msgid "foe_data.gb_short.Oracle_of_Delphi"
-msgstr "Оракл"
+msgstr "Оракул"
 
 msgid "foe_data.gb_short.Temple_of_Relics"
 msgstr "Храм"
 
 msgid "foe_data.gb_short.Space_Carrier"
-msgstr "Космический авианосец"
+msgstr "Авик"
 
 msgid "foe_data.gb_short.Star_Gazer"
-msgstr "Звездочет"
+msgstr "Звездочёт"
 
 msgid "foe_data.gb_short.The_Virgo_Project"
 msgstr "Дева"
 
 msgid "foe_data.gb_short.Himeji_Castle"
-msgstr "Замок"
+msgstr "Хим"
 
 msgid "foe_data.gb_short.Terracotta_Army"
 msgstr "Терра"
 
 msgid "foe_data.gb_short.The_Blue_Galaxy"
-msgstr "Гала"
+msgstr "Галактика"
 
 msgid "foe_data.gb_short.Seed_Vault"
 msgstr "Зерно"
@@ -1555,7 +1551,7 @@ msgid "foe_data.gb_short.Atomium"
 msgstr "Атом"
 
 msgid "foe_data.gb_short.Space_Needle"
-msgstr "Спейс"
+msgstr "Спейс-Нидл"
 
 msgid "foe_data.gb_short.Alcatraz"
 msgstr "Альк"
@@ -1564,7 +1560,7 @@ msgid "foe_data.gb_short.Chateau_Frontenac"
 msgstr "Шато"
 
 msgid "foe_data.gb_short.Royal_Albert_Hall"
-msgstr "Алберт"
+msgstr "Альберт"
 
 msgid "foe_data.gb_short.Capitol"
 msgstr "Капитолий"
@@ -1576,13 +1572,13 @@ msgid "foe_data.gb_short.Deal_Castle"
 msgstr "Диль"
 
 msgid "foe_data.gb_short.Castel_del_Monte"
-msgstr "Кастель-дель-Монте"
+msgstr "Кастель"
 
 msgid "foe_data.gb_short.Saint_Basil_s_Cathedral"
 msgstr "Вася"
 
 msgid "foe_data.gb_short.Notre_Dame"
-msgstr "Нотер"
+msgstr "Нотр-Дам"
 
 msgid "foe_data.gb_short.St_Mark_s_Basilica"
 msgstr "Марк"
@@ -1594,7 +1590,7 @@ msgid "foe_data.gb_short.Observatory"
 msgstr "Обсерва"
 
 msgid "foe_data.gb_short.Tower_of_Babel"
-msgstr "Вавилонка"
+msgstr "Вавилон"
 
 msgid "foe_data.goods.marble"
 msgstr "Мрамор"
@@ -2579,7 +2575,7 @@ msgid "utils.graph.gb_level"
 msgstr "Уровень"
 
 msgid "utils.graph.gb_level_cost"
-msgstr "Вся стоимость уровня"
+msgstr "Стоимость всего уровня"
 
 msgid "utils.graph.gb_reward_1st_place"
 msgstr "Награда за уровень (1е место)"
@@ -2636,9 +2632,9 @@ msgstr[2] "Ожидаемый убыток"
 
 msgid "components.gb_forecast_cost.message.diff"
 msgid_plural "components.gb_forecast_cost.message.diff"
-msgstr[0] "За счет бонуса вы сэкономите {count} СО"
-msgstr[1] "За счет бонуса вы сэкономите {count} СО"
-msgstr[2] "За счет бонуса вы сэкономите {count} СО"
+msgstr[0] "За счет множителя Арки вы сэкономите {count} СО"
+msgstr[1] "За счет множителя Арки вы сэкономите {count} СО"
+msgstr[2] "За счет множителя Арки вы сэкономите {count} СО"
 
 msgid "components.secure_position.block_place.fp_to_complete_level"
 msgid_plural "components.secure_position.block_place.fp_to_complete_level"
@@ -2698,7 +2694,7 @@ msgid "routes.help_to_translate_the_site.hero.title"
 msgstr "Помогите перевести данный сайт"
 
 msgid "footer_menu.cookie_policy"
-msgstr "Правила обработки Cookies"
+msgstr "Правила обработки Cookie"
 
 msgid "footer_menu.privacy_policy"
 msgstr "Политика конфиденциальности"
@@ -2920,7 +2916,7 @@ msgstr ""
 "ссылкам:"
 
 msgid "components.site_layout.global_config_dialog.day_night_mode.System"
-msgstr "Определено системой"
+msgstr "Определяется системой"
 
 msgid "components.site_layout.update"
 msgid_plural "components.site_layout.update"
@@ -2946,19 +2942,19 @@ msgstr "Качество"
 msgid "routes.contact.message_translate"
 msgstr ""
 "Знаете ли вы, что вы также можете помочь с переводом сайта? Для получения "
-"дополнительной информации перейдите по следующей ссылке:"
+"дополнительной информации перейдите по данной ссылке:"
 
 msgid "routes.contact.message_contact_html"
 msgstr ""
-"Есть идея по улучшению функционала? Или проблема? Не стесняйтесь послать мне "
-"письмо (на английском или французском) по адресу @:(common.links."
-"contact_foe_tools)."
+"Есть идея по улучшению функционала? Нашли проблему с работой сайта? Не "
+"стесняйтесь прислать мне емейл (на английском или французском) по адресу "
+"@:(common.links.contact_foe_tools)."
 
 msgid "routes.contact.hero.subtitle"
-msgstr "Связаться с администратором @:(common.site_title)"
+msgstr "Связаться с администратором проекта @:(common.site_title)"
 
 msgid "routes.contact.hero.title"
-msgstr "Связаться"
+msgstr "Контакты"
 
 msgid "routes.contact.title"
 msgstr "@:(routes.contact.hero.title) | @:(common.site_title)"
@@ -3035,14 +3031,15 @@ msgstr "Показать"
 
 msgid "routes.donate.donation_message"
 msgstr ""
-"@:(common.site_title) - это бесплатный проект без рекламы. Таким образом "
-"время, которое я трачу на развитие этого сервиса никем не оплачивается. "
-"Однако я принимаю пожертвования от всех, кто ценит мою работу настолько, что "
-"хотел бы помочь финансово, независимо от суммы и способа (будь то разовое "
-"или ежемесячное пожертвование). Эти пожертвования очень много для меня "
-"значат, поскольку они помогают покрыть расходы, связанные с обслуживанием "
-"серверов, доменов и хостинга, а также общие расходы на жизнь. В добавок вы "
-"дарите мне стимул продолжать работать над этим проектом."
+"@:(common.site_title) - это бесплатный проект без рекламы. Из-за этого "
+"время, которое я трачу на разработку и развитие проекта никем не "
+"оплачивается. Однако я принимаю пожертвования от всех, кто ценит мою работу "
+"настолько, что хотел бы помочь финансово, независимо от суммы и способа ("
+"будь то разовое или ежемесячное пожертвование). Эти пожертвования очень "
+"много для меня значат, поскольку они помогают покрыть расходы, связанные с "
+"обслуживанием серверов, доменов и хостинга, а также общие расходы на жизнь. "
+"В добавок вы дарите мне стимул продолжать работу над этим проектом в "
+"дальнейшем."
 
 msgid "components.promotion_message_builder.place_builder"
 msgstr "строитель места"
@@ -3139,8 +3136,8 @@ msgstr "Мы хотели бы активировать дополнительн
 
 msgid "cookieConsent.foe-tools.description"
 msgstr ""
-"Все данные, относящиеся к вашей конфигурации (уровень ВС, вкладчики, бонус "
-"Арки и т. д.)"
+"Все данные, относящиеся к вашей конфигурации (уровень ВС, вкладчики, "
+"множитель Арки и т. д.)"
 
 msgid "cookieConsent.ok"
 msgstr "Я согласен"
@@ -3337,7 +3334,7 @@ msgid "foe_data.goods.nickel"
 msgstr "Никель"
 
 msgid "foe_data.gb_short.Galata_Tower"
-msgstr "Галатская башня"
+msgstr "Галатская"
 
 msgid "foe_data.gb.Galata_Tower"
 msgstr "Галатская башня"
@@ -3398,12 +3395,12 @@ msgstr ""
 "эпох."
 
 msgid "routes.trade.hero.subtitle"
-msgstr "Этот инструмент облегчает торговлю, предлагая лучшие ставки."
+msgstr "Рассчёт обменных курсов товара."
 
 msgid "routes.contact.message_other_info_html"
 msgstr ""
-"Если вы разработчик, вы также можете отправить заявку (и внести свой вклад в "
-"развитие сайта) на @:( common.links.github)."
+"Если вы программист, вы также можете отправить заявку (и внести свой вклад в "
+"развитие проекта) здесь: @:(common.links.github)."
 
 msgid "routes.survey.title"
 msgstr "@:(routes.survey.hero.title) | @:(common.site_title)"
@@ -3457,7 +3454,7 @@ msgid "utils.errors.field_cannot_be_empty"
 msgstr "Это поле не может быть пустым"
 
 msgid "utils.Donate"
-msgstr "Пожертвовать"
+msgstr "Помочь рублём"
 
 msgid "utils.Tutorial"
 msgstr "Руководство"
@@ -3523,7 +3520,7 @@ msgid "foe_data.bonus.exploration_site.gb_description"
 msgstr "---"
 
 msgid "routes.donate.hero.subtitle"
-msgstr "Пожертвовать @:(common.site_title)"
+msgstr "Сделать пожертвование проекту @:(common.site_title)"
 
 msgid "routes.donate.hero.title"
 msgstr "@:(utils.Donate)"
@@ -3700,7 +3697,7 @@ msgstr ""
 "в битве две волны, то умение действует только во время первой."
 
 msgid "components.site_layout.global_config_dialog.custom_gb_names"
-msgstr "Свои имена Великих Строений"
+msgstr "Короткие названия ВС"
 
 msgid "addToHomeScreen.description"
 msgstr ""
@@ -4053,7 +4050,7 @@ msgid "addToHomeScreen.dismiss"
 msgstr "Отмена"
 
 msgid "components.site_layout.global_config_dialog.disable_update_notification"
-msgstr "Выключить уведомления об обновлениях"
+msgstr "Выключить уведомления об обновлениях сайта"
 
 msgid "components.gb_investment.custom_name"
 msgstr ""
@@ -4127,3 +4124,30 @@ msgstr "Чертежи"
 
 msgid "components.gb_patron_data.rewards.fp"
 msgstr "СО"
+
+msgid "foe_data.bonus.mysterious_shards.gb_description"
+msgstr "Шанс появления награды-осколка в активном культурном поселении."
+
+msgid "foe_data.bonus.mysterious_shards.name"
+msgstr "Таинственные осколки"
+
+msgid "foe_data.goods.sugar_crystals"
+msgstr "Сахарные кристалы"
+
+msgid "foe_data.goods.soy_proteins"
+msgstr "Соевые протеины"
+
+msgid "foe_data.goods.microgreen_supplement"
+msgstr "Подкормок из микрозелени"
+
+msgid "foe_data.goods.herbal_snack"
+msgstr "Травяные закуски"
+
+msgid "foe_data.goods.glowing_seaweed"
+msgstr "Светящиеся водоросли"
+
+msgid "foe_data.age_short.SpaceAgeVenus"
+msgstr "Венера"
+
+msgid "foe_data.age_short.SpaceAgeAsteroidBelt"
+msgstr "КЭПА"

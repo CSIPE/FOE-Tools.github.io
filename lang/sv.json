@@ -1208,5 +1208,14 @@
   "components.gb_patron_data.rewards.fp": "FPs",
   "components.gb_patron_data.icon_alt": "Belöning lista",
   "components.gb_data.missing_values": "Saknade värden.",
-  "components.gb_data.icon_alt": "Bonus lista"
+  "components.gb_data.icon_alt": "Bonus lista",
+  "foe_data.bonus.mysterious_shards.gb_description": "Ger chans att generera en skärvbelöning i din aktiva kulturella bosättning.",
+  "foe_data.bonus.mysterious_shards.name": "Mysteriska skärvor",
+  "foe_data.goods.sugar_crystals": "Sockerkristaller",
+  "foe_data.goods.soy_proteins": "Sojaproteiner",
+  "foe_data.goods.microgreen_supplement": "Bladskottstillskott",
+  "foe_data.goods.herbal_snack": "Örtsnacks",
+  "foe_data.goods.glowing_seaweed": "Glödande tång",
+  "foe_data.age_short.SpaceAgeVenus": "SAV",
+  "foe_data.age_short.SpaceAgeAsteroidBelt": "RÅAB"
 }
