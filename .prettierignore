@@ -52,3 +52,36 @@ lib/vuex-pathify
 lib/tailwindcss-module
 .github
 .nuxt
+
+# FIXME: these files fails, probably because of v-tippy
+# Example:
+#[error] components/campaign-cost/template.pug: Error: SyntaxError: Unexpected token ':'
+#[error]     at a (./node_modules/prettier/parser-angular.js:46:18506)
+#[error]     at t.parseNgInterpolation (./node_modules/prettier/parser-angular.js:46:19673)
+#[error]     at n (./node_modules/prettier/parser-angular.js:46:30528)
+#[error]     at Object.t.parseInterpolation (./node_modules/prettier/parser-angular.js:46:30931)
+#[error]     at ./node_modules/prettier/parser-angular.js:46:31556
+#[error]     at Object.parse (./node_modules/prettier/parser-angular.js:46:31239)
+#[error]     at Object.parse$a [as parse] (./node_modules/prettier/index.js:14892:19)
+#[error]     at coreFormat (./node_modules/prettier/index.js:16425:16)
+#[error]     at formatWithCursor$1 (./node_modules/prettier/index.js:16665:14)
+#[error]     at ./node_modules/prettier/index.js:60922:12
+#[error]     at PugPrinter.build (./node_modules/@prettier/plugin-pug/dist/printer.js:106:23)
+#[error]     at Object.print (./node_modules/@prettier/plugin-pug/dist/index.js:66:40)
+#[error]     at callPluginPrintFunction (./node_modules/prettier/index.js:16169:21)
+#[error]     at mainPrintInternal (./node_modules/prettier/index.js:16107:17)
+#[error]     at mainPrint (./node_modules/prettier/index.js:16089:14)
+#[error]     at printAstToDoc (./node_modules/prettier/index.js:16076:13)
+#[error]     at coreFormat (./node_modules/prettier/index.js:16436:15)
+#[error]     at formatWithCursor$1 (./node_modules/prettier/index.js:16665:14)
+#[error]     at Object.formatWithCursor (./node_modules/prettier/index.js:60922:12)
+#[error]     at format$1 (./node_modules/prettier/bin-prettier.js:16107:14)
+components/campaign-cost/template.pug
+components/gb-investment-investors/template.pug
+components/gb-investment/template.pug
+components/gb-list-select/template.pug
+components/main-header/template.pug
+components/promotion-message-builder/template.pug
+components/secure-position/template.pug
+components/yes-no/template.pug
+pages/contributors/template.pug

@@ -1,4 +1,5 @@
 import { FocusTrap } from "focus-trap-vue";
+import clickOutside from "~/scripts/clickOutside.js";
 
 function removeElement(el) {
   if (typeof el.remove !== "undefined") {
@@ -12,6 +13,9 @@ const defaultModalCanCancel = ["escape", "x", "outside", "button"];
 
 export default {
   name: "TModal",
+  directives: {
+    clickOutside,
+  },
   props: {
     active: Boolean,
     component: [Object, Function, String],
@@ -22,6 +26,10 @@ export default {
     width: {
       type: [String, Number],
       default: 960,
+    },
+    size: {
+      type: String,
+      default: "sm:max-w-lg",
     },
     hasModalCard: Boolean,
     animation: {
@@ -111,6 +119,11 @@ export default {
     },
   },
   methods: {
+    onClickOutside(event) {
+      if (this.cancelOptions.includes("outside") && event.srcElement.id === "modalContainer") {
+        this.close();
+      }
+    },
     handleScroll() {
       if (typeof window === "undefined") return;
 

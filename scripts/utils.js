@@ -516,6 +516,7 @@ export default {
         customPercentage: false,
       },
       tab: 0,
+      yourLevel: -1,
     };
   },
 

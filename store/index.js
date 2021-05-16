@@ -34,6 +34,7 @@ export const state = () => ({
     contact: { key: "contact", link: "Contact" },
     cookie_policy: { key: "cookie_policy", link: "CookiePolicy" },
     privacy_policy: { key: "privacy_policy", link: "PrivacyPolicy" },
+    gb_leveling_order: { key: "gb_leveling_order", link: "GbLevelingOrder", isBeta: true },
   },
 
   /**
@@ -192,12 +193,14 @@ export const mutations = {
 
 export const getters = {
   ...make.getters(state),
-  getUrlQuery: (state) => (ns = "") => {
-    if (!ns || ns.length === 0) {
-      return state.urlQuery;
-    }
-    return Object.assign(JSON.parse(JSON.stringify(state.urlQuery)), state.urlQueryNamespace[ns]);
-  },
+  getUrlQuery:
+    (state) =>
+    (ns = "") => {
+      if (!ns || ns.length === 0) {
+        return state.urlQuery;
+      }
+      return Object.assign(JSON.parse(JSON.stringify(state.urlQuery)), state.urlQueryNamespace[ns]);
+    },
 };
 
 export const actions = make.actions(state);

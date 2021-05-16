@@ -646,7 +646,8 @@ const TStepperButton = {
           "border-t border-b": true,
           "border-red-500": this.context.isInvalid,
           "border-gray-300 dark:border-gray-600": !this.context.isInvalid,
-          "bg-blueGray-200 dark:bg-blueGray-400 text-gray-400 dark:text-gray-400 cursor-not-allowed bg-opacity-50 dark:bg-opacity-50 text-opacity-50": isDisabled,
+          "bg-blueGray-200 dark:bg-blueGray-400 text-gray-400 dark:text-gray-400 cursor-not-allowed bg-opacity-50 dark:bg-opacity-50 text-opacity-50":
+            isDisabled,
           "bg-blueGray-200 hover:bg-blueGray-300 dark:hover:bg-blueGray-100 text-gray-700": !isDisabled,
         },
         domProps: {

@@ -42,6 +42,12 @@ export default {
               subtitle: "common.tools.campaign_cost.subtitle",
               link: this.$store.get("routes@campaign_cost.link"),
             },
+            {
+              title: "common.tools.gb_leveling_order.title",
+              subtitle: "common.tools.gb_leveling_order.subtitle",
+              link: this.$store.get("routes@gb_leveling_order.link"),
+              isBeta: true,
+            },
           ],
         },
         {

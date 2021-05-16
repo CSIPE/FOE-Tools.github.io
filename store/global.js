@@ -12,7 +12,7 @@ export const state = () => ({
   haveReadInstallApp: false,
   customPromotionMessagesTemplates: [],
   displayTableCard: false,
-  dayNightMode: "system",
+  dayNightMode: "system", // day | night | auto | system
   dayStart: "07:00",
   nightStart: "18:30",
   locale: defaultLocale,

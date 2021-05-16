@@ -33,7 +33,8 @@ div
             :min="1",
             :max="maxLevel - 1",
             v-model.number="toInput",
-            name="previsionTo"
+            name="previsionTo",
+            @blur="onBlurToField"
           )
 
     // Row 2

@@ -1085,9 +1085,9 @@ export default {
       this.updatePromotionMessage();
     },
     getSplittedCustomFields(name) {
-      const fields = this.$data.promotionMessageList[
-        this.$data.promotionMessageList.map((val) => val.name).indexOf(name)
-      ].config.customFields;
+      const fields =
+        this.$data.promotionMessageList[this.$data.promotionMessageList.map((val) => val.name).indexOf(name)].config
+          .customFields;
       const result = Object.keys(fields).map((key) => {
         return fields[key];
       });
@@ -1202,7 +1202,7 @@ export default {
         {
           i18nKey: "tabs",
           stepId: "thDefaultRewards",
-          attachTo: { element: "#giPromotionMessageTab nav", on: "top" },
+          attachTo: { element: "#giPromotionMessageTab", on: "top" },
         },
         {
           i18nKey: "prefix",
@@ -1329,8 +1329,8 @@ export default {
         id: "gbListSelect",
         text: formatTuto(
           this.$t("components.gb_investment.tutorial.gb_select", {
-            videoSelect: getVideoTag("/video/select.mp4"),
-            videoAutoComplete: getVideoTag("/video/auto-complete.mp4"),
+            videoSelect: getVideoTag("/video/select"),
+            videoAutoComplete: getVideoTag("/video/auto-complete"),
           })
         ),
         attachTo: { element: "#gbListSelect", on: "bottom" },
@@ -1468,6 +1468,22 @@ export default {
         });
       }
       this.$store.set(`profile/profiles@["${this.$store.get("global/currentProfile")}"].bookmarks`, bookmarks);
+    },
+    showImportPromotionMessage: /* istanbul ignore next */ function () {
+      this.$modal({
+        parent: this,
+        component: ImportPromotionMessage,
+        hasModalCard: true,
+        size: "sm:max-w-3xl",
+      });
+    },
+    showPromotionMessageBuilder: /* istanbul ignore next */ function () {
+      this.$modal({
+        parent: this,
+        component: PromotionMessageBuilder,
+        hasModalCard: true,
+        size: "sm:max-w-3xl",
+      });
     },
   },
   mounted() {

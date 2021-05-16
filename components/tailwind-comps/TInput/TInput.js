@@ -62,15 +62,15 @@ const TInput = {
           // Animation
           "duration-100 ease-in-out transition": true,
           // eslint-disable-next-line max-len
-          "border-gray-300 dark:border-gray-600 bg-white focus:border-gray-300 dark:focus:border-gray-600": !this
-            .formControl.isInvalid,
+          "border-gray-300 dark:border-gray-600 bg-white focus:border-gray-300 dark:focus:border-gray-600":
+            !this.formControl.isInvalid,
           // eslint-disable-next-line max-len
-          "border-red-500 dark:border-red-500 focus:border-red-500 dark:focus:border-red-500 dark:bg-opacity-25 dark:bg-red-900 bg-red-100": this
-            .formControl.isInvalid,
+          "border-red-500 dark:border-red-500 focus:border-red-500 dark:focus:border-red-500 dark:bg-opacity-25 dark:bg-red-900 bg-red-100":
+            this.formControl.isInvalid,
           "number-appearance-textfield": this.hasIncDecButtons,
           "w-full min-w-0": this.isFullWidth,
-          "bg-coolGray-400 dark:bg-gray-700 bg-opacity-10 text-opacity-50 dark:text-gray-500 cursor-not-allowed": this
-            .formControl.isDisabled,
+          "bg-coolGray-400 dark:bg-gray-700 bg-opacity-10 text-opacity-50 dark:text-gray-500 cursor-not-allowed":
+            this.formControl.isDisabled,
           "dark:bg-gray-700 dark:bg-opacity-50": !this.formControl.isDisabled && !this.formControl.isInvalid,
         },
         domProps: {

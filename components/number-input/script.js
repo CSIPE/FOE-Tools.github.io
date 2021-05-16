@@ -50,6 +50,11 @@ export default {
       this.$emit("input", value);
     },
   },
+  methods: {
+    onBlurField(event) {
+      this.$emit("blur", event);
+    },
+  },
   components: {
     ValidationProvider,
     TNumberInput,

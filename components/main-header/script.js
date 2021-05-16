@@ -65,6 +65,12 @@ export default {
               name: `main_menu.${this.$store.get("routes@campaign_cost.key")}`,
               children: [],
             },
+            {
+              ...this.$store.get("routes@gb_leveling_order"),
+              type: Utils.MenuRecordType.PAGE,
+              name: `main_menu.${this.$store.get("routes@gb_leveling_order.key")}`,
+              children: [],
+            },
           ],
         },
         {
