@@ -12,6 +12,11 @@ focus-trap(v-model="isActive")
       )
         .fixed.inset-0(v-show="isActive", style="z-index: -1")
           .absolute.inset-0.bg-gray-800.opacity-75
+          font-awesome-icon.absolute.top-8.right-8.text-white.opacity-70.cursor-pointer(
+            v-if="cancelOptions.includes('outside')",
+            :icon="['fas', 'times']",
+            size="2x"
+          )
       // This element is to trick the browser into centering the modal contents.
       span.hidden(class="sm:inline-block sm:align-middle sm:h-screen", aria-hidden="true") &ZeroWidthSpace;
       transition(
