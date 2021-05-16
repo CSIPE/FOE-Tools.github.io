@@ -193,12 +193,14 @@ export const mutations = {
 
 export const getters = {
   ...make.getters(state),
-  getUrlQuery: (state) => (ns = "") => {
-    if (!ns || ns.length === 0) {
-      return state.urlQuery;
-    }
-    return Object.assign(JSON.parse(JSON.stringify(state.urlQuery)), state.urlQueryNamespace[ns]);
-  },
+  getUrlQuery:
+    (state) =>
+    (ns = "") => {
+      if (!ns || ns.length === 0) {
+        return state.urlQuery;
+      }
+      return Object.assign(JSON.parse(JSON.stringify(state.urlQuery)), state.urlQueryNamespace[ns]);
+    },
 };
 
 export const actions = make.actions(state);

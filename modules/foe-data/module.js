@@ -2,6 +2,16 @@ const { join } = require("path");
 const { existsSync, writeFileSync, mkdirSync } = require("fs");
 const hasha = require("hasha");
 
+import * as campaignCost from "../../lib/foe-data/campaign-cost";
+import * as gbs from "../../lib/foe-data/gbs";
+import * as goods from "../../lib/foe-data/goods";
+
+const mapFiles = {
+  "campaign-cost": campaignCost,
+  gbs,
+  goods
+};
+
 module.exports = async function () {
   const { rootDir, generate: { dir: generateDir } } = this.options;
   const dirPath = "foe-data";
@@ -38,7 +48,7 @@ module.exports = async function () {
   // render foe-data via SSR
   this.nuxt.hook('render:setupMiddleware', () => {
     for (const fileName of filesName) {
-      let obj = require(join(rootDir, "lib", dirPath, `${fileName}.js`));
+      let obj = mapFiles[fileName];
       if ("default" in obj) {
         obj = obj.default;
       }

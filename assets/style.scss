@@ -285,11 +285,12 @@ p:not([class]) {
   display: inline-block;
 }
 
-.shepherd-element .shepherd-arrow:before, .shepherd-element .shepherd-arrow:after  {
+.shepherd-element .shepherd-arrow:before,
+.shepherd-element .shepherd-arrow:after {
   @apply bg-coolGray-100 dark:bg-gray-600;
 }
 
-.shepherd-element[data-popper-placement^=top] > .shepherd-arrow {
+.shepherd-element[data-popper-placement^="top"] > .shepherd-arrow {
   bottom: 8px;
 }
 

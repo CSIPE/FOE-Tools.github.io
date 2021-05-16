@@ -771,6 +771,7 @@ export default {
         use: "raw-loader",
       });
     },
+    transpile: ["file:./lib/foe-data/campaign-cost.js", "file:./lib/foe-data/gbs.js", "file:./lib/foe-data/goods.js"],
   },
 
   buildModules: [

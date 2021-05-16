@@ -94,8 +94,8 @@ export default {
         case "default":
           return {
             "bg-blueGray-200 hover:bg-blueGray-300 dark:hover:bg-blueGray-100 text-gray-700": !this.$attrs.disabled,
-            "bg-oldGray-200 dark:bg-oldGray-500 text-gray-400 dark:text-gray-600 cursor-not-allowed": this.$attrs
-              .disabled,
+            "bg-oldGray-200 dark:bg-oldGray-500 text-gray-400 dark:text-gray-600 cursor-not-allowed":
+              this.$attrs.disabled,
           };
         case "success":
           return {
@@ -110,8 +110,8 @@ export default {
         case "warning":
           return {
             "bg-yellow-400 hover:bg-yellow-500 dark:hover:bg-yellow-300 text-black": !this.$attrs.disabled,
-            "bg-yellow-300 hover:bg-yellow-300 text-gray-100 dark:text-gray-100 cursor-not-allowed": this.$attrs
-              .disabled,
+            "bg-yellow-300 hover:bg-yellow-300 text-gray-100 dark:text-gray-100 cursor-not-allowed":
+              this.$attrs.disabled,
           };
         case "danger":
           return {

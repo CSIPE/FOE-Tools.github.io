@@ -27,8 +27,8 @@ export default {
         case "default":
           return {
             "bg-blueGray-200 border-blueGray-200 text-gray-700": !this.$attrs.disabled,
-            "bg-oldGray-200 dark:bg-oldGray-500 text-gray-400 dark:text-gray-600 cursor-not-allowed": this.$attrs
-              .disabled,
+            "bg-oldGray-200 dark:bg-oldGray-500 text-gray-400 dark:text-gray-600 cursor-not-allowed":
+              this.$attrs.disabled,
           };
         case "success":
           return {

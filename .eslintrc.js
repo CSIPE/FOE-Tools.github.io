@@ -9,14 +9,7 @@ module.exports = {
     ecmaVersion: 2017,
     allowImportExportEverywhere: true,
   },
-  extends: [
-    "@nuxtjs",
-    "prettier/vue",
-    "plugin:vue/recommended",
-    "plugin:nuxt/recommended",
-    "prettier",
-    "plugin:prettier/recommended",
-  ],
+  extends: ["@nuxtjs", "plugin:vue/recommended", "plugin:nuxt/recommended", "prettier", "plugin:prettier/recommended"],
   rules: {
     "no-console": "off",
     "max-len": ["error", { code: 120 }],

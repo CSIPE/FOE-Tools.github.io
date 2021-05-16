@@ -1085,9 +1085,9 @@ export default {
       this.updatePromotionMessage();
     },
     getSplittedCustomFields(name) {
-      const fields = this.$data.promotionMessageList[
-        this.$data.promotionMessageList.map((val) => val.name).indexOf(name)
-      ].config.customFields;
+      const fields =
+        this.$data.promotionMessageList[this.$data.promotionMessageList.map((val) => val.name).indexOf(name)].config
+          .customFields;
       const result = Object.keys(fields).map((key) => {
         return fields[key];
       });
