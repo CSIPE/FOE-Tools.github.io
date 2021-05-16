@@ -181,9 +181,6 @@ export default {
         return this.normalizedTo();
       },
       set(val) {
-        if (val <= this.fromInput) {
-          this.fromInput = Math.max(val - 1, 0);
-        }
         this.$data.to = val;
       },
     },
@@ -417,6 +414,11 @@ export default {
     },
   },
   methods: {
+    onBlurToField() {
+      if (this.toInput <= this.fromInput) {
+        this.fromInput = Math.max(this.toInput - 1, 0);
+      }
+    },
     normalizedFrom() {
       return Utils.normalizeNumberValue(this.$data.from, 1);
     },
