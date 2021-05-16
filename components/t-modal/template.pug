@@ -1,6 +1,6 @@
 focus-trap(v-model="isActive")
   .fixed.z-50.inset-0.overflow-y-auto
-    .flex.items-end.justify-center.min-h-screen.max-h-screen.text-center(class="sm:block sm:p-0")
+    #modalContainer.flex.items-end.justify-center.min-h-screen.max-h-screen.text-center(class="sm:block sm:p-0")
       transition(
         name="tailwind-modal-bg",
         enter-active-class="transition-opacity ease-out duration-300",
@@ -28,7 +28,8 @@ focus-trap(v-model="isActive")
           class="sm:align-middle sm:max-w-lg sm:w-full dark:bg-gray-700",
           role="dialog",
           aria-modal="true",
-          aria-labelledby="modal-headline"
+          aria-labelledby="modal-headline",
+          v-click-outside="onClickOutside"
         )
           component(
             v-if="component",
