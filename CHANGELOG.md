@@ -4,19 +4,17 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [2.88.0](https://github.com/FOE-Tools/FOE-Tools.github.io/compare/v2.87.1...v2.88.0) (2021-05-16)
 
-
 ### Features
 
-* **privacy-policy:** update policy ([d727334](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/d727334b54cf31d02bbb7f9e9a0af5f5c802db47))
-* **promotion-message:** Make import promotion message / promotion message builder as a popup instead of tab ([fcbd91d](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/fcbd91da27105f463a12a57fc392189be54f88c1)), closes [#452](https://github.com/FOE-Tools/FOE-Tools.github.io/issues/452)
-* add new tool: GB Leveling Order ([ac05495](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/ac0549557637fd782f888c17211ab426261bffcb))
-* **foe-data:** add levels of several ages ([504da4e](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/504da4ee59ece2c698c5f09e66f4eddc3e177833))
-
+- **privacy-policy:** update policy ([d727334](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/d727334b54cf31d02bbb7f9e9a0af5f5c802db47))
+- **promotion-message:** Make import promotion message / promotion message builder as a popup instead of tab ([fcbd91d](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/fcbd91da27105f463a12a57fc392189be54f88c1)), closes [#452](https://github.com/FOE-Tools/FOE-Tools.github.io/issues/452)
+- add new tool: GB Leveling Order ([ac05495](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/ac0549557637fd782f888c17211ab426261bffcb))
+- **foe-data:** add levels of several ages ([504da4e](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/504da4ee59ece2c698c5f09e66f4eddc3e177833))
 
 ### Bug Fixes
 
-* **gb-forecast-cost:** fix overwriting of "from" field when "to" field is lower ([360e9fd](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/360e9fd2b22917e765e4994eb34628ee682c8c4e)), closes [#458](https://github.com/FOE-Tools/FOE-Tools.github.io/issues/458)
-* **modal:** allow to close modal on click outside ([2c525ca](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/2c525cafec835aab60736fd125f0d26c40605896)), closes [#455](https://github.com/FOE-Tools/FOE-Tools.github.io/issues/455)
+- **gb-forecast-cost:** fix overwriting of "from" field when "to" field is lower ([360e9fd](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/360e9fd2b22917e765e4994eb34628ee682c8c4e)), closes [#458](https://github.com/FOE-Tools/FOE-Tools.github.io/issues/458)
+- **modal:** allow to close modal on click outside ([2c525ca](https://github.com/FOE-Tools/FOE-Tools.github.io/commit/2c525cafec835aab60736fd125f0d26c40605896)), closes [#455](https://github.com/FOE-Tools/FOE-Tools.github.io/issues/455)
 
 ### [2.87.1](https://github.com/FOE-Tools/FOE-Tools.github.io/compare/v2.87.0...v2.87.1) (2021-05-02)
 
