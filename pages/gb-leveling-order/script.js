@@ -1,6 +1,7 @@
 import { get } from "vuex-pathify";
 import set from "lodash.set";
 import lGet from "lodash.get";
+import mapvalues from "lodash.mapvalues";
 import gbProcess from "@/lib/foe-compute-process/gb-investment";
 import { compute as GbLevelingOrderProcess } from "@/lib/foe-compute-process/gb-leveling-order";
 import { bonus } from "~/lib/foe-data/bonus";
@@ -71,6 +72,11 @@ export default {
       { key: "mysterious_shards", text: this.$t(`foe_data.bonus.${bonus.mysterious_shards}.name`) },
     ].sort((a, b) => a.text.localeCompare(b.text));
 
+    const gbsInfo = mapvalues(
+      this.$store.copy(`profile/profiles@${this.$store.get("global/currentProfile")}.gb`),
+      (elt) => (elt.yourLevel === undefined ? -1 : elt.yourLevel)
+    );
+
     return {
       i18nPrefix,
       chosenReward: "",
@@ -82,7 +88,7 @@ export default {
       buildRatioTimeout: null,
       initFpBy24h: 10,
       initFpBy24hTimeout: null,
-      fromLevel: this.$clone(this.$store.get(`profile/profiles@${this.$store.get("global/currentProfile")}.yourGbs`)),
+      fromLevel: gbsInfo,
       fromLevelTimeout: {},
       includeRandomReward: false,
       randomRewardProduction: 10,
@@ -153,8 +159,14 @@ export default {
       clearTimeout(this.fromLevelTimeout);
       this.fromLevelTimeout = setTimeout(() => {
         for (const key in this.fromLevel) {
+          if (!(key in this.$store.get(`profile/profiles@${this.$store.get("global/currentProfile")}.gb`))) {
+            this.$store.set(
+              `profile/profiles@${this.$store.get("global/currentProfile")}.gb.${key}`,
+              this.$clone(Utils.getDefaultGBConf())
+            );
+          }
           this.$store.set(
-            `profile/profiles@${this.$store.get("global/currentProfile")}.yourGbs.${key}`,
+            `profile/profiles@${this.$store.get("global/currentProfile")}.gb.${key}.yourLevel`,
             this.$clone(this.fromLevel[key])
           );
         }
@@ -323,7 +335,7 @@ export default {
         );
 
         fromLevel[gbKey] = this.$clone(
-          this.$store.get(`profile/profiles@${this.$store.get("global/currentProfile")}.yourGbs.${gbKey}`)
+          this.$store.get(`profile/profiles@${this.$store.get("global/currentProfile")}.gb.${gbKey}.yourLevel`)
         );
         if (fromLevel[gbKey] === undefined) {
           fromLevel[gbKey] = -1;

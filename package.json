@@ -146,6 +146,7 @@
     "js-priority-queue": "^0.1.5",
     "jsdom": "^16.5.3",
     "klaro": "^0.7.18",
+    "lodash.mapvalues": "^4.6.0",
     "nuxt": "^2.15.6",
     "nuxt-i18n": "^6.27.0",
     "nuxt-purgecss": "^1.0.0",
