@@ -1202,7 +1202,7 @@ export default {
         {
           i18nKey: "tabs",
           stepId: "thDefaultRewards",
-          attachTo: { element: "#giPromotionMessageTab nav", on: "top" },
+          attachTo: { element: "#giPromotionMessageTab", on: "top" },
         },
         {
           i18nKey: "prefix",
@@ -1468,6 +1468,22 @@ export default {
         });
       }
       this.$store.set(`profile/profiles@["${this.$store.get("global/currentProfile")}"].bookmarks`, bookmarks);
+    },
+    showImportPromotionMessage: /* istanbul ignore next */ function () {
+      this.$modal({
+        parent: this,
+        component: ImportPromotionMessage,
+        hasModalCard: true,
+        size: "sm:max-w-3xl",
+      });
+    },
+    showPromotionMessageBuilder: /* istanbul ignore next */ function () {
+      this.$modal({
+        parent: this,
+        component: PromotionMessageBuilder,
+        hasModalCard: true,
+        size: "sm:max-w-3xl",
+      });
     },
   },
   mounted() {

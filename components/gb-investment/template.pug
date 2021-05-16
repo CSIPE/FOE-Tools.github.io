@@ -660,186 +660,187 @@
     // Promotion Message Section //
     ///////////////////////////////
 
-    #giPromotionMessage
-      t-tabs(v-model="promotionMessageTab")
-        #giPromotionMessageTab.m-auto.mx-0.mt-8.-mb-4(class="md:mx-16 lg:mx-32 xl:mx-64")
-          t-tab-list
-            t-tab {{ $t(i18nPrefix + 'promotion.title') }}
-            t-tab {{ $t('components.import_promotion_message.title') }}
-            t-tab {{ $t('components.promotion_message_builder.title') }}
-        t-tab-panels
-          t-tab-panel
-            .t-content-container
-              h4.title {{ $t(i18nPrefix + 'promotion.title') }}
+    #giPromotionMessage.t-content-container
+      #giPromotionMessageTab
+        .flex.justify-between
+          h4.title {{ $t(i18nPrefix + 'promotion.title') }}
+          .space-x-4.hidden(class="sm:flex")
+            t-button(
+              iconLeft="fas fa-file-import",
+              v-tippy="{ content: $t('components.import_promotion_message.title') }",
+              @click="showImportPromotionMessage"
+            )
+            t-button(
+              iconLeft="fas fa-file",
+              v-tippy="{ content: $t('components.promotion_message_builder.title') }",
+              @click="showPromotionMessageBuilder"
+            )
 
-              .t-columns.my-4.space-y-4(class="sm:space-x-8 sm:space-y-0")
-                #pmPrefix.w-full(class="sm:w-1/2")
-                  t-label(:label="$t('utils.Prefix')", label-for="giPrefix")
-                  t-input(
-                    inputId="giPrefix",
-                    type="text",
-                    v-model.trim="prefix",
-                    name="prefix",
-                    :placeholder="$t($data.i18nPrefix + 'promotion.prefix_placeholder')"
-                  )
-                    template(#after)
-                      t-button(
-                        :title="showPrefix ? $t('utils.Hide') : $t('utils.Show')",
-                        @click="switchPrefix",
-                        :borderLeft="false",
-                        :roundedTopLeft="false",
-                        :roundedBottomLeft="false",
-                        v-tippy="{ content: showPrefix ? $t('utils.Hide') : $t('utils.Show') }"
-                      )
-                        font-awesome-icon(v-if="showPrefix", :icon="['fas', 'eye']")
-                        font-awesome-icon(v-else, :icon="['fas', 'eye-slash']")
+        .space-x-4.flex(class="sm:hidden")
+          t-button(
+            iconLeft="fas fa-file-import",
+            v-tippy="{ content: $t('components.import_promotion_message.title') }",
+            @click="showImportPromotionMessage"
+          )
+          t-button(
+            iconLeft="fas fa-file",
+            v-tippy="{ content: $t('components.promotion_message_builder.title') }",
+            @click="showPromotionMessageBuilder"
+          )
 
-                #pmSuffix.w-full(class="sm:w-1/2")
-                  t-label(:label="$t('utils.Suffix')", label-for="giSuffix")
-                  t-input(
-                    inputId="giSuffix",
-                    type="text",
-                    v-model.trim="suffix",
-                    name="suffix",
-                    :placeholder="$t($data.i18nPrefix + 'promotion.suffix_placeholder')"
-                  )
-                    template(#after)
-                      t-button(
-                        :title="showSuffix ? $t('utils.Hide') : $t('utils.Show')",
-                        @click="switchSuffix",
-                        :borderLeft="false",
-                        :roundedTopLeft="false",
-                        :roundedBottomLeft="false",
-                        v-tippy="{ content: showSuffix ? $t('utils.Hide') : $t('utils.Show') }"
-                      )
-                        font-awesome-icon(v-if="showSuffix", :icon="['fas', 'eye']")
-                        font-awesome-icon(v-else, :icon="['fas', 'eye-slash']")
+      .t-columns.my-4.space-y-4(class="sm:space-x-8 sm:space-y-0")
+        #pmPrefix.w-full(class="sm:w-1/2")
+          t-label(:label="$t('utils.Prefix')", label-for="giPrefix")
+          t-input(
+            inputId="giPrefix",
+            type="text",
+            v-model.trim="prefix",
+            name="prefix",
+            :placeholder="$t($data.i18nPrefix + 'promotion.prefix_placeholder')"
+          )
+            template(#after)
+              t-button(
+                :title="showPrefix ? $t('utils.Hide') : $t('utils.Show')",
+                @click="switchPrefix",
+                :borderLeft="false",
+                :roundedTopLeft="false",
+                :roundedBottomLeft="false",
+                v-tippy="{ content: showPrefix ? $t('utils.Hide') : $t('utils.Show') }"
+              )
+                font-awesome-icon(v-if="showPrefix", :icon="['fas', 'eye']")
+                font-awesome-icon(v-else, :icon="['fas', 'eye-slash']")
 
-              .grid.grid-cols-1.mb-8(class="sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4")
-                yes-no#pmDisplayGbName(
-                  v-model="displayGbName",
-                  :label="$t($data.i18nPrefix + 'gb_investment.display_gb_name')"
+        #pmSuffix.w-full(class="sm:w-1/2")
+          t-label(:label="$t('utils.Suffix')", label-for="giSuffix")
+          t-input(
+            inputId="giSuffix",
+            type="text",
+            v-model.trim="suffix",
+            name="suffix",
+            :placeholder="$t($data.i18nPrefix + 'promotion.suffix_placeholder')"
+          )
+            template(#after)
+              t-button(
+                :title="showSuffix ? $t('utils.Hide') : $t('utils.Show')",
+                @click="switchSuffix",
+                :borderLeft="false",
+                :roundedTopLeft="false",
+                :roundedBottomLeft="false",
+                v-tippy="{ content: showSuffix ? $t('utils.Hide') : $t('utils.Show') }"
+              )
+                font-awesome-icon(v-if="showSuffix", :icon="['fas', 'eye']")
+                font-awesome-icon(v-else, :icon="['fas', 'eye-slash']")
+
+      .grid.grid-cols-1.mb-8(class="sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4")
+        yes-no#pmDisplayGbName(
+          v-model="displayGbName",
+          :label="$t($data.i18nPrefix + 'gb_investment.display_gb_name')"
+        )
+        yes-no#pmShortName(
+          v-model="shortName",
+          :label="$t($data.i18nPrefix + 'gb_investment.use_short_name')",
+          :labelAfter="$t(i18nPrefix + 'custom_name')"
+        )
+        yes-no#pmShowLevel(v-model="showLevel", :label="$t($data.i18nPrefix + 'gb_investment.show_level')")
+        yes-no#pmShowOnlySecuredPlaces(
+          v-model="showOnlySecuredPlaces",
+          :label="$t(i18nPrefix + 'gb_investment.form.show_only_secured_places')"
+        )
+
+      div(v-if="result !== null")
+        template(v-for="(value, i) in promotion")
+          // Show custom fields
+          template(
+            v-if="promotionMessageList[promotionMessageList.map((val) => val.name).indexOf(value.name)].config.customFields"
+          )
+            .t-columns.my-4.space-y-4(class="sm:space-x-8 sm:space-y-0", v-for="line in getSplittedCustomFields(value.name)")
+              .w-full(class="sm:w-1/2", v-for="elt in line")
+                t-label.custom_field(:label="elt.key", :label-for="'custom_field_' + elt.key")
+                t-input(
+                  :inputId="'custom_field_' + elt.key",
+                  type="text",
+                  :placeholder="promotionMessageList[i].config.customFields[elt.key].placeholder",
+                  v-model.trim="promotionMessageList[i].config.customFields[elt.key].value",
+                  :name="'custom_field_' + elt.key"
                 )
-                yes-no#pmShortName(
-                  v-model="shortName",
-                  :label="$t($data.i18nPrefix + 'gb_investment.use_short_name')",
-                  :labelAfter="$t(i18nPrefix + 'custom_name')"
-                )
-                yes-no#pmShowLevel(v-model="showLevel", :label="$t($data.i18nPrefix + 'gb_investment.show_level')")
-                yes-no#pmShowOnlySecuredPlaces(
-                  v-model="showOnlySecuredPlaces",
-                  :label="$t(i18nPrefix + 'gb_investment.form.show_only_secured_places')"
-                )
-
-              div(v-if="result !== null")
-                template(v-for="(value, i) in promotion")
-                  // Show custom fields
-                  template(
-                    v-if="promotionMessageList[promotionMessageList.map((val) => val.name).indexOf(value.name)].config.customFields"
-                  )
-                    .t-columns.my-4.space-y-4(
-                      class="sm:space-x-8 sm:space-y-0",
-                      v-for="line in getSplittedCustomFields(value.name)"
+                  template(#after)
+                    t-button(
+                      :title="promotionMessageList[i].config.customFields[elt.key].show ? $t('utils.Hide') : $t('utils.Show')",
+                      @click="promotionMessageList[i].config.customFields[elt.key].show = !promotionMessageList[i].config.customFields[elt.key].show",
+                      :borderLeft="false",
+                      :roundedTopLeft="false",
+                      :roundedBottomLeft="false",
+                      v-tippy="{ content: promotionMessageList[i].config.customFields[elt.key].show ? $t('utils.Hide') : $t('utils.Show') }"
                     )
-                      .w-full(class="sm:w-1/2", v-for="elt in line")
-                        t-label.custom_field(:label="elt.key", :label-for="'custom_field_' + elt.key")
-                        t-input(
-                          :inputId="'custom_field_' + elt.key",
-                          type="text",
-                          :placeholder="promotionMessageList[i].config.customFields[elt.key].placeholder",
-                          v-model.trim="promotionMessageList[i].config.customFields[elt.key].value",
-                          :name="'custom_field_' + elt.key"
-                        )
-                          template(#after)
-                            t-button(
-                              :title="promotionMessageList[i].config.customFields[elt.key].show ? $t('utils.Hide') : $t('utils.Show')",
-                              @click="promotionMessageList[i].config.customFields[elt.key].show = !promotionMessageList[i].config.customFields[elt.key].show",
-                              :borderLeft="false",
-                              :roundedTopLeft="false",
-                              :roundedBottomLeft="false",
-                              v-tippy="{ content: promotionMessageList[i].config.customFields[elt.key].show ? $t('utils.Hide') : $t('utils.Show') }"
-                            )
-                              font-awesome-icon(
-                                v-if="promotionMessageList[i].config.customFields[elt.key].show",
-                                :icon="['fas', 'eye']"
-                              )
-                              font-awesome-icon(v-else, :icon="['fas', 'eye-slash']")
-                  // Show value
-                  .t-columns.my-4.space-y-4(class="sm:space-x-8 sm:space-y-0")
-                    .w-full
-                      t-input(
-                        :as="nbMultiLine(value.message) ? 'textarea' : 'input'",
-                        :rows="nbMultiLine(value.message) ? nbMultiLine(value.message) : undefined",
-                        :value="value.message",
-                        isReadOnly
+                      font-awesome-icon(
+                        v-if="promotionMessageList[i].config.customFields[elt.key].show",
+                        :icon="['fas', 'eye']"
                       )
-                        template(#before)
-                          t-button(
-                            :title="$t('utils.Remove')",
-                            @click="removePromotionMessage(i)",
-                            iconLeft="fas fa-trash",
-                            :borderRight="false",
-                            :roundedTopRight="false",
-                            :roundedBottomRight="false",
-                            type="danger",
-                            v-tippy="{ content: $t('utils.Remove') }"
-                          )
-                        template(#after)
-                          t-button(
-                            v-clipboard="value.message",
-                            @success="successCopy(i)",
-                            :title="$t('utils.Copy')",
-                            iconLeft="far fa-copy",
-                            :borderLeft="false",
-                            :roundedTopLeft="false",
-                            :roundedBottomLeft="false",
-                            v-tippy="{ content: $t('utils.Copyed'), trigger: 'click' }"
-                          )
+                      font-awesome-icon(v-else, :icon="['fas', 'eye-slash']")
+          // Show value
+          .t-columns.my-4.space-y-4(class="sm:space-x-8 sm:space-y-0")
+            .w-full
+              t-input(
+                :as="nbMultiLine(value.message) ? 'textarea' : 'input'",
+                :rows="nbMultiLine(value.message) ? nbMultiLine(value.message) : undefined",
+                :value="value.message",
+                isReadOnly
+              )
+                template(#before)
+                  t-button(
+                    :title="$t('utils.Remove')",
+                    @click="removePromotionMessage(i)",
+                    iconLeft="fas fa-trash",
+                    :borderRight="false",
+                    :roundedTopRight="false",
+                    :roundedBottomRight="false",
+                    type="danger",
+                    v-tippy="{ content: $t('utils.Remove') }"
+                  )
+                template(#after)
+                  t-button(
+                    v-clipboard="value.message",
+                    @success="successCopy(i)",
+                    :title="$t('utils.Copy')",
+                    iconLeft="far fa-copy",
+                    :borderLeft="false",
+                    :roundedTopLeft="false",
+                    :roundedBottomLeft="false",
+                    v-tippy="{ content: $t('utils.Copyed'), trigger: 'click' }"
+                  )
 
-              .t-columns.my-4.space-y-4(class="sm:space-x-8 sm:space-y-0")
-                .w-full
-                  #pmAddMessage
-                    t-select#pmbTemplateToAdd(
-                      v-model.trim="templateToAdd",
-                      name="templateToAdd",
-                      autocomplete="off",
-                      :roundedTopRight="false",
-                      :roundedBottomRight="false"
-                    )
-                      optgroup(:label="$t('components.promotion_message_builder.templates.default')")
-                        option(
-                          v-for="template in defaultPromotionMessagesTemplates",
-                          :key="template.id",
-                          :value="template.id"
-                        ) {{ template.name }}: {{ getTemplateSample(template.config) }}
-                      optgroup(
-                        v-if="customPromotionMessagesTemplates.length",
-                        :label="$t('components.promotion_message_builder.templates.custom')"
-                      )
-                        option(
-                          v-for="template in customPromotionMessagesTemplates",
-                          :key="template.id",
-                          :value="template.id"
-                        ) {{ template.name }}: {{ getTemplateSample(template.config) }}
+      .t-columns.my-4.space-y-4(class="sm:space-x-8 sm:space-y-0")
+        .w-full
+          #pmAddMessage
+            t-select#pmbTemplateToAdd(
+              v-model.trim="templateToAdd",
+              name="templateToAdd",
+              autocomplete="off",
+              :roundedTopRight="false",
+              :roundedBottomRight="false"
+            )
+              optgroup(:label="$t('components.promotion_message_builder.templates.default')")
+                option(v-for="template in defaultPromotionMessagesTemplates", :key="template.id", :value="template.id") {{ template.name }}: {{ getTemplateSample(template.config) }}
+              optgroup(
+                v-if="customPromotionMessagesTemplates.length",
+                :label="$t('components.promotion_message_builder.templates.custom')"
+              )
+                option(v-for="template in customPromotionMessagesTemplates", :key="template.id", :value="template.id") {{ template.name }}: {{ getTemplateSample(template.config) }}
 
-                      template(#after)
-                        t-button(
-                          :title="$t('utils.Add')",
-                          @click="addPromotionMessageTemplate",
-                          iconLeft="fas fa-plus",
-                          :borderLeft="false",
-                          :roundedTopLeft="false",
-                          :roundedBottomLeft="false",
-                          type="info"
-                        ) {{ $t('utils.Add') }}
-          t-tab-panel
-            .t-content-container
-              ImportPromotionMessage
-          t-tab-panel
-            .t-content-container
-              PromotionMessageBuilder
+              template(#after)
+                t-button(
+                  :title="$t('utils.Add')",
+                  @click="addPromotionMessageTemplate",
+                  iconLeft="fas fa-plus",
+                  :borderLeft="false",
+                  :roundedTopLeft="false",
+                  :roundedBottomLeft="false",
+                  type="info"
+                ) {{ $t('utils.Add') }}
 
-    // Secure Position
+    /////////////////////
+    // Secure Position //
+    /////////////////////
 
     div(v-if="result", style="margin-top: 2rem")
       secure-position(
