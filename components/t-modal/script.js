@@ -27,6 +27,10 @@ export default {
       type: [String, Number],
       default: 960,
     },
+    size: {
+      type: String,
+      default: "sm:max-w-lg",
+    },
     hasModalCard: Boolean,
     animation: {
       type: String,
