@@ -1329,8 +1329,8 @@ export default {
         id: "gbListSelect",
         text: formatTuto(
           this.$t("components.gb_investment.tutorial.gb_select", {
-            videoSelect: getVideoTag("/video/select.mp4"),
-            videoAutoComplete: getVideoTag("/video/auto-complete.mp4"),
+            videoSelect: getVideoTag("/video/select"),
+            videoAutoComplete: getVideoTag("/video/auto-complete"),
           })
         ),
         attachTo: { element: "#gbListSelect", on: "bottom" },

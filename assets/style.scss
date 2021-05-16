@@ -271,7 +271,7 @@ p:not([class]) {
 .shepherd-text {
   @apply dark:bg-gray-700 dark:text-white;
   overflow: auto;
-  max-height: 30vh;
+  max-height: 45vh;
   text-align: justify;
 }
 
@@ -285,18 +285,12 @@ p:not([class]) {
   display: inline-block;
 }
 
-.shepherd-element.shepherd-element-attached-bottom.shepherd-element-attached-center .shepherd-arrow:after,
-.shepherd-element.shepherd-pinned-top .shepherd-arrow:after {
-  transform: rotate(270deg);
+.shepherd-element .shepherd-arrow:before, .shepherd-element .shepherd-arrow:after  {
+  @apply bg-coolGray-100 dark:bg-gray-600;
 }
 
-.shepherd-element.shepherd-element-attached-top.shepherd-element-attached-center .shepherd-arrow:after {
-  transform: rotate(90deg);
-}
-
-.shepherd-element.shepherd-element-attached-middle.shepherd-element-attached-right .shepherd-arrow:after,
-.shepherd-element.shepherd-pinned-left .shepherd-arrow:after {
-  transform: rotate(180deg);
+.shepherd-element[data-popper-placement^=top] > .shepherd-arrow {
+  bottom: 8px;
 }
 
 .shepherd-element {
