@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: contact@foe.tools\n"
 "POT-Creation-Date: 2020-08-21T21:00:51.667Z\n"
 "PO-Revision-Date: 2021-05-17 07:05+0000\n"
-"Last-Translator: adam janecki <adamos79@gmail.com>\n"
+"Last-Translator: RAdek PRabucki <raprad@o2.pl>\n"
 "Language-Team: Polish <https://translate.foe.tools/projects/"
 "foe-tools-website/website/pl/>\n"
 "Language: pl\n"
@@ -79,7 +79,7 @@ msgid "components.cf_calculator.block_cfc.your_age"
 msgstr "Twoja epoka"
 
 msgid "components.cf_calculator.block_cfc.your_cf_boost"
-msgstr "Twój @:(foe_data.gb.Chateau_Frontenac) Bonus"
+msgstr "Twój Bonus @:(foe_data.gb.Chateau_Frontenac)"
 
 msgid "components.cf_calculator.block_cfc.coins_to_use"
 msgstr "Monety potrzebne do zadania \"Przyjęcie Nieurodzinowe\" (UBQ)"
@@ -120,7 +120,7 @@ msgid "components.cf_calculator.block_cfc.table_reward.thead.th3"
 msgstr "Surowce"
 
 msgid "components.cf_calculator.block_cfc.table_reward.thead.th4"
-msgstr "PR'y"
+msgstr "PR-y"
 
 msgid "components.cf_calculator.block_cfc.reward_message.daily_ubq"
 msgstr "Dzienna ilość zadań \"Przyjęcie Nieurodzinowe\" (UBQ): {count}"
@@ -1556,7 +1556,7 @@ msgid "foe_data.gb_short.Colosseum"
 msgstr "Koloseum"
 
 msgid "foe_data.gb_short.Lighthouse_of_Alexandria"
-msgstr "LzF"
+msgstr "LF"
 
 msgid "foe_data.gb_short.Hagia_Sophia"
 msgstr "HS"
@@ -3452,3 +3452,9 @@ msgstr "Aby uzyskać więcej informacji, skorzystaj z poniższych linków:"
 
 msgid "routes.about.cookie.info.cookieConsent"
 msgstr "Twoje preferencje dotyczące plików cookie"
+
+msgid "foe_data.gb.Flying_Island"
+msgstr "Latająca wyspa"
+
+msgid "foe_data.gb.Space_Carrier"
+msgstr "Kosmiczny transporter"
