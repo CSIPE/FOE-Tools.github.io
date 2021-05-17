@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "Report-Msgid-Bugs-To: contact@foe.tools\n"
 "POT-Creation-Date: 2020-08-21T21:00:51.667Z\n"
-"PO-Revision-Date: 2021-03-09 03:02+0000\n"
-"Last-Translator: srkns <serkanisleyen@gmail.com>\n"
+"PO-Revision-Date: 2021-05-17 07:05+0000\n"
+"Last-Translator: adam janecki <adamos79@gmail.com>\n"
 "Language-Team: Polish <https://translate.foe.tools/projects/"
 "foe-tools-website/website/pl/>\n"
 "Language: pl\n"
@@ -3426,3 +3426,29 @@ msgstr "Wpisz liczbę PR-ów jakie zebrałeś w ciągu 24 godzin."
 msgid "components.cf_calculator.tutorial.otherRq"
 msgstr ""
 "Ustaw pozostałe powtarzające się dzienne zadania, które obecnie wykonałeś."
+
+msgid "cookieConsent.title"
+msgstr "Cześć ! To my… ciasteczka!"
+
+msgid "cookieConsent.purposes.performance.title"
+msgstr "Optymalizacja wydajności"
+
+msgid "cookieConsent.acceptSelected"
+msgstr "Ukończono"
+
+msgid "cookieConsent.consentNotice.learnMore_nonTogglable"
+msgstr "Dowiedz się więcej"
+
+msgid "cookieConsent.acceptAll"
+msgstr "Akceptuję wszystko"
+
+msgid "pwa_update.message"
+msgstr ""
+"Aplikacja została zaktualizowana. Aplikacja załaduje się ponownie za 5 "
+"sekund."
+
+msgid "routes.about.cookie.p2"
+msgstr "Aby uzyskać więcej informacji, skorzystaj z poniższych linków:"
+
+msgid "routes.about.cookie.info.cookieConsent"
+msgstr "Twoje preferencje dotyczące plików cookie"
