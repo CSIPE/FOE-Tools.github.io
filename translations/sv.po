@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "Report-Msgid-Bugs-To: contact@foe.tools\n"
 "POT-Creation-Date: 2020-08-21T21:00:52.129Z\n"
-"PO-Revision-Date: 2021-04-19 10:06+0000\n"
+"PO-Revision-Date: 2021-05-18 11:14+0000\n"
 "Last-Translator: Magnus Beutner <magnus.beutner@gmail.com>\n"
 "Language-Team: Swedish <https://translate.foe.tools/projects/"
 "foe-tools-website/website/sv/>\n"
@@ -3693,7 +3693,7 @@ msgid "contributions.fundingFinding"
 msgstr "Söka Finansiering"
 
 msgid "contributions.ideas"
-msgstr "Idéer, Planering & Återkoppling"
+msgstr "Idéer, planering, & återkoppling"
 
 msgid "contributions.infra"
 msgstr "Infrastruktur (Inhysning, Bygg-verktyg, etc)"
@@ -3705,10 +3705,10 @@ msgid "contributions.plugin"
 msgstr "Plugin / verktygsbibliotek"
 
 msgid "contributions.question"
-msgstr "Besvara frågor"
+msgstr "Besvarar frågor"
 
 msgid "contributions.review"
-msgstr "Recenserade kod-förfrågningar"
+msgstr "Överser kod-förslag"
 
 msgid "contributions.talk"
 msgstr "Talks"
@@ -3729,10 +3729,10 @@ msgid "contributions.video"
 msgstr "Videor"
 
 msgid "contributions.data"
-msgstr "Lägga till eller uppdatera data"
+msgstr "Lägger till / uppdaterar data"
 
 msgid "contributions.inspired_tool"
-msgstr "Verktyg inspirerat av hans arbete"
+msgstr "Inspirationskälla till varktyget"
 
 msgid "contributions.creator"
 msgstr "Skapare av detta projekt"
@@ -4127,3 +4127,75 @@ msgstr "SAV"
 
 msgid "foe_data.age_short.SpaceAgeAsteroidBelt"
 msgstr "RÅAB"
+
+msgid "routes.gb_leveling_order.includeRandomReward"
+msgstr "Räkna med MBs som ger slumpmässiga belöningar av den önskade bonusen ?"
+
+msgid "foe_data.bonus.previous_era_goods_production.gb_description"
+msgstr ""
+"Producerar slumpmässiga gods från spelarens föregående era var 24:e timme. "
+"För Bronsålder produceras bronsålder-gods."
+
+msgid "foe_data.bonus.previous_era_goods_production.name"
+msgstr "Föregående Era Gods Produktion"
+
+msgid "routes.gb_leveling_order.yourGbs"
+msgstr "Nivåer på dina MBs (-1 = ej byggt)"
+
+#, fuzzy
+msgid "routes.gb_leveling_order.randomRewardProduction"
+msgstr " (efter 24 timmar)"
+
+msgid "routes.gb_leveling_order.initFpBy24h_fp_boost"
+msgstr " (FP MBs exkluderade)"
+
+msgid "routes.gb_leveling_order.buildRatio"
+msgstr ""
+"Ekvivalent till 1 resurs (i FP) behövd för att bygga ett MB (0 = ignorera)"
+
+msgid "routes.gb_leveling_order.targetLevel"
+msgstr "Målnivå (-1 = ingen gräns)"
+
+msgid "routes.gb_leveling_order.rewardKinds.popular"
+msgstr "Populär"
+
+msgid "routes.gb_leveling_order.choose_reward_to_boost"
+msgstr "Välj en bonus att boosta (FP, Attack, etc.)"
+
+#, fuzzy
+msgid "routes.gb_leveling_order.reward_to_boost"
+msgstr "Bonus till boost"
+
+msgid "routes.gb_leveling_order.table_reward.build"
+msgstr "Byggnad"
+
+msgid "routes.gb_leveling_order.table_reward.time"
+msgstr "Estimerad tid"
+
+msgid "routes.gb_leveling_order.table_reward.bonus"
+msgstr "Total bonus"
+
+msgid "routes.gb_leveling_order.table_reward.to"
+msgstr "Till nivå"
+
+msgid "routes.gb_leveling_order.table_reward.from"
+msgstr "Från nivå"
+
+msgid "routes.gb_leveling_order.title"
+msgstr "@:(routes.gb_leveling_order.hero.title)"
+
+msgid "routes.gb_leveling_order.hero.subtitle"
+msgstr ""
+"Vilket MB borde jag adressera? I vilken ordning? Till vilken nivå? Detta "
+"verktyg hjälper dig med dessa frågor."
+
+msgid "routes.gb_leveling_order.hero.title"
+msgstr "MB nivellerings-ordning"
+
+msgid "components.site_layout.in_beta"
+msgstr ""
+"Detta verktyg är i beta. Tveka inte att återkoppla till: @:(common.links."
+"contact_foe_tools)"
+
+msgid "main_menu.gb_leveling_order"
+msgstr "@:(routes.gb_leveling_order.hero.title)"
