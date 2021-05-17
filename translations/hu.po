@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "Report-Msgid-Bugs-To: contact@foe.tools\n"
 "POT-Creation-Date: 2020-08-21T21:00:51.372Z\n"
-"PO-Revision-Date: 2021-03-09 03:02+0000\n"
-"Last-Translator: srkns <serkanisleyen@gmail.com>\n"
+"PO-Revision-Date: 2021-05-18 11:14+0000\n"
+"Last-Translator: Magnus Beutner <magnus.beutner@gmail.com>\n"
 "Language-Team: Hungarian <https://translate.foe.tools/projects/"
 "foe-tools-website/website/hu/>\n"
 "Language: hu\n"
@@ -2945,7 +2945,7 @@ msgstr ""
 "(statisztikailag) megnyerhető pénz és alapanyagszámod alapján."
 
 msgid "components.gb_investment.tutorial.table.default_rewards"
-msgstr "Ez a hely alap jutalma (Bárka bónusz nélkül)"
+msgstr "Ez a hely alap jutalma (Bárka bónusz nélkül)."
 
 msgid "components.gb_investment.tutorial.promotion_message.suffix"
 msgstr "Szöveg, ami az üzenet végére fog kerülni."
@@ -2972,7 +2972,7 @@ msgid "components.gb_investment.tutorial.table.fp_already_putin"
 msgstr ""
 "Ez az oszlop akkor jelenik meg, ha legalább egy befektetőt bejegyeztél. "
 "Megmutatja, hogy a befektető hanyadik helyen fog állni a tulajdonos "
-"stratégiájával. (várható befektetés)"
+"stratégiájával. (várható befektetés)."
 
 msgid "components.gb_investment.tutorial.table.place"
 msgstr "A helyindexnek megfelelő."
@@ -3329,3 +3329,31 @@ msgstr "Csillag"
 
 msgid "components.promotion_message_builder.variables.place.PI"
 msgstr "Helyezés sorszáma"
+
+msgid "routes.gb_leveling_order.title"
+msgstr "@:(routes.gb_leveling_order.hero.title)"
+
+msgid "routes.donate.hero.title"
+msgstr "@:(utils.Donate)"
+
+msgid "routes.donate.title"
+msgstr "@:(routes.donate.hero.title) | @:(common.site_title)"
+
+msgid "routes.contact.title"
+msgstr "@:(routes.contact.hero.title) | @:(common.site_title)"
+
+msgid "routes.survey.title"
+msgstr "@:(routes.survey.hero.title) | @:(common.site_title)"
+
+msgid "components.promotion_message_builder.variables.message.OP"
+msgstr ""
+"@:(components.gb_investment.gb_investment.table.tfoot.total_preparation)"
+
+msgid "components.promotion_message_builder.variables.place.PP"
+msgstr "@:(components.gb_investment.gb_investment.table.thead.th3)"
+
+msgid "components.promotion_message_builder.use_short_name"
+msgstr "@:(components.gb_investment.gb_investment.use_short_name)"
+
+msgid "main_menu.gb_leveling_order"
+msgstr "@:(routes.gb_leveling_order.hero.title)"
