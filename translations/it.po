@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "Report-Msgid-Bugs-To: contact@foe.tools\n"
 "POT-Creation-Date: 2020-08-21T21:00:51.446Z\n"
-"PO-Revision-Date: 2021-03-09 03:02+0000\n"
-"Last-Translator: srkns <serkanisleyen@gmail.com>\n"
+"PO-Revision-Date: 2021-05-18 11:14+0000\n"
+"Last-Translator: Magnus Beutner <magnus.beutner@gmail.com>\n"
 "Language-Team: Italian <https://translate.foe.tools/projects/"
 "foe-tools-website/website/it/>\n"
 "Language: it\n"
@@ -3316,7 +3316,7 @@ msgid "foe_data.gb_short.Frauenkirche_of_Dresden"
 msgstr "Dresda"
 
 msgid "foe_data.gb_short.Castel_del_Monte"
-msgstr "CDM"
+msgstr "CdM"
 
 msgid "foe_data.gb_short.Saint_Basil_s_Cathedral"
 msgstr "Basilio"
@@ -3487,7 +3487,7 @@ msgstr ""
 "proprietario così come quelli degli investitori nel livello attuale."
 
 msgid "components.gb_investment.tutorial.promotion_message.show_level"
-msgstr "Visualizza il livello del GE (se incluso nel modello del messaggio)"
+msgstr "Visualizza il livello del GE (se incluso nel modello del messaggio)."
 
 msgid ""
 "components.gb_investment.tutorial.promotion_message.use_short_"
@@ -3656,3 +3656,19 @@ msgstr "timone del corsaro"
 
 msgid "foe_data.province.Dagon_s_Dagger"
 msgstr "Il pugnale di Dagon"
+
+msgid "routes.gb_leveling_order.title"
+msgstr "@:(routes.gb_leveling_order.hero.title)"
+
+msgid "routes.donate.hero.title"
+msgstr "@:(utils.Donate)"
+
+msgid "routes.donate.title"
+msgstr "@:(routes.donate.hero.title) | @:(common.site_title)"
+
+msgid "components.promotion_message_builder.variables.message.OP"
+msgstr ""
+"@:(components.gb_investment.gb_investment.table.tfoot.total_preparation)"
+
+msgid "main_menu.gb_leveling_order"
+msgstr "@:(routes.gb_leveling_order.hero.title)"
