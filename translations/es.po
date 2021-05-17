@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: i18next-conv\n"
 "Report-Msgid-Bugs-To: contact@foe.tools\n"
 "POT-Creation-Date: 2020-08-21T21:00:51.147Z\n"
-"PO-Revision-Date: 2021-05-17 10:10+0000\n"
+"PO-Revision-Date: 2021-05-18 03:06+0000\n"
 "Last-Translator: Magnus Beutner <magnus.beutner@gmail.com>\n"
 "Language-Team: Spanish <https://translate.foe.tools/projects/"
 "foe-tools-website/website/es/>\n"
@@ -1536,7 +1536,7 @@ msgid "routes.error.404.message"
 msgstr "Lo sentimos, la página que estás buscando no existe o ya no existe"
 
 msgid "foe_data.age.Oracle"
-msgstr "@:(foe_data.age.NoAge)(@:(foe_data.gb.Oracle_of_Delphi))"
+msgstr "@:(foe_data.age.NoAge) (@:(foe_data.gb.Oracle_of_Delphi))"
 
 msgid "foe_data.age.NoAge"
 msgstr "Sin edad"
@@ -1800,7 +1800,7 @@ msgid "foe_data.gb_short.Saint_Basil_s_Cathedral"
 msgstr "CSB"
 
 msgid "foe_data.gb_short.Castel_del_Monte"
-msgstr "CDM"
+msgstr "CdM"
 
 msgid "foe_data.gb_short.Deal_Castle"
 msgstr "Deal"
@@ -3540,7 +3540,7 @@ msgid "routes.gb_investment.hero.title"
 msgstr "{gb_key} - @:(routes.gb_investment_gb_chooser.hero.title)"
 
 msgid "routes.gb_investment.title"
-msgstr "@:(routes.contact.hero.title) | @:(common.site_title)"
+msgstr "@:(routes.gb_investment.hero.title) | @:(common.site_title)"
 
 msgid "routes.contributors.title"
 msgstr "@:(routes.contributors.hero.title) | @:(common.site_title)"
@@ -3847,7 +3847,6 @@ msgstr "Everdoom"
 msgid "foe_data.province.Delta_Hills"
 msgstr "Colinas Delta"
 
-#, fuzzy
 msgid "foe_data.province.Sharvice"
 msgstr "Sharvice"
 
@@ -4048,4 +4047,7 @@ msgid "cookieConsent.sentry.description"
 msgstr ""
 
 msgid "main_menu.gb_leveling_order"
+msgstr "@:(routes.gb_leveling_order.hero.title)"
+
+msgid "routes.gb_leveling_order.title"
 msgstr "@:(routes.gb_leveling_order.hero.title)"
