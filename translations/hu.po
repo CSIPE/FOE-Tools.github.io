@@ -17,30 +17,6 @@ msgstr ""
 msgid "main_menu.home"
 msgstr "Kezdőlap"
 
-msgid "main_menu.gb_investment"
-msgstr "@:(routes.gb_investment_gb_chooser.hero.title)"
-
-msgid "main_menu.secure_position"
-msgstr "@:(routes.secure_position.hero.title)"
-
-msgid "main_menu.cf_calculator"
-msgstr "@:(routes.cf_calculator.hero.title)"
-
-msgid "main_menu.gb_statistics"
-msgstr "@:(routes.gb_statistics.hero.title)"
-
-msgid "main_menu.gb_forecast_cost"
-msgstr "@:(routes.gb_forecast_cost.hero.title)"
-
-msgid "main_menu.trade"
-msgstr "@:(routes.trade.hero.title)"
-
-msgid "main_menu.help_to_translate_the_site"
-msgstr "@:(routes.help_to_translate_the_site.hero.title)"
-
-msgid "main_menu.campaign_cost"
-msgstr "@:(routes.campaign_cost.hero.title)"
-
 msgid "footer_menu.about"
 msgstr "Rólunk"
 
@@ -52,9 +28,6 @@ msgstr "Változás napló"
 
 msgid "footer_menu.contact"
 msgstr "Kapcsolat"
-
-msgid "components.campaign_cost.title"
-msgstr "@:(routes.campaign_cost.hero.title)"
 
 msgid "components.campaign_cost.choose_province"
 msgstr "Válassz egy tartományt"
@@ -72,9 +45,6 @@ msgid "components.campaign_cost.message.haveUnknownCosts"
 msgstr ""
 "Ez a tartomány egy vagy több szektort tartalmaz, amelyeknél hiányoznak az "
 "értékek."
-
-msgid "components.cf_calculator.block_cfc.title"
-msgstr "@:(routes.cf_calculator.hero.title)"
 
 msgid "components.cf_calculator.block_cfc.your_age"
 msgstr "Melyik korban vagy"
@@ -98,9 +68,6 @@ msgstr "Napi FP termelésed"
 
 msgid "components.cf_calculator.block_cfc.supplies_gathered"
 msgstr "Begyűjtött alapanyag"
-
-msgid "components.cf_calculator.block_cfc.table_reward.title"
-msgstr "@:(utils.Rewards)"
 
 msgid "components.cf_calculator.block_cfc.table_reward.thead.th1"
 msgstr "Tervrajzok"
@@ -153,9 +120,6 @@ msgstr "Add meg, hogy 24 óra alatt hány darab FP-t szerzel."
 
 msgid "components.gb_investment.gb_list_select.label"
 msgstr "Válassz nevezetes épületet"
-
-msgid "components.gb_investment.gb_investment.title"
-msgstr "@:(routes.gb_investment_gb_chooser.hero.title)"
 
 msgid "components.gb_investment.gb_investment.description.p1"
 msgstr ""
@@ -315,11 +279,6 @@ msgstr "Helyezés megjelenítése"
 
 msgid ""
 "components.gb_investment_investors.takingPlaceInConsideration."
-"form.no"
-msgstr "@:(utils.No)"
-
-msgid ""
-"components.gb_investment_investors.takingPlaceInConsideration."
 "form.normal"
 msgstr "Normál"
 
@@ -389,12 +348,6 @@ msgstr "A kívánt szint eléréséhez szükséges idő: {time}"
 msgid "components.gb_forecast_cost.prop_already_invested"
 msgstr "A tulajdonos által a jelenlegi szinten befektetett FP mennyisége"
 
-msgid "components.gb_forecast_cost.graph.x_axes_label"
-msgstr "@:(utils.graph.gb_level)"
-
-msgid "components.gb_forecast_cost.graph.y_axes_label"
-msgstr "@:(utils.graph.gb_level_cost)"
-
 msgid "components.gb_forecast_cost.graph.label.default"
 msgstr "A szint bruttó költsége"
 
@@ -403,9 +356,6 @@ msgstr "Az előkészítés költésge bónusz nélkül"
 
 msgid "components.gb_forecast_cost.graph.label.custom_preparation"
 msgstr "Az előkészítés költésge bónusszal"
-
-msgid "components.gb_statistics.title"
-msgstr "@:(routes.gb_statistics.hero.title)"
 
 msgid "components.gb_statistics.p1"
 msgstr ""
@@ -497,9 +447,6 @@ msgstr "Kor"
 msgid "components.simple_trade.table.thead.th2"
 msgstr "Áru"
 
-msgid "components.simple_trade.table.thead.th3"
-msgstr "@:(components.trade.label.i_want)"
-
 msgid "components.simple_trade.table.thead.th4"
 msgstr "Eredmény"
 
@@ -514,9 +461,6 @@ msgstr "Ajánlat felosztása kisebb egységekre?"
 
 msgid "components.simple_trade.show_ratio"
 msgstr "Arány megjelenítése"
-
-msgid "components.site_layout.hero.title"
-msgstr "@:(common.site_title)"
 
 msgid "components.site_layout.hero.slogan_html"
 msgstr "Néhány eszköz, mely egyszerűbbé teszi az életed a @:(common.links.foe)-ban"
@@ -585,9 +529,6 @@ msgstr "Mennyiség"
 msgid "components.trade.split_value"
 msgstr "Egy ajánlat maximális mérete (max {count})"
 
-msgid "components.trade.split_message.common"
-msgstr "{count} × (@:(components.trade.split_message.msg))"
-
 msgid "components.trade.split_message.multi"
 msgstr "@:(components.trade.split_message.common) és {secondPart}"
 
@@ -645,9 +586,6 @@ msgid ""
 "components.promotion_message_builder.errors.template_cannot_"
 "have_this_name"
 msgstr "Ez a név nem használható. Kérjük, válassz másik nevet."
-
-msgid "routes.home.title"
-msgstr "@:(common.site_title)"
 
 msgid "routes.about.general_info.title"
 msgstr "Általános információ"
@@ -724,17 +662,11 @@ msgstr ""
 "nyelven közölni, annak érdekében, hogy a bejelentés a többségünk számára "
 "érthető legyen."
 
-msgid "routes.campaign_cost.title"
-msgstr "@:(routes.campaign_cost.hero.title) | @:(common.site_title)"
-
 msgid "routes.campaign_cost.hero.title"
 msgstr "Hadjárat költsége"
 
 msgid "routes.campaign_cost.hero.subtitle"
 msgstr "Ez az eszköz megmutatja egy szektor vagy tartomány költségeit."
-
-msgid "routes.cf_calculator.title"
-msgstr "@:(routes.cf_calculator.hero.title) | @:(common.site_title)"
 
 msgid "routes.cf_calculator.hero.title"
 msgstr "Château Frontenac tervező"
@@ -742,26 +674,14 @@ msgstr "Château Frontenac tervező"
 msgid "routes.changelog.title"
 msgstr "Változás napló | @:(common.site_title)"
 
-msgid "routes.contributors.title"
-msgstr "@:(routes.contributors.hero.title) | @:(common.site_title)"
-
 msgid "routes.contributors.hero.title"
 msgstr "Közreműködők"
-
-msgid "routes.gb_investment.title"
-msgstr "@:(routes.gb_investment.hero.title) | @:(common.site_title)"
-
-msgid "routes.gb_investment.hero.title"
-msgstr "{gb_key} - @:(routes.gb_investment_gb_chooser.hero.title)"
 
 msgid "routes.gb_investment.tab.owner_view.title"
 msgstr "Tulajdonos nézete"
 
 msgid "routes.gb_investment.tab.investors_view.title"
 msgstr "Befektetők nézete"
-
-msgid "routes.gb_investment_gb_chooser.title"
-msgstr "@:(routes.gb_investment_gb_chooser.hero.title) | @:(common.site_title)"
 
 msgid "routes.gb_investment_gb_chooser.hero.title"
 msgstr "Nevezetes épület befektetés"
@@ -775,9 +695,6 @@ msgstr ""
 msgid "routes.gb_investment_gb_chooser.choose_gb.title"
 msgstr "Válassz egy nevezetes épületet"
 
-msgid "routes.gb_forecast_cost.title"
-msgstr "@:(routes.gb_forecast_cost.hero.title) | @:(common.site_title)"
-
 msgid "routes.gb_forecast_cost.hero.title"
 msgstr "Nevezetes építés tervezése"
 
@@ -786,14 +703,8 @@ msgstr ""
 "Ez az eszköz megmutatja, hogy mennyi FP-re van szükséged az egyik szintről "
 "a másikra jutni, Bárka bónusszal vagy nélküle."
 
-msgid "routes.gb_statistics.title"
-msgstr "@:(routes.gb_statistics.hero.title) | @:(common.site_title)"
-
 msgid "routes.gb_statistics.hero.title"
 msgstr "Nevi statisztika"
-
-msgid "routes.secure_position.title"
-msgstr "@:(routes.secure_position.hero.title) | @:(common.site_title)"
 
 msgid "routes.secure_position.hero.title"
 msgstr "Védett pozíció"
@@ -802,9 +713,6 @@ msgid "routes.secure_position.hero.subtitle"
 msgstr ""
 "Ez az eszköz kiszámítja az FP-k számát, amivel egy játékos blokkolni tudja "
 "a helyét egy neviben."
-
-msgid "routes.trade.title"
-msgstr "@:(routes.trade.hero.title) | @:(common.site_title)"
 
 msgid "routes.trade.hero.title"
 msgstr "Kereskedés"
@@ -824,9 +732,6 @@ msgid "routes.trade.tab.fair_trade.message"
 msgstr ""
 "Ez a fajta kereskedelem figyelembe veszi az áru gyártásának költségeit "
 "(pénz és alapanyagok) az áruk közötti árfolyam meghatározásához."
-
-msgid "routes.help_to_translate_the_site.title"
-msgstr "@:(routes.help_to_translate_the_site.hero.title) | @:(common.site_title)"
 
 msgid "routes.help_to_translate_the_site.hero.title"
 msgstr "Segíts az oldal fordításában"
@@ -868,9 +773,6 @@ msgstr "Oldal nem található | @:(common.site_title)"
 
 msgid "routes.error.404.message"
 msgstr "Sajnáljuk, de a keresett oldal nem található"
-
-msgid "foe_data.age.Oracle"
-msgstr "@:(foe_data.age.NoAge) (@:(foe_data.gb.Oracle_of_Delphi))"
 
 msgid "foe_data.age.NoAge"
 msgstr "Nincs kor"
@@ -3329,31 +3231,3 @@ msgstr "Csillag"
 
 msgid "components.promotion_message_builder.variables.place.PI"
 msgstr "Helyezés sorszáma"
-
-msgid "routes.gb_leveling_order.title"
-msgstr "@:(routes.gb_leveling_order.hero.title)"
-
-msgid "routes.donate.hero.title"
-msgstr "@:(utils.Donate)"
-
-msgid "routes.donate.title"
-msgstr "@:(routes.donate.hero.title) | @:(common.site_title)"
-
-msgid "routes.contact.title"
-msgstr "@:(routes.contact.hero.title) | @:(common.site_title)"
-
-msgid "routes.survey.title"
-msgstr "@:(routes.survey.hero.title) | @:(common.site_title)"
-
-msgid "components.promotion_message_builder.variables.message.OP"
-msgstr ""
-"@:(components.gb_investment.gb_investment.table.tfoot.total_preparation)"
-
-msgid "components.promotion_message_builder.variables.place.PP"
-msgstr "@:(components.gb_investment.gb_investment.table.thead.th3)"
-
-msgid "components.promotion_message_builder.use_short_name"
-msgstr "@:(components.gb_investment.gb_investment.use_short_name)"
-
-msgid "main_menu.gb_leveling_order"
-msgstr "@:(routes.gb_leveling_order.hero.title)"

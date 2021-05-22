@@ -17,30 +17,6 @@ msgstr ""
 msgid "main_menu.home"
 msgstr "Hjem"
 
-msgid "main_menu.gb_investment"
-msgstr "@:(routes.gb_investment_gb_chooser.hero.title)"
-
-msgid "main_menu.secure_position"
-msgstr "@:(routes.secure_position.hero.title)"
-
-msgid "main_menu.cf_calculator"
-msgstr "@:(routes.cf_calculator.hero.title)"
-
-msgid "main_menu.gb_statistics"
-msgstr "@:(routes.gb_statistics.hero.title)"
-
-msgid "main_menu.gb_forecast_cost"
-msgstr "@:(routes.gb_forecast_cost.hero.title)"
-
-msgid "main_menu.trade"
-msgstr "@:(routes.trade.hero.title)"
-
-msgid "main_menu.help_to_translate_the_site"
-msgstr "@:(routes.help_to_translate_the_site.hero.title)"
-
-msgid "main_menu.campaign_cost"
-msgstr "@:(routes.campaign_cost.hero.title)"
-
 msgid "footer_menu.about"
 msgstr "Om"
 
@@ -52,9 +28,6 @@ msgstr "Changelog"
 
 msgid "footer_menu.contact"
 msgstr "Kontakt"
-
-msgid "components.campaign_cost.title"
-msgstr "@:(routes.campaign_cost.hero.title)"
 
 msgid "components.campaign_cost.choose_province"
 msgstr "Vælg en provins"
@@ -70,9 +43,6 @@ msgstr "Alle provinser"
 
 msgid "components.campaign_cost.all_ages"
 msgstr "Alle aldre"
-
-msgid "components.cf_calculator.block_cfc.title"
-msgstr "@:(routes.cf_calculator.hero.title)"
 
 msgid "components.cf_calculator.block_cfc.your_age"
 msgstr "Din tidsalder"
@@ -105,9 +75,6 @@ msgstr "Sekundær RQ giver ?"
 
 msgid "components.cf_calculator.block_cfc.supplies_gathered"
 msgstr "Forsyninger samlet"
-
-msgid "components.cf_calculator.block_cfc.table_reward.title"
-msgstr "@:(utils.Rewards)"
 
 msgid "components.cf_calculator.block_cfc.table_reward.thead.th1"
 msgstr "BP's"
@@ -229,9 +196,6 @@ msgstr "Skift Særlig BYgning"
 
 msgid "components.gb_investment.gb_list_select.info"
 msgstr "Du kan ændre stilen på vælgeren i globale instillinger"
-
-msgid "components.gb_investment.gb_investment.title"
-msgstr "@:(routes.gb_investment_gb_chooser.hero.title)"
 
 msgid "components.gb_investment.gb_investment.description.p1"
 msgstr ""
@@ -427,11 +391,6 @@ msgstr "Vis placering"
 
 msgid ""
 "components.gb_investment_investors.takingPlaceInConsideration."
-"form.no"
-msgstr "@:(utils.No)"
-
-msgid ""
-"components.gb_investment_investors.takingPlaceInConsideration."
 "form.normal"
 msgstr "Normal"
 
@@ -502,12 +461,6 @@ msgstr "FP's der allerede er blevet bidraget med af ejer, på nuværende niveau"
 msgid "components.gb_forecast_cost.graph.title"
 msgstr "Prognose for ejerens forberedelsesbidrag for \"{gb}\""
 
-msgid "components.gb_forecast_cost.graph.x_axes_label"
-msgstr "@:(utils.graph.gb_level)"
-
-msgid "components.gb_forecast_cost.graph.y_axes_label"
-msgstr "@:(utils.graph.gb_level_cost)"
-
 msgid "components.gb_forecast_cost.graph.label.default"
 msgstr "Brutto omkostninger for niveauet"
 
@@ -516,9 +469,6 @@ msgstr "Mængde af forberedning uden bonus"
 
 msgid "components.gb_forecast_cost.graph.label.custom_preparation"
 msgstr "Mængde af forberedning med bonus"
-
-msgid "components.gb_statistics.title"
-msgstr "@:(routes.gb_statistics.hero.title)"
 
 msgid "components.gb_statistics.p1"
 msgstr ""
@@ -641,9 +591,6 @@ msgstr "Tidsalder"
 msgid "components.simple_trade.table.thead.th2"
 msgstr "Varer"
 
-msgid "components.simple_trade.table.thead.th3"
-msgstr "@:(components.trade.label.i_want)"
-
 msgid "components.simple_trade.table.thead.th4"
 msgstr "Resultat"
 
@@ -663,9 +610,6 @@ msgid "components.site_layout.update"
 msgid_plural "components.site_layout.update"
 msgstr[0] "En opdatering siden dit sidste besøg."
 msgstr[1] "{count}opdateringer siden dit sidste besøg."
-
-msgid "components.site_layout.hero.title"
-msgstr "@:(common.site_title)"
 
 msgid "components.site_layout.hero.slogan_html"
 msgstr "Et sæt værktøjer til at forenkle @:(common.links.foe)"
@@ -764,9 +708,6 @@ msgstr "Max størrelse på et bidrag (max. {count})"
 msgid "components.trade.split_message.msg"
 msgstr "{valueFrom}{ageFrom}for {valueTo}{ageTo}"
 
-msgid "components.trade.split_message.common"
-msgstr "{count}× (@:(components.trade.split_message.msg))"
-
 msgid "components.trade.split_message.multi"
 msgstr "@:(components.trade.split_message.common)og {secondPart}"
 
@@ -831,9 +772,6 @@ msgstr "Feltværdi"
 msgid "components.promotion_message_builder.custom_field_title"
 msgstr "Dine brugerdefinerede felter"
 
-msgid "components.promotion_message_builder.use_short_name"
-msgstr "@:(components.gb_investment.gb_investment.use_short_name)"
-
 msgid "components.promotion_message_builder.reverse_place_order"
 msgstr "Omvendt rækkefølge af placeringer?"
 
@@ -867,9 +805,6 @@ msgstr "Placerings indeks"
 msgid "components.promotion_message_builder.variables.place.PV"
 msgstr "Pladseringsværdi (i FP's)"
 
-msgid "components.promotion_message_builder.variables.place.PP"
-msgstr "@:(components.gb_investment.gb_investment.table.thead.th3)"
-
 msgid "components.promotion_message_builder.variables.message.FLVL"
 msgstr "Fra niveau"
 
@@ -881,9 +816,6 @@ msgstr "SB navn"
 
 msgid "components.promotion_message_builder.variables.message.P"
 msgstr "Pladseringer"
-
-msgid "components.promotion_message_builder.variables.message.OP"
-msgstr "@:(components.gb_investment.gb_investment.table.tfoot.total_preparation)"
 
 msgid "components.promotion_message_builder.variables.message.PPx"
 msgstr ""
@@ -928,9 +860,6 @@ msgstr "Data er ugyldigt"
 
 msgid "components.import_promotion_message.template_imported"
 msgstr "Skabelon importeret"
-
-msgid "routes.home.title"
-msgstr "@:(common.site_title)"
 
 msgid "routes.about.title"
 msgstr "Om @:(common.site_title)"
@@ -1160,17 +1089,11 @@ msgstr ""
 "<b> Bemærk: </b> Hvad angår problemer på GitHub, skal du sørge for at "
 "skrive dem på engelsk for at gøre det lettere at forstå det største antal."
 
-msgid "routes.campaign_cost.title"
-msgstr "@:(routes.campaign_cost.hero.title) | @:(common.site_title)"
-
 msgid "routes.campaign_cost.hero.title"
 msgstr "Kampagneomkostninger"
 
 msgid "routes.campaign_cost.hero.subtitle"
 msgstr "Dette værktøj forudsiger omkostningerne for en sektor eller provins."
-
-msgid "routes.cf_calculator.title"
-msgstr "@:(routes.cf_calculator.hero.title) | @:(common.site_title)"
 
 msgid "routes.cf_calculator.hero.title"
 msgstr "Château Frontenac-regnemaskine"
@@ -1183,29 +1106,17 @@ msgstr ""
 msgid "routes.changelog.title"
 msgstr "Changelog | @:(common.site_title)"
 
-msgid "routes.contributors.title"
-msgstr "@:(routes.contributors.hero.title) | @:(common.site_title)"
-
 msgid "routes.contributors.hero.title"
 msgstr "Bidragydere"
 
 msgid "routes.contributors.hero.subtitle"
 msgstr "Denne side forsøger at liste alle bidragydere"
 
-msgid "routes.gb_investment.title"
-msgstr "@:(routes.gb_investment.hero.title) | @:(common.site_title)"
-
-msgid "routes.gb_investment.hero.title"
-msgstr "{gb_key} - @:(routes.gb_investment_gb_chooser.hero.title)"
-
 msgid "routes.gb_investment.tab.owner_view.title"
 msgstr "Ejervisning"
 
 msgid "routes.gb_investment.tab.investors_view.title"
 msgstr "Bidragervisning"
-
-msgid "routes.gb_investment_gb_chooser.title"
-msgstr "@:(routes.gb_investment_gb_chooser.hero.title)| @:(common.site_title)"
 
 msgid "routes.gb_investment_gb_chooser.hero.title"
 msgstr "SB-investering"
@@ -1219,9 +1130,6 @@ msgstr ""
 msgid "routes.gb_investment_gb_chooser.choose_gb.title"
 msgstr "Vælg en storslået bygning"
 
-msgid "routes.gb_forecast_cost.title"
-msgstr "@:(routes.gb_forecast_cost.hero.title)| @:(common.site_title)"
-
 msgid "routes.gb_forecast_cost.hero.title"
 msgstr "Forudberegnet pris SB"
 
@@ -1229,9 +1137,6 @@ msgid "routes.gb_forecast_cost.hero.subtitle"
 msgstr ""
 "Dette værktøj bestemmer antallet af FP's, der skal til fra et niveau til et "
 "andet af en SB, med eller uden Ark bonusser."
-
-msgid "routes.gb_statistics.title"
-msgstr "@:(routes.gb_statistics.hero.title)| @:(common.site_title)"
 
 msgid "routes.gb_statistics.hero.title"
 msgstr "SB-statistik"
@@ -1241,9 +1146,6 @@ msgstr ""
 "Dette værktøj gør det muligt at visualisere grafer over udviklingen af "
 "omkostningerne til en SB efter tidsalder."
 
-msgid "routes.secure_position.title"
-msgstr "@:(routes.secure_position.hero.title)| @:(common.site_title)"
-
 msgid "routes.secure_position.hero.title"
 msgstr "Sikker pladsering"
 
@@ -1251,9 +1153,6 @@ msgid "routes.secure_position.hero.subtitle"
 msgstr ""
 "Dette værktøj beregner antallet af FP, som en spiller skal lægge i en SB "
 "for at blokere pladseringen."
-
-msgid "routes.trade.title"
-msgstr "@:(routes.trade.hero.title)| @:(common.site_title)"
 
 msgid "routes.trade.hero.title"
 msgstr "Handle"
@@ -1279,9 +1178,6 @@ msgstr ""
 "Denne type handel tager højde for omkostningerne ved fremstilling af en "
 "vare (mønter og forsyninger) for at bestemme satserne mellem varerne."
 
-msgid "routes.help_to_translate_the_site.title"
-msgstr "@:(routes.help_to_translate_the_site.hero.title) | @:(common.site_title)"
-
 msgid "routes.help_to_translate_the_site.hero.title"
 msgstr "Hjælp med at oversætte webstedet"
 
@@ -1305,9 +1201,6 @@ msgstr ""
 "contact_foe_tools) med angivelse af det / de sprog, som du kan oversætte "
 "til, så vi kan sende dig en invitation"
 
-msgid "routes.survey.title"
-msgstr "@:(routes.survey.hero.title) | @:(common.site_title)"
-
 msgid "routes.survey.hero.title"
 msgstr "Undersøgelse"
 
@@ -1327,9 +1220,6 @@ msgstr "Der er opstået en fejl, kontroller formularen og prøv igen"
 
 msgid "routes.survey.unknown_error"
 msgstr "Der er opstået en ukendt fejl. Kontakt webstedets administrator"
-
-msgid "routes.contact.title"
-msgstr "@:(routes.contact.hero.title) | @:(common.site_title)"
 
 msgid "routes.contact.hero.title"
 msgstr "Kontakt"
@@ -1357,9 +1247,6 @@ msgstr "Side ikke fundet | @:(common.site_title)"
 
 msgid "routes.error.404.message"
 msgstr "Beklager, den side, du leder efter, findes ikke eller findes ikke mere"
-
-msgid "foe_data.age.Oracle"
-msgstr "@:(foe_data.age.NoAge) (@:(foe_data.gb.Oracle_of_Delphi))"
 
 msgid "foe_data.age.NoAge"
 msgstr "Ingen tidsalder"
@@ -2304,12 +2191,3 @@ msgid "components.gb_investment.tutorial.investor_percentage"
 msgstr ""
 "Vælg satsen som du foventer at dine investorer bruger.\n"
 "Eksempel: ved en investering af 1.9, så vælg 90"
-
-msgid "routes.gb_leveling_order.title"
-msgstr "@:(routes.gb_leveling_order.hero.title)"
-
-msgid "routes.donate.hero.title"
-msgstr "@:(utils.Donate)"
-
-msgid "main_menu.gb_leveling_order"
-msgstr "@:(routes.gb_leveling_order.hero.title)"
