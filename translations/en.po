@@ -1459,7 +1459,7 @@ msgid "routes.gb_leveling_order.targetLevel"
 msgstr "Target level (-1 = no limit)"
 
 msgid "routes.gb_leveling_order.buildRatio"
-msgstr "Equivalence of 1 resource (in FP) needed to build a GM (0 to be ignored)"
+msgstr "Equivalence of 1 resource (in FP) needed to build a GB (0 to be ignored)"
 
 msgid "routes.gb_leveling_order.initFpBy24h_fp_boost"
 msgstr " (FP GBs excluded)"
@@ -1468,7 +1468,7 @@ msgid "routes.gb_leveling_order.randomRewardProduction"
 msgstr " (by 24 hours)"
 
 msgid "routes.gb_leveling_order.includeRandomReward"
-msgstr "Take in account GBs that can provides random rewards of the desired bonus ?"
+msgstr "Take in account GBs that can provide random rewards of the desired bonus ?"
 
 msgid "routes.gb_leveling_order.yourGbs"
 msgstr "Levels of your GBs (-1 = not yet built)"
