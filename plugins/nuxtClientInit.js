@@ -169,20 +169,10 @@ function checkLocaleNotCompleted(store, translationState, $i18n) {
   store.set("localesNotCompleted", localesNotCompleted);
 }
 
-async function getLocaleCompletion(store, $axios, $i18n) {
-  let url = `${process.env.TRANSLATION_URL}/statistics/`;
-  const obj = {};
-  do {
-    const localesStatistics = await $axios.get(url);
-    for (const elt of localesStatistics.data.results) {
-      obj[elt.code] = elt.translated_percent;
-    }
-    url = localesStatistics.data.next;
-  } while (url);
-
+function getLocaleCompletion(store, $config, $i18n) {
   setTimeout(() => {
-    store.set("translationState", obj);
-    checkLocaleNotCompleted(store, obj, $i18n);
+    store.set("translationState", $config.translationState);
+    checkLocaleNotCompleted(store, $config.translationState, $i18n);
   }, 0);
 }
 
@@ -199,6 +189,6 @@ export default function ({ store, $clone, $moment, $axios, app, $colorMode, $con
   storeProfileSchemaUpdate(store, $clone);
   dayNightMode(store, $clone, $moment, $colorMode);
   getSurvey(store, $axios);
-  getLocaleCompletion(store, $axios, app.i18n);
+  getLocaleCompletion(store, $config, app.i18n);
   initFoeData(store, $axios, $config);
 }
