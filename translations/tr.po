@@ -17,30 +17,6 @@ msgstr ""
 msgid "main_menu.home"
 msgstr "Ana Sayfa"
 
-msgid "main_menu.gb_investment"
-msgstr "@:(routes.gb_investment_gb_chooser.hero.title)"
-
-msgid "main_menu.secure_position"
-msgstr "@:(routes.secure_position.hero.title)"
-
-msgid "main_menu.cf_calculator"
-msgstr "@:(routes.cf_calculator.hero.title)"
-
-msgid "main_menu.gb_statistics"
-msgstr "@:(routes.gb_statistics.hero.title)"
-
-msgid "main_menu.gb_forecast_cost"
-msgstr "@:(routes.gb_forecast_cost.hero.title)"
-
-msgid "main_menu.trade"
-msgstr "@:(routes.trade.hero.title)"
-
-msgid "main_menu.help_to_translate_the_site"
-msgstr "@:(routes.help_to_translate_the_site.hero.title)"
-
-msgid "main_menu.campaign_cost"
-msgstr "@:(routes.campaign_cost.hero.title)"
-
 msgid "footer_menu.about"
 msgstr "Hakkımızda"
 
@@ -53,17 +29,11 @@ msgstr "Değişiklikler"
 msgid "footer_menu.contact"
 msgstr "İletişim"
 
-msgid "components.campaign_cost.title"
-msgstr "@:(routes.campaign_cost.hero.title)"
-
 msgid "components.campaign_cost.choose_province"
 msgstr "Bölge seçin"
 
 msgid "components.campaign_cost.message.haveUnknownCosts"
 msgstr "Bu bölgede değerleri eksik olan bir veya daha fazla sektör var."
-
-msgid "components.cf_calculator.block_cfc.title"
-msgstr "@:(routes.cf_calculator.hero.title)"
 
 msgid "components.cf_calculator.block_cfc.your_age"
 msgstr "Çağınız"
@@ -96,9 +66,6 @@ msgstr "2. Yinelenen Görev ?"
 
 msgid "components.cf_calculator.block_cfc.supplies_gathered"
 msgstr "Toplanan Malzemeler"
-
-msgid "components.cf_calculator.block_cfc.table_reward.title"
-msgstr "@:(utils.Rewards)"
 
 msgid "components.cf_calculator.block_cfc.table_reward.thead.th1"
 msgstr "Ozalitler"
@@ -160,9 +127,6 @@ msgid "components.gb_investment.gb_list_select.info"
 msgstr ""
 "Genel ayarlarda seçicinin stilini (eski seçici veya otomatik tamamlama) "
 "değiştirebilirsiniz"
-
-msgid "components.gb_investment.gb_investment.title"
-msgstr "@:(routes.gb_investment_gb_chooser.hero.title)"
 
 msgid "components.gb_investment.gb_investment.description.p1"
 msgstr ""
@@ -354,11 +318,6 @@ msgstr "Sırayı göster"
 
 msgid ""
 "components.gb_investment_investors.takingPlaceInConsideration."
-"form.no"
-msgstr "@:(utils.No)"
-
-msgid ""
-"components.gb_investment_investors.takingPlaceInConsideration."
 "form.normal"
 msgstr "Normal"
 
@@ -431,12 +390,6 @@ msgstr "Bina sahibinin şu anki seviyede atmış olduğu FP"
 msgid "components.gb_forecast_cost.graph.title"
 msgstr "{gb} Devasal Binası için bina sahibinin tahmini FP miktarı"
 
-msgid "components.gb_forecast_cost.graph.x_axes_label"
-msgstr "@:(utils.graph.gb_level)"
-
-msgid "components.gb_forecast_cost.graph.y_axes_label"
-msgstr "@:(utils.graph.gb_level_cost)"
-
 msgid "components.gb_forecast_cost.graph.label.default"
 msgstr "Bu seviyenin brüt maliyeti"
 
@@ -445,9 +398,6 @@ msgstr "Bonussuz olarak gereken FP miktarı"
 
 msgid "components.gb_forecast_cost.graph.label.custom_preparation"
 msgstr "Bonuslu olarak gereken FP miktarı"
-
-msgid "components.gb_statistics.title"
-msgstr "@:(routes.gb_statistics.hero.title)"
 
 msgid "components.gb_statistics.p1"
 msgstr ""
@@ -568,9 +518,6 @@ msgstr "Çağ"
 msgid "components.simple_trade.table.thead.th2"
 msgstr "Ürünler"
 
-msgid "components.simple_trade.table.thead.th3"
-msgstr "@:(components.trade.label.i_want)"
-
 msgid "components.simple_trade.table.thead.th4"
 msgstr "Sonuç"
 
@@ -590,9 +537,6 @@ msgid "components.site_layout.update"
 msgid_plural "components.site_layout.update"
 msgstr[0] "Son ziyaretinizden bu yana bir güncelleme var."
 msgstr[1] "Son ziyaretinizden bu yana {count} güncelleme var."
-
-msgid "components.site_layout.hero.title"
-msgstr "@:(common.site_title)"
 
 msgid "components.site_layout.hero.slogan_html"
 msgstr "@:(common.links.foe) tecrübenizi kolaylaştırmaya yarayan birkaç araç"
@@ -694,9 +638,6 @@ msgstr "Teklifin boyutu (max {count})"
 msgid "components.trade.split_message.msg"
 msgstr "{valueTo}{ageTo} için {valueFrom}{ageFrom}"
 
-msgid "components.trade.split_message.common"
-msgstr "{count} x (@:(components.trade.split_message.msg))"
-
 msgid "components.trade.split_message.multi"
 msgstr "@:(components.trade.split_message.common) ve {secondPart}"
 
@@ -762,9 +703,6 @@ msgstr "Alan değeri"
 msgid "components.promotion_message_builder.custom_field_title"
 msgstr "Özel alanlarınız"
 
-msgid "components.promotion_message_builder.use_short_name"
-msgstr "@:(components.gb_investment.gb_investment.use_short_name)"
-
 msgid "components.promotion_message_builder.reverse_place_order"
 msgstr "Ters sıra ile göster?"
 
@@ -798,9 +736,6 @@ msgstr "Sıra dizini"
 msgid "components.promotion_message_builder.variables.place.PV"
 msgstr "Sıra değeri (FP cinsinden)"
 
-msgid "components.promotion_message_builder.variables.place.PP"
-msgstr "@:(components.gb_investment.gb_investment.table.thead.th3)"
-
 msgid "components.promotion_message_builder.variables.message.FLVL"
 msgstr "Şu seviyeden"
 
@@ -812,9 +747,6 @@ msgstr "Devasa Bina ismi"
 
 msgid "components.promotion_message_builder.variables.message.P"
 msgstr "Sıralar"
-
-msgid "components.promotion_message_builder.variables.message.OP"
-msgstr "@:(components.gb_investment.gb_investment.table.tfoot.total_preparation)"
 
 msgid "components.promotion_message_builder.variables.message.PPx"
 msgstr "Sahibin \"x\" sırası için atacağı FP sayısı (\"x\" ile 1'den 5'e kadar)"
@@ -858,9 +790,6 @@ msgstr "Geçersiz veri"
 
 msgid "components.import_promotion_message.template_imported"
 msgstr "Şablon dışarıdan alındı"
-
-msgid "routes.home.title"
-msgstr "@:(common.site_title)"
 
 msgid "routes.about.title"
 msgstr "@:(common.site_title) Hakkında"
@@ -1089,9 +1018,6 @@ msgstr ""
 "<b>Not:</b> GitHub ile ilgili sorunlarda anlamayı en üst düzeye "
 "çıkarabilmek için lütfen İngilizce yazınız."
 
-msgid "routes.campaign_cost.title"
-msgstr "@:(routes.campaign_cost.hero.title) | @:(common.site_title)"
-
 msgid "routes.campaign_cost.hero.title"
 msgstr "Fetih Maliyeti"
 
@@ -1099,9 +1025,6 @@ msgid "routes.campaign_cost.hero.subtitle"
 msgstr ""
 "Bu araç, kıta haritasında bir sektörü veya bölgeyi müzakere ederek "
 "fethetmenin maliyetini hesaplar."
-
-msgid "routes.cf_calculator.title"
-msgstr "@:(routes.cf_calculator.hero.title) | @:(common.site_title)"
 
 msgid "routes.cf_calculator.hero.title"
 msgstr "Frontenac Şatosu Hesaplama Aracı"
@@ -1114,29 +1037,17 @@ msgstr ""
 msgid "routes.changelog.title"
 msgstr "Değişiklikler | @:(common.site_title)"
 
-msgid "routes.contributors.title"
-msgstr "@:(routes.contributors.hero.title) | @:(common.site_title)"
-
 msgid "routes.contributors.hero.title"
 msgstr "Katkıda bulunanlar"
 
 msgid "routes.contributors.hero.subtitle"
 msgstr "Bu sayfa tüm katılımcıları listelemeye çalışıyor"
 
-msgid "routes.gb_investment.title"
-msgstr "@:(routes.gb_investment.hero.title) | @:(common.site_title)"
-
-msgid "routes.gb_investment.hero.title"
-msgstr "{gb_key} - @:(routes.gb_investment_gb_chooser.hero.title)"
-
 msgid "routes.gb_investment.tab.owner_view.title"
 msgstr "Bina sahibinin gözünden"
 
 msgid "routes.gb_investment.tab.investors_view.title"
 msgstr "Yatırımcının gözünden"
-
-msgid "routes.gb_investment_gb_chooser.title"
-msgstr "@:(routes.gb_investment_gb_chooser.hero.title) | @:(common.site_title)"
 
 msgid "routes.gb_investment_gb_chooser.hero.title"
 msgstr "Devasa Binalara FP Yatırımı"
@@ -1149,9 +1060,6 @@ msgstr ""
 msgid "routes.gb_investment_gb_chooser.choose_gb.title"
 msgstr "Bir Devasa Bina Seç"
 
-msgid "routes.gb_forecast_cost.title"
-msgstr "@:(routes.gb_forecast_cost.hero.title) | @:(common.site_title)"
-
 msgid "routes.gb_forecast_cost.hero.title"
 msgstr "DB maliyet tahmini"
 
@@ -1159,9 +1067,6 @@ msgid "routes.gb_forecast_cost.hero.subtitle"
 msgstr ""
 "Bu araç Ark bonusuyla veya Ark bonusu olmadan, herhangi bir Devasa Bina'nın "
 "belirleyeceğiniz iki seviye arasındaki maliyetini hesaplar."
-
-msgid "routes.gb_statistics.title"
-msgstr "@:(routes.gb_statistics.hero.title) | @:(common.site_title)"
 
 msgid "routes.gb_statistics.hero.title"
 msgstr "Devasa Bina İstatistikleri"
@@ -1171,9 +1076,6 @@ msgstr ""
 "Bu araç, çağlara göre Devasa Binaların her seviyedeki maliyetini grafikler "
 "yardımıyla göstermeye yarar."
 
-msgid "routes.secure_position.title"
-msgstr "@:(routes.secure_position.hero.title) | @:(common.site_title)"
-
 msgid "routes.secure_position.hero.title"
 msgstr "Sıra garantileme"
 
@@ -1181,9 +1083,6 @@ msgid "routes.secure_position.hero.subtitle"
 msgstr ""
 "Bu araç, bir oyuncunun herhangi bir Devasa Binada kilitleyeceği sıra için "
 "atması gereken FP sayısını hesaplar."
-
-msgid "routes.trade.title"
-msgstr "@:(routes.trade.hero.title) | @:(common.site_title)"
 
 msgid "routes.trade.hero.title"
 msgstr "Ticaret"
@@ -1209,9 +1108,6 @@ msgstr ""
 "Bu tür bir ticaret, ürünler arasındaki oranları belirlemek için bir ürünün "
 "(para ve erzak bakımından) üretim maliyetini hesaba katar."
 
-msgid "routes.help_to_translate_the_site.title"
-msgstr "@:(routes.help_to_translate_the_site.hero.title) | @:(common.site_title)"
-
 msgid "routes.help_to_translate_the_site.hero.title"
 msgstr "Bu sitenin tercümesine yardımcı ol"
 
@@ -1234,9 +1130,6 @@ msgstr ""
 "dillerde tercüme yapabileceğinizi belirten bir email atabilirsiniz (email "
 "İngilizce olmalı); böylece size davet gönderebiliriz"
 
-msgid "routes.survey.title"
-msgstr "@:(routes.survey.hero.title) | @:(common.site_title)"
-
 msgid "routes.survey.hero.title"
 msgstr "Anket"
 
@@ -1256,9 +1149,6 @@ msgstr "Bir hata oluştu, formu kontrol edip tekrar deneyin"
 
 msgid "routes.survey.unknown_error"
 msgstr "Bilinmeyen bir hata oluştu, lütfen site yöneticisiyle iletişime geçin"
-
-msgid "routes.contact.title"
-msgstr "@:(routes.contact.hero.title) | @:(common.site_title)"
 
 msgid "routes.contact.hero.title"
 msgstr "İletişim"
@@ -1287,9 +1177,6 @@ msgstr "Sayfa bulunamadı | @:(common.site_title)"
 
 msgid "routes.error.404.message"
 msgstr "Üzgünüz, aradığınız sayfa bulunamıyor"
-
-msgid "foe_data.age.Oracle"
-msgstr "@:(foe_data.age.NoAge) (@:(foe_data.gb.Oracle_of_Delphi))"
 
 msgid "foe_data.age.NoAge"
 msgstr "Çağ Yok"
@@ -3741,9 +3628,6 @@ msgstr "Rustikauri"
 msgid "routes.donate.hero.subtitle"
 msgstr "Bağış yap @:(common.site_title)"
 
-msgid "routes.donate.title"
-msgstr "@:(routes.donate.hero.title) - @:(common.site_title)"
-
 msgid "components.promotion_message_builder.variables.message.LC"
 msgstr "Seviye maliyeti"
 
@@ -3822,12 +3706,3 @@ msgstr "Bu durumda, yapmak istediğiniz Görev sayısını belirlemeniz gerekir.
 
 msgid "components.cf_calculator.tutorial.otherRq"
 msgstr "Şu anda yaptığınız diğer günlük yinelenen görevleri ayarlayın."
-
-msgid "routes.gb_leveling_order.title"
-msgstr "@:(routes.gb_leveling_order.hero.title)"
-
-msgid "routes.donate.hero.title"
-msgstr "@:(utils.Donate)"
-
-msgid "main_menu.gb_leveling_order"
-msgstr "@:(routes.gb_leveling_order.hero.title)"

@@ -99,9 +99,6 @@ msgstr ""
 "Denne tabellen viser deg belønninger du vil oppnå. Husk på at belønningens "
 "størrelse er basert på empirisk sannsynlighet."
 
-msgid "components.cf_calculator.block_cfc.title"
-msgstr "@:(routes.cf_calculator.hero.title)"
-
 msgid "components.cf_calculator.block_cfc.your_age"
 msgstr "Din alder"
 
@@ -125,9 +122,6 @@ msgstr "Andre daglige repeterende oppdrag"
 
 msgid "components.cf_calculator.block_cfc.supplies_gathered"
 msgstr "Forsyninger samlet"
-
-msgid "components.cf_calculator.block_cfc.table_reward.title"
-msgstr "@:(utils.Rewards)"
 
 msgid "components.cf_calculator.block_cfc.table_reward.thead.th1"
 msgstr "Skisser"
@@ -189,9 +183,6 @@ msgstr ""
 
 msgid "components.cf_calculator.block_cfc.second_rq"
 msgstr "Andre repeterende oppgavegiver ?"
-
-msgid "components.campaign_cost.title"
-msgstr "@:(routes.campaign_cost.hero.title)"
 
 msgid "components.campaign_cost.choose_province"
 msgstr "Velg en provins"
@@ -285,9 +276,6 @@ msgstr "Global utregning"
 
 msgid "components.gb_investment.gb_investment.form.investor_percentage"
 msgstr "% av global investor bonus (arc bonus)"
-
-msgid "components.gb_investment.gb_investment.title"
-msgstr "@:(routes.gb_investment_gb_chooser.hero.title)"
 
 msgid "components.gb_investment.gb_investment.show_level"
 msgstr "Vis nivå?"
@@ -432,30 +420,6 @@ msgstr "Bytt Storslått Bygning"
 
 msgid "main_menu.home"
 msgstr "Hjem"
-
-msgid "main_menu.gb_statistics"
-msgstr "@:(routes.gb_statistics.hero.title)"
-
-msgid "main_menu.trade"
-msgstr "@:(routes.trade.hero.title)"
-
-msgid "main_menu.campaign_cost"
-msgstr "@:(routes.campaign_cost.hero.title)"
-
-msgid "main_menu.cf_calculator"
-msgstr "@:(routes.cf_calculator.hero.title)"
-
-msgid "main_menu.gb_forecast_cost"
-msgstr "@:(routes.gb_forecast_cost.hero.title)"
-
-msgid "main_menu.help_to_translate_the_site"
-msgstr "@:(routes.help_to_translate_the_site.hero.title)"
-
-msgid "main_menu.secure_position"
-msgstr "@:(routes.secure_position.hero.title)"
-
-msgid "main_menu.gb_investment"
-msgstr "@:(routes.gb_investment_gb_chooser.hero.title)"
 
 msgid "footer_menu.about"
 msgstr "Om"
@@ -779,89 +743,3 @@ msgid "components.gb_forecast_cost.message.estimated_time_swap_threads"
 msgstr ""
 "Forventet tid for å nå nivået ved bruk av byttetråder (5/10/20/50/100 FPs, "
 "etc.): {time}"
-
-msgid "foe_data.age.Oracle"
-msgstr "@:(foe_data.age.NoAge) (@:(foe_data.gb.Oracle_of_Delphi))"
-
-msgid "routes.gb_leveling_order.title"
-msgstr "@:(routes.gb_leveling_order.hero.title)"
-
-msgid "routes.donate.hero.title"
-msgstr "@:(utils.Donate)"
-
-msgid "routes.donate.title"
-msgstr "@:(routes.donate.hero.title) | @:(common.site_title)"
-
-msgid "routes.contact.title"
-msgstr "@:(routes.contact.hero.title) | @:(common.site_title)"
-
-msgid "routes.survey.title"
-msgstr "@:(routes.survey.hero.title) | @:(common.site_title)"
-
-msgid "routes.help_to_translate_the_site.title"
-msgstr ""
-"@:(routes.help_to_translate_the_site.hero.title) | @:(common.site_title)"
-
-msgid "routes.trade.title"
-msgstr "@:(routes.trade.hero.title) | @:(common.site_title)"
-
-msgid "routes.secure_position.title"
-msgstr "@:(routes.secure_position.hero.title) | @:(common.site_title)"
-
-msgid "routes.gb_statistics.title"
-msgstr "@:(routes.gb_statistics.hero.title) | @:(common.site_title)"
-
-msgid "routes.gb_forecast_cost.title"
-msgstr "@:(routes.gb_forecast_cost.hero.title) | @:(common.site_title)"
-
-msgid "routes.gb_investment_gb_chooser.title"
-msgstr "@:(routes.gb_investment_gb_chooser.hero.title) | @:(common.site_title)"
-
-msgid "routes.gb_investment.hero.title"
-msgstr "{gb_key} - @:(routes.gb_investment_gb_chooser.hero.title)"
-
-msgid "routes.gb_investment.title"
-msgstr "@:(routes.gb_investment.hero.title) | @:(common.site_title)"
-
-msgid "routes.contributors.title"
-msgstr "@:(routes.contributors.hero.title) | @:(common.site_title)"
-
-msgid "routes.cf_calculator.title"
-msgstr "@:(routes.cf_calculator.hero.title) | @:(common.site_title)"
-
-msgid "routes.campaign_cost.title"
-msgstr "@:(routes.campaign_cost.hero.title) | @:(common.site_title)"
-
-msgid "routes.home.title"
-msgstr "@:(common.site_title)"
-
-msgid "components.promotion_message_builder.variables.message.OP"
-msgstr ""
-"@:(components.gb_investment.gb_investment.table.tfoot.total_preparation)"
-
-msgid "components.promotion_message_builder.variables.place.PP"
-msgstr "@:(components.gb_investment.gb_investment.table.thead.th3)"
-
-msgid "components.promotion_message_builder.use_short_name"
-msgstr "@:(components.gb_investment.gb_investment.use_short_name)"
-
-msgid "components.trade.split_message.common"
-msgstr "{count} × (@:(components.trade.split_message.msg))"
-
-msgid "components.site_layout.hero.title"
-msgstr "@:(common.site_title)"
-
-msgid "components.simple_trade.table.thead.th3"
-msgstr "@:(components.trade.label.i_want)"
-
-msgid "components.gb_statistics.title"
-msgstr "@:(routes.gb_statistics.hero.title)"
-
-msgid "components.gb_forecast_cost.graph.y_axes_label"
-msgstr "@:(utils.graph.gb_level_cost)"
-
-msgid "components.gb_forecast_cost.graph.x_axes_label"
-msgstr "@:(utils.graph.gb_level)"
-
-msgid "main_menu.gb_leveling_order"
-msgstr "@:(routes.gb_leveling_order.hero.title)"

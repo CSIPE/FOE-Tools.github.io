@@ -17,33 +17,6 @@ msgstr ""
 msgid "main_menu.home"
 msgstr "Accueil"
 
-msgid "main_menu.gb_investment"
-msgstr "@:(routes.gb_investment_gb_chooser.hero.title)"
-
-msgid "main_menu.secure_position"
-msgstr "@:(routes.secure_position.hero.title)"
-
-msgid "main_menu.cf_calculator"
-msgstr "@:(routes.cf_calculator.hero.title)"
-
-msgid "main_menu.gb_statistics"
-msgstr "@:(routes.gb_statistics.hero.title)"
-
-msgid "main_menu.gb_forecast_cost"
-msgstr "@:(routes.gb_forecast_cost.hero.title)"
-
-msgid "main_menu.trade"
-msgstr "@:(routes.trade.hero.title)"
-
-msgid "main_menu.help_to_translate_the_site"
-msgstr "@:(routes.help_to_translate_the_site.hero.title)"
-
-msgid "main_menu.campaign_cost"
-msgstr "@:(routes.campaign_cost.hero.title)"
-
-msgid "main_menu.gb_leveling_order"
-msgstr "@:(routes.gb_leveling_order.hero.title)"
-
 msgid "footer_menu.about"
 msgstr "À propos"
 
@@ -62,9 +35,6 @@ msgstr "Politique relative aux cookies"
 msgid "footer_menu.privacy_policy"
 msgstr "Politique de confidentialité"
 
-msgid "components.campaign_cost.title"
-msgstr "@:(routes.campaign_cost.hero.title)"
-
 msgid "components.campaign_cost.choose_province"
 msgstr "Choissisez une province"
 
@@ -79,9 +49,6 @@ msgstr "Toutes les provinces"
 
 msgid "components.campaign_cost.provinces"
 msgstr "Provinces"
-
-msgid "components.cf_calculator.block_cfc.title"
-msgstr "@:(routes.cf_calculator.hero.title)"
 
 msgid "components.cf_calculator.block_cfc.your_age"
 msgstr "Votre age"
@@ -114,9 +81,6 @@ msgstr "Seconde quête récurrente ?"
 
 msgid "components.cf_calculator.block_cfc.supplies_gathered"
 msgstr "Marchandises produites"
-
-msgid "components.cf_calculator.block_cfc.table_reward.title"
-msgstr "@:(utils.Rewards)"
 
 msgid "components.cf_calculator.block_cfc.table_reward.thead.th1"
 msgstr "Plan"
@@ -273,9 +237,6 @@ msgid "components.gb_investment.gb_list_select.info"
 msgstr ""
 "Vous pouvez changer le style du sélecteur (ancien sélecteur ou "
 "auto-complétion) dans les paramètres globaux"
-
-msgid "components.gb_investment.gb_investment.title"
-msgstr "@:(routes.gb_investment_gb_chooser.hero.title)"
 
 msgid "components.gb_investment.gb_investment.description.p1"
 msgstr ""
@@ -739,11 +700,6 @@ msgstr "Afficher les places"
 
 msgid ""
 "components.gb_investment_investors.takingPlaceInConsideration."
-"form.no"
-msgstr "@:(utils.No)"
-
-msgid ""
-"components.gb_investment_investors.takingPlaceInConsideration."
 "form.normal"
 msgstr "Normal"
 
@@ -818,12 +774,6 @@ msgstr "PFs déjà investi par le propriétaire sur le niveau actuel"
 msgid "components.gb_forecast_cost.graph.title"
 msgstr "Prévision du montant de préparation du propriétaire pour « {gb} »"
 
-msgid "components.gb_forecast_cost.graph.x_axes_label"
-msgstr "@:(utils.graph.gb_level)"
-
-msgid "components.gb_forecast_cost.graph.y_axes_label"
-msgstr "@:(utils.graph.gb_level_cost)"
-
 msgid "components.gb_forecast_cost.graph.label.default"
 msgstr "Coût brut du niveau"
 
@@ -832,9 +782,6 @@ msgstr "Montant de préparation sans bonus"
 
 msgid "components.gb_forecast_cost.graph.label.custom_preparation"
 msgstr "Montant de préparation avec bonus"
-
-msgid "components.gb_statistics.title"
-msgstr "@:(routes.gb_statistics.hero.title)"
 
 msgid "components.gb_statistics.p1"
 msgstr ""
@@ -955,9 +902,6 @@ msgstr "Âge"
 msgid "components.simple_trade.table.thead.th2"
 msgstr "Marchandise"
 
-msgid "components.simple_trade.table.thead.th3"
-msgstr "@:(components.trade.label.i_want)"
-
 msgid "components.simple_trade.table.thead.th4"
 msgstr "Résultat"
 
@@ -977,9 +921,6 @@ msgid "components.site_layout.update"
 msgid_plural "components.site_layout.update"
 msgstr[0] "Une mise à jour depuis votre dernière visite."
 msgstr[1] "{count} mises à jour depuis votre dernière visite."
-
-msgid "components.site_layout.hero.title"
-msgstr "@:(common.site_title)"
 
 msgid "components.site_layout.hero.slogan_html"
 msgstr "Un ensemble d'outils pour se simplifier la vie sur @:(common.links.foe)"
@@ -1098,9 +1039,6 @@ msgstr "Taille maximale d'une offre (max {count})"
 msgid "components.trade.split_message.msg"
 msgstr "{valueFrom} {ageFrom} pour {valueTo} {ageTo}"
 
-msgid "components.trade.split_message.common"
-msgstr "{count} × (@:(components.trade.split_message.msg))"
-
 msgid "components.trade.split_message.multi"
 msgstr "@:(components.trade.split_message.common) et {secondPart}"
 
@@ -1167,9 +1105,6 @@ msgstr "Valeur du champ"
 msgid "components.promotion_message_builder.custom_field_title"
 msgstr "Vos champs personnalisés"
 
-msgid "components.promotion_message_builder.use_short_name"
-msgstr "@:(components.gb_investment.gb_investment.use_short_name)"
-
 msgid "components.promotion_message_builder.reverse_place_order"
 msgstr "Inverser l'ordre des places ?"
 
@@ -1203,9 +1138,6 @@ msgstr "Numéro de place"
 msgid "components.promotion_message_builder.variables.place.PV"
 msgstr "Valeur de la place (en PFs)"
 
-msgid "components.promotion_message_builder.variables.place.PP"
-msgstr "@:(components.gb_investment.gb_investment.table.thead.th3)"
-
 msgid "components.promotion_message_builder.variables.message.FLVL"
 msgstr "Du niveau"
 
@@ -1217,9 +1149,6 @@ msgstr "Nom du GM"
 
 msgid "components.promotion_message_builder.variables.message.P"
 msgstr "Places"
-
-msgid "components.promotion_message_builder.variables.message.OP"
-msgstr "@:(components.gb_investment.gb_investment.table.tfoot.total_preparation)"
 
 msgid "components.promotion_message_builder.variables.message.PPx"
 msgstr ""
@@ -1292,9 +1221,6 @@ msgstr "Plans"
 msgid "components.gb_patron_data.rewards.medals"
 msgstr "Médailles"
 
-msgid "routes.home.title"
-msgstr "@:(common.site_title)"
-
 msgid "routes.about.title"
 msgstr "À propos de @:(common.site_title)"
 
@@ -1359,17 +1285,11 @@ msgstr ""
 "rédiger en anglais pour faciliter la compréhension pour le plus grand "
 "nombre."
 
-msgid "routes.campaign_cost.title"
-msgstr "@:(routes.campaign_cost.hero.title) | @:(common.site_title)"
-
 msgid "routes.campaign_cost.hero.title"
 msgstr "Coût de la campagne"
 
 msgid "routes.campaign_cost.hero.subtitle"
 msgstr "Cet outil permet de prévoir le coût d'un secteur ou d'une province."
-
-msgid "routes.cf_calculator.title"
-msgstr "@:(routes.cf_calculator.hero.title) | @:(common.site_title)"
 
 msgid "routes.cf_calculator.hero.title"
 msgstr "Calculette Château Frontenac"
@@ -1383,29 +1303,17 @@ msgstr ""
 msgid "routes.changelog.title"
 msgstr "Changelog | @:(common.site_title)"
 
-msgid "routes.contributors.title"
-msgstr "@:(routes.contributors.hero.title) | @:(common.site_title)"
-
 msgid "routes.contributors.hero.title"
 msgstr "Contributeurs"
 
 msgid "routes.contributors.hero.subtitle"
 msgstr "Cette page tente de répertorier tous les contributeurs"
 
-msgid "routes.gb_investment.title"
-msgstr "@:(routes.gb_investment.hero.title) | @:(common.site_title)"
-
-msgid "routes.gb_investment.hero.title"
-msgstr "{gb_key} - @:(routes.gb_investment_gb_chooser.hero.title)"
-
 msgid "routes.gb_investment.tab.owner_view.title"
 msgstr "Vue propriétaire"
 
 msgid "routes.gb_investment.tab.investors_view.title"
 msgstr "Vue investisseurs"
-
-msgid "routes.gb_investment_gb_chooser.title"
-msgstr "@:(routes.gb_investment_gb_chooser.hero.title) | @:(common.site_title)"
 
 msgid "routes.gb_investment_gb_chooser.hero.title"
 msgstr "Investissement GM"
@@ -1419,9 +1327,6 @@ msgstr ""
 msgid "routes.gb_investment_gb_chooser.choose_gb.title"
 msgstr "Choisir un Grand Monument"
 
-msgid "routes.gb_forecast_cost.title"
-msgstr "@:(routes.gb_forecast_cost.hero.title) | @:(common.site_title)"
-
 msgid "routes.gb_forecast_cost.hero.title"
 msgstr "Prévision du coût d'un GM"
 
@@ -1429,9 +1334,6 @@ msgid "routes.gb_forecast_cost.hero.subtitle"
 msgstr ""
 "Cet outil permet de déterminer le nombre de PFs pour aller d'un niveau à un "
 "autre, avec ou sans bonus d'Arche."
-
-msgid "routes.gb_statistics.title"
-msgstr "@:(routes.gb_statistics.hero.title) | @:(common.site_title)"
 
 msgid "routes.gb_statistics.hero.title"
 msgstr "Statistiques GM"
@@ -1441,9 +1343,6 @@ msgstr ""
 "Cet outil permet de visualiser des graphiques sur l'évolution des coûts des "
 "GM suivant l'Âge."
 
-msgid "routes.secure_position.title"
-msgstr "@:(routes.secure_position.hero.title) | @:(common.site_title)"
-
 msgid "routes.secure_position.hero.title"
 msgstr "Sécurisation de place"
 
@@ -1451,9 +1350,6 @@ msgid "routes.secure_position.hero.subtitle"
 msgstr ""
 "Cet outil permet de calculer le nombre de PF qu'un joueur doit mettre sur "
 "un GM pour bloquer sa place."
-
-msgid "routes.trade.title"
-msgstr "@:(routes.trade.hero.title) | @:(common.site_title)"
 
 msgid "routes.trade.hero.title"
 msgstr "Commerce"
@@ -1479,9 +1375,6 @@ msgstr ""
 "Ce type de commerce prend en compte le coût de fabrication d'une ressource "
 "(pièce d'or et marchandise) pour déterminer les taux entre les ressources."
 
-msgid "routes.help_to_translate_the_site.title"
-msgstr "@:(routes.help_to_translate_the_site.hero.title) | @:(common.site_title)"
-
 msgid "routes.help_to_translate_the_site.hero.title"
 msgstr "Aider à traduire le site"
 
@@ -1506,9 +1399,6 @@ msgstr ""
 msgid "routes.help_to_translate_the_site.state_of_translation"
 msgstr "État de la traduction :"
 
-msgid "routes.survey.title"
-msgstr "@:(routes.survey.hero.title) | @:(common.site_title)"
-
 msgid "routes.survey.hero.title"
 msgstr "Sondage"
 
@@ -1528,9 +1418,6 @@ msgid "routes.survey.unknown_error"
 msgstr ""
 "Une erreur inconnue c'est produit, veuillez contacter l'administrateur du "
 "site"
-
-msgid "routes.contact.title"
-msgstr "@:(routes.contact.hero.title) | @:(common.site_title)"
 
 msgid "routes.contact.hero.title"
 msgstr "Contact"
@@ -1553,9 +1440,6 @@ msgstr ""
 "Si vous êtes développeurs, vous pouvez aussi créer une issue (et contribuer "
 "au développement du site) sur @:(common.links.github)."
 
-msgid "routes.donate.title"
-msgstr "@:(routes.donate.hero.title) | @:(common.site_title)"
-
 msgid "routes.donate.donation_message"
 msgstr ""
 "@:(common.site_title) est un projet open source gratuit. Par conséquent, le temps que je passe à le "
@@ -1574,9 +1458,6 @@ msgstr ""
 msgid "routes.donate.donation_options"
 msgstr "Faites un don avec @:(common.links.donorbox) ou @:(common.links.paypal)."
 
-msgid "routes.donate.hero.title"
-msgstr "@:(utils.Donate)"
-
 msgid "routes.donate.hero.subtitle"
 msgstr "Faites un don à @:(common.site_title)"
 
@@ -1591,9 +1472,6 @@ msgstr "Ordre de montée des GMs"
 
 msgid "routes.gb_leveling_order.hero.subtitle"
 msgstr "Quels GM dois-je monter ? Dans quel ordre ? Jusqu'à quel niveau ? Cet outil est là pour répondre à ces questions."
-
-msgid "routes.gb_leveling_order.title"
-msgstr "@:(routes.gb_leveling_order.hero.title)"
 
 msgid "routes.gb_leveling_order.table_reward.from"
 msgstr "Du niveau"
@@ -1636,9 +1514,6 @@ msgstr "Prendre en compte les GMs qui peuvent fournir des récompenses aléatoir
 
 msgid "routes.gb_leveling_order.yourGbs"
 msgstr "Niveaux de vos GMs (-1 = pas encore construit)"
-
-msgid "foe_data.age.Oracle"
-msgstr "@:(foe_data.age.NoAge) (@:(foe_data.gb.Oracle_of_Delphi))"
 
 msgid "foe_data.age.NoAge"
 msgstr "Aucun âge"

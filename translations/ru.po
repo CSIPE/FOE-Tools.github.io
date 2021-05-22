@@ -18,30 +18,6 @@ msgstr ""
 msgid "main_menu.home"
 msgstr "Главная"
 
-msgid "main_menu.gb_investment"
-msgstr "@:(routes.gb_investment_gb_chooser.hero.title)"
-
-msgid "main_menu.secure_position"
-msgstr "@:(routes.secure_position.hero.title)"
-
-msgid "main_menu.cf_calculator"
-msgstr "@:(routes.cf_calculator.hero.title)"
-
-msgid "main_menu.gb_statistics"
-msgstr "@:(routes.gb_statistics.hero.title)"
-
-msgid "main_menu.gb_forecast_cost"
-msgstr "@:(routes.gb_forecast_cost.hero.title)"
-
-msgid "main_menu.trade"
-msgstr "@:(routes.trade.hero.title)"
-
-msgid "main_menu.help_to_translate_the_site"
-msgstr "@:(routes.help_to_translate_the_site.hero.title)"
-
-msgid "main_menu.campaign_cost"
-msgstr "@:(routes.campaign_cost.hero.title)"
-
 msgid "footer_menu.about"
 msgstr "О проекте"
 
@@ -53,9 +29,6 @@ msgstr "История обновлений сайта"
 
 msgid "footer_menu.contact"
 msgstr "Контакты"
-
-msgid "components.campaign_cost.title"
-msgstr "@:(routes.campaign_cost.hero.title)"
 
 msgid "components.campaign_cost.choose_province"
 msgstr "Выберите провинцию"
@@ -73,9 +46,6 @@ msgstr "Все провинции"
 
 msgid "components.campaign_cost.all_ages"
 msgstr "Все эпохи"
-
-msgid "components.cf_calculator.block_cfc.title"
-msgstr "@:(routes.cf_calculator.hero.title)"
 
 msgid "components.cf_calculator.block_cfc.your_age"
 msgstr "Ваша эпоха"
@@ -103,9 +73,6 @@ msgstr "Еще круговые квесты?"
 
 msgid "components.cf_calculator.block_cfc.supplies_gathered"
 msgstr "Ресурсов получено"
-
-msgid "components.cf_calculator.block_cfc.table_reward.title"
-msgstr "@:(utils.Rewards)"
 
 msgid "components.cf_calculator.block_cfc.table_reward.thead.th1"
 msgstr "Чертежи"
@@ -248,9 +215,6 @@ msgid "components.gb_investment.gb_list_select.info"
 msgstr ""
 "Вы можете изменить стиль выбора ВС (устаревший или автозаполнение) в "
 "глобальных настройках"
-
-msgid "components.gb_investment.gb_investment.title"
-msgstr "@:(routes.gb_investment_gb_chooser.hero.title)"
 
 msgid "components.gb_investment.gb_investment.description.p1"
 msgstr ""
@@ -538,11 +502,6 @@ msgstr "Отобразить место"
 
 msgid ""
 "components.gb_investment_investors.takingPlaceInConsideration."
-"form.no"
-msgstr "@:(utils.No)"
-
-msgid ""
-"components.gb_investment_investors.takingPlaceInConsideration."
 "form.normal"
 msgstr "Нормальный"
 
@@ -609,12 +568,6 @@ msgstr "СО, уже вложенные владельцем в текущий �
 msgid "components.gb_forecast_cost.graph.title"
 msgstr "Прогноз затрат СО при разных сценариях прокачки ВС \"{gb}\""
 
-msgid "components.gb_forecast_cost.graph.x_axes_label"
-msgstr "@:(utils.graph.gb_level)"
-
-msgid "components.gb_forecast_cost.graph.y_axes_label"
-msgstr "@:(utils.graph.gb_level_cost)"
-
 msgid "components.gb_forecast_cost.graph.label.default"
 msgstr "Стоимость уровня без продажи мест"
 
@@ -623,9 +576,6 @@ msgstr "Если продавать места по номиналу"
 
 msgid "components.gb_forecast_cost.graph.label.custom_preparation"
 msgstr "Если продавать места под указанный множитель Арки"
-
-msgid "components.gb_statistics.title"
-msgstr "@:(routes.gb_statistics.hero.title)"
 
 msgid "components.gb_statistics.p1"
 msgstr ""
@@ -792,9 +742,6 @@ msgstr "Разбить"
 msgid "components.simple_trade.table.thead.ratio"
 msgstr "Отношение"
 
-msgid "components.simple_trade.table.thead.th3"
-msgstr "@:(components.trade.label.i_want)"
-
 msgid "components.simple_trade.slpit"
 msgstr "Разбить предложения?"
 
@@ -803,9 +750,6 @@ msgstr "Показать отношение"
 
 msgid "components.simple_trade.title"
 msgstr "Табличная версия"
-
-msgid "components.site_layout.hero.title"
-msgstr "@:(common.site_title)"
 
 msgid "components.site_layout.hero.slogan_html"
 msgstr "Набор инструментов для упрощения игры в @:(common.links.foe)"
@@ -917,9 +861,6 @@ msgstr ""
 msgid "components.trade.message.total"
 msgstr "(всего: {amount} {key})"
 
-msgid "components.trade.split_message.common"
-msgstr "{count} × (@:(components.trade.split_message.msg))"
-
 msgid "components.trade.split_message.multi"
 msgstr "@:(components.trade.split_message.common) и {secondPart}"
 
@@ -954,9 +895,6 @@ msgstr ""
 "Количество СО, которые должен вложить инвестор с учётом множителей Арки "
 "чтобы занять место \"х\" (где \"х\" значение от 1 до 5)"
 
-msgid "components.promotion_message_builder.variables.message.OP"
-msgstr "@:(components.gb_investment.gb_investment.table.tfoot.total_preparation)"
-
 msgid "components.promotion_message_builder.variables.message.P"
 msgstr "Места"
 
@@ -965,9 +903,6 @@ msgstr "По уровень"
 
 msgid "components.promotion_message_builder.variables.message.FLVL"
 msgstr "С уровня"
-
-msgid "components.promotion_message_builder.variables.place.PP"
-msgstr "@:(components.gb_investment.gb_investment.table.thead.th3)"
 
 msgid "components.promotion_message_builder.variables.place.PV"
 msgstr "Стоимость места (в СО)"
@@ -990,9 +925,6 @@ msgstr "Шаблон рекламных сообщений"
 
 msgid "components.promotion_message_builder.reverse_place_order"
 msgstr "Отобразить места в обратном порядке?"
-
-msgid "components.promotion_message_builder.use_short_name"
-msgstr "@:(components.gb_investment.gb_investment.use_short_name)"
 
 msgid "components.promotion_message_builder.custom_field_title"
 msgstr "Ваши настраиваемые поля"
@@ -1082,9 +1014,6 @@ msgstr "Вставьте свою конфигурацию сюда"
 msgid "components.import_promotion_message.title"
 msgstr "Импорт рекламного сообщения"
 
-msgid "routes.home.title"
-msgstr "@:(common.site_title)"
-
 msgid "routes.about.title"
 msgstr "Об @:(common.site_title)"
 
@@ -1142,9 +1071,6 @@ msgstr ""
 "по-английски, чтобы все вас понимали. Переводчик на русский в процессе "
 "разработки не участвует."
 
-msgid "routes.cf_calculator.title"
-msgstr "@:(routes.cf_calculator.hero.title) | @:(common.site_title)"
-
 msgid "routes.cf_calculator.hero.title"
 msgstr "Калькулятор Шато-Фронтенак"
 
@@ -1154,9 +1080,6 @@ msgstr "Подсчёт бонусов при выполнении круговы
 msgid "routes.changelog.title"
 msgstr "Изменения | @:(common.site_title)"
 
-msgid "routes.contributors.title"
-msgstr "@:(routes.contributors.hero.title) | @:(common.site_title)"
-
 msgid "routes.contributors.hero.title"
 msgstr "Авторы и участники проекта"
 
@@ -1165,20 +1088,11 @@ msgstr ""
 "На этой странице перечислены все (надеемся, что так) участники разработки "
 "этого проекта"
 
-msgid "routes.gb_investment.title"
-msgstr "@:(routes.gb_investment.hero.title) | @:(common.site_title)"
-
-msgid "routes.gb_investment.hero.title"
-msgstr "{gb_key} - @:(routes.gb_investment_gb_chooser.hero.title)"
-
 msgid "routes.gb_investment.tab.investors_view.title"
 msgstr "Вид от лица вкладчика"
 
 msgid "routes.gb_investment.tab.owner_view.title"
 msgstr "Вид от лица владельца ВС"
-
-msgid "routes.gb_investment_gb_chooser.title"
-msgstr "@:(routes.gb_investment_gb_chooser.hero.title) | @:(common.site_title)"
 
 msgid "routes.gb_investment_gb_chooser.hero.title"
 msgstr "Обеспечение гаранта"
@@ -1189,26 +1103,17 @@ msgstr "Обеспечение гарантированных мест друг�
 msgid "routes.gb_investment_gb_chooser.choose_gb.title"
 msgstr "Выберите Великое строение"
 
-msgid "routes.gb_forecast_cost.title"
-msgstr "@:(routes.gb_forecast_cost.hero.title) | @:(common.site_title)"
-
 msgid "routes.gb_forecast_cost.hero.title"
 msgstr "Прогноз стоимости прокачки ВС"
 
 msgid "routes.gb_forecast_cost.hero.subtitle"
 msgstr "Прогноз стоимости прокачки ВС для владельца при разных сценариях."
 
-msgid "routes.gb_statistics.title"
-msgstr "@:(routes.gb_statistics.hero.title) | @:(common.site_title)"
-
 msgid "routes.gb_statistics.hero.title"
 msgstr "Эпохи ВС"
 
 msgid "routes.gb_statistics.hero.subtitle"
 msgstr "Визуализация роста стоимости ВС относительно эпохи."
-
-msgid "routes.secure_position.title"
-msgstr "@:(routes.secure_position.hero.title) | @:(common.site_title)"
 
 msgid "routes.secure_position.hero.title"
 msgstr "Блокирование места"
@@ -1225,20 +1130,11 @@ msgstr "Извините, страница не существует"
 msgid "routes.trade.hero.title"
 msgstr "Обмен товаров"
 
-msgid "routes.trade.title"
-msgstr "@:(routes.trade.hero.title) | @:(common.site_title)"
-
 msgid "routes.campaign_cost.hero.subtitle"
 msgstr "Подсчёт стоимости захвата провинций путём переговоров."
 
 msgid "routes.campaign_cost.hero.title"
 msgstr "Стоимость захвата провинций"
-
-msgid "routes.campaign_cost.title"
-msgstr "@:(routes.campaign_cost.hero.title) | @:(common.site_title)"
-
-msgid "foe_data.age.Oracle"
-msgstr "@:(foe_data.age.NoAge) (@:(foe_data.gb.Oracle_of_Delphi))"
 
 msgid "foe_data.age.NoAge"
 msgstr "Без эпохи"
@@ -2955,9 +2851,6 @@ msgstr "Связаться с администратором проекта @:(c
 msgid "routes.contact.hero.title"
 msgstr "Контакты"
 
-msgid "routes.contact.title"
-msgstr "@:(routes.contact.hero.title) | @:(common.site_title)"
-
 msgid "routes.survey.unknown_error"
 msgstr "Произошла неизвестная ошибка, обратитесь к администратору сайта"
 
@@ -3384,10 +3277,6 @@ msgstr "Разлом барки"
 msgid "foe_data.province.Idlers_Range"
 msgstr "Область лентяя"
 
-msgid "routes.help_to_translate_the_site.title"
-msgstr ""
-"@:(routes.help_to_translate_the_site.hero.title) | @:(common.site_title)"
-
 msgid "routes.trade.tab.trade_2_1.message"
 msgstr ""
 "Простые ставки: соотношение 1 к 1 товары одной эпохи, и 1 к 2 товары разных "
@@ -3400,9 +3289,6 @@ msgid "routes.contact.message_other_info_html"
 msgstr ""
 "Если вы программист, вы также можете отправить заявку (и внести свой вклад в "
 "развитие проекта) здесь: @:(common.links.github)."
-
-msgid "routes.survey.title"
-msgstr "@:(routes.survey.hero.title) | @:(common.site_title)"
 
 msgid "contributions.question"
 msgstr "Ответы на вопросы"
@@ -3521,17 +3407,11 @@ msgstr "---"
 msgid "routes.donate.hero.subtitle"
 msgstr "Сделать пожертвование проекту @:(common.site_title)"
 
-msgid "routes.donate.hero.title"
-msgstr "@:(utils.Donate)"
-
 msgid "routes.donate.donation_options"
 msgstr "Поддержать через @:(common.links.donorbox) или @:(common.links.paypal)."
 
 msgid "routes.donate.conversion"
 msgstr "Если вам нравится моя работа, вы можете пожертвовать на развитие."
-
-msgid "routes.donate.title"
-msgstr "@:(routes.donate.hero.title) | @:(common.site_title)"
 
 msgid "foe_data.bonus.fierce_resistance.name"
 msgstr "Яростное сопротивление"
@@ -4150,9 +4030,3 @@ msgstr "Венера"
 
 msgid "foe_data.age_short.SpaceAgeAsteroidBelt"
 msgstr "КЭПА"
-
-msgid "routes.gb_leveling_order.title"
-msgstr "@:(routes.gb_leveling_order.hero.title)"
-
-msgid "main_menu.gb_leveling_order"
-msgstr "@:(routes.gb_leveling_order.hero.title)"

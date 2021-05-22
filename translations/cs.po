@@ -17,30 +17,6 @@ msgstr ""
 msgid "main_menu.home"
 msgstr "Domů"
 
-msgid "main_menu.gb_investment"
-msgstr "@:(routes.gb_investment_gb_chooser.hero.title)"
-
-msgid "main_menu.secure_position"
-msgstr "@:(routes.secure_position.hero.title)"
-
-msgid "main_menu.cf_calculator"
-msgstr "@:(routes.cf_calculator.hero.title)"
-
-msgid "main_menu.gb_statistics"
-msgstr "@:(routes.gb_statistics.hero.title)"
-
-msgid "main_menu.gb_forecast_cost"
-msgstr "@:(routes.gb_forecast_cost.hero.title)"
-
-msgid "main_menu.trade"
-msgstr "@:(routes.trade.hero.title)"
-
-msgid "main_menu.help_to_translate_the_site"
-msgstr "@:(routes.help_to_translate_the_site.hero.title)"
-
-msgid "main_menu.campaign_cost"
-msgstr "@:(routes.campaign_cost.hero.title)"
-
 msgid "footer_menu.about"
 msgstr "O nás"
 
@@ -52,9 +28,6 @@ msgstr "Seznam změn"
 
 msgid "footer_menu.contact"
 msgstr "Kontakt"
-
-msgid "components.campaign_cost.title"
-msgstr "@:(routes.campaign_cost.hero.title)"
 
 msgid "components.campaign_cost.choose_province"
 msgstr "Vyberte provincii"
@@ -70,9 +43,6 @@ msgstr "Všechny provincie"
 
 msgid "components.campaign_cost.all_ages"
 msgstr "Všechny doby"
-
-msgid "components.cf_calculator.block_cfc.title"
-msgstr "@:(routes.cf_calculator.hero.title)"
 
 msgid "components.cf_calculator.block_cfc.your_age"
 msgstr "Vaše doba"
@@ -105,9 +75,6 @@ msgstr "2. zadavatel opakovatelných úkolů?"
 
 msgid "components.cf_calculator.block_cfc.supplies_gathered"
 msgstr "Zásob získáno"
-
-msgid "components.cf_calculator.block_cfc.table_reward.title"
-msgstr "@:(utils.Rewards)"
 
 msgid "components.cf_calculator.block_cfc.table_reward.thead.th1"
 msgstr "Nákresy"
@@ -249,9 +216,6 @@ msgid "components.gb_investment.gb_list_select.info"
 msgstr ""
 "V nastavení si můžeš změnit styl rozbalovací nabídky (na řazení VB dle ér "
 "nebo abecedně)"
-
-msgid "components.gb_investment.gb_investment.title"
-msgstr "@:(routes.gb_investment_gb_chooser.hero.title)"
 
 msgid "components.gb_investment.gb_investment.description.p1"
 msgstr ""
@@ -682,11 +646,6 @@ msgstr "Zobrazit místo"
 
 msgid ""
 "components.gb_investment_investors.takingPlaceInConsideration."
-"form.no"
-msgstr "@:(utils.No)"
-
-msgid ""
-"components.gb_investment_investors.takingPlaceInConsideration."
 "form.normal"
 msgstr "Standardní"
 
@@ -760,12 +719,6 @@ msgstr "Výzkumné body již investoval vlastník na současné úrovni"
 msgid "components.gb_forecast_cost.graph.title"
 msgstr "Prognóza částky přípravy majitele na {gb}"
 
-msgid "components.gb_forecast_cost.graph.x_axes_label"
-msgstr "@:(utils.graph.gb_level)"
-
-msgid "components.gb_forecast_cost.graph.y_axes_label"
-msgstr "@:(utils.graph.gb_level_cost)"
-
 msgid "components.gb_forecast_cost.graph.label.default"
 msgstr "Hrubé náklady na úroveň"
 
@@ -774,9 +727,6 @@ msgstr "Náklady na přípravu bez bonusu"
 
 msgid "components.gb_forecast_cost.graph.label.custom_preparation"
 msgstr "Náklady na přípravu s bonusem"
-
-msgid "components.gb_statistics.title"
-msgstr "@:(routes.gb_statistics.hero.title)"
 
 msgid "components.gb_statistics.p1"
 msgstr ""
@@ -937,9 +887,6 @@ msgstr "Věk"
 msgid "components.simple_trade.table.thead.th2"
 msgstr "Suroviny"
 
-msgid "components.simple_trade.table.thead.th3"
-msgstr "@:(components.trade.label.i_want)"
-
 msgid "components.simple_trade.table.thead.th4"
 msgstr "Výsledek"
 
@@ -963,9 +910,6 @@ msgstr "{count} novinky od vaší poslední návštěvy."
 
 msgid "components.site_layout.update_2"
 msgstr "{count} novinek od vaší poslední návštěvy."
-
-msgid "components.site_layout.hero.title"
-msgstr "@:(common.site_title)"
 
 msgid "components.site_layout.hero.slogan_html"
 msgstr "Sada nástrojů pro zjednodušení života ve @:(common.links.foe)"
@@ -1069,9 +1013,6 @@ msgstr "Maximální nabídka (max {count})"
 msgid "components.trade.split_message.msg"
 msgstr "{valueFrom} {ageFrom} pro {valueTo} {ageTo}"
 
-msgid "components.trade.split_message.common"
-msgstr "{count} × (@:(components.trade.split_message.msg))"
-
 msgid "components.trade.split_message.multi"
 msgstr "@:(components.trade.split_message.common) a{secondPart}"
 
@@ -1136,9 +1077,6 @@ msgstr "Hodnota pole"
 msgid "components.promotion_message_builder.custom_field_title"
 msgstr "Vaše vlastní pole"
 
-msgid "components.promotion_message_builder.use_short_name"
-msgstr "@:(components.gb_investment.gb_investment.use_short_name)"
-
 msgid "components.promotion_message_builder.reverse_place_order"
 msgstr "Vyměnit pořadí pozic?"
 
@@ -1172,9 +1110,6 @@ msgstr "Seznam pozic"
 msgid "components.promotion_message_builder.variables.place.PV"
 msgstr "Hodnota pozice (v FB)"
 
-msgid "components.promotion_message_builder.variables.place.PP"
-msgstr "@:(components.gb_investment.gb_investment.table.thead.th3)"
-
 msgid "components.promotion_message_builder.variables.message.FLVL"
 msgstr "Z úrovně"
 
@@ -1186,9 +1121,6 @@ msgstr "Název VB"
 
 msgid "components.promotion_message_builder.variables.message.P"
 msgstr "Pozice"
-
-msgid "components.promotion_message_builder.variables.message.OP"
-msgstr "@:(components.gb_investment.gb_investment.table.tfoot.total_preparation)"
 
 msgid "components.promotion_message_builder.variables.message.PPx"
 msgstr "Počet bodu k vložení majitele na pozici \"x\" (kde \"x\" je 1-5)"
@@ -1238,9 +1170,6 @@ msgstr "Neplatné údaje"
 
 msgid "components.import_promotion_message.template_imported"
 msgstr "Šablona byla nahrána"
-
-msgid "routes.home.title"
-msgstr "@:(common.site_title)"
 
 msgid "routes.about.title"
 msgstr "O @:(common.site_title)"
@@ -1460,17 +1389,11 @@ msgstr ""
 "<b>Zpráva:</b> Pokud se problém týká GitHub, nezapomeňte zprávu napsat v "
 "angličtině, aby ji rozumělo co nejvíce lidí."
 
-msgid "routes.campaign_cost.title"
-msgstr "@:(routes.campaign_cost.hero.title) | @:(common.site_title)"
-
 msgid "routes.campaign_cost.hero.title"
 msgstr "Cena kampaně"
 
 msgid "routes.campaign_cost.hero.subtitle"
 msgstr "Tento nástroj počítá náklady na získání sektoru nebo provincie."
-
-msgid "routes.cf_calculator.title"
-msgstr "@:(routes.cf_calculator.hero.title) | @:(common.site_title)"
 
 msgid "routes.cf_calculator.hero.title"
 msgstr "Château Frontenac počítadlo"
@@ -1481,29 +1404,17 @@ msgstr "Nástroj pro vypočítání produkce zboží a FB z opakujících se úk
 msgid "routes.changelog.title"
 msgstr "Seznam změn | @:(common.site_title)"
 
-msgid "routes.contributors.title"
-msgstr "@:(routes.contributors.hero.title) | @:(common.site_title)"
-
 msgid "routes.contributors.hero.title"
 msgstr "Spolupracovníci"
 
 msgid "routes.contributors.hero.subtitle"
 msgstr "Tato strana zobrazí seznam všech přispěvovatelů"
 
-msgid "routes.gb_investment.title"
-msgstr "@:(routes.gb_investment.hero.title) | @:(common.site_title)"
-
-msgid "routes.gb_investment.hero.title"
-msgstr "{gb_key} - @:(routes.gb_investment_gb_chooser.hero.title)"
-
 msgid "routes.gb_investment.tab.owner_view.title"
 msgstr "Náhled majitele"
 
 msgid "routes.gb_investment.tab.investors_view.title"
 msgstr "Náhled přispívajícího"
-
-msgid "routes.gb_investment_gb_chooser.title"
-msgstr "@:(routes.gb_investment_gb_chooser.hero.title) | @:(common.site_title)"
 
 msgid "routes.gb_investment_gb_chooser.hero.title"
 msgstr "Příspěvky do VB"
@@ -1516,9 +1427,6 @@ msgstr ""
 msgid "routes.gb_investment_gb_chooser.choose_gb.title"
 msgstr "Vyberte Velkolepou Budovu"
 
-msgid "routes.gb_forecast_cost.title"
-msgstr "@:(routes.gb_forecast_cost.hero.title) | @:(common.site_title)"
-
 msgid "routes.gb_forecast_cost.hero.title"
 msgstr "Výpočet ceny VB"
 
@@ -1527,26 +1435,17 @@ msgstr ""
 "Tento nástroj vypočítá potřebný počet FB k získání další úrovně VB s a nebo "
 "bez bonusu Arcu."
 
-msgid "routes.gb_statistics.title"
-msgstr "@:(routes.gb_statistics.hero.title) | @:(common.site_title)"
-
 msgid "routes.gb_statistics.hero.title"
 msgstr "Statistiky VB"
 
 msgid "routes.gb_statistics.hero.subtitle"
 msgstr "Tento nástroj zobrazuje grafy vývoje nákladů na VB dle dosaženého věku."
 
-msgid "routes.secure_position.title"
-msgstr "@:(routes.secure_position.hero.title) | @:(common.site_title)"
-
 msgid "routes.secure_position.hero.title"
 msgstr "Zajištěná pozice"
 
 msgid "routes.secure_position.hero.subtitle"
 msgstr "Tento nástroj vypočítá nutný počet FB pro zajištění své pozice ve VB."
-
-msgid "routes.trade.title"
-msgstr "@:(routes.trade.hero.title) | @:(common.site_title)"
 
 msgid "routes.trade.hero.title"
 msgstr "Obchod"
@@ -1572,9 +1471,6 @@ msgstr ""
 "Tento typ obchodu zohledňuje cenu výrobny (mince a zásoby) k určení ceny "
 "zboží."
 
-msgid "routes.help_to_translate_the_site.title"
-msgstr "@:(routes.help_to_translate_the_site.hero.title) | @:(common.site_title)"
-
 msgid "routes.help_to_translate_the_site.hero.title"
 msgstr "Pomožte nám přeložit stránky"
 
@@ -1598,9 +1494,6 @@ msgstr ""
 msgid "routes.help_to_translate_the_site.state_of_translation"
 msgstr "Aktuální stav překladu:"
 
-msgid "routes.survey.title"
-msgstr "@:(routes.survey.hero.title) | @:(common.site_title)"
-
 msgid "routes.survey.hero.title"
 msgstr "Dotazník"
 
@@ -1618,9 +1511,6 @@ msgstr "Vyskytla se chyba, zkontrolujte formulář a zkuste to znovu"
 
 msgid "routes.survey.unknown_error"
 msgstr "Vyskytla se neznámá chyba, kontaktujte prosím správce stránek"
-
-msgid "routes.contact.title"
-msgstr "@:(routes.contact.hero.title) | @:(common.site_title)"
 
 msgid "routes.contact.hero.title"
 msgstr "Kontakt"
@@ -1649,14 +1539,8 @@ msgstr "Stránka nenalezena | @:(common.site_title)"
 msgid "routes.error.404.message"
 msgstr "Litujeme, hledaná stránka neexistuje nebo byla zrušena"
 
-msgid "routes.donate.title"
-msgstr "@:(routes.donate.hero.title) | @:(common.site_title)"
-
 msgid "routes.donate.hero.subtitle"
 msgstr "Darovat na@:(common.site_title)"
-
-msgid "routes.donate.hero.title"
-msgstr "@:(utils.Donate)"
 
 msgid "routes.donate.donation_options"
 msgstr "Darovat můžete přes @:(common.links.donorbox) nebo @:(common.links.paypal)."
@@ -1672,9 +1556,6 @@ msgstr ""
 "(jednorázově/měsíčně) Každý dar pro mě znamená hodně. Pomůžou mi s pokrytím "
 "nákladů za server a hosting a dalších nákladů. Také poslouží jako motivace k "
 "další práci na tomto open-source projektu."
-
-msgid "foe_data.age.Oracle"
-msgstr "@:(foe_data.age.NoAge) (@:(foe_data.gb.Oracle_of_Delphi)"
 
 msgid "foe_data.age.NoAge"
 msgstr "Bezdobé období"
@@ -3884,9 +3765,3 @@ msgstr "Zásady ochrany osobních údajů"
 
 msgid "footer_menu.cookie_policy"
 msgstr "Zásady používání Cookie"
-
-msgid "routes.gb_leveling_order.title"
-msgstr "@:(routes.gb_leveling_order.hero.title)"
-
-msgid "main_menu.gb_leveling_order"
-msgstr "@:(routes.gb_leveling_order.hero.title)"
