@@ -1015,5 +1015,8 @@
   "foe_data.province.Nemo_s_Dock": "Il bacino di Nemo",
   "foe_data.province.Medusa_Cove": "Baia della Medusa",
   "foe_data.province.Privateer_Helm": "timone del corsaro",
-  "foe_data.province.Dagon_s_Dagger": "Il pugnale di Dagon"
+  "foe_data.province.Dagon_s_Dagger": "Il pugnale di Dagon",
+  "components.site_layout.global_config_dialog.disable_update_notification": "Disabilita notifiche sugli aggiornamenti",
+  "components.gb_investment.custom_name": "Puoi impostare un nome personalizzato per il GE in @:(components.site_layout.global_config)",
+  "components.site_layout.global_config_dialog.custom_gb_names": "Nome GE personalizzato"
 }

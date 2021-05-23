@@ -10,7 +10,7 @@
   "components.campaign_cost.provinces": "Prowincje",
   "components.campaign_cost.all_provinces": "Wszystkie prowincje",
   "components.cf_calculator.block_cfc.your_age": "Twoja epoka",
-  "components.cf_calculator.block_cfc.your_cf_boost": "Twój Bonus @:(foe_data.gb.Chateau_Frontenac)",
+  "components.cf_calculator.block_cfc.your_cf_boost": "Twój bonus @:(foe_data.gb.Chateau_Frontenac)",
   "components.cf_calculator.block_cfc.coins_to_use": "Monety potrzebne do zadania \"Przyjęcie Nieurodzinowe\" (UBQ)",
   "components.cf_calculator.block_cfc.coins_supplies_info": "Ta wartość powinna być większa lub równa {min} ponieważ poniżej nie możemy zagwarantować żadnego zysku (statystycznie)",
   "components.cf_calculator.block_cfc.supplies_to_use": "Zaopatrzenie potrzebne do zadania \"Przyjęcie Nieurodzinowe\" (UBQ)",
@@ -1009,5 +1009,6 @@
   "routes.about.cookie.p2": "Aby uzyskać więcej informacji, skorzystaj z poniższych linków:",
   "routes.about.cookie.info.cookieConsent": "Twoje preferencje dotyczące plików cookie",
   "foe_data.gb.Flying_Island": "Latająca wyspa",
-  "foe_data.gb.Space_Carrier": "Kosmiczny transporter"
+  "foe_data.gb.Space_Carrier": "Kosmiczny transporter",
+  "components.cf_calculator.tutorial.infiniteGenerator": "Ta sekcja jest wyświetlana tylko, kiedy @:(foe_data.gb.Chateau_Frontenac) premia (zgodna z twoją epoką) daje statystycznie więcej monet i zasobów, które możesz wydać."
 }
