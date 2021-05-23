@@ -3810,7 +3810,7 @@ msgid "cookieConsent.consentNotice.learnMore_nonTogglable"
 msgstr "Learn More"
 
 msgid "cookieConsent.sentry.description"
-msgstr "Collecting errors to identify potential bugs (self-hosted solution)"
+msgstr "Collecting errors to identify potential bugs"
 
 msgid "cookieConsent.foe-tools.description"
 msgstr "All data related to your configuration (GBs level, investors, Arc bonus, etc.)"
