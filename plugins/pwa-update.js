@@ -1,7 +1,9 @@
 import Vue from "vue";
 
-export default async ({ app }) => {
+export default async ({ app, store }) => {
   const workbox = await window.$workbox;
+
+  const lastVisitVersion = store.get("global/lastVisitVersion");
 
   if (!workbox) {
     // Workbox couldn't be loaded.
@@ -14,15 +16,14 @@ export default async ({ app }) => {
       return;
     }
 
-    window.onNuxtReady(() => {
-      Vue.prototype.$toast({
-        description: app.i18n.t("pwa_update.message"),
-        isClosable: false,
-        status: "info",
-      });
-      setTimeout(() => {
-        window.location.reload();
-      }, 5000);
+    Vue.prototype.$toast({
+      description: app.i18n.t("pwa_update.message"),
+      isClosable: false,
+      status: "info",
     });
+    setTimeout(() => {
+      store.set("global/lastVisitVersion", lastVisitVersion);
+      window.location.reload();
+    }, 5000);
   });
 };
