@@ -517,6 +517,7 @@ export default {
     "nuxt-i18n",
     "@nuxtjs/axios",
     { src: "~/modules/foe-data/module.js" },
+    { src: "~/modules/translation/module.js" },
     { src: "~/modules/cname/module.js" },
     "@nuxtjs/sentry",
   ],

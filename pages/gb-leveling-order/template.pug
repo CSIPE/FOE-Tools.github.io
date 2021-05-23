@@ -71,7 +71,20 @@ div(v-if="gbsData")
 
     .t-columns.mb-4.mt-4(v-for="gb in gbs")
       .w-full(class="sm:w-1/2")
-        t-label(:label="$t('foe_data.gb.' + gb.key)", :label-for="gb.key + 'label'")
+        span.mr-2
+          font-awesome-icon.cursor-pointer.text-red-500(
+            v-if="gbsIgnoreInfo[gb.key][chosenReward].ignore",
+            icon="lock",
+            @click="setIgnore(gb.key, false)",
+            v-tippy="getTippyContent($t('utils.unlock'))"
+          )
+          font-awesome-icon.cursor-pointer(
+            v-else,
+            icon="lock-open",
+            @click="setIgnore(gb.key, true)",
+            v-tippy="getTippyContent($t('utils.lock'))"
+          )
+        t-label.inline-flex(:label="$t('foe_data.gb.' + gb.key)", :label-for="gb.key + 'label'")
       .w-full(class="sm:w-1/2")
         numberinput(
           :min="-1",

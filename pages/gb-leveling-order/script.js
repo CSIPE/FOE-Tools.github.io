@@ -77,6 +77,11 @@ export default {
       (elt) => (elt.yourLevel === undefined ? -1 : elt.yourLevel)
     );
 
+    const gbsIgnoreInfo = mapvalues(
+      this.$store.copy(`profile/profiles@${this.$store.get("global/currentProfile")}.gb`),
+      (elt) => (elt.gblo === undefined ? {} : elt.gblo)
+    );
+
     return {
       i18nPrefix,
       chosenReward: "",
@@ -89,6 +94,7 @@ export default {
       initFpBy24h: 10,
       initFpBy24hTimeout: null,
       fromLevel: gbsInfo,
+      gbsIgnoreInfo,
       fromLevelTimeout: {},
       includeRandomReward: false,
       randomRewardProduction: 10,
@@ -300,6 +306,11 @@ export default {
           continue;
         }
 
+        if (lGet(this.gbsIgnoreInfo, `${gbKey}.${bonusKey}.ignore`) === undefined) {
+          set(this.gbsIgnoreInfo, `${gbKey}.${bonusKey}.ignore`, false);
+          this.setIgnoreInStore(gbKey, false);
+        }
+
         let previous = gbs[gbKey].gbReward[1][bonusKey];
 
         // Add empirical value for missing values
@@ -342,6 +353,8 @@ export default {
         }
       }
 
+      this.gbsIgnoreInfo = this.$clone(this.gbsIgnoreInfo);
+
       this.fromLevel = fromLevel;
       this.gbs = gbs;
     },
@@ -354,14 +367,56 @@ export default {
         this.initGbs();
       }
 
+      let additionalFPs = 0;
+
+      const gbs = this.$clone(this.gbs);
+      for (const gbKey in gbs) {
+        if (lGet(this.gbsIgnoreInfo, `${gbKey}.${this.chosenReward}.ignore`)) {
+          if (this.chosenReward === "strategy_points" && this.fromLevel[gbKey] > 0) {
+            additionalFPs += gbs[gbKey].gbReward[this.fromLevel[gbKey]][this.chosenReward];
+          }
+
+          delete gbs[gbKey];
+        }
+      }
+
       this.r = GbLevelingOrderProcess(
-        this.gbs,
+        gbs,
         this.chosenReward,
         this.fromLevel,
         this.targetLevel === null ? -1 : this.targetLevel,
         this.buildRatio,
-        this.initFpBy24h
+        this.initFpBy24h + additionalFPs
       );
+    },
+    setIgnoreInStore(gbKey, value) {
+      if (!this.$store.get(`profile/profiles@${this.$store.get("global/currentProfile")}.gb.${gbKey}.gblo`)) {
+        this.$store.set(`profile/profiles@${this.$store.get("global/currentProfile")}.gb.${gbKey}.gblo`, {});
+      }
+
+      if (
+        !this.$store.get(
+          `profile/profiles@${this.$store.get("global/currentProfile")}.gb.${gbKey}.gblo.${this.chosenReward}`
+        )
+      ) {
+        this.$store.set(
+          `profile/profiles@${this.$store.get("global/currentProfile")}.gb.${gbKey}.gblo.${this.chosenReward}`,
+          {}
+        );
+      }
+
+      this.$store.set(
+        `profile/profiles@${this.$store.get("global/currentProfile")}.gb.${gbKey}.gblo.${this.chosenReward}.ignore`,
+        value
+      );
+    },
+    setIgnore(gbKey, value) {
+      this.gbsIgnoreInfo[gbKey][this.chosenReward].ignore = value;
+      this.setIgnoreInStore(gbKey, value);
+      this.updateData();
+    },
+    getTippyContent(content) {
+      return { content };
     },
   },
   mounted() {
